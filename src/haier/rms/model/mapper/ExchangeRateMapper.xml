@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="ExchangeRate">
+
+
+    <select id="selectOneRecord" parameterType="gateway.SBS.ExchangeRate.ExRateRecordBean"
+            resultType="gateway.SBS.ExchangeRate.ExRateRecordBean">
+        select * from rms_exchangerate where curcde=#{CURCDE} and secccy=#{SECCCY} and effdat=#{EFFDAT}
+    </select>
+
+    <!-- 查找最近的汇率信息 -->
+    <select id="selectRate" parameterType="gateway.SBS.ExchangeRate.ExRateRecordBean"
+            resultType="gateway.SBS.ExchangeRate.ExRateRecordBean">
+        <![CDATA[
+        select  *
+          from (select t.*
+                  from rms_exchangerate t
+                 where t.curcde = #{CURCDE}
+                   and t.secccy = #{SECCCY}
+                   and t.effdat <= #{EFFDAT}
+                 order by t.effdat desc) a
+         where rownum = 1
+         ]]>
+    </select>
+
+
+    <insert id="insertOneRecord" parameterType="gateway.SBS.ExchangeRate.ExRateRecordBean">
+    <![CDATA[
+        INSERT INTO
+        rms_exchangerate (
+            CURCDE ,
+            SECCCY ,
+            EFFDAT ,
+            EFFTIM ,
+            RATFL1 ,
+            RATVA1 ,
+            RATFL2 ,
+            RATVA2 ,
+            RATFL3 ,
+            RATVA3 ,
+            RATFL4 ,
+            RATVA4 ,
+            RATFL5 ,
+            RATVA5 ,
+            RATFL6 ,
+            RATVA6 ,
+            RATFL7 ,
+            RATVA7 ,
+            RATFL8 ,
+            RATVA8 ,
+            RATFL9 ,
+            RATVA9
+        ) VALUES (
+            #{CURCDE,jdbcType=VARCHAR},
+            #{SECCCY,jdbcType=VARCHAR},
+            #{EFFDAT,jdbcType=VARCHAR},
+            #{EFFTIM,jdbcType=VARCHAR},
+            #{RATFL1,jdbcType=VARCHAR},
+            #{RATVA1,jdbcType=VARCHAR},
+            #{RATFL2,jdbcType=VARCHAR},
+            #{RATVA2,jdbcType=VARCHAR},
+            #{RATFL3,jdbcType=VARCHAR},
+            #{RATVA3,jdbcType=VARCHAR},
+            #{RATFL4,jdbcType=VARCHAR},
+            #{RATVA4,jdbcType=VARCHAR},
+            #{RATFL5,jdbcType=VARCHAR},
+            #{RATVA5,jdbcType=VARCHAR},
+            #{RATFL6,jdbcType=VARCHAR},
+            #{RATVA6,jdbcType=VARCHAR},
+            #{RATFL7,jdbcType=VARCHAR},
+            #{RATVA7,jdbcType=VARCHAR},
+            #{RATFL8,jdbcType=VARCHAR},
+            #{RATVA8,jdbcType=VARCHAR},
+            #{RATFL9,jdbcType=VARCHAR},
+            #{RATVA9,jdbcType=VARCHAR}
+        )
+    ]]>
+    </insert>
+
+    <delete id="deleteOneRecord" parameterType="gateway.SBS.ExchangeRate.ExRateRecordBean">
+        delete from rms_exchangerate where curcde=#{CURCDE} and secccy=#{SECCCY} and effdat=#{EFFDAT}
+    </delete>
+
+
+</mapper>

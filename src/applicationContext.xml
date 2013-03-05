@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation=" http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+             http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+             http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+             http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+             http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
+        default-lazy-init="false" >
+
+    <!-- 配置数据库连接池 -->
+    <context:property-placeholder location="classpath:credit.properties"/>
+
+    <!-- 配置数据库连接池 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${pub.platform.db.ConnectionManager.sDBDriver}"/>
+        <property name="url" value="${pub.platform.db.ConnectionManager.sConnStr}"/>
+        <property name="username" value="${pub.platform.db.ConnectionManager.user}"/>
+        <property name="password" value="${pub.platform.db.ConnectionManager.passwd}"/>
+        <property name="maxActive" value="15"/>
+        <property name="maxIdle" value="5"/>
+    </bean>
+
+
+    <!-- transaction manager, use JtaTransactionManager for global tx -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+    <!-- enable component scanning (beware that this does not enable mapper scanning!) -->
+    <context:component-scan base-package="haier.service"/>
+
+    <!-- enable autowire -->
+    <context:annotation-config/>
+
+    <!--<tx:jta-transaction-manager />-->
+
+    <!-- enable transaction demarcation with annotations -->
+    <tx:annotation-driven/>
+
+    <!-- define the SqlSessionFactory, notice that configLocation is not needed when you use MapperFactoryBean -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:haier/repository/mapper/**/*.xml"/>
+    </bean>
+
+    <!-- scan for mappers and let them be autowired -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="haier.repository.dao"/>
+    </bean>
+
+    <!--quartz-->
+    <!-- SBS 历史余额查询 cronTrigger -->
+    <bean id="sbsactbal" class="haier.scheduler.SBSAccountBalanceHandler"/>
+    <bean id="sbsactbalJobDetailBean" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="sbsactbal"/>
+        <property name="targetMethod" value="run"/>
+    </bean>
+    <bean id="sbsactbalCronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="sbsactbalJobDetailBean"/>
+        <property name="cronExpression" value="0 30 23 * * ?"/>
+    </bean>
+    <!-- DIS 企业余额上报 cronTrigger -->
+    <bean id="disactbal" class="haier.scheduler.DisReportHandler"/>
+    <bean id="disactbalJobDetailBean" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="disactbal"/>
+        <property name="targetMethod" value="run"/>
+    </bean>
+    <bean id="disactbalCronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="disactbalJobDetailBean"/>
+        <property name="cronExpression" value="0 45 23 * * ?"/>
+    </bean>
+
+    <!-- CCB 重客企业余额实时查询 cronTrigger -->
+    <bean id="ccbactbalMonitor" class="haier.scheduler.fundmonitor.CCBAccountBalanceOnlineMonitorHandler"/>
+    <bean id="ccbactbalOnlineQryJobDetailBean"
+          class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ccbactbalMonitor"/>
+        <property name="targetMethod" value="run"/>
+    </bean>
+    <bean id="ccbactbalOnlineQryCronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="ccbactbalOnlineQryJobDetailBean"/>
+        <property name="cronExpression" value="0 0/60 9-16 * * ?"/>
+    </bean>
+    <!-- SBS 企业余额实时查询 cronTrigger -->
+    <bean id="sbsactbalMonitor" class="haier.scheduler.fundmonitor.SBSAccountBalanceOnlineMonitorHandler"/>
+    <bean id="sbsactbalOnlineQryJobDetailBean"
+          class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="sbsactbalMonitor"/>
+        <property name="targetMethod" value="run"/>
+    </bean>
+    <bean id="sbsactbalOnlineQryCronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="sbsactbalOnlineQryJobDetailBean"/>
+        <property name="cronExpression" value="0 0/30 9-16 * * ?"/>
+    </bean>
+
+
+    <!-- 设置调度 -->
+    <bean id="myScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="sbsactbalCronTriggerBean"/>
+                <ref bean="disactbalCronTriggerBean"/>
+                <!--<ref bean="sbsactbalOnlineQryCronTriggerBean"/>-->
+                <!--<ref bean="ccbactbalOnlineQryCronTriggerBean"/>-->
+            </list>
+        </property>
+        <property name="quartzProperties">
+            <props>
+                <prop key="org.quartz.threadPool.threadCount">10</prop>
+                <prop key="org.quartz.scheduler.instanceId">AUTO</prop>
+            </props>
+        </property>
+    </bean>
+
+
+    <!--华腾信贷数据库配置 -->
+    <bean id="cmsDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${cms.jdbc.driverClassName}"/>
+        <property name="url" value="${cms.jdbc.url}"/>
+        <property name="username" value="${cms.jdbc.username}"/>
+        <property name="password" value="${cms.jdbc.password}"/>
+        <property name="maxActive" value="10"/>
+        <property name="maxIdle" value="5"/>
+    </bean>
+
+    <bean id="cmsJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="cmsDataSource"/>
+    </bean>
+    <bean id="cmsSimpleJdbcTemplate" class="org.springframework.jdbc.core.simple.SimpleJdbcTemplate">
+        <constructor-arg ref="cmsDataSource"/>
+    </bean>
+
+    <!--消费信贷数据库配置 -->
+    <bean id="ccmsDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${ccms.jdbc.driverClassName}"/>
+        <property name="url" value="${ccms.jdbc.url}"/>
+        <property name="username" value="${ccms.jdbc.username}"/>
+        <property name="password" value="${ccms.jdbc.password}"/>
+        <property name="maxActive" value="10"/>
+        <property name="maxIdle" value="5"/>
+    </bean>
+
+    <bean id="ccmsJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="ccmsDataSource"/>
+    </bean>
+    <bean id="ccmsSimpleJdbcTemplate" class="org.springframework.jdbc.core.simple.SimpleJdbcTemplate">
+        <constructor-arg ref="ccmsDataSource"/>
+    </bean>
+
+</beans>

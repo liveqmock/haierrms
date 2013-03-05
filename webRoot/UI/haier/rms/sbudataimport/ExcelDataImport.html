@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>批量数据导入</title>
+    <LINK href="../../../../css/ccb.css" type="text/css" rel="stylesheet">
+        <script language="javascript" src="../../../../js/function.js"></script>
+        <script language="javascript" src="ExcelDataImport.js"></script>
+        <script type="text/javascript" language="javascript" src="../../../../DatePicker/WdatePicker.js"></script>
+</head>
+<body onload="getNowDate()">
+   <fieldset style="margin:30px 60px;padding:0px 25px 0px 25px;">
+       <legend>数据批量导入</legend>
+       <form action="ExcelDataImport.jsp" style="margin:10px 60px;" method="post" enctype="multipart/form-data" name="importfm">
+           <table width="100%" border="0" cellspacing="0" cellpadding="3">
+               <tr>
+                   <!--<td width="100%" align="center">-->
+                       <table align="center" border="0" cellspacing="0" cellpadding="3" width="100%">
+                           <tr>
+                               <td width="30%" align="right" nowrap="nowrap" class="lbl_right_padding">
+                                  选择数据日期
+                              </td>
+                              <td width="70%" align="right" nowrap="nowrap" class="data_input" >
+                                   <input type="text" onclick="WdatePicker()" id="txtDataDate" name="txtDataDate" fieldType="date" />
+                              </td>
+
+                           </tr>
+                            <tr>
+                               <td width="30%" align="right" nowrap="nowrap" class="lbl_right_padding">
+                                  选择文件
+                              </td>
+                              <td width="70%" align="right" nowrap="nowrap" class="data_input" >
+                                  <input type="file" style="height:22px;width:80%;" id="himport" name="himport"/>
+                              </td>
+                           </tr>
+                           <tr>
+                               <td colspan="2"></td>
+                           </tr>
+                           <tr>
+                               <td width="100%" colspan="2" valign="bottom" align="center">
+                                   <input type="button" onclick="ExcelFomatCheck()" style=" height:22px;width:80px;" value="导入数据">
+                               </td>
+                           </tr>
+                       </table>
+                   <!--</td>-->
+               </tr>
+           </table>
+
+       </form>
+   </fieldset>
+</body>
+</html>

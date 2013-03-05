@@ -1,0 +1,121 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+    </ui:define>
+
+    <ui:define name="content">
+        <p:messages id="msgs" showDetail="false"/>
+        <h:form id="form">
+            <div id="header">
+                <div>
+                    <p:panel header="查询条件">
+                        <h:panelGrid columns="2" cellspacing="5">
+                            <h:outputLabel value="账号:" for="actnum"/>
+                            <h:inputText id="actnum" size="30" required="true" requiredMessage="请输入账号。"
+                                         value="#{actDetlBookHandler.actnum}"/>
+
+                            <h:outputLabel value="起始日期:" for="startdate"/>
+                            <p:calendar  id="startdate" value="#{actDetlBookHandler.uiStartdate}" mode="popup" pattern="yyyy-MM-dd"
+                                        locale="zh_CN" showButtonPanel="true" navigator="true"
+                                        required="true" requiredMessage="日期不能为空。"/>
+                            <h:outputLabel value="截止日期:" for="enddate"/>
+                            <p:calendar id="enddate" value="#{actDetlBookHandler.uiEnddate}" mode="popup" pattern="yyyy-MM-dd"
+                                        locale="zh_CN" showButtonPanel="true" navigator="true"
+                                        required="true" requiredMessage="日期不能为空。"/>
+
+                            <h:outputText value=""/>
+                            <h:panelGroup>
+                                <p:commandButton id="qrybtn" value="查询" action="#{actDetlBookHandler.query}"
+                                                 update="pdt,msgs">
+                                </p:commandButton>
+                                <p:commandButton id="excelbtn1" value="导出" action="#{actDetlBookHandler.onExport}"
+                                                  ajax="false" >
+                                </p:commandButton>
+                            </h:panelGroup>
+                        </h:panelGrid>
+                        <!--</h:form>-->
+                    </p:panel>
+                </div>
+            </div>
+            <p:ajaxStatus style="height:20px;text-align:center">
+                <f:facet name="start">
+                    <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                </f:facet>
+                <f:facet name="complete">
+                    <h:outputText value=""/>
+                </f:facet>
+            </p:ajaxStatus>
+
+            <p:dataTable id="pdt" height="200" dynamic="true" selectionMode="single"
+                         value="#{actDetlBookHandler.detlList}" var="record"
+                         paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                         paginator="true" rows="30" paginatorPosition="both"
+                         rowsPerPageTemplate="100,50,30,10,5"
+                         emptyMessage="数据记录为空...">
+
+                <p:column style="text-align:center">
+                    <f:facet name="header">
+                        账号
+                    </f:facet>
+                    <h:outputText value="#{record.formatedActnum}"/>
+                </p:column>
+
+                <p:column sortBy="#{record.stmdat}" style="text-align:center">
+                    <f:facet name="header">
+                        交易日期
+                    </f:facet>
+                    <h:outputText value="#{record.stmdat}">
+                        <!--<f:convertDateTime dateStyle="default"/>-->
+                    </h:outputText>
+                </p:column>
+                <p:column sortBy="#{record.tlrnum}" style="text-align:center">
+                    <f:facet name="header">
+                        交易柜员
+                    </f:facet>
+                    <h:outputText value="#{record.tlrnum}"/>
+                </p:column>
+                <p:column sortBy="#{record.vchset}" style="text-align:center">
+                    <f:facet name="header">
+                        传票套号
+                    </f:facet>
+                    <h:outputText value="#{record.vchset}"/>
+                </p:column>
+                <p:column sortBy="#{record.setseq}" style="text-align:center">
+                    <f:facet name="header">
+                        套内序号
+                    </f:facet>
+                    <h:outputText value="#{record.setseq}"/>
+                </p:column>
+
+
+                <p:column sortBy="#{record.txnamt}">
+                    <f:facet name="header">
+                        <h:outputText value="发生额" />
+                    </f:facet>
+                    <h:outputText value="#{record.txnamt}" style="float: right"/>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="余额" />
+                    </f:facet>
+                    <h:outputText value="#{record.lasbal}" style="float: right"/>
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        摘要
+                    </f:facet>
+                    <h:outputText value="#{record.furinf}"/>
+                </p:column>
+
+            </p:dataTable>
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>

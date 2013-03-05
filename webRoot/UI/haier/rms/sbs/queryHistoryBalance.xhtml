@@ -1,0 +1,127 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+    </ui:define>
+
+    <ui:define name="content">
+        <p:messages id="msgs" showDetail="false"/>
+        <h:form id="form">
+            <div id="header" style="margin-top:5px">
+                <div>
+                    <p:panel header="查询条件">
+                        <h:panelGrid columns="2" cellspacing="10">
+
+                            <h:outputLabel value="业务日期:" for="startdate"/>
+                            <p:calendar id="startdate" value="#{historyBalanceQryAction.startdate}" mode="popup"
+                                        pattern="yyyy-MM-dd"
+                                        locale="zh_CN" showButtonPanel="true" navigator="true"
+                                        required="true" requiredMessage="日期不能为空。"/>
+                        </h:panelGrid>
+                        <p:separator/>
+                        <h:panelGrid columns="2"  style="margin-left:10px;">
+                            <p:commandButton type="push" value="查询" image="ui-icon-search"
+                                             action="#{historyBalanceQryAction.query}" update="pdt,msgs,toolbar"/>
+                            <p:commandButton id="print"  value="导出"  ajax="false"
+                                             action="#{historyBalanceQryAction.exportExcel}"/>
+                        </h:panelGrid>
+
+                    </p:panel>
+
+                    <p:ajaxStatus style="height:20px;text-align:center">
+                        <f:facet name="start">
+                            <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                        </f:facet>
+                        <f:facet name="complete">
+                            <h:outputText value=""/>
+                        </f:facet>
+                    </p:ajaxStatus>
+                </div>
+            </div>
+            <!--<br/>-->
+
+            <p:dataTable id="pdt" height="200" dynamic="true" selectionMode="single"
+                         value="#{historyBalanceQryAction.detlList}" var="record"
+                         paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
+                         paginator="true" rows="30" paginatorPosition="bottom"
+                         rowsPerPageTemplate="100,50,30,15"
+                         emptyMessage="数据记录为空...">
+
+                <f:facet name="header">
+                    <h:outputText value="#{historyBalanceQryAction.title}"/>
+                    (
+                    <h:outputText value="总数:#{historyBalanceQryAction.totalcount}／人民币总金额:"/>
+
+                    <h:outputText value="#{historyBalanceQryAction.totalamt}">
+                        <f:convertNumber type="number" pattern="##,###,###,###,###.##"/>
+                    </h:outputText>
+                    )
+                </f:facet>
+
+                <p:column filterBy="#{record.actno}" filterMatchMode="contains" sortBy="#{record.actno}"
+                          style="text-align:center">
+                    <f:facet name="header">
+                        账号
+                    </f:facet>
+                    <h:outputText value="#{record.actno}"/>
+                </p:column>
+                <p:column sortBy="#{record.actname}" filterBy="#{record.actname}" filterMatchMode="contains">
+                    <f:facet name="header">
+                        户名
+                    </f:facet>
+                    <h:outputText value="#{record.actname}"/>
+                </p:column>
+
+                <p:column sortBy="#{record.homecurbal}">
+                    <f:facet name="header">余额(本币)</f:facet>
+                    <h:outputText value="#{record.homecurbal}" style="float: right">
+                        <f:convertNumber type="currency" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+                <p:column sortBy="#{record.rmbbal}">
+                    <f:facet name="header">余额(人民币)</f:facet>
+                    <h:outputText value="#{record.rmbbal}" style="float: right">
+                        <f:convertNumber type="currency" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+                <p:column sortBy="#{record.currname}" style="text-align:center" filterBy="#{record.currname}"
+                          filterMatchMode="exact" filterOptions="#{historyBalanceQryAction.currencyOptions}">
+                    <f:facet name="header">
+                        币种
+                    </f:facet>
+                    <h:outputText value="#{record.currname}"/>
+                </p:column>
+                <p:column sortBy="#{record.roe}">
+                    <f:facet name="header">汇率</f:facet>
+                    <h:outputText value="#{record.roe}" style="float: right">
+                        <f:convertNumber pattern="###,###,##0.00#####"/>
+                    </h:outputText>
+                </p:column>
+
+                <p:column sortBy="#{record.acttypename}" style="text-align:center" filterBy="#{record.acttypename}"
+                          filterMatchMode="exact" filterOptions="#{historyBalanceQryAction.acttypeOptions}">
+                    <f:facet name="header">
+                        帐户类型
+                    </f:facet>
+                    <h:outputText value="#{record.acttypename}"/>
+                </p:column>
+
+                <p:column sortBy="#{record.actattr}" style="text-align:center" filterBy="#{record.actattr}"
+                          filterMatchMode="exact" filterOptions="#{historyBalanceQryAction.actattrOptions}">
+                    <f:facet name="header">
+                        集团内外
+                    </f:facet>
+                    <h:outputText value="#{record.actattr}"/>
+                </p:column>
+
+            </p:dataTable>
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>

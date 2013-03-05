@@ -1,0 +1,44 @@
+<definitions name="QueryFinanceBalanceFromYY" targetNamespace="http://xmlns.oracle.com/QueryFinanceBalanceFromYY" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.oracle.com/QueryFinanceBalanceFromYY" xmlns:ns1="http://xmlns.oracle.com/pcbpel/adapter/db/dbo/UP_Getdeposit_ByCorp/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:client="http://xmlns.oracle.com/QueryFinanceBalanceFromYY">
+   <types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+         <import namespace="http://xmlns.oracle.com/QueryFinanceBalanceFromYY" schemaLocation="QueryFinanceBalanceFromYY.xsd"/>
+      </schema>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+         <xsd:import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbo/UP_Getdeposit_ByCorp/" schemaLocation="dbo_UP_Getdeposit_ByCorp.xsd"/>
+      </xsd:schema>
+   </types>
+   <message name="QueryFinanceBalanceFromYYRequestMessage">
+      <part name="payload" element="tns:QueryFinanceBalanceFromYYProcessRequest"/>
+   </message>
+   <message name="QueryFinanceBalanceFromYYResponseMessage">
+      <part name="payload" element="tns:QueryFinanceBalanceFromYYProcessResponse"/>
+   </message>
+   <portType name="QueryFinanceBalanceFromYY">
+      <operation name="process">
+         <input message="tns:QueryFinanceBalanceFromYYRequestMessage"/>
+         <output message="tns:QueryFinanceBalanceFromYYResponseMessage"/>
+      </operation>
+   </portType>
+   <binding name="QueryFinanceBalanceFromYYBinding" type="tns:QueryFinanceBalanceFromYY">
+      <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+      <operation name="process">
+         <soap:operation style="document" soapAction="process"/>
+         <input>
+            <soap:body use="literal"/>
+         </input>
+         <output>
+            <soap:body use="literal"/>
+         </output>
+      </operation>
+   </binding>
+   <service name="QueryFinanceBalanceFromYY">
+      <port name="QueryFinanceBalanceFromYYPort" binding="tns:QueryFinanceBalanceFromYYBinding">
+         <soap:address location="http://HEAIAP02:7778/orabpel/default/QueryFinanceBalanceFromYY/1.0"/>
+      </port>
+   </service>
+   <plnk:partnerLinkType name="QueryFinanceBalanceFromYY">
+      <plnk:role name="QueryFinanceBalanceFromYYProvider">
+         <plnk:portType name="tns:QueryFinanceBalanceFromYY"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+</definitions>

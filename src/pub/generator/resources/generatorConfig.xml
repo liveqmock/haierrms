@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry location="/WorkSpace/svn-haierrms/ref/ojdbc6.jar"/>
+
+    <!--信息 注意数据库地址配置 -->
+    <context id="AllInfo" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+                        connectionURL="jdbc:oracle:thin:@10.143.18.20:1521:orcl"
+                        userId="rms"
+                        password="rms">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="haier.repository.model" targetProject="src">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="haier.repository.mapper" targetProject="src">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="haier.repository.dao" targetProject="src">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--业务类 -->
+        <!--
+        <table tableName="svprdsalinf">
+            <generatedKey column="guid" sqlStatement="select sys_guid() from dual" identity="false"/>
+        </table>
+        -->
+
+        <!--业务类 -->
+        <!--
+        <table tableName="sbs_actbal"/>
+        <table tableName="sbs_actccy"/>
+        <table tableName="sbs_actcxr"/>
+        <table tableName="sbs_actaha"/>
+
+        <table tableName="dis_actlst"/>
+        <table tableName="rms_sbsactattr"/>
+        <table tableName="rms_sbsactattr"/>
+
+        <table tableName="mt_acttype"/>
+        <table tableName="mt_actbal"/>
+        -->
+
+        <!--PBC REPORT -->
+        <!--
+        <table schema="rms" tableName="pbc_rate_depositbal">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+            <generatedKey column="pkid" sqlStatement="select sys_guid() from dual" identity="false"/>
+        </table>
+        <table schema="rms" tableName="pbc_rate_depositdetl">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+            <generatedKey column="pkid" sqlStatement="select sys_guid() from dual" identity="false"/>
+        </table>
+        <table schema="rms" tableName="pbc_rate_loanbal">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+        </table>
+        <table schema="rms" tableName="pbc_rate_loandetl">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+        </table>
+        <table schema="rms" tableName="pbc_rate_balverify">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+            <generatedKey column="pkid" sqlStatement="select sys_guid() from dual" identity="false"/>
+        </table>
+        <table schema="rms" tableName="pbc_rate_detlverify">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+            <generatedKey column="pkid" sqlStatement="select sys_guid() from dual" identity="false"/>
+        </table>
+        <table schema="rms" tableName="pbc_rate_verifyitem">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+            <generatedKey column="pkid" sqlStatement="select sys_guid() from dual" identity="false"/>
+        </table>
+        -->
+
+
+        <!--客户基本信息类 -->
+        <!--
+        <table schema="rms" tableName="crm_customer_base">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+            <generatedKey column="pkid" sqlStatement="select sys_guid() from dual" identity="false"/>
+        </table>
+        -->
+
+        <!--平台类 -->
+        <!--
+                <table tableName="ptdept"/>
+                <table tableName="ptenudetail"/>
+                <table tableName="ptenumain"/>
+                <table tableName="pterror"/>
+                <table tableName="ptlogicact"/>
+                <table tableName="ptmenu"/>
+                <table tableName="ptoper"/>
+                <table tableName="ptoperrole"/>
+                <table tableName="ptrsource"/>
+                <table tableName="sys_lock"/>
+                <table tableName="sys_scheduler"/>
+                <table tableName="sys_scheduler_log"/>
+                <table tableName="cp_sequence"/>
+        -->
+
+
+    </context>
+
+</generatorConfiguration>

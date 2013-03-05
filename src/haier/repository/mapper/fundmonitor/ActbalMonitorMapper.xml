@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="haier.repository.dao.fundmonitor.ActbalMonitorMapper">
+
+    <!--zhanrui 20110621  企业存款类余额汇总  -->
+    <select id="selectSumDataList" parameterType="String" resultType="haier.repository.model.fundmonitor.MtActbalSumBean">
+        select qrytime, count(*) as cnt, round(sum(t.rmbamt)/10000,0) as rmbamt, t.category
+          from (select a.*, b.actname, b.category, b.openingbank, b.actattr
+                  from MT_ACTBAL a, MT_ACTTYPE b
+                 where a.bankcd = b.bankcd
+                   and a.actno = b.actno
+                   and a.bankcd = #{bankcd}
+                   and a.qrydate = #{txndate}) t
+         group by t.qrytime, t.category
+         order by t.qrytime, t.category
+    </select>
+
+    <!--zhanrui 20110627  某时点帐务余额清单 -->
+    <select id="selectActBalList" parameterType="String" resultType="haier.repository.model.fundmonitor.MtActbalBean">
+        select a.*, b.actname, b.category, b.openingbank, b.actattr
+              from MT_ACTBAL a, MT_ACTTYPE b
+             where a.bankcd = b.bankcd
+               and a.actno = b.actno
+               and a.bankcd = #{bankcd}
+               and a.qrydate = #{txndate}
+               and a.qrytime = #{qrytime}
+    </select>
+
+
+
+    <!--zhanrui 20110411  查询某日A股或H股币种清单  -->
+    <select id="selectCurrcodeList" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalHistory">
+            select currcode,
+                   (select trim(curnmc) from sbs_actccy where curcde = currcode) as currname,
+                   (select ratval
+                      from sbs_actcxr
+                     where curcde = currcode
+                       and txndate = #{txndate}) as roe
+              from (select substr(a.actno, 16, 3) as currcode, count(*)
+                      from (select *
+                              from sbs_actbal
+                             where txndate = #{txndate}
+                               and actno in
+                                   (select actno from sbs_actaha where acttype = #{acttype})) a
+                     group by substr(a.actno, 16, 3)) x
+    </select>
+
+</mapper>

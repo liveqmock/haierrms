@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="CubeInfo">
+
+    <select id="selectPLoanDayIntr" parameterType="haier.rms.model.PLoanKey" resultType="haier.rms.model.PLoanInfo">
+        <![CDATA[
+          select c.xdkhlb_lbbh as lbbh, round(sum(t1.lxje),2) as lxje
+              from (
+                    (select t.gthtjh_htnm as htnm, t.gthtjh_lxje / 30 as lxje
+                       from gthtjh@haier_shengchan t
+                      where substr(t.gthtjh_date, 1, 6) = #{currmonth}
+                        and t.gthtjh_date > #{currdate})
+                     union
+                    (select t2.gthtjh_htnm as htnm, t2.gthtjh_lxje / 30 as lxje
+                       from (select t.gthtjh_htnm
+                               from gthtjh@haier_shengchan t
+                              where substr(t.gthtjh_date, 1, 6) = #{currmonth}
+                                and t.gthtjh_date <= #{currdate}) t1,
+                            (select t.gthtjh_htnm, t.gthtjh_lxje
+                               from gthtjh@haier_shengchan t
+                              where substr(t.gthtjh_date, 1, 6) = #{nextmonth}) t2
+                      where t1.gthtjh_htnm = t2.gthtjh_htnm)
+                      union
+                     (select a.xdfhkx_htnm as htnm,a.xdfhkx_je as lxje
+                        from xdfhkx@haier_shengchan a
+                        where a.xdfhkx_ywzl='7' and a.xdfhkx_ywrq = #{currdate})             
+                     ) t1,
+                   gthtb@haier_shengchan a,
+                   xdkhzd@haier_shengchan b,
+                   xdkhlb@haier_shengchan c
+             where t1.htnm = a.gthtb_htnm
+               and a.gthtb_dwbh = b.xdkhzd_khbh
+               and (substr(b.xdkhzd_khlb, 1, 1) = '8' or
+                   substr(b.xdkhzd_khlb, 1, 1) = '9')
+               and b.xdkhzd_khlb = c.xdkhlb_lbbh
+               and a.gthtb_htzt <> '5'
+             group by c.xdkhlb_lbbh
+             order by c.xdkhlb_lbbh
+	    ]]>
+    </select>
+
+
+    <!-- 消费信贷 -->
+    <!-- 输入日期如：20100510 返回当日应收利息（元） -->
+    <select id="selectXFDayIntr" parameterType="haier.rms.model.PLoanKey" resultType="haier.rms.model.PLoanInfo">
+        <![CDATA[
+            select '0000' as lbbh,round(sum(a.paybackamt / 30),2) as lxje
+              from xfactcutpaymain@cmsdb_shengchan a, xfcontract@cmsdb_shengchan b
+             where a.contractno = b.contractno
+               and to_char(a.paybackdate, 'yyyyMM') = #{currmonth}
+               and ((b.terminalcd = '0') or
+                   (b.terminalcd = '1' and to_char(b.terminaldate, 'yyyyMMdd') > #{currdate}))
+	    ]]>
+    </select>
+
+
+
+
+    <insert id="insertCubeFactActr" parameterType="haier.rms.model.CubeFactActrInfo">
+        <![CDATA[
+            INSERT INTO
+            cube_fact_actr (
+                dim_cust_no,
+                dim_buss_item,
+                dim_currency,
+                dim_oprt_dept,
+                dim_cust_mngr,
+                dim_buss_date,
+                dim_data_date,
+                fact_value
+            ) VALUES (
+                #{dim_cust_no,jdbcType=VARCHAR},
+                #{dim_buss_item,jdbcType=VARCHAR},
+                #{dim_currency,jdbcType=VARCHAR},
+                #{dim_oprt_dept,jdbcType=VARCHAR},
+                #{dim_cust_mngr,jdbcType=VARCHAR},
+                #{dim_buss_date,jdbcType=VARCHAR},
+                #{dim_data_date,jdbcType=VARCHAR},
+                #{fact_value,jdbcType=DOUBLE}
+            )
+        ]]>
+    </insert>
+
+    <insert id="insertCubeFactPlan" parameterType="haier.rms.model.CubeFactPlanInfo">
+        <![CDATA[
+            INSERT INTO
+            cube_fact_actr (
+                dim_cust_no,
+                dim_buss_item,
+                dim_currency,
+                dim_oprt_dept,
+                dim_cust_mngr,
+                dim_buss_date,
+                dim_data_date,
+                fact_value
+            ) VALUES (
+                #{dim_cust_no,jdbcType=VARCHAR},
+                #{dim_buss_item,jdbcType=VARCHAR},
+                #{dim_currency,jdbcType=VARCHAR},
+                #{dim_oprt_dept,jdbcType=VARCHAR},
+                #{dim_cust_mngr,jdbcType=VARCHAR},
+                #{dim_buss_date,jdbcType=VARCHAR},
+                #{dim_data_date,jdbcType=VARCHAR},
+                #{fact_value,jdbcType=DOUBLE}
+            )
+        ]]>
+    </insert>
+
+    <insert id="insertCubeFactFcst" parameterType="haier.rms.model.CubeFactFcstInfo">
+        <![CDATA[
+            INSERT INTO
+            cube_fact_fcst (
+                dim_cust_no,
+                dim_buss_item,
+                dim_currency,
+                dim_oprt_dept,
+                dim_cust_mngr,
+                dim_buss_date,
+                dim_data_date,
+                tag_fcst_type,
+                fact_value
+            ) VALUES (
+                #{dim_cust_no,jdbcType=VARCHAR},
+                #{dim_buss_item,jdbcType=VARCHAR},
+                #{dim_currency,jdbcType=VARCHAR},
+                #{dim_oprt_dept,jdbcType=VARCHAR},
+                #{dim_cust_mngr,jdbcType=VARCHAR},
+                #{dim_buss_date,jdbcType=VARCHAR},
+                #{dim_data_date,jdbcType=VARCHAR},
+                #{tag_fcst_type,jdbcType=VARCHAR},
+                #{fact_value,jdbcType=DOUBLE}
+            )
+        ]]>
+    </insert>
+
+
+    <delete  id="deleteCubeFactActrForDate" parameterType="java.lang.String">
+        delete from cube_fact_actr where  dim_data_date = substr(#{id},1,8)  and dim_buss_item = substr(#{id},9,4)
+    </delete>
+
+    <delete  id="deleteCubeFactPlanForDate" parameterType="java.lang.String">
+        delete from cube_fact_plan where  dim_data_date = substr(#{id},1,8)  and dim_buss_item = substr(#{id},9,4)
+    </delete>
+
+    <delete  id="deleteCubeFactFcstForDate" parameterType="java.lang.String">
+        delete from cube_fact_fcst where  dim_data_date = substr(#{id},1,8)  and dim_buss_item = substr(#{id},9,4)
+    </delete>
+
+    <select id="queryPLoanCurrYearActr" parameterType="haier.rms.model.PLoanKey" resultType="haier.rms.model.Sburpt">
+        <![CDATA[
+            select t.dim_cust_no as custNo, sum(t.fact_value) as yearActr
+              from cube_fact_actr t
+             where t.dim_data_date >= #{startdate}
+               and t.dim_data_date <= #{enddate}
+             group by t.dim_cust_no
+             order by t.dim_cust_no
+	    ]]>
+    </select>
+
+    <select id="selectPLoanSbuData" parameterType="haier.rms.model.PLoanKey" resultType="haier.rms.model.Sburpt">
+        <![CDATA[
+            select trim(t1.cust_no) as custNo,
+                   trim(t10.cust_name) as custName,
+                   round(nvl(t1.fact_value, 0)/10000,2) as yearActr,
+                   round(nvl(t2.fact_value, 0)/10000,2) as weekActr,
+                   round(nvl(t01.fact_value, 0)/10000,2) as weekActrT1,
+                   round(nvl(t02.fact_value, 0)/10000,2) as weekActrT2,
+                   round(nvl(t03.fact_value, 0)/10000,2) as weekActrT3,
+                   round(nvl(t04.fact_value, 0)/10000,2) as weekActrT4,
+                   round(nvl(t05.fact_value, 0)/10000,2) as weekActrT5,
+                   round(nvl(t06.fact_value, 0)/10000,2) as weekActrT6
+                   
+              from (select t.dim_cust_no as cust_no, sum(t.fact_value) as fact_value
+                      from cube_fact_actr t
+                     where t.dim_data_date >= #{startdate}
+                       and t.dim_data_date <= #{enddate}
+                       and t.dim_buss_item = #{bussItem}
+                     group by t.dim_cust_no) t1,
+
+                   (select t.dim_cust_no as cust_no, sum(t.fact_value) as fact_value
+                      from cube_fact_actr t
+                     where t.dim_data_date >= #{weekstartdate}
+                       and t.dim_data_date <= #{weekenddate}
+                       and t.dim_buss_item = #{bussItem}
+                     group by t.dim_cust_no) t2,
+
+                   (select a.dim_cust_no as cust_no,a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date) = #{weekt1}) t01,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date)= #{weekt2}) t02,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date)= #{weekt3}) t03,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date) = #{weekt4}) t04,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date) = #{weekt5}) t05,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date) = #{weekt6}) t06,
+
+                    (select t.xdkhlb_lbbh as cust_no,t.xdkhlb_lbmc as cust_name
+                      from xdkhlb@haier_shengchan t 
+                      where substr(t.xdkhlb_lbbh,1,1)='8' or substr(t.xdkhlb_lbbh,1,1)='9') t10
+
+             where t1.cust_no = t2.cust_no
+               and t1.cust_no = t01.cust_no(+)
+               and t1.cust_no = t02.cust_no(+)
+               and t1.cust_no = t03.cust_no(+)
+               and t1.cust_no = t04.cust_no(+)
+               and t1.cust_no = t05.cust_no(+)
+               and t1.cust_no = t06.cust_no(+)
+               and trim(t1.cust_no) = trim(t10.cust_no)
+
+             order by t1.cust_no
+	    ]]>
+    </select>
+
+    <!-- 消费信贷数据 CUBE数据转换报表数据 -->
+    <select id="selectXFSbuData" parameterType="haier.rms.model.PLoanKey" resultType="haier.rms.model.Sburpt">
+        <![CDATA[
+            select trim(t1.cust_no) as custNo,
+                   'ALL' as custName,
+                   round(nvl(t1.fact_value, 0)/10000,2) as yearActr,
+                   round(nvl(t2.fact_value, 0)/10000,2) as weekActr,
+                   round(nvl(t01.fact_value, 0)/10000,2) as weekActrT1,
+                   round(nvl(t02.fact_value, 0)/10000,2) as weekActrT2,
+                   round(nvl(t03.fact_value, 0)/10000,2) as weekActrT3,
+                   round(nvl(t04.fact_value, 0)/10000,2) as weekActrT4,
+                   round(nvl(t05.fact_value, 0)/10000,2) as weekActrT5,
+                   round(nvl(t06.fact_value, 0)/10000,2) as weekActrT6
+
+              from (select t.dim_cust_no as cust_no, sum(t.fact_value) as fact_value
+                      from cube_fact_actr t
+                     where t.dim_data_date >= #{startdate}
+                       and t.dim_data_date <= #{enddate}
+                       and t.dim_buss_item = #{bussItem}
+                     group by t.dim_cust_no) t1,
+
+                   (select t.dim_cust_no as cust_no, sum(t.fact_value) as fact_value
+                      from cube_fact_actr t
+                     where t.dim_data_date >= #{weekstartdate}
+                       and t.dim_data_date <= #{weekenddate}
+                       and t.dim_buss_item = #{bussItem}
+                     group by t.dim_cust_no) t2,
+
+                   (select a.dim_cust_no as cust_no,a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date) = #{weekt1}) t01,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date)= #{weekt2}) t02,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date)= #{weekt3}) t03,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date) = #{weekt4}) t04,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date) = #{weekt5}) t05,
+
+                   (select a.dim_cust_no as cust_no, a.fact_value as fact_value
+                      from cube_fact_fcst a
+                     where a.dim_data_date = #{currdate}
+                       and a.dim_buss_item = #{bussItem}
+                       and trim(a.dim_buss_date) = #{weekt6}) t06
+
+             where t1.cust_no = t2.cust_no
+               and t1.cust_no = t01.cust_no(+)
+               and t1.cust_no = t02.cust_no(+)
+               and t1.cust_no = t03.cust_no(+)
+               and t1.cust_no = t04.cust_no(+)
+               and t1.cust_no = t05.cust_no(+)
+               and t1.cust_no = t06.cust_no(+)
+
+             order by t1.cust_no
+	    ]]>
+    </select>
+
+</mapper>

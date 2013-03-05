@@ -1,0 +1,1823 @@
+<?xml version="1.0"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="DataSource" product="" version="" uuid="f6657fba-1dca-4cc8-917d-e56c667be578">
+    <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+    <jdbc-url>jdbc:oracle:thin:@localhost:1521:orcl</jdbc-url>
+    <user-name>cbs</user-name>
+    <user-password>dfc9dfc8dfd9</user-password>
+    <schema-pattern>*.CBS</schema-pattern>
+    <libraries>
+      <library>
+        <url>jar://$PROJECT_DIR$/webRoot/WEB-INF/lib/ojdbc6.jar!/</url>
+      </library>
+    </libraries>
+    <table name="ACTACT" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="ACTNAM" sqlType="VARCHAR2" length="72" precision="0" nullable="true" jdbcType="12" />
+      <column name="BOKBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="AVABAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DIFBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CIFBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="MAVBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="YAVBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DDRAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DCRAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DDRCNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="DCRCNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="MDRAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="MCRAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="MDRCNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="MCRCNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="YDRAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="YCRAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="YDRCNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="YCRCNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="DINRAT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CINRAT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="DRATSF" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="CRATSF" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="DACINT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CACINT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DAMINT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CAMINT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="INTFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTCYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTTRA" sqlType="VARCHAR2" length="18" precision="0" nullable="true" jdbcType="12" />
+      <column name="LINTDT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="ACTTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTGLC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTPLC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="LENTDT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="LINDTH" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="DRACCM" sqlType="NUMBER" length="17" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRACCM" sqlType="NUMBER" length="17" precision="0" nullable="true" jdbcType="3" />
+      <column name="CQEFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="BALLIM" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="OVELIM" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="OVEEXP" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="OPNDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CLSDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="REGSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FRZSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTACT_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTACT_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTACT_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTACT_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTACT_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTACT_IND_10" unique="false" columns="SYSIDT" />
+      <index name="ACTACT_IND_10" unique="false" columns="ORGIDT" />
+      <index name="ACTACT_IND_10" unique="false" columns="APCODE" />
+      <index name="ACTACT_IND_2" unique="false" columns="ORGIDT" />
+      <index name="ACTACT_IND_2" unique="false" columns="APCODE" />
+      <index name="ACTACT_IND_2" unique="false" columns="CURCDE" />
+      <index name="ACTACT_IND_2" unique="false" columns="CUSIDT" />
+      <index name="ACTACT_IND_2" unique="false" columns="RECSTS" />
+      <index name="ACTACT_IND_2" unique="false" columns="SYSIDT" />
+      <index name="ACTACT_IND_3" unique="false" columns="ACTGLC" />
+      <index name="ACTACT_IND_3" unique="false" columns="OPNDAT" />
+      <index name="ACTACT_IND_4" unique="false" columns="ORGIDT" />
+      <index name="ACTACT_IND_4" unique="false" columns="ACTGLC" />
+      <index name="ACTACT_IND_4" unique="false" columns="CURCDE" />
+      <index name="ACTACT_IND_5" unique="false" columns="ACTPLC" />
+      <index name="ACTACT_IND_5" unique="false" columns="SYSIDT" />
+      <index name="ACTACT_IND_5" unique="false" columns="BOKBAL" />
+      <index name="ACTACT_IND_6" unique="false" columns="ORGIDT" />
+      <index name="ACTACT_IND_6" unique="false" columns="DEPNUM" />
+      <index name="ACTACT_IND_6" unique="false" columns="ACTPLC" />
+      <index name="ACTACT_IND_6" unique="false" columns="CURCDE" />
+      <index name="ACTACT_IND_7" unique="false" columns="INTFLG" />
+      <index name="ACTACT_IND_8" unique="false" columns="LENTDT" />
+      <index name="ACTACT_IND_9" unique="false" columns="APCODE" />
+    </table>
+    <table name="ACTALB" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="CURCDE" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="RECTYP" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+      <column name="ALCODE" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="ALCNAM" sqlType="CHAR" length="35" precision="0" nullable="true" jdbcType="1" />
+      <column name="ALCTYP" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="COLNUM" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="LINFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="ALBBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="ASTRBL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="RECSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="SUMFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <primary-key name="ACTALB_PK" columns="orgidt,curcde,rectyp,alcode" />
+    </table>
+    <table name="ACTANC" schema="CBS" catalog="" type="TABLE">
+      <column name="ANCTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ANACDE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="GLCRAG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="PLCRAG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ANCDCR" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="CFBCD3" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="CFBCD2" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CFBCD1" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="ICLCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CFBTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="CDFLAG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLER" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILL02" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILL03" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTANC_IND_1" unique="true" columns="ANCTYP" />
+      <index name="ACTANC_IND_1" unique="true" columns="ANACDE" />
+    </table>
+    <table name="ACTANI" schema="CBS" catalog="" type="TABLE">
+      <column name="OLDACN" sqlType="VARCHAR2" length="20" precision="0" nullable="false" jdbcType="12" />
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTANI_IND_1" unique="true" columns="OLDACN" />
+      <index name="ACTANI_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTANI_IND_2" unique="false" columns="SYSIDT" />
+      <index name="ACTANI_IND_2" unique="false" columns="ORGIDT" />
+      <index name="ACTANI_IND_2" unique="false" columns="CUSIDT" />
+      <index name="ACTANI_IND_2" unique="false" columns="APCODE" />
+      <index name="ACTANI_IND_2" unique="false" columns="CURCDE" />
+      <index name="ACTANI_IND_3" unique="false" columns="ORGIDT" />
+      <index name="ACTANI_IND_3" unique="false" columns="CUSIDT" />
+      <index name="ACTANI_IND_3" unique="false" columns="APCODE" />
+      <index name="ACTANI_IND_3" unique="false" columns="CURCDE" />
+    </table>
+    <table name="ACTAPC" schema="CBS" catalog="" type="TABLE">
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCNAM" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="PLCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTEXP" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTINC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPSAPC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCDCR" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTDAC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTCAC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="NDRINT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="NCRINT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCKID" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTAPC_IND_1" unique="true" columns="APCODE" />
+    </table>
+    <table name="ACTATH" schema="CBS" catalog="" type="TABLE">
+      <column name="ATRCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="DRAMNT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DTXAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRAMNT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CTXAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="ACTATR" schema="CBS" catalog="" type="TABLE">
+      <column name="ATRCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="ATRNAM" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="CYCCDE" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="CYCDAT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="TRICDE" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="TRIBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="FEXCDE" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="BASRAT" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="BASRT2" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="BASRT3" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="BASRT4" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="BASRT5" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="CURRAG" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="EVTCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="CTPCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CATCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="SPECD1" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="SPECD2" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="SPECD3" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="PROFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ATRDCR" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTATR_IND_1" unique="true" columns="ATRCDE" />
+    </table>
+    <table name="ACTCAD" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="ADRKID" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ADRDCR" sqlType="VARCHAR2" length="80" precision="0" nullable="true" jdbcType="12" />
+      <column name="ZIPCDE" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="TELNUM" sqlType="VARCHAR2" length="18" precision="0" nullable="true" jdbcType="12" />
+      <column name="TELEXN" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+      <column name="LANCTR" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTCAD_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTCAD_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTCAD_IND_1" unique="true" columns="ADRKID" />
+    </table>
+    <table name="ACTCAP" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLDATE" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="DRAMNT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRAMNT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DRCUNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRCUNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="DRBALA" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRBALA" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DAVBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CAVBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DLSBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CLSBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTCAP_1" unique="false" columns="ORGIDT" />
+      <index name="ACTCAP_1" unique="false" columns="GLCODE" />
+      <index name="ACTCAP_1" unique="false" columns="CURCDE" />
+      <index name="ACTCAP_1" unique="false" columns="RECTYP" />
+      <index name="ACTCAP_1" unique="false" columns="GLDATE" />
+      <index name="ACTCAP_2" unique="false" columns="ORGIDT" />
+      <index name="ACTCAP_2" unique="false" columns="GLCODE" />
+      <index name="ACTCAP_2" unique="false" columns="CURCDE" />
+      <index name="ACTCAP_2" unique="false" columns="RECTYP" />
+    </table>
+    <table name="ACTCCY" schema="CBS" catalog="" type="TABLE">
+      <column name="CURCDE" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="CURNMC" sqlType="CHAR" length="16" precision="0" nullable="true" jdbcType="1" />
+      <column name="CURNME" sqlType="CHAR" length="16" precision="0" nullable="true" jdbcType="1" />
+      <column name="DOMCDE" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="INTCUR" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="CURUNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="DECPOS" sqlType="NUMBER" length="1" precision="0" nullable="true" jdbcType="3" />
+      <column name="EXCFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="EXCUNT" sqlType="NUMBER" length="9" precision="3" nullable="true" jdbcType="3" />
+      <column name="MINUNT" sqlType="NUMBER" length="9" precision="3" nullable="true" jdbcType="3" />
+      <column name="CUTFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="WEIGHT" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="INTDAY" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="SPEFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="HOLFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="CLRFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="EFFDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="EXPDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="AMDTLR" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <primary-key name="ACTCCY_PK" columns="curcde" />
+    </table>
+    <table name="ACTCGL" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="GLCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="RECTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="GLDATE" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="DRAMNT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRAMNT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DRCUNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRCUNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="DRBALA" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRBALA" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DAVBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CAVBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DLSBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CLSBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTCGL_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTCGL_IND_1" unique="true" columns="GLCODE" />
+      <index name="ACTCGL_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTCGL_IND_1" unique="true" columns="RECTYP" />
+      <index name="ACTCGL_IND_1" unique="true" columns="GLDATE" />
+      <index name="ACTCGL_IND_2" unique="false" columns="GLCODE" />
+      <index name="ACTCGL_IND_2" unique="false" columns="RECTYP" />
+      <index name="ACTCGL_IND_2" unique="false" columns="RECSTS" />
+      <index name="ACTCGL_IND_3" unique="false" columns="RECTYP" />
+      <index name="ACTCGL_IND_3" unique="false" columns="RECSTS" />
+      <index name="ACTCGL_IND_4" unique="false" columns="CURCDE" />
+      <index name="ACTCGL_IND_4" unique="false" columns="RECSTS" />
+    </table>
+    <table name="ACTCIR" schema="CBS" catalog="" type="TABLE">
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="IRTKD1" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="IRTKD2" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="EFFDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="LASIRT" sqlType="NUMBER" length="18" precision="15" nullable="true" jdbcType="3" />
+      <column name="LIRVAL" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="CURIRT" sqlType="NUMBER" length="18" precision="15" nullable="true" jdbcType="3" />
+      <column name="MODFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="IRTVAL" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="NXTIRT" sqlType="NUMBER" length="18" precision="15" nullable="true" jdbcType="3" />
+      <column name="NIRVAL" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <index name="ACTCIR_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTCIR_IND_1" unique="true" columns="IRTKD1" />
+      <index name="ACTCIR_IND_1" unique="true" columns="IRTKD2" />
+      <index name="ACTCIR_IND_1" unique="true" columns="EFFDAT" />
+    </table>
+    <table name="ACTCIT" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="IPYDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="YINTSQ" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="BEGDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="ENDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="INTCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTRAT" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="INTAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="VCHSET" sqlType="NUMBER" length="4" precision="0" nullable="true" jdbcType="3" />
+      <column name="REASON" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTCIT_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTCIT_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTCIT_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTCIT_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTCIT_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTCIT_IND_1" unique="true" columns="IPYDAT" />
+      <index name="ACTCIT_IND_1" unique="true" columns="YINTSQ" />
+    </table>
+    <table name="ACTCUS" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSNAM" sqlType="VARCHAR2" length="72" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHTNAM" sqlType="VARCHAR2" length="16" precision="0" nullable="true" jdbcType="12" />
+      <column name="ENGNAM" sqlType="VARCHAR2" length="120" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSIDX" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="RSDCTR" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPRCTR" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CORADD" sqlType="VARCHAR2" length="122" precision="0" nullable="true" jdbcType="12" />
+      <column name="ZIPCDE" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="TELNUM" sqlType="VARCHAR2" length="18" precision="0" nullable="true" jdbcType="12" />
+      <column name="TELEXN" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+      <column name="TSTRNK" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="PASTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="PASSNO" sqlType="VARCHAR2" length="18" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRDLIM" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="RSKGRP" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="RELCUS" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPNDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CUSPWD" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSKID" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="TMPCUS_PK" columns="cusidt,sysidt" />
+    </table>
+    <table name="ACTCXR" schema="CBS" catalog="" type="TABLE">
+      <column name="CURCDE" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="XRTCDE" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+      <column name="SECCCY" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="CURRAT" sqlType="NUMBER" length="16" precision="10" nullable="true" jdbcType="3" />
+      <column name="RATVAL" sqlType="NUMBER" length="16" precision="10" nullable="true" jdbcType="3" />
+      <primary-key name="ACTCXR_PK" columns="curcde,xrtcde,secccy" />
+    </table>
+    <table name="ACTDEP" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="DEPCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="DEPNAM" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPENM" sqlType="VARCHAR2" length="16" precision="0" nullable="true" jdbcType="12" />
+      <column name="SUPDEP" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="MANTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="TLRCNT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="RSVFG1" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RSVFG2" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTDEP_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTDEP_IND_1" unique="true" columns="DEPCDE" />
+    </table>
+    <table name="ACTENT" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="LEGBDY" sqlType="VARCHAR2" length="24" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTBDY" sqlType="VARCHAR2" length="24" precision="0" nullable="true" jdbcType="12" />
+      <column name="LOCCAP" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="REGCAP" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="REGCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="REGADD" sqlType="VARCHAR2" length="122" precision="0" nullable="true" jdbcType="12" />
+      <column name="REGDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="EFFDUR" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="CTXNUM" sqlType="VARCHAR2" length="15" precision="0" nullable="true" jdbcType="12" />
+      <column name="LTXNUM" sqlType="VARCHAR2" length="15" precision="0" nullable="true" jdbcType="12" />
+      <column name="BOCGRP" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="SUPDEP" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="BUSCDE" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="ENTTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSTY1" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSTY2" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSTY3" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSTY4" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSTY5" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTNET" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="ENTCDE" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="IBKCDE" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="SBKNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTENT_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTENT_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTENT_IND_2" unique="false" columns="CUSIDT" />
+      <index name="ACTENT_IND_3" unique="false" columns="LEGBDY" />
+    </table>
+    <table name="ACTERY" schema="CBS" catalog="" type="TABLE">
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="EVTCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="CTPCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CATCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="ERYSEQ" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYAMT" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="CDRFLG" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="VCHPAR" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="TOTNUM" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="CORCUR" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CORAPC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYREM" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTERY_IND_1" unique="true" columns="PRDCDE" />
+      <index name="ACTERY_IND_1" unique="true" columns="EVTCDE" />
+      <index name="ACTERY_IND_1" unique="true" columns="CTPCDE" />
+      <index name="ACTERY_IND_1" unique="true" columns="CATCDE" />
+      <index name="ACTERY_IND_1" unique="true" columns="ERYSEQ" />
+    </table>
+    <table name="ACTEVC" schema="CBS" catalog="" type="TABLE">
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="EVTCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="EVCDCR" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTEVC_IND_1" unique="true" columns="PRDCDE" />
+      <index name="ACTEVC_IND_1" unique="true" columns="EVTCDE" />
+    </table>
+    <table name="ACTFRT" schema="CBS" catalog="" type="TABLE">
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="FRTKD1" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="FRTKD2" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="EFFDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="FRTNAM" sqlType="VARCHAR2" length="24" precision="0" nullable="true" jdbcType="12" />
+      <column name="DOCCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="DOCNAM" sqlType="VARCHAR2" length="14" precision="0" nullable="true" jdbcType="12" />
+      <column name="FRTSPH" sqlType="NUMBER" length="5" precision="4" nullable="true" jdbcType="3" />
+      <column name="FRTSPL" sqlType="NUMBER" length="5" precision="4" nullable="true" jdbcType="3" />
+      <column name="SPRFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="MALFEE" sqlType="NUMBER" length="13" precision="2" nullable="true" jdbcType="3" />
+      <column name="COMFEE" sqlType="NUMBER" length="13" precision="2" nullable="true" jdbcType="3" />
+      <column name="FEERAT" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="HIGLIM" sqlType="NUMBER" length="13" precision="2" nullable="true" jdbcType="3" />
+      <column name="LOWLIM" sqlType="NUMBER" length="13" precision="2" nullable="true" jdbcType="3" />
+      <column name="FEECYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FEESDE" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FEEAPC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRETLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="ACTFRT_PK" columns="curcde,frtkd1,frtkd2,effdat" />
+    </table>
+    <table name="ACTFRZ" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="PDNSEQ" sqlType="NUMBER" length="6" precision="0" nullable="false" jdbcType="3" />
+      <column name="FRZMOD" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FRZFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FRZRSN" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FRZAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="FRZBDT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="FRZEDT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="FRZTIM" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTFRZ_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTFRZ_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTFRZ_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTFRZ_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTFRZ_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTFRZ_IND_1" unique="true" columns="PDNSEQ" />
+    </table>
+    <table name="ACTGLC" schema="CBS" catalog="" type="TABLE">
+      <column name="GLCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="GLCNAM" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCCLS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCGRP" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCCAT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCCCY" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCBAL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCOCC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCINT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCRAT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCOPN" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCRVS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RSVFG1" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RSVFG2" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RSVFG3" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RSVFG4" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RSVFG5" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCBEL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="EFFDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="EXPDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCORD" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <index name="ACTGLC_IND_1" unique="true" columns="GLCODE" />
+    </table>
+    <table name="ACTHOL" schema="CBS" catalog="" type="TABLE">
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="HOLDAT" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="PREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="NXTDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="PREDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="NXTDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTHOL_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTHOL_IND_1" unique="true" columns="HOLDAT" />
+    </table>
+    <table name="ACTIRT" schema="CBS" catalog="" type="TABLE">
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="IRTKD1" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="IRTKD2" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="EFFDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="IRTNAM" sqlType="VARCHAR2" length="24" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="MODFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="IRTVAL" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="IRTSPH" sqlType="NUMBER" length="3" precision="2" nullable="true" jdbcType="3" />
+      <column name="IRTSPL" sqlType="NUMBER" length="3" precision="2" nullable="true" jdbcType="3" />
+      <column name="SPRFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="CDFLAG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="IRTTRM" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="TRMUNT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRETLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTIRT_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTIRT_IND_1" unique="true" columns="IRTKD1" />
+      <index name="ACTIRT_IND_1" unique="true" columns="IRTKD2" />
+      <index name="ACTIRT_IND_1" unique="true" columns="EFFDAT" />
+      <index name="ACTIRT_IND_2" unique="false" columns="CURCDE" />
+      <index name="ACTIRT_IND_2" unique="false" columns="IRTKD1" />
+      <index name="ACTIRT_IND_2" unique="false" columns="IRTKD2" />
+      <index name="ACTIRT_IND_2" unique="false" columns="CURFLG" />
+      <index name="ACTIRT_IND_3" unique="false" columns="CURFLG" />
+    </table>
+    <table name="ACTLBL" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="SECCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="LEGDEP" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="OLDACN" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTNAM" sqlType="VARCHAR2" length="72" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="SECLBL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="NLEGLL" sqlType="NUMBER" length="5" precision="0" nullable="true" jdbcType="3" />
+      <column name="NLEGNY" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="FSTPAG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="NLEGPG" sqlType="NUMBER" length="5" precision="0" nullable="true" jdbcType="3" />
+      <column name="LEGPLN" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="LEGCYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGCDT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGFMT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGSHT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="LEGADD" sqlType="VARCHAR2" length="42" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGZIP" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTLBL_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTLBL_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTLBL_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTLBL_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTLBL_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTLBL_IND_1" unique="true" columns="SECCCY" />
+      <index name="ACTLBL_IND_2" unique="false" columns="LEGFMT" />
+      <index name="ACTLBL_IND_2" unique="false" columns="RECSTS" />
+      <index name="ACTLBL_IND_2" unique="false" columns="OLDACN" />
+    </table>
+    <table name="ACTLGH" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="LEGDEP" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="LEGTIM" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID3" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="TLRNUM" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="VCHSET" sqlType="NUMBER" length="4" precision="0" nullable="false" jdbcType="3" />
+      <column name="SETSEQ" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="SECCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="FSTPAG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="DAYEND" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="DRACCM" sqlType="NUMBER" length="17" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRACCM" sqlType="NUMBER" length="17" precision="0" nullable="true" jdbcType="3" />
+      <column name="TXNAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="ACTBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="LASBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="VALDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RVSLBL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID2" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRNYER" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="PRDSEQ" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLER" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="THRREF" sqlType="VARCHAR2" length="16" precision="0" nullable="true" jdbcType="12" />
+      <column name="FURINF" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="FXRATE" sqlType="NUMBER" length="12" precision="6" nullable="true" jdbcType="3" />
+      <column name="SECPMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="SECBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="SECLBA" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="LEGPNY" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="NLEGPG" sqlType="NUMBER" length="5" precision="0" nullable="true" jdbcType="3" />
+      <column name="PAGLIN" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTLGH_IND_1" unique="false" columns="SYSIDT" />
+      <index name="ACTLGH_IND_1" unique="false" columns="ORGIDT" />
+      <index name="ACTLGH_IND_1" unique="false" columns="CUSIDT" />
+      <index name="ACTLGH_IND_1" unique="false" columns="APCODE" />
+      <index name="ACTLGH_IND_1" unique="false" columns="CURCDE" />
+      <index name="ACTLGH_IND_1" unique="false" columns="LEGPNY" />
+      <index name="ACTLGH_IND_1" unique="false" columns="NLEGPG" />
+      <index name="ACTLGH_IND_2" unique="false" columns="SYSIDT" />
+      <index name="ACTLGH_IND_2" unique="false" columns="ORGIDT" />
+      <index name="ACTLGH_IND_2" unique="false" columns="CUSIDT" />
+      <index name="ACTLGH_IND_2" unique="false" columns="APCODE" />
+      <index name="ACTLGH_IND_2" unique="false" columns="CURCDE" />
+      <index name="ACTLGH_IND_2" unique="false" columns="LEGDAT" />
+      <index name="ACTLGH_IND_2" unique="false" columns="SECCCY" />
+      <index name="ACTLGH_IND_2" unique="false" columns="TLRNUM" />
+      <index name="ACTLGH_IND_2" unique="false" columns="VCHSET" />
+      <index name="ACTLGH_IND_2" unique="false" columns="SETSEQ" />
+    </table>
+    <table name="ACTNSM" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="STMPNY" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="NSTMPG" sqlType="NUMBER" length="5" precision="0" nullable="false" jdbcType="3" />
+      <column name="PAGLIN" sqlType="NUMBER" length="3" precision="0" nullable="false" jdbcType="3" />
+      <column name="FSTPAG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="DAYEND" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMDEP" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="STMTIM" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID3" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="TLRNUM" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHSET" sqlType="NUMBER" length="4" precision="0" nullable="true" jdbcType="3" />
+      <column name="SETSEQ" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="SECCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="DRACCM" sqlType="NUMBER" length="17" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRACCM" sqlType="NUMBER" length="17" precision="0" nullable="true" jdbcType="3" />
+      <column name="TXNAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="ACTBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="LASBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="VALDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RVSLBL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID2" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRNYER" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="PRDSEQ" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLER" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="THRREF" sqlType="VARCHAR2" length="16" precision="0" nullable="true" jdbcType="12" />
+      <column name="FURINF" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="FXRATE" sqlType="NUMBER" length="12" precision="6" nullable="true" jdbcType="3" />
+      <column name="SECPMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="SECBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="SECLBA" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTNSM_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTNSM_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTNSM_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTNSM_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTNSM_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTNSM_IND_1" unique="true" columns="STMPNY" />
+      <index name="ACTNSM_IND_1" unique="true" columns="NSTMPG" />
+      <index name="ACTNSM_IND_1" unique="true" columns="PAGLIN" />
+      <index name="ACTNSM_IND_2" unique="false" columns="SYSIDT" />
+      <index name="ACTNSM_IND_2" unique="false" columns="ORGIDT" />
+      <index name="ACTNSM_IND_2" unique="false" columns="CUSIDT" />
+      <index name="ACTNSM_IND_2" unique="false" columns="APCODE" />
+      <index name="ACTNSM_IND_2" unique="false" columns="CURCDE" />
+      <index name="ACTNSM_IND_2" unique="false" columns="NSTMPG" />
+      <index name="ACTNSM_IND_2" unique="false" columns="RECSTS" />
+      <index name="ACTNSM_IND_3" unique="false" columns="SYSIDT" />
+      <index name="ACTNSM_IND_3" unique="false" columns="ORGIDT" />
+      <index name="ACTNSM_IND_3" unique="false" columns="CUSIDT" />
+      <index name="ACTNSM_IND_3" unique="false" columns="APCODE" />
+      <index name="ACTNSM_IND_3" unique="false" columns="CURCDE" />
+      <index name="ACTNSM_IND_3" unique="false" columns="STMDAT" />
+    </table>
+    <table name="ACTOAC" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="OACFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTNAM" sqlType="VARCHAR2" length="72" precision="0" nullable="true" jdbcType="12" />
+      <column name="DINRAT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CINRAT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="DRATSF" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="CRATSF" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="INTFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTCYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTTRA" sqlType="VARCHAR2" length="18" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMCYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMCDT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMFMT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMADD" sqlType="VARCHAR2" length="42" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMZIP" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMSHT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="STMDEP" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGCYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGCDT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGFMT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGADD" sqlType="VARCHAR2" length="42" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGZIP" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGSHT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="LEGDEP" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPNDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CLSDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CQEFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="BALLIM" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="OVELIM" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="OVEEXP" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CRETLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTOAC_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTOAC_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTOAC_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTOAC_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTOAC_IND_2" unique="false" columns="CREDAT" />
+      <index name="ACTOAC_IND_3" unique="false" columns="OACFLG" />
+      <index name="ACTOAC_IND_3" unique="false" columns="RECSTS" />
+    </table>
+    <table name="ACTOAH" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="CRETIM" sqlType="VARCHAR2" length="8" precision="0" nullable="false" jdbcType="12" />
+      <column name="OACFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTNAM" sqlType="VARCHAR2" length="72" precision="0" nullable="true" jdbcType="12" />
+      <column name="DINRAT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CINRAT" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="DRATSF" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="CRATSF" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="INTFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTCYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="INTTRA" sqlType="VARCHAR2" length="18" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMCYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMCDT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMFMT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMADD" sqlType="VARCHAR2" length="42" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMZIP" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="STMSHT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="STMDEP" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGCYC" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGCDT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGFMT" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGADD" sqlType="VARCHAR2" length="42" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGZIP" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEGSHT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="LEGDEP" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPNDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CLSDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CQEFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="BALLIM" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="OVELIM" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="OVEEXP" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CRETLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTOAH_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTOAH_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTOAH_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTOAH_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTOAH_IND_1" unique="true" columns="CREDAT" />
+      <index name="ACTOAH_IND_1" unique="true" columns="CRETIM" />
+      <index name="ACTOAH_IND_2" unique="false" columns="CREDAT" />
+    </table>
+    <table name="ACTOBF" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="BOKBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="AVABAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DIFBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CIFBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="ACTSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FRZSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="REGSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="OVELIM" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="OVEEXP" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="CQEFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCBAL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTOBF_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTOBF_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTOBF_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTOBF_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTOBF_IND_1" unique="true" columns="CURCDE" />
+    </table>
+    <table name="ACTORG" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGNAM" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="IBKCDE" sqlType="VARCHAR2" length="5" precision="0" nullable="true" jdbcType="12" />
+      <column name="SBKNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="EBKCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="SUPBAK" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGLVL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRSFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="NETCDE" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="OSTREF" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="RSVRF1" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="RSVRF2" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="RSVRF3" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="DEPCNT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="TLRCNT" sqlType="NUMBER" length="5" precision="0" nullable="true" jdbcType="3" />
+      <column name="CMTNUM" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="SCTNUM" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="TAXNUM" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="ACTFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTORG_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTORG_IND_2" unique="false" columns="ORGIDT" />
+      <index name="ACTORG_IND_2" unique="false" columns="RECSTS" />
+      <index name="ACTORG_IND_3" unique="false" columns="ORGIDT" />
+      <index name="ACTORG_IND_3" unique="false" columns="SUPBAK" />
+      <index name="ACTORG_IND_4" unique="false" columns="ORGLVL" />
+      <index name="ACTORG_IND_4" unique="false" columns="SCTNUM" />
+      <index name="ACTORG_IND_4" unique="false" columns="RECSTS" />
+      <index name="ACTORG_IND_5" unique="false" columns="SUPBAK" />
+    </table>
+    <table name="ACTOUF" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="CRNYER" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="REGNUM" sqlType="VARCHAR2" length="20" precision="0" nullable="false" jdbcType="12" />
+      <column name="OSTAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="BOKDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="BOKVCH" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+      <column name="BOKREM" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRSDUR" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="BOKAUT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="BOKANO" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRSDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CRSVCH" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRSAUT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRSANO" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRSREM" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="REFNUM" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTOUF_IND_1" unique="true" columns="SYSIDT" />
+      <index name="ACTOUF_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTOUF_IND_1" unique="true" columns="CUSIDT" />
+      <index name="ACTOUF_IND_1" unique="true" columns="APCODE" />
+      <index name="ACTOUF_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTOUF_IND_1" unique="true" columns="CRNYER" />
+      <index name="ACTOUF_IND_1" unique="true" columns="REGNUM" />
+      <index name="ACTOUF_IND_2" unique="true" columns="SYSIDT" />
+      <index name="ACTOUF_IND_2" unique="true" columns="ORGIDT" />
+      <index name="ACTOUF_IND_2" unique="true" columns="CUSIDT" />
+      <index name="ACTOUF_IND_2" unique="true" columns="APCODE" />
+      <index name="ACTOUF_IND_2" unique="true" columns="CURCDE" />
+      <index name="ACTOUF_IND_2" unique="true" columns="REGNUM" />
+      <index name="ACTOUF_IND_2" unique="true" columns="CRNYER" />
+      <index name="ACTOUF_IND_3" unique="false" columns="ORGIDT" />
+      <index name="ACTOUF_IND_3" unique="false" columns="CUSIDT" />
+      <index name="ACTOUF_IND_3" unique="false" columns="APCODE" />
+      <index name="ACTOUF_IND_3" unique="false" columns="CURCDE" />
+      <index name="ACTOUF_IND_3" unique="false" columns="REGNUM" />
+      <index name="ACTOUF_IND_4" unique="false" columns="REFNUM" />
+      <index name="ACTOUF_IND_4" unique="false" columns="ORGIDT" />
+    </table>
+    <table name="ACTPDC" schema="CBS" catalog="" type="TABLE">
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="PRDNUM" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRDNAM" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="PDCTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RSKWHT" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTPDC_IND_1" unique="true" columns="PRDCDE" />
+    </table>
+    <table name="ACTPDN" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="PDNSEQ" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="PDNYER" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTPDN_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTPDN_IND_1" unique="true" columns="PRDCDE" />
+      <index name="ACTPDN_IND_1" unique="true" columns="PDNYER" />
+    </table>
+    <table name="ACTPER" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSIDT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="CUSSEX" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="BIRDAY" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="PROFSN" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="POSTON" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="WRKUNT" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="MONSLA" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="OTHINC" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="TAXNUM" sqlType="VARCHAR2" length="15" precision="0" nullable="true" jdbcType="12" />
+      <column name="ISRNUM" sqlType="VARCHAR2" length="15" precision="0" nullable="true" jdbcType="12" />
+      <column name="MARSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FAMPER" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="CUSTY1" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSTY2" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSTY3" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="ACTPER_PK" columns="cusidt,sysidt" />
+    </table>
+    <table name="ACTPLC" schema="CBS" catalog="" type="TABLE">
+      <column name="PLCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="PLCNAM" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="GLCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="PLSCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="PLCTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTPLC_IND_1" unique="true" columns="PLCODE" />
+      <index name="ACTPLC_IND_1" unique="true" columns="GLCODE" />
+    </table>
+    <table name="ACTPLF" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="PLCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="RECTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="PLDATE" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="DRAMNT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRAMNT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DRCUNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRCUNT" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="DRBALA" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRBALA" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="DAVBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CAVBAL" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTPLF_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTPLF_IND_1" unique="true" columns="DEPNUM" />
+      <index name="ACTPLF_IND_1" unique="true" columns="PLCODE" />
+      <index name="ACTPLF_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTPLF_IND_1" unique="true" columns="RECTYP" />
+      <index name="ACTPLF_IND_1" unique="true" columns="PLDATE" />
+      <index name="ACTPLF_IND_2" unique="false" columns="ORGIDT" />
+      <index name="ACTPLF_IND_2" unique="false" columns="CURCDE" />
+      <index name="ACTPLF_IND_2" unique="false" columns="RECTYP" />
+      <index name="ACTPLF_IND_2" unique="false" columns="PLDATE" />
+      <index name="ACTPLF_IND_3" unique="false" columns="ORGIDT" />
+      <index name="ACTPLF_IND_3" unique="false" columns="DEPNUM" />
+      <index name="ACTPLF_IND_3" unique="false" columns="CURCDE" />
+      <index name="ACTPLF_IND_3" unique="false" columns="RECTYP" />
+      <index name="ACTPLF_IND_3" unique="false" columns="PLDATE" />
+    </table>
+    <table name="ACTSCT" schema="CBS" catalog="" type="TABLE">
+      <column name="SCTNUM" sqlType="NUMBER" length="3" precision="0" nullable="false" jdbcType="3" />
+      <column name="CRNDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="JCLNM1" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="JCLNM2" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="DAYFMT" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="DAYWRD" sqlType="VARCHAR2" length="11" precision="0" nullable="true" jdbcType="12" />
+      <column name="WDYMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="TDYMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FNTMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="MONMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="QTRMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="HYRMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="YERMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="LWKDAY" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="NWKDAY" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="LWKDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="NXTDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="BMMDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="BSSDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="BYYDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="MWKDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="YWKDDS" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="CUSNUM" sqlType="NUMBER" length="7" precision="0" nullable="true" jdbcType="3" />
+      <column name="IPYMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="IPYDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="PREMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="TAXMAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="TAXDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="SYSSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="JOBSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="BACSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="ACTSCT_PK" columns="sctnum" />
+    </table>
+    <table name="ACTTAC" schema="CBS" catalog="" type="TABLE">
+      <column name="TAXCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="TAXDCR" sqlType="VARCHAR2" length="34" precision="0" nullable="true" jdbcType="12" />
+      <column name="TAXFG1" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="TAXFG2" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="TAXFG3" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTTAC_IND_1" unique="true" columns="TAXCDE" />
+    </table>
+    <table name="ACTTAX" schema="CBS" catalog="" type="TABLE">
+      <column name="TAXTNO" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="TAXCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="TAXRAT" sqlType="NUMBER" length="7" precision="3" nullable="true" jdbcType="3" />
+      <column name="TAXADJ" sqlType="NUMBER" length="7" precision="3" nullable="true" jdbcType="3" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="ACTTAX_PK" columns="taxtno,taxcde" />
+    </table>
+    <table name="ACTTBC" schema="CBS" catalog="" type="TABLE">
+      <column name="TDBSRT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="TDBNAM" sqlType="VARCHAR2" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <index name="ACTTBC_IND_1" unique="true" columns="TDBSRT" />
+    </table>
+    <table name="ACTTLR" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="TLRNUM" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="TLRNAM" sqlType="VARCHAR2" length="16" precision="0" nullable="true" jdbcType="12" />
+      <column name="TLRPAS" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="SEVNUM" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="GRPCDE" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="AUTMA1" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="AUTMA2" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="TLRTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="TLRRAK" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXTBLN" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="LERYDT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="TXNCNT" sqlType="NUMBER" length="4" precision="0" nullable="true" jdbcType="3" />
+      <column name="VCHSET" sqlType="NUMBER" length="4" precision="0" nullable="true" jdbcType="3" />
+      <column name="VCHSNO" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="TRNIDT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="LTXCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNTYP" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNCLS" sqlType="NUMBER" length="4" precision="0" nullable="true" jdbcType="3" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTTLR_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTTLR_IND_1" unique="true" columns="TLRNUM" />
+    </table>
+    <table name="ACTTMC" schema="CBS" catalog="" type="TABLE">
+      <column name="TDBSRT" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="TDMSRT" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="TDMNAM" sqlType="VARCHAR2" length="40" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <index name="ACTTMC_IND_1" unique="true" columns="TDBSRT" />
+      <index name="ACTTMC_IND_1" unique="true" columns="TDMSRT" />
+    </table>
+    <table name="ACTTRF" schema="CBS" catalog="" type="TABLE">
+      <column name="ATRCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="TRFSEQ" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="TRFKID" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="TRFNUM" sqlType="VARCHAR2" length="20" precision="0" nullable="false" jdbcType="12" />
+      <column name="TRFOPR" sqlType="NUMBER" length="1" precision="0" nullable="true" jdbcType="3" />
+      <column name="AMTTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMTSDE" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTTRF_IND_1" unique="true" columns="ATRCDE" />
+      <index name="ACTTRF_IND_1" unique="true" columns="TRFKID" />
+      <index name="ACTTRF_IND_1" unique="true" columns="TRFNUM" />
+    </table>
+    <table name="ACTTSC" schema="CBS" catalog="" type="TABLE">
+      <column name="TDDTDC" sqlType="VARCHAR2" length="5" precision="0" nullable="false" jdbcType="12" />
+      <column name="TDDNAM" sqlType="VARCHAR2" length="40" precision="0" nullable="true" jdbcType="12" />
+      <column name="TDDCN1" sqlType="VARCHAR2" length="120" precision="0" nullable="true" jdbcType="12" />
+      <column name="TDDCN2" sqlType="VARCHAR2" length="122" precision="0" nullable="true" jdbcType="12" />
+      <column name="TDDCN3" sqlType="VARCHAR2" length="122" precision="0" nullable="true" jdbcType="12" />
+      <column name="TDDCN4" sqlType="VARCHAR2" length="72" precision="0" nullable="true" jdbcType="12" />
+      <column name="AMDTLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <index name="ACTTSC_IND_1" unique="true" columns="TDDTDC" />
+    </table>
+    <table name="ACTTVC" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="TLRNUM" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="VCHSET" sqlType="NUMBER" length="4" precision="0" nullable="false" jdbcType="3" />
+      <column name="SETSEQ" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="VALDAT" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="RVSLBL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ANACDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="FURINF" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="FXRATE" sqlType="NUMBER" length="12" precision="6" nullable="true" jdbcType="3" />
+      <column name="SECCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="SECAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CORAPC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHATT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="VCHAUT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="CLRBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYDAT" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYTIM" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="OUFCRE" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="FXEFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="REGNUM" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTTVC_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTTVC_IND_1" unique="true" columns="TLRNUM" />
+      <index name="ACTTVC_IND_1" unique="true" columns="VCHSET" />
+      <index name="ACTTVC_IND_1" unique="true" columns="SETSEQ" />
+    </table>
+    <table name="ACTVCH" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="TLRNUM" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="VCHSET" sqlType="NUMBER" length="4" precision="0" nullable="false" jdbcType="3" />
+      <column name="SETSEQ" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="ORGID2" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRNYER" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="PRDSEQ" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="FXEFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID3" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="VALDAT" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="RVSLBL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ANACDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="FURINF" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="FXRATE" sqlType="NUMBER" length="12" precision="6" nullable="true" jdbcType="3" />
+      <column name="SECCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="SECAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CORAPC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHATT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="THRREF" sqlType="VARCHAR2" length="16" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHAUT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHANO" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="CLRBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID4" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYDAT" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYTIM" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTVCH_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTVCH_IND_1" unique="true" columns="TLRNUM" />
+      <index name="ACTVCH_IND_1" unique="true" columns="VCHSET" />
+      <index name="ACTVCH_IND_1" unique="true" columns="SETSEQ" />
+      <index name="ACTVCH_IND_2" unique="false" columns="ORGID3" />
+      <index name="ACTVCH_IND_2" unique="false" columns="CUSIDT" />
+      <index name="ACTVCH_IND_2" unique="false" columns="APCODE" />
+      <index name="ACTVCH_IND_2" unique="false" columns="CURCDE" />
+    </table>
+    <table name="ACTVHH" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="TLRNUM" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="VCHSET" sqlType="NUMBER" length="4" precision="0" nullable="false" jdbcType="3" />
+      <column name="SETSEQ" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="ERYDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="ORGID2" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRNYER" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="PRDSEQ" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLER" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID3" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="VALDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RVSLBL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ANACDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="FURINF" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="FXRATE" sqlType="NUMBER" length="12" precision="6" nullable="true" jdbcType="3" />
+      <column name="SECCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="SECAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CORAPC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHATT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="THRREF" sqlType="VARCHAR2" length="16" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHAUT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHANO" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="CLRBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID4" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYTIM" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="ACTVHH_PK" columns="orgidt,tlrnum,vchset,setseq,erydat" />
+      <index name="ACTVHH_IND_1" unique="false" columns="ORGID3" />
+      <index name="ACTVHH_IND_1" unique="false" columns="APCODE" />
+      <index name="ACTVHH_IND_1" unique="false" columns="CURCDE" />
+      <index name="ACTVHH_IND_1" unique="false" columns="TXNAMT" />
+      <index name="ACTVHH_IND_2" unique="false" columns="ORGIDT" />
+      <index name="ACTVHH_IND_2" unique="false" columns="PRDCDE" />
+      <index name="ACTVHH_IND_2" unique="false" columns="ERYDAT" />
+      <index name="ACTVHH_IND_3" unique="false" columns="ORGID3" />
+      <index name="ACTVHH_IND_3" unique="false" columns="CUSIDT" />
+      <index name="ACTVHH_IND_3" unique="false" columns="APCODE" />
+      <index name="ACTVHH_IND_3" unique="false" columns="CURCDE" />
+      <index name="ACTVHH_IND_3" unique="false" columns="ERYDAT" />
+    </table>
+    <table name="ACTVTH" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="TLRNUM" sqlType="VARCHAR2" length="4" precision="0" nullable="false" jdbcType="12" />
+      <column name="VCHSET" sqlType="NUMBER" length="4" precision="0" nullable="false" jdbcType="3" />
+      <column name="SETSEQ" sqlType="NUMBER" length="2" precision="0" nullable="false" jdbcType="3" />
+      <column name="ORGID2" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRDCDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRNYER" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="PRDSEQ" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="FXEFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID3" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="CUSIDT" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="APCODE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="VALDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RVSLBL" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ANACDE" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="FURINF" sqlType="VARCHAR2" length="32" precision="0" nullable="true" jdbcType="12" />
+      <column name="FXRATE" sqlType="NUMBER" length="12" precision="6" nullable="true" jdbcType="3" />
+      <column name="SECCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="SECAMT" sqlType="NUMBER" length="15" precision="0" nullable="true" jdbcType="3" />
+      <column name="CORAPC" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHATT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="THRREF" sqlType="VARCHAR2" length="16" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHAUT" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="VCHANO" sqlType="VARCHAR2" length="6" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPNUM" sqlType="VARCHAR2" length="2" precision="0" nullable="true" jdbcType="12" />
+      <column name="TXNBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACTBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="CLRBAK" sqlType="VARCHAR2" length="7" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORGID4" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYTYP" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERYDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="ERYTIM" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTVTH_IND_1" unique="true" columns="ORGIDT" />
+      <index name="ACTVTH_IND_1" unique="true" columns="TLRNUM" />
+      <index name="ACTVTH_IND_1" unique="true" columns="VCHSET" />
+      <index name="ACTVTH_IND_1" unique="true" columns="SETSEQ" />
+      <index name="ACTVTH_IND_1" unique="true" columns="ERYDAT" />
+      <index name="ACTVTH_IND_2" unique="false" columns="ORGID3" />
+      <index name="ACTVTH_IND_2" unique="false" columns="APCODE" />
+      <index name="ACTVTH_IND_2" unique="false" columns="CURCDE" />
+      <index name="ACTVTH_IND_2" unique="false" columns="CUSIDT" />
+      <index name="ACTVTH_IND_2" unique="false" columns="ORGIDT" />
+      <index name="ACTVTH_IND_2" unique="false" columns="TLRNUM" />
+      <index name="ACTVTH_IND_2" unique="false" columns="VCHSET" />
+      <index name="ACTVTH_IND_2" unique="false" columns="SETSEQ" />
+      <index name="ACTVTH_IND_3" unique="false" columns="ORGID3" />
+      <index name="ACTVTH_IND_3" unique="false" columns="APCODE" />
+      <index name="ACTVTH_IND_3" unique="false" columns="CURCDE" />
+      <index name="ACTVTH_IND_3" unique="false" columns="CUSIDT" />
+      <index name="ACTVTH_IND_3" unique="false" columns="SECCCY" />
+      <index name="ACTVTH_IND_3" unique="false" columns="TXNAMT" />
+      <index name="ACTVTH_IND_4" unique="false" columns="VALDAT" />
+    </table>
+    <table name="ACTXRT" schema="CBS" catalog="" type="TABLE">
+      <column name="CURCDE" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="SECCCY" sqlType="VARCHAR2" length="3" precision="0" nullable="false" jdbcType="12" />
+      <column name="XRTCDE" sqlType="VARCHAR2" length="1" precision="0" nullable="false" jdbcType="12" />
+      <column name="EFFDAT" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="EFFTIM" sqlType="VARCHAR2" length="8" precision="0" nullable="false" jdbcType="12" />
+      <column name="CURFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="MODFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="RATVAL" sqlType="NUMBER" length="13" precision="7" nullable="true" jdbcType="3" />
+      <column name="RATFLG" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRETLR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="CRETIM" sqlType="VARCHAR2" length="8" precision="0" nullable="true" jdbcType="12" />
+      <column name="RECSTS" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <index name="ACTXRT_IND_1" unique="true" columns="CURCDE" />
+      <index name="ACTXRT_IND_1" unique="true" columns="SECCCY" />
+      <index name="ACTXRT_IND_1" unique="true" columns="XRTCDE" />
+      <index name="ACTXRT_IND_1" unique="true" columns="EFFDAT" />
+      <index name="ACTXRT_IND_1" unique="true" columns="EFFTIM" />
+      <index name="ACTXRT_IND_2" unique="false" columns="CURCDE" />
+      <index name="ACTXRT_IND_2" unique="false" columns="SECCCY" />
+      <index name="ACTXRT_IND_2" unique="false" columns="XRTCDE" />
+      <index name="ACTXRT_IND_2" unique="false" columns="EFFDAT" />
+    </table>
+    <table name="APTLOG" schema="CBS" catalog="" type="TABLE">
+      <column name="TXNDAT" sqlType="CHAR" length="8" precision="0" nullable="true" jdbcType="1" />
+      <column name="BRCODE" sqlType="CHAR" length="10" precision="0" nullable="true" jdbcType="1" />
+      <column name="TELCDE" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="TXNSEQ" sqlType="CHAR" length="5" precision="0" nullable="true" jdbcType="1" />
+      <column name="RECCNT" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="TXNSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="RTNCDE" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="TXNTIM" sqlType="CHAR" length="6" precision="0" nullable="true" jdbcType="1" />
+      <column name="TXNCDE" sqlType="CHAR" length="6" precision="0" nullable="true" jdbcType="1" />
+      <column name="TMCODE" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="TMTYPE" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="SUPKEY" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="RECIDT" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="SIFLEN" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="NEXDAT" sqlType="CHAR" length="8" precision="0" nullable="true" jdbcType="1" />
+      <column name="DAYCNT" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="APAREA" sqlType="VARCHAR2" length="450" precision="0" nullable="true" jdbcType="12" />
+      <column name="SIFARE" sqlType="VARCHAR2" length="400" precision="0" nullable="true" jdbcType="12" />
+      <column name="TASKNO" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="RESERV" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="CURRRN" sqlType="CHAR" length="8" precision="0" nullable="true" jdbcType="1" />
+      <column name="SYCPDE" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="NXTBTE" sqlType="CHAR" length="8" precision="0" nullable="true" jdbcType="1" />
+      <column name="LASRRN" sqlType="CHAR" length="8" precision="0" nullable="true" jdbcType="1" />
+      <column name="SYSSEQ" sqlType="CHAR" length="10" precision="0" nullable="true" jdbcType="1" />
+      <column name="NACSEQ" sqlType="CHAR" length="5" precision="0" nullable="true" jdbcType="1" />
+      <column name="BATSEQ" sqlType="CHAR" length="5" precision="0" nullable="true" jdbcType="1" />
+      <column name="BRSTAT" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="BOOKST" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="APRSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="REENTR" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="INBSOU" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="INBRTN" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="TIMSWC" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="FILLER" sqlType="CHAR" length="27" precision="0" nullable="true" jdbcType="1" />
+      <index name="APTKEY" unique="true" columns="TXNDAT" />
+      <index name="APTKEY" unique="true" columns="BRCODE" />
+      <index name="APTKEY" unique="true" columns="TELCDE" />
+      <index name="APTKEY" unique="true" columns="TXNSEQ" />
+      <index name="APTKEY" unique="true" columns="RECCNT" />
+    </table>
+    <table name="CP_SEQUENCE" schema="CBS" catalog="" type="TABLE">
+      <column name="SEQNAME" sqlType="VARCHAR2" length="30" precision="0" nullable="false" jdbcType="12" />
+      <column name="MINVALUE" sqlType="NUMBER" length="12" precision="0" nullable="true" jdbcType="3" />
+      <column name="MAXVALUE" sqlType="NUMBER" length="12" precision="0" nullable="true" jdbcType="3" />
+      <column name="CYCLE" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="STEPVALUE" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="CACHE" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="YEAR" sqlType="VARCHAR2" length="4" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURVALUE" sqlType="NUMBER" length="12" precision="0" nullable="true" jdbcType="3" />
+    </table>
+    <table name="PTDEPT" schema="CBS" catalog="" type="TABLE">
+      <column name="DEPTID" sqlType="VARCHAR2" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="DEPTNAME" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPTDESC" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="PARENTDEPTID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEPTLEAF" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="DEPTLEVEL" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="DEPTSTATUS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="ISDUMMY" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="FILLSTR10" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLSTR20" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLSTR100" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLSTR150" sqlType="VARCHAR2" length="150" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLINT4" sqlType="NUMBER" length="4" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLINT6" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLINT8" sqlType="NUMBER" length="8" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLDBL2" sqlType="NUMBER" length="8" precision="2" nullable="true" jdbcType="3" />
+      <column name="FILLDBL22" sqlType="NUMBER" length="10" precision="2" nullable="true" jdbcType="3" />
+      <column name="FILLDBL4" sqlType="NUMBER" length="10" precision="4" nullable="true" jdbcType="3" />
+      <column name="FILLDATE1" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="FILLDATE2" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="DQDM" sqlType="CHAR" length="6" precision="0" nullable="true" jdbcType="1" />
+      <column name="MKDM" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="DEPTINDEX" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="DEPTGUID" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PK_PTDEPT" columns="deptid" />
+    </table>
+    <table name="PTENUDETAIL" schema="CBS" catalog="" type="TABLE">
+      <column name="ENUTYPE" sqlType="VARCHAR2" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="ENUITEMVALUE" sqlType="VARCHAR2" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="ENUITEMLABEL" sqlType="VARCHAR2" length="400" precision="0" nullable="true" jdbcType="12" />
+      <column name="ENUITEMDESC" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="DISPNO" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="ENUITEMEXPAND" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PK_PTENUDETAIL" columns="enuitemvalue,enutype" />
+      <foreign-key name="FK_PTENUDET_RELATIONS_PTENUMAI" columns="ENUTYPE" ref-table="PTENUMAIN" ref-schema="CBS" ref-catalog="" ref-columns="ENUTYPE" cascade-update="true" />
+      <index name="RELATIONSHIP_7_FK" unique="false" columns="ENUTYPE" />
+    </table>
+    <table name="PTENUMAIN" schema="CBS" catalog="" type="TABLE">
+      <column name="ENUTYPE" sqlType="VARCHAR2" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="ENUNAME" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="VALUETYPE" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="ENUDESC" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PK_PTENUMAIN" columns="enutype" />
+    </table>
+    <table name="PTERROR" schema="CBS" catalog="" type="TABLE">
+      <column name="MOUDLEID" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERRORTYPE" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="ERRORINDEX" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="MESSAGE" sqlType="VARCHAR2" length="400" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILL1" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="PTLOGICACT" schema="CBS" catalog="" type="TABLE">
+      <column name="LOGICCODE" sqlType="VARCHAR2" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="LOGICCLASS" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="LOGICMETHOD" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="LOGICDESC" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="LOGICENABLED" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+    </table>
+    <table name="PTMENU" schema="CBS" catalog="" type="TABLE">
+      <column name="MENUID" sqlType="VARCHAR2" length="20" precision="0" nullable="false" jdbcType="12" />
+      <column name="PARENTMENUID" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="MENULEVEL" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="ISLEAF" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="MENUDESC" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="MENULABEL" sqlType="VARCHAR2" length="40" precision="0" nullable="true" jdbcType="12" />
+      <column name="MENUICON" sqlType="VARCHAR2" length="80" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPENICON" sqlType="VARCHAR2" length="80" precision="0" nullable="true" jdbcType="12" />
+      <column name="TARGETMACHINE" sqlType="VARCHAR2" length="80" precision="0" nullable="true" jdbcType="12" />
+      <column name="MENUACTION" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPENWINDOW" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="WINDOWWIDTH" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="WINDOWHEIGHT" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="LEVELIDX" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLSTR50" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLSTR100" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLINT1" sqlType="NUMBER" length="10" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLDBL2" sqlType="NUMBER" length="10" precision="2" nullable="true" jdbcType="3" />
+      <column name="FILLDATE" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+    </table>
+    <table name="PTOPER" schema="CBS" catalog="" type="TABLE">
+      <column name="DEPTID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPERID" sqlType="VARCHAR2" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="OPERPASSWD" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="ISSUPER" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="OPERDUTY" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPERTYPE" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPERNAME" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="SEX" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="EMAIL" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="MOBILEPHONE" sqlType="VARCHAR2" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPERPHONE" sqlType="VARCHAR2" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="OTHERPHONE" sqlType="VARCHAR2" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPERENABLED" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="FILLSTR50" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLSTR80" sqlType="VARCHAR2" length="80" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLSTR100" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLSTR150" sqlType="VARCHAR2" length="150" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLSTR600" sqlType="VARCHAR2" length="600" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILLDATE1" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="FILLDATE2" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="FILLDATE3" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="FILLINT6" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLINT8" sqlType="NUMBER" length="8" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLINT10" sqlType="NUMBER" length="10" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLINT12" sqlType="NUMBER" length="12" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLINTVAR" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="FILLDBL1" sqlType="NUMBER" length="10" precision="2" nullable="true" jdbcType="3" />
+      <column name="FILLDBL2" sqlType="NUMBER" length="10" precision="2" nullable="true" jdbcType="3" />
+      <column name="FILLDBL3" sqlType="NUMBER" length="10" precision="4" nullable="true" jdbcType="3" />
+      <column name="USERGUID" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <index name="I_OPERID" unique="true" columns="OPERID" />
+      <index name="RELATIONSHIP_2_FK" unique="false" columns="DEPTID" />
+    </table>
+    <table name="PTOPERROLE" schema="CBS" catalog="" type="TABLE">
+      <column name="ROLEID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="OPERID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <foreign-key name="FK_PTOPERRO_RELATIONS_PTROLE" columns="ROLEID" ref-table="PTROLE" ref-schema="CBS" ref-catalog="" ref-columns="ROLEID" cascade-update="true" />
+      <index name="RELATIONSHIP_5_FK" unique="false" columns="ROLEID" />
+      <index name="RELATIONSHIP_6_FK" unique="false" columns="OPERID" />
+    </table>
+    <table name="PTPYK" schema="CBS" catalog="" type="TABLE">
+      <column name="HZ" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="PY" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILL1" sqlType="VARCHAR2" length="10" precision="0" nullable="true" jdbcType="12" />
+      <index name="PK_HZ" unique="false" columns="HZ" />
+    </table>
+    <table name="PTRESOURCE" schema="CBS" catalog="" type="TABLE">
+      <column name="RESID" sqlType="VARCHAR2" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="PARENTRESID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="RESNAME" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="RESTYPE" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="RESENABLED" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="RESDESC" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="PTROLE" schema="CBS" catalog="" type="TABLE">
+      <column name="ROLEID" sqlType="VARCHAR2" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="ROLEDESC" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <primary-key name="PK_PTROLE" columns="roleid" />
+    </table>
+    <table name="PTROLERES" schema="CBS" catalog="" type="TABLE">
+      <column name="RESID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="ROLEID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <foreign-key name="FK_PTROLERE_RELATIONS_PTROLE" columns="ROLEID" ref-table="PTROLE" ref-schema="CBS" ref-catalog="" ref-columns="ROLEID" cascade-update="true" />
+      <index name="RELATIONSHIP_8_FK" unique="false" columns="ROLEID" />
+      <index name="RELATIONSHIP_9_FK" unique="false" columns="RESID" />
+    </table>
+    <table name="PTWORDSPELL" schema="CBS" catalog="" type="TABLE">
+      <column name="CHWORD" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+      <column name="CHWORDSPELL" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+    </table>
+    <table name="RETAPD" schema="CBS" catalog="" type="TABLE">
+      <column name="DPTTYP" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="CHFMAK" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+      <column name="APCODE" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="RECSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <index name="RETAPD_IND_1" unique="true" columns="DPTTYP" />
+      <index name="RETAPD_IND_1" unique="true" columns="CHFMAK" />
+    </table>
+    <table name="RETATO" schema="CBS" catalog="" type="TABLE">
+      <column name="BOKNUM" sqlType="CHAR" length="18" precision="0" nullable="false" jdbcType="1" />
+      <column name="TXNDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="VALDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="INTRAT" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="CURBAL" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="TOTINT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="EXPDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="RECSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="TAXAMT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <index name="RETATO_IND_1" unique="false" columns="BOKNUM" />
+      <index name="RETATO_IND_2" unique="false" columns="BOKNUM" />
+      <index name="RETATO_IND_2" unique="false" columns="RECSTS" />
+    </table>
+    <table name="RETFIX" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="DEPNUM" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="CURCDE" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="DPTTYP" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="RESBIT" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+      <column name="SEQNUM" sqlType="CHAR" length="6" precision="0" nullable="false" jdbcType="1" />
+      <column name="CHKBIT" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+      <column name="ACTORG" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="ACTDEP" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="ORGID1" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="PRDCD1" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="CRNYE1" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="PRDSE1" sqlType="CHAR" length="6" precision="0" nullable="true" jdbcType="1" />
+      <column name="FILLR1" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="ORGID2" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="PRDCD2" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="CRNYE2" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="PRDSE2" sqlType="CHAR" length="6" precision="0" nullable="true" jdbcType="1" />
+      <column name="FILLR2" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="SYSIDT" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="ORGID3" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="CUSIDT" sqlType="CHAR" length="7" precision="0" nullable="true" jdbcType="1" />
+      <column name="APCODE" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="CURCD1" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="ACTNAM" sqlType="CHAR" length="72" precision="0" nullable="true" jdbcType="1" />
+      <column name="PASTYP" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="PASSNO" sqlType="CHAR" length="18" precision="0" nullable="true" jdbcType="1" />
+      <column name="ACTSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="DPTPRD" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="ATOFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="BEFFLG" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="LSTIDT" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="STNIDT" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="OTHIDT" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="ACTTYP" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="CURBAL" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="AVABAL" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="STNBAL" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="DRAMNT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="CRAMNT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="OPNDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="VALDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="EXPDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="LSTDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="INTCDE" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="INTRAT" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="BEFRAT" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="BEFRT1" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="FLOPER" sqlType="NUMBER" length="9" precision="6" nullable="true" jdbcType="3" />
+      <column name="TOTINT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="DRACNT" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="DRATOT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="MONAMT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="DPTCNT" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="NBKCNT" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="DRIAMT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="DRICNT" sqlType="NUMBER" length="2" precision="0" nullable="true" jdbcType="3" />
+      <column name="INTACT" sqlType="CHAR" length="18" precision="0" nullable="true" jdbcType="1" />
+      <column name="PAYINT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="UPYINT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="PIDATE" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="PIVLAU" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="BOKLIN" sqlType="NUMBER" length="3" precision="0" nullable="true" jdbcType="3" />
+      <column name="AMDTLR" sqlType="CHAR" length="4" precision="0" nullable="true" jdbcType="1" />
+      <column name="UPDDAT" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="VCHTYP" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="VCHNUM" sqlType="CHAR" length="13" precision="0" nullable="true" jdbcType="1" />
+      <column name="DRAMDE" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="CUSPWD" sqlType="CHAR" length="6" precision="0" nullable="true" jdbcType="1" />
+      <column name="DRICYC" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="FIXREF" sqlType="CHAR" length="20" precision="0" nullable="true" jdbcType="1" />
+      <index name="FIXKEY" unique="true" columns="ORGIDT" />
+      <index name="FIXKEY" unique="true" columns="DEPNUM" />
+      <index name="FIXKEY" unique="true" columns="CURCDE" />
+      <index name="FIXKEY" unique="true" columns="DPTTYP" />
+      <index name="FIXKEY" unique="true" columns="RESBIT" />
+      <index name="FIXKEY" unique="true" columns="SEQNUM" />
+      <index name="FIXKEY" unique="true" columns="CHKBIT" />
+      <index name="RETFIX_IND_1" unique="false" columns="ACTNAM" />
+      <index name="RETFIX_IND_2" unique="false" columns="INTACT" />
+      <index name="RETFIX_IND_3" unique="false" columns="SYSIDT" />
+      <index name="RETFIX_IND_3" unique="false" columns="CUSIDT" />
+      <index name="RETFIX_IND_4" unique="false" columns="ATOFLG" />
+      <index name="RETFIX_IND_4" unique="false" columns="ACTSTS" />
+      <index name="RETFIX_IND_5" unique="false" columns="ACTSTS" />
+    </table>
+    <table name="RETSEQ" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="DEPNUM" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="CURCDE" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="DPTTYP" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="RESBIT" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+      <column name="SEQNUM" sqlType="NUMBER" length="6" precision="0" nullable="true" jdbcType="3" />
+      <index name="RETSEQ_IND_1" unique="true" columns="ORGIDT" />
+      <index name="RETSEQ_IND_1" unique="true" columns="DEPNUM" />
+      <index name="RETSEQ_IND_1" unique="true" columns="CURCDE" />
+      <index name="RETSEQ_IND_1" unique="true" columns="DPTTYP" />
+      <index name="RETSEQ_IND_1" unique="true" columns="RESBIT" />
+    </table>
+    <table name="RETTNV" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="DEPNUM" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="TLRNUM" sqlType="CHAR" length="4" precision="0" nullable="false" jdbcType="1" />
+      <column name="VCHTYP" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="BEGNUM" sqlType="CHAR" length="13" precision="0" nullable="false" jdbcType="1" />
+      <column name="ENDNUM" sqlType="CHAR" length="13" precision="0" nullable="true" jdbcType="1" />
+      <column name="VCHNUM" sqlType="NUMBER" length="13" precision="0" nullable="true" jdbcType="3" />
+      <column name="VCHSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="APPDAT" sqlType="CHAR" length="10" precision="0" nullable="true" jdbcType="1" />
+      <index name="RETTNV_IND_1" unique="true" columns="ORGIDT" />
+      <index name="RETTNV_IND_1" unique="true" columns="DEPNUM" />
+      <index name="RETTNV_IND_1" unique="true" columns="TLRNUM" />
+      <index name="RETTNV_IND_1" unique="true" columns="VCHTYP" />
+      <index name="RETTNV_IND_1" unique="true" columns="BEGNUM" />
+      <index name="RETTNV_IND_2" unique="false" columns="VCHTYP" />
+      <index name="RETTNV_IND_2" unique="false" columns="BEGNUM" />
+    </table>
+    <table name="RETTTX" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="TLRNUM" sqlType="CHAR" length="4" precision="0" nullable="false" jdbcType="1" />
+      <column name="DEPNUM" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="CRNCNT" sqlType="NUMBER" length="13" precision="0" nullable="true" jdbcType="3" />
+      <column name="CRNAMT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="MWKCNT" sqlType="NUMBER" length="13" precision="0" nullable="true" jdbcType="3" />
+      <column name="MWKAMT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <column name="YWKCNT" sqlType="NUMBER" length="13" precision="0" nullable="true" jdbcType="3" />
+      <column name="YWKAMT" sqlType="NUMBER" length="15" precision="2" nullable="true" jdbcType="3" />
+      <index name="TTXKEY" unique="true" columns="ORGIDT" />
+      <index name="TTXKEY" unique="true" columns="TLRNUM" />
+    </table>
+    <table name="RETTYP" schema="CBS" catalog="" type="TABLE">
+      <column name="DPTTYP" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="CURCDE" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="ACTTYP" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="PRDTYP" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="DPTPRD" sqlType="CHAR" length="2" precision="0" nullable="true" jdbcType="1" />
+      <column name="INTCDE" sqlType="CHAR" length="3" precision="0" nullable="true" jdbcType="1" />
+      <column name="RECSTS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <index name="RETTYP_IND_1" unique="true" columns="DPTTYP" />
+      <index name="RETTYP_IND_1" unique="true" columns="CURCDE" />
+      <index name="RETTYP_IND_1" unique="true" columns="ACTTYP" />
+      <index name="RETTYP_IND_1" unique="true" columns="PRDTYP" />
+      <index name="RETTYP_IND_1" unique="true" columns="DPTPRD" />
+    </table>
+    <table name="SCTMAX" schema="CBS" catalog="" type="TABLE">
+      <column name="ORGIDT" sqlType="CHAR" length="3" precision="0" nullable="false" jdbcType="1" />
+      <column name="LIMIDT" sqlType="CHAR" length="4" precision="0" nullable="false" jdbcType="1" />
+      <column name="APPIDT" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="TXNLIM" sqlType="NUMBER" length="13" precision="0" nullable="false" jdbcType="3" />
+      <column name="AUTTYP" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+      <column name="AUTLVL" sqlType="CHAR" length="1" precision="0" nullable="false" jdbcType="1" />
+      <column name="LIMDCR" sqlType="CHAR" length="30" precision="0" nullable="true" jdbcType="1" />
+      <index name="SCTMAX_IND_1" unique="true" columns="ORGIDT" />
+      <index name="SCTMAX_IND_1" unique="true" columns="LIMIDT" />
+      <index name="SCTMAX_IND_1" unique="true" columns="APPIDT" />
+      <index name="SCTMAX_IND_1" unique="true" columns="TXNLIM" />
+      <index name="SCTMAX_IND_2" unique="false" columns="ORGIDT" />
+      <index name="SCTMAX_IND_2" unique="false" columns="LIMIDT" />
+      <index name="SCTMAX_IND_2" unique="false" columns="APPIDT" />
+      <index name="SCTMAX_IND_3" unique="false" columns="LIMIDT" />
+    </table>
+    <table name="SCTMIN" schema="CBS" catalog="" type="TABLE">
+      <column name="LIMIDT" sqlType="CHAR" length="4" precision="0" nullable="false" jdbcType="1" />
+      <column name="APPIDT" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1" />
+      <column name="TXNLIM" sqlType="NUMBER" length="13" precision="2" nullable="true" jdbcType="3" />
+      <column name="LIMDCR" sqlType="CHAR" length="30" precision="0" nullable="true" jdbcType="1" />
+      <index name="SCTMIN_IND_1" unique="true" columns="LIMIDT" />
+      <index name="SCTMIN_IND_1" unique="true" columns="APPIDT" />
+    </table>
+    <table name="SYS_LOCK" schema="CBS" catalog="" type="TABLE">
+      <column name="SYSLOCKSTATUS" sqlType="VARCHAR2" length="2" precision="0" nullable="false" jdbcType="12" />
+    </table>
+    <table name="SYS_SCHEDULER" schema="CBS" catalog="" type="TABLE">
+      <column name="JOBID" sqlType="NUMBER" length="8" precision="0" nullable="true" jdbcType="3" />
+      <column name="JOBNAME" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="CRONEXPRESSION" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="SUCCESSCOUNT" sqlType="NUMBER" length="8" precision="0" nullable="true" jdbcType="3" />
+      <column name="FAILCOUNT" sqlType="NUMBER" length="8" precision="0" nullable="true" jdbcType="3" />
+      <column name="LASTEXECUTETIME" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="STATUS" sqlType="CHAR" length="1" precision="0" nullable="true" jdbcType="1" />
+      <column name="MAILONFAIL" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="INFORMATION" sqlType="VARCHAR2" length="500" precision="0" nullable="true" jdbcType="12" />
+      <column name="JOBACTION" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="JOBMETHOD" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+      <column name="JOBPARAM" sqlType="VARCHAR2" length="50" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="SYS_SCHEDULER_LOG" schema="CBS" catalog="" type="TABLE">
+      <column name="JOBID" sqlType="NUMBER" length="8" precision="0" nullable="false" jdbcType="3" />
+      <column name="JOBNAME" sqlType="VARCHAR2" length="50" precision="0" nullable="false" jdbcType="12" />
+      <column name="TIME" sqlType="DATE" length="7" precision="0" nullable="false" jdbcType="93" />
+      <column name="INFO" sqlType="VARCHAR2" length="500" precision="0" nullable="true" jdbcType="12" />
+      <index name="LOG_JOBID_INDEX" unique="false" columns="JOBID" />
+      <index name="LOG_TIME_INDEX" unique="false" columns="TIME" />
+    </table>
+    <table name="SYS_SEQ" schema="CBS" catalog="" type="TABLE">
+      <column name="BHLX" sqlType="VARCHAR2" length="20" precision="0" nullable="false" jdbcType="12" />
+      <column name="QSHH" sqlType="NUMBER" length="12" precision="0" nullable="true" jdbcType="3" />
+      <column name="JSBH" sqlType="NUMBER" length="12" precision="0" nullable="true" jdbcType="3" />
+      <column name="DQBH" sqlType="NUMBER" length="12" precision="0" nullable="true" jdbcType="3" />
+      <column name="BHWS" sqlType="NUMBER" length="4" precision="0" nullable="true" jdbcType="3" />
+      <column name="RQ" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+    </table>
+    <table name="SYS_SEQ_DISCARD" schema="CBS" catalog="" type="TABLE">
+      <column name="BHLX" sqlType="VARCHAR2" length="30" precision="0" nullable="false" jdbcType="12" />
+      <column name="OSEQNO" sqlType="VARCHAR2" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="NSEQNO" sqlType="VARCHAR2" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="USEFLG" sqlType="NUMBER" length="12" precision="0" nullable="true" jdbcType="3" />
+      <column name="USEDATE" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="DISCARDNO" sqlType="VARCHAR2" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="INOPERID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="INDATE" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="DOTYPE" sqlType="VARCHAR2" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="USEOPERID" sqlType="VARCHAR2" length="100" precision="0" nullable="true" jdbcType="12" />
+    </table>
+  </data-source>
+</component>

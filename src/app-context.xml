@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	   http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-3.0.xsd">
+
+    <!--	<bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate"> -->
+    <!--       <property name="environment"> -->
+    <!--          <props> -->
+    <!--             <prop key="java.naming.factory.initial">-->
+    <!--                   org.exolab.jms.jndi.InitialContextFactory</prop> -->
+    <!--             <prop key="java.naming.provider.url">tcp://10.37.129.2:3035</prop> -->
+    <!--             <prop key="java.naming.security.principal">admin</prop> -->
+    <!--             <prop key="java.naming.security.credentials">openjms</prop> -->
+    <!--          </props> -->
+    <!--       </property> -->
+    <!--    </bean> -->
+
+    <bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate">
+        <property name="environment">
+            <props>
+                <prop key="java.naming.factory.initial">
+                    org.apache.activemq.jndi.ActiveMQInitialContextFactory
+                </prop>
+                <prop key="java.naming.provider.url">tcp://localhost:61616</prop>
+                <prop key="java.naming.security.principal">system</prop>
+                <prop key="java.naming.security.credentials">manager</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="jndiQueueConnectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiTemplate" ref="jndiTemplate"/>
+        <property name="jndiName" value="QueueCF"/>
+    </bean>
+
+    <!--	<bean id="queueConnectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory"> -->
+    <!--	   <property name="targetConnectionFactory" ref="jndiQueueConnectionFactory"/> -->
+    <!--	</bean>        -->
+
+    <bean id="queueConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <property name="targetConnectionFactory" ref="jndiQueueConnectionFactory"/>
+        <property name="sessionCacheSize" value="1"/>
+    </bean>
+
+
+    <bean id="queueDestination"
+          class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiTemplate" ref="jndiTemplate"/>
+        <property name="jndiName" value="queue1"/>
+    </bean>
+
+    <bean id="destinationResolver" class="org.springframework.jms.support.destination.JndiDestinationResolver">
+        <property name="jndiTemplate" ref="jndiTemplate"/>
+        <property name="cache" value="true"/>
+        <property name="fallbackToDynamicDestination" value="false"/>
+    </bean>
+
+
+    <!--JMS CONFIGURE-->
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="queueConnectionFactory"/>
+        <property name="destinationResolver" ref="destinationResolver"/>
+        <property name="defaultDestinationName" value="queue1"/>
+        <property name="pubSubDomain" value="false"/>
+    </bean>
+
+    <bean id="jmsSender" class="haier.activemq.test.jms.client.JMSSender">
+        <property name="jmsTemplate" ref="jmsTemplate"/>
+        <property name="queueName" value="queue1"/>
+    </bean>
+
+    <bean id="jmsSenderConvert" class="haier.activemq.test.jms.client.JMSSenderConvert">
+        <property name="jmsTemplate" ref="jmsTemplate"/>
+        <property name="queueName" value="queue1"/>
+        <property name="queueDest" ref="queueDestination"/>
+    </bean>
+
+    <bean id="jmsSenderReply" class="haier.activemq.test.jms.client.JMSSenderReply">
+        <property name="jmsTemplate" ref="jmsTemplate"/>
+        <property name="requestQ" value="request"/>
+        <property name="replyQ" value="response"/>
+    </bean>
+
+</beans>

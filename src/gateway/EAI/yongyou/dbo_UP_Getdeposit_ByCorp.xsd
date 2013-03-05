@@ -1,0 +1,63 @@
+<schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbo/UP_Getdeposit_ByCorp/" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/dbo/UP_Getdeposit_ByCorp/">
+   <element name="InputParameters">
+      <complexType>
+         <sequence>
+            <element name="DBAccount" db:index="1" db:type="VARCHAR" minOccurs="0" nillable="true">
+               <simpleType>
+                  <restriction base="string">
+                     <maxLength value="20"/>
+                  </restriction>
+               </simpleType>
+            </element>
+            <element name="Month" db:index="2" db:type="VARCHAR" minOccurs="0" nillable="true">
+               <simpleType>
+                  <restriction base="string">
+                     <maxLength value="2"/>
+                  </restriction>
+               </simpleType>
+            </element>
+            <element name="begindate" db:index="3" db:type="VARCHAR" minOccurs="0" nillable="true">
+               <simpleType>
+                  <restriction base="string">
+                     <maxLength value="50"/>
+                  </restriction>
+               </simpleType>
+            </element>
+            <element name="enddate" db:index="4" db:type="VARCHAR" minOccurs="0" nillable="true">
+               <simpleType>
+                  <restriction base="string">
+                     <maxLength value="50"/>
+                  </restriction>
+               </simpleType>
+            </element>
+         </sequence>
+      </complexType>
+   </element>
+   <element name="OutputParameters">
+      <complexType>
+         <sequence>
+            <element name="RowSet" type="db:RowSet" db:type="RowSet" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+         </sequence>
+      </complexType>
+   </element>
+   <complexType name="RowSet">
+      <sequence>
+         <element name="Row" minOccurs="0" maxOccurs="unbounded" nillable="true">
+            <complexType>
+               <sequence>
+                  <element name="Column" maxOccurs="unbounded" nillable="true">
+                     <complexType>
+                        <simpleContent>
+                           <extension base="string">
+                              <attribute name="name" type="string" use="required"/>
+                              <attribute name="sqltype" type="string" use="required"/>
+                           </extension>
+                        </simpleContent>
+                     </complexType>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+</schema>

@@ -1,0 +1,105 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+        <style type="text/css">
+            .exportbutton {
+                width: 500px;
+                text-align: right;
+            }
+        </style>
+        <script language="JavaScript" type="text/JavaScript">
+            //<![CDATA[
+            window.onload = doOnLoad;
+            function isIE6() {
+                var Sys = {};
+                var ua = navigator.userAgent.toLowerCase();
+                var s;
+                (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+                        (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+                                (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+                                        (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+                                                (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+                if (Sys.ie) {
+                    if (Sys.ie == '6.0')
+                        return true;
+                    else
+                        return false;
+                } else {
+                    return false;
+                }
+
+            }
+
+            function doOnLoad() {
+                var w_width;
+                var w_height;
+
+                if (isIE6()) {
+                    w_height = document.body.clientHeight;
+                    w_width = document.body.clientWidth;
+                } else {
+                    w_height = document.documentElement.clientHeight;
+                    w_width = document.documentElement.clientWidth;
+                }
+
+                document.getElementById('top').style.marginTop = (w_height - 300) / 2 + 'px';
+                document.getElementById('top').style.marginLeft = (w_width - 500) / 2 + 'px';
+            }
+
+            //]]>
+        </script>
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="entry" id="top">
+            <p:growl id="msgs" showDetail="false"/>
+            <h:form id="form">
+                <div>
+                    <p:panel header="选择报表日期" style="width:500px;">
+                        <h:panelGrid columns="2" cellspacing="15" style="margin-top: 15px;">
+                            <h:outputLabel value="SBS柜员号:" />
+                            <p:inputText id="tellerid1" rendered="#{tellerTxnRptAction.leaderFlag}"
+                                         disabled="false" required="true"
+                                         requiredMessage="柜员号不能为空。"
+                                         value="#{tellerTxnRptAction.tellerId}"/>
+                            <p:inputText id="tellerid2" rendered="#{!tellerTxnRptAction.leaderFlag}"
+                                         disabled="true" required="true"
+                                         requiredMessage="柜员号不能为空。"
+                                         value="#{tellerTxnRptAction.tellerId}"/>
+
+                            <h:outputLabel value="起始日期:" />
+                            <p:inputText id="startdate" required="true" requiredMessage="日期不能为空。"
+                                         value="#{tellerTxnRptAction.startdate}"
+                                         onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+                            <h:outputLabel value="结束日期:" />
+                            <p:inputText id="enddate" required="true" requiredMessage="日期不能为空。"
+                                         value="#{tellerTxnRptAction.enddate}"
+                                         onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+                        </h:panelGrid>
+                        <p:separator/>
+                        <h:panelGrid columns="1" columnClasses="exportbutton">
+                            <p:commandButton  value="EXCEL导出" image="ui-icon-disk" ajax="false"
+                                             action="#{tellerTxnRptAction.onExport}"/>
+                        </h:panelGrid>
+                    </p:panel>
+
+                    <p:ajaxStatus style="height:20px;text-align:center">
+                        <f:facet name="start">
+                            <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                        </f:facet>
+                        <f:facet name="complete">
+                            <h:outputText value=""/>
+                        </f:facet>
+                    </p:ajaxStatus>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>

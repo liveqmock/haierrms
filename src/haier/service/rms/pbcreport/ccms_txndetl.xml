@@ -1,0 +1,72 @@
+select 'C5007437000019' 金融机构代码, '1' 客户类型, data.*
+        from (select a.ab_cust_id 客户号,
+            '1' 贷款主体行业类别,
+            '' 借款人登记注册地编码,
+            '' 企业出资人经济成分,
+            '' 企业规模,
+            a.AB_ACCTNO 贷款借据编码,
+            case a.ab_amorz_type
+            when '4' then '022'
+            when '5' then '0219'
+            end 产品类别,
+            '100' 贷款实际投向,
+
+            to_char(to_date(a.AB_SETUP_DATE, 'yyyyMMdd'), 'yyyy-MM-dd') 贷款发放日期,
+            to_char((SELECT add_months(to_date(a.AB_FIRST_DUE_DATE,
+            'yyyyMMdd'),
+            a.AB_TOTAL_TERM - 1)
+            FROM dual),
+            'yyyy-MM-dd') 贷款到期日期,
+
+            case a.AB_TERMINATION_IND
+            when 'Y' then
+            to_char(to_date(trim(a.AB_TERMINATION_DATE), 'yyyyMMdd'),
+            'yyyy-mm-dd')
+            when 'N' then
+            to_date('', 'yyyy-MM-dd')
+            end 贷款实际终止日期,
+            'CNY' 币种,
+
+            data1.principal 贷款借据金额,
+            --'' 外币折美元金额,
+            case i.IP_RATE
+            when 0 then
+            'RF01'
+            else
+            'RF02'
+            end 利率是否固定,
+            i.IP_RATE 利率水平,
+            l.AD_USER_CD_6 贷款担保方式,
+            case a.ab_loan_status
+            when 'N' then
+            'RS01'
+            else
+            'RS03'
+            end 贷款状态,
+            data1.prinbackflag 贷款发放收回标志,
+            '${enddate}' 上报日期
+
+        from TBL_ACM_ACCBSC a,
+            TBL_ADM_APPDTL l,
+            tbl_pcm_intprm i,
+            (select b.ab_acctno acctno,
+            b.AB_PRINCIPAL principal,
+            '1' prinbackflag,
+            b.AB_SETUP_DATE txndate
+            from tbl_acm_accbsc b
+            union
+            select e.aj_acctno acctno,
+            e.aj_txn_amt principal,
+            '0' prinbackflag,
+            AJ_TXN_date txndate
+            from tbl_acm_accjnl e
+        where (e.aj_txn_type = 'NormalPrin' or
+            e.aj_txn_type = 'OverDuePrin')
+            and aj_txn_cd = '590') data1
+            where a.ab_acctno = l.AD_APPL_NO
+            and a.AB_INT_RATE_NO = i.IP_INT_RATE_NO
+            and a.ab_acctno = data1.acctno
+            and data1.txndate
+                between to_char(to_date('${begindate}','yyyy-mm-dd'),'yyyymmdd')
+                and to_char(to_date('${enddate}','yyyy-mm-dd'),'yyyymmdd')
+        ) data

@@ -1,0 +1,47 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+    </ui:define>
+
+    <ui:define name="content">
+        <p:messages id="msgs" showDetail="false"/>
+        <h:form id="form">
+            <div id="header">
+                <div>
+                    <p:panel header="业务日期">
+                        <h:panelGrid columns="2" cellspacing="5">
+
+                            <h:outputLabel value="启动日期:" for="startdate"/>
+                            <p:calendar  id="startdate" value="#{disReportAction.startdate}" mode="popup" pattern="yyyy-MM-dd"
+                                        locale="zh_CN" showButtonPanel="true" navigator="true"
+                                        required="true" requiredMessage="日期不能为空。"/>
+
+                            <h:outputText value=""/>
+                            <h:panelGroup>
+                                <p:commandButton id="qrybtn" value="启动" action="#{disReportAction.doStart}"
+                                                 update="msgs">
+                                </p:commandButton>
+                            </h:panelGroup>
+                        </h:panelGrid>
+                    </p:panel>
+                </div>
+            </div>
+            <p:ajaxStatus style="height:20px;text-align:center">
+                <f:facet name="start">
+                    <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                </f:facet>
+                <f:facet name="complete">
+                    <h:outputText value=""/>
+                </f:facet>
+            </p:ajaxStatus>
+
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>

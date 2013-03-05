@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="haier.repository.dao.pbcrateReport.PbcrateReportMapper">
+
+    <update id="updateusdamtLoanbal" parameterType="String">
+        update pbc_rate_loanbal t
+        set t.usdamt = round(t.ioubalamt * trunc((select c.rate
+                                      from tempcurrate c
+                                     where c.intcur = t.currencycode
+                                       and c.yyyymm = #{yyyymm}) /
+                                   (select c1.rate
+                                      from tempcurrate c1
+                                     where c1.intcur = 'USD'
+                                       and c1.yyyymm = #{yyyymm}),
+                                   10) /
+                  (select c2.ratebasic
+                     from tempcurrate c2
+                    where c2.intcur = t.currencycode
+                      and c2.yyyymm = #{yyyymm}),2)
+        where t.currencycode not in ('CNY')
+          and t.reportdate = #{strdate}
+    </update>
+    <update id="updateusdamtDepositbal" parameterType="String">
+        update pbc_rate_depositbal t
+        set t.usdamt = round(t.balamt * trunc((select c.rate
+                                      from tempcurrate c
+                                     where c.intcur = t.currencycode
+                                       and c.yyyymm = #{yyyymm}) /
+                                   (select c1.rate
+                                      from tempcurrate c1
+                                     where c1.intcur = 'USD'
+                                       and c1.yyyymm = #{yyyymm}),
+                                   10) /
+                  (select c2.ratebasic
+                     from tempcurrate c2
+                    where c2.intcur = t.currencycode
+                      and c2.yyyymm = #{yyyymm}),2)
+        where t.currencycode not in ('CNY')
+          and t.reportdate = #{strdate}
+    </update>
+    <select id="qryPbcrateLoanBal" parameterType="String" resultType="haier.repository.model.pbcrateReport.PbcrateBean">
+        select
+        temp.productstypecode
+        ,sum(cnt) as cnt
+        ,sum(temp.lbal) as lbal
+        ,temp.currencycode
+        from
+        (
+            select substr(t.productstypecode, 0, 2) as productstypecode,
+                   count(*) as cnt,
+                   (case
+                     when t.currencycode = 'CNY' then
+                      sum(t.ioubalamt) / 10000
+                     else
+                      sum(t.usdamt) / 10000
+                   end)
+                   as lbal,
+                   (case when t.currencycode='CNY' then 'CNY' else 'USD' end) as currencycode
+                from pbc_rate_loanbal t
+                where
+                    t.reportdate = #{strdate}
+                group by substr(t.productstypecode,0,2),t.currencycode
+            ) temp
+         group by temp.productstypecode,temp.currencycode
+    </select>
+    <select id="qryPbcrateDepositBal" parameterType="String"
+            resultType="haier.repository.model.pbcrateReport.PbcrateBean">
+        <![CDATA[
+
+        select
+            temp.productstypecode
+            ,sum(cnt) as cnt
+            ,sum(temp.lbal) as lbal
+            ,temp.currencycode
+        from
+            (
+            select substr(t.productstypecode, 0, 2) as productstypecode,
+                   (case
+                     when t.currencycode = 'CNY' then
+                      sum(t.balamt) / 10000 else
+                       sum(t.usdamt) / 10000
+                   end) as lbal,
+                   count(*) as cnt,
+                   (case when t.currencycode='CNY' then 'CNY' else 'USD' end) as currencycode
+              from pbc_rate_depositbal t
+             where t.reportdate=#{strdate}
+             group by substr(t.productstypecode, 0, 2), t.currencycode
+             ) temp
+        group by temp.productstypecode,temp.currencycode
+
+        ]]>
+    </select>
+    <select id="qryPbcrateLoanDetl" parameterType="String"
+            resultType="haier.repository.model.pbcrateReport.PbcrateBean">
+        select
+        temp.productstypecode
+        ,sum(cnt) as cnt
+        ,sum(temp.lbal) as lbal
+        ,temp.currencycode
+        from
+        (
+        select substr(t.productstypecode, 0, 2) as productstypecode,
+               count(*) as cnt,
+               (case
+                 when t.currencycode = 'CNY' then
+                  sum(case
+                        when t.LOANSENDRECVCODE = '1' then
+                         t.ioubalamt
+                        else
+                         -t.ioubalamt
+                      end) / 10000
+                 else
+                  sum(case
+                        when t.LOANSENDRECVCODE = '1' then
+                         t.usdamt
+                        else
+                         -t.usdamt
+                      end)/ 10000
+               end) as lbal,
+               (case
+                 when t.currencycode = 'CNY' then
+                  'CNY'
+                 else
+                  'USD'
+               end) as currencycode
+          from pbc_rate_loandetl t
+         where t.reportdate = #{strdate}
+         group by substr(t.productstypecode, 0, 2), t.currencycode
+        ) temp
+         group by temp.productstypecode,temp.currencycode
+    </select>
+    <select id="qryPbcrateDepositDetl" parameterType="String"
+            resultType="haier.repository.model.pbcrateReport.PbcrateBean">
+        <![CDATA[
+
+        select
+        temp.productstypecode
+        ,sum(cnt) as cnt
+        ,sum(temp.lbal) as lbal
+        ,temp.currencycode
+        from
+        (
+        select substr(t.productstypecode, 0, 2) as productstypecode,
+               count(*) as cnt,
+               (case when t.currencycode = 'CNY' then
+                sum(case when t.depositflag = '1' then t.amt else - t.amt end) /
+                10000 else
+                sum(case when t.depositflag = '1' then t.usdamt else - t.usdamt end)/
+                10000
+                end) as lbal,
+               (case
+                 when t.currencycode = 'CNY' then
+                  'CNY'
+                 else
+                  'USD'
+               end) as currencycode
+          from pbc_rate_depositdetl t
+         where t.productstypecode <> '011'
+           and t.reportdate = #{strdate}
+         group by substr(t.productstypecode, 0, 2), t.currencycode
+        ) temp
+         group by temp.productstypecode,temp.currencycode
+
+        ]]>
+    </select>
+
+    <update id="updateusdamtld" parameterType="String">
+         update pbc_rate_loandetl t
+        set t.usdamt = round(t.ioubalamt * trunc((select c.rate
+                                      from tempcurrate c
+                                     where c.intcur = t.currencycode
+                                       and c.yyyymm = #{yyyymm}) /
+                                   (select c1.rate
+                                      from tempcurrate c1
+                                     where c1.intcur = 'USD'
+                                       and c1.yyyymm = #{yyyymm}),
+                                   10) /
+                  (select c2.ratebasic
+                     from tempcurrate c2
+                    where c2.intcur = t.currencycode
+                      and c2.yyyymm = #{yyyymm}),2)
+        where
+        t.reportdate = #{strdate}
+        and t.currencycode not in ('CNY')
+    </update>
+    <update id="updateusdamtdd" parameterType="String">
+        update pbc_rate_depositdetl t
+        set t.usdamt = round(t.amt * trunc((select c.rate
+                                      from tempcurrate c
+                                     where c.intcur = t.currencycode
+                                       and c.yyyymm = #{yyyymm}) /
+                                   (select c1.rate
+                                      from tempcurrate c1
+                                     where c1.intcur = 'USD'
+                                       and c1.yyyymm = #{yyyymm}),
+                                   10) /
+                  (select c2.ratebasic
+                     from tempcurrate c2
+                    where c2.intcur = t.currencycode
+                      and c2.yyyymm = #{yyyymm}),2)
+        where t.currencycode not in ('CNY')
+          and t.reportdate= #{strdate}
+    </update>
+</mapper>

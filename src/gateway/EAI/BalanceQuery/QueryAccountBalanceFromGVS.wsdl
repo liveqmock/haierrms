@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s0:definitions name="QueryAccountBalanceFromGVS" targetNamespace="http://www.example.org/QueryAccountBalanceFromGVS/" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://www.example.org/QueryAccountBalanceFromGVS/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <s0:types>
+    <xsd:schema targetNamespace="http://www.example.org/QueryAccountBalanceFromGVS/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.example.org/QueryAccountBalanceFromGVS/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="QueryAccountBalanceFromGVS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="in" type="tns:InputType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryAccountBalanceFromGVSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="out" type="tns:OutputType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="InputType"/>
+      <xsd:complexType name="OutputType">
+        <xsd:sequence>
+          <xsd:element name="BUTXT" type="xsd:string"/>
+          <xsd:element name="SAKNR" type="xsd:string"/>
+          <xsd:element name="TXT50_1" type="xsd:string"/>
+          <xsd:element name="TXT50_2" type="xsd:string"/>
+          <xsd:element name="WAERS" type="xsd:string"/>
+          <xsd:element name="TYUE" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </s0:types>
+  <s0:message name="QueryAccountBalanceFromGVSRequest">
+    <s0:part element="s1:QueryAccountBalanceFromGVS" name="parameters"/>
+  </s0:message>
+  <s0:message name="QueryAccountBalanceFromGVSResponse">
+    <s0:part element="s1:QueryAccountBalanceFromGVSResponse" name="parameters"/>
+  </s0:message>
+  <s0:portType name="QueryAccountBalanceFromGVS">
+    <s0:operation name="QueryAccountBalanceFromGVS">
+      <s0:input message="s1:QueryAccountBalanceFromGVSRequest"/>
+      <s0:output message="s1:QueryAccountBalanceFromGVSResponse"/>
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="QueryAccountBalanceFromGVSSOAP" type="s1:QueryAccountBalanceFromGVS">
+    <s2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <s0:operation name="QueryAccountBalanceFromGVS">
+      <s2:operation soapAction="http://www.example.org/QueryAccountBalanceFromGVS/QueryAccountBalanceFromGVS"/>
+      <s0:input>
+        <s2:body use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal"/>
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="QueryAccountBalanceFromGVS">
+    <s0:port binding="s1:QueryAccountBalanceFromGVSSOAP" name="QueryAccountBalanceFromGVSSOAP">
+      <s2:address location="http://10.135.1.110:7001/EAI/service/GVS/FinanceBalance/QueryAccountBalanceFromGVS/QueryAccountBalanceFromGVS"/>
+    </s0:port>
+  </s0:service>
+</s0:definitions>

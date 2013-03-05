@@ -1,0 +1,36 @@
+<schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified"
+	targetNamespace="http://xmlns.oracle.com/QueryFinanceBalanceFromYY"
+	xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:ns="http://xmlns.oracle.com/QueryFinanceBalanceFromYY">
+	<element name="QueryFinanceBalanceFromYYProcessRequest">
+		<complexType>
+			<sequence>
+				<element name="input" type="ns:InputType" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="QueryFinanceBalanceFromYYProcessResponse">
+		<complexType>
+			<sequence>
+				<element name="result" type="ns:outputType" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+        <complexType name="InputType">
+  <sequence>
+   <element name="DBAccount" type="string"/>
+   <element name="Month" type="string"/>
+   <element name="begindate" type="string"/>
+   <element name="enddate" type="string"/>
+  </sequence>
+ </complexType>
+ <complexType name="outputType">
+  <sequence>
+   <element name="ccode" type="string"/>
+   <element name="me" type="string"/>
+   <element name="ccode_name" type="string"/>
+   <element name="bz" type="string"/>
+  </sequence>
+ </complexType>
+</schema>

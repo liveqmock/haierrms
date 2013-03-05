@@ -1,0 +1,68 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="entry" id="top">
+            <p:messages id="msgs" showDetail="false"/>
+            <h:form id="form">
+                <div style="margin-top: 20px;">
+                    <p:panel header="选择报表日期">
+                        <h:panelGrid columns="2" cellspacing="30">
+
+                            <h:outputLabel value="报表日期:" style="font-weight: bold;" for="startdate"/>
+                            <p:inputText id="startdate" required="true" requiredMessage="日期不能为空。"
+                                         value="#{pbcRateRptAction.startdate}"
+                                         onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+                        </h:panelGrid>
+                    </p:panel>
+                    <br/>
+                    <p:menubar>
+                        <p:menuitem type="push" value="①导入信贷、消费信贷、SBS数据(注意：需通知消费信贷系统手工恢复月底数据)"
+                                    action="#{pbcRateRptAction.onImport}" update="msgs, pdt" />
+<!--
+                        <p:menuitem type="push" value="导入信贷系统发生额数据" icon="ui-icon ui-icon-document"
+                                    action="#{pbcRateRptAction.onImportCmsTxndetlData}" update="msgs, pdt" />
+                        <p:menuitem type="push" value="导入信贷系统余额数据" icon="ui-icon ui-icon-disk"
+                                    action="#{pbcRateRptAction.onImportCmsBalanceData}" update="msgs, pdt"/>
+                        <p:menuitem type="push" value="导入SBS系统余额数据" icon="ui-icon ui-icon-disk"
+                                    action="#{pbcRateRptAction.onImportSbsBalanceData}" update="msgs, pdt"/>
+-->
+                    </p:menubar>
+                    <p:menubar style="margin-top: 2px">
+                        <p:menuitem type="push" value="②导出核对表"
+                                    action="#{pbcRateRptAction.onExportXls_Check}" ajax="false" />
+                    </p:menubar>
+                    <p:menubar style="margin-top: 2px">
+                        <p:menuitem type="push" value="③导出贷款余额上报文件"
+                                    action="#{pbcRateRptAction.onExportTxt_cmsbal}" ajax="false" />
+                        <p:menuitem type="push" value="④导出贷款发生额上报文件"
+                                    action="#{pbcRateRptAction.onExportTxt_CmsTxndetl}" ajax="false" />
+                        <p:menuitem type="push" value="⑤导出存款余额上报文件"
+                                    action="#{pbcRateRptAction.onExportTxt_sbsbal}" ajax="false" />
+                    </p:menubar>
+
+
+                    <p:ajaxStatus style="height:20px;text-align:center">
+                        <f:facet name="start">
+                            <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                        </f:facet>
+                        <f:facet name="complete">
+                            <h:outputText value=""/>
+                        </f:facet>
+                    </p:ajaxStatus>
+
+                </div>
+
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

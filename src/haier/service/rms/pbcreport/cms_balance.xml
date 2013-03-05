@@ -1,0 +1,266 @@
+with bal as
+        (select 'C5007437000019' 金融机构代码, datas.*
+        from ((select
+        --a.客户名,
+        a.客户类型,
+        a.组织机构代码,
+        a.行业类别,
+        a.注册地编码,
+        a.企业出资人经济成分,
+        a.企业规模,
+        a.贷款借据编码,
+        a.贷款类别,
+        a.贷款实际投向,
+        a.贷款发放日期,
+        a.贷款到期日期,
+        to_char(ext.ENDDATE, 'yyyy-mm-dd') 展期到期日,
+        a.币种,
+        a.金额,
+        a.利率是否固定,
+        a.利率水平,
+        a.担保方式,
+        a.贷款质量,
+        a.贷款状态,
+        a.上报日期
+        from (select cust.cname 客户名,
+        case
+        when length(corp.ORG_CODE) = 10 then
+        substr(corp.ORG_CODE, 1, 8) ||
+        substr(corp.ORG_CODE, 10, 1)
+        else
+        cust.custno
+        end 组织机构代码,
+        case cust.cust_type
+        when '1' then
+        '0'
+        when '2' then
+        '1'
+        end 客户类型,
+        case
+        when length(cust.MISCFLGS) = 6 then
+        case
+        when substr(cust.MISCFLGS, 6, 1) = '1' then
+        '2'
+        else
+        substr(corp.BIZ_TYPE, 1, 1)
+        end
+        else
+        substr(corp.BIZ_TYPE, 1, 1)
+        end 行业类别,
+        corp.DIQUBIANHAO 注册地编码,
+        case corp.CORP_MODE
+        when '110' then
+        'A0101'
+        when '120' then
+        'A0201'
+        when '130' then
+        'B0101'
+        when '141' then
+        'A0102'
+        when '142' then
+        'A0202'
+        when '143' then
+        'A0102'
+        when '149' then
+        'B0102'
+        when '151' then
+        'A0102'
+        when '159' then
+        'B0102'
+        when '160' then
+        'B0101'
+        when '171' then
+        'B0102'
+        when '172' then
+        'B0102'
+        when '173' then
+        'B0102'
+        when '174' then
+        'B0102'
+        when '190' then
+        'B0102'
+        when '210' then
+        'B0202'
+        when '220' then
+        'B0202'
+        when '230' then
+        'B0202'
+        when '240' then
+        'B0202'
+        when '310' then
+        'B0302'
+        when '320' then
+        'B0302'
+        when '330' then
+        'B0302'
+        when '340' then
+        'B0302'
+        when '210' then
+        'B0202'
+        when '220' then
+        'B0202'
+        else
+        'B0201'
+        end 企业出资人经济成分,
+        case corp.CORP_SCALE
+        when '1' then
+        'CS01'
+        when '2' then
+        'CS01'
+        when '3' then
+        'CS02'
+        when '4' then
+        'CS03'
+        else
+        'CS01'
+        end 企业规模,
+        credencd.CREDENCENO 贷款借据编码,
+        '022' 贷款类别,
+        case
+        when length(cust.MISCFLGS) = 6 then
+        case
+        when substr(cust.MISCFLGS, 6, 1) = '1' then
+        '200'
+        else
+        corp.SHIJITOUXIANG
+        end
+        else
+        corp.SHIJITOUXIANG
+        end 贷款实际投向,
+        to_char(credencd.startdate, 'yyyy-mm-dd') 贷款发放日期,
+        to_char(credencd.enddate, 'yyyy-mm-dd') 贷款到期日期,
+        credencd.curcd 币种,
+        round(credencd.amt, 2) 金额,
+        case credencd.guar
+        when '1000' then
+        'D'
+        when '0000' then
+        'D'
+        when '0100' then
+        'C'
+        when '0010' then
+        'B'
+        when '0001' then
+        'A'
+        else
+        'Z'
+        end 担保方式,
+        case credencd.intrate_type
+        when '1' then
+        'RF01'
+        else
+        'RF02'
+        end 利率是否固定,
+        credencd.intrate 利率水平,
+        type 贷款质量,
+        case credencd.trm_class
+        when '0' then
+        'FS01'
+        when '1' then
+        'FS03'
+        else
+        'FS01'
+        end 贷款状态,
+        credencd.rptdt 上报日期
+        from customer_info cust,
+        corp_basic_info_view corp,
+        (select comm.custcd custcd,
+        comm.CREDENCENO CREDENCENO,
+        'QL01' type,
+        comm.trm_class trm_class,
+        comm.paydate paydate,
+        ballog.lnbal amt,
+        comm.CURCD curcd,
+        cast(con.GUAT_TYPE_LIST as varchar2(4)) guar,
+        comm.PAYDATE startdate,
+        comm.ENDDATE enddate,
+        comm.intrate,
+        comm.intrate_type,
+        ballog.REPORT_DATE rptdt
+        from comm_credence_info comm,
+        cont_base_info     con,
+        LOAN_BAL_INFO_LOG  ballog
+        where con.contractno = comm.contractno
+        and ballog.credenceno = comm.credenceno
+        and PROVIDE_STATE in ('3', '9')) credencd
+        where cust.custcd = corp.custcd
+        and credencd.custcd = cust.custcd) a
+        left outer join EXT_CREDENCE_INFO ext
+        on ext.credenceno = a.贷款借据编码) union all
+        (select
+        --cust.cname 客户名,
+        case cust.cust_type
+        when '1' then
+        '0'
+        when '2' then
+        '1'
+        end 客户类型,
+        cust.custno 组织机构代码,
+        '1' 行业类别,
+        '' 注册地编码,
+        '' 企业出资人经济成分,
+        '' 企业规模,
+        credencd.CREDENCENO 贷款借据编码,
+        case loantype
+        when '101003' then
+        '0219'
+        when '101001' then
+        '0211'
+        else
+        '0211'
+        end 贷款类别,
+        '100' 贷款实际投向,
+        to_char(credencd.startdate, 'yyyy-mm-dd') 贷款发放日期,
+        to_char(credencd.enddate, 'yyyy-mm-dd') 贷款到期日期,
+        null 展期到期,
+        credencd.curcd 币种,
+        round(credencd.amt, 2) 金额,
+
+        'RF02' 利率是否固定,
+        credencd.intrate 利率水平,
+        case credencd.guar
+        when '1' then
+        'A'
+        when '2' then
+        'B'
+        when '3' then
+        'C'
+        when '4' then
+        'D'
+        when '5' then
+        'E'
+        else
+        'Z'
+        end 担保方式,
+        type 贷款质量,
+        case credencd.trm_class
+        when '0' then
+        'FS01'
+        when '1' then
+        'FS03'
+        else
+        'FS01'
+        end 贷款状态,
+        credencd.rptdt 上报日期
+        from customer_info cust,
+        ((select comm.custcd custcd,
+        comm.CINO CREDENCENO,
+        comm.trm_class trm_class,
+        con.lnid loantype,
+        'QL01' type,
+        ballog.lnbal amt,
+        con.CURCD curcd,
+        GUATCODE guar,
+        comm.ISDATE startdate,
+        comm.TEDATE enddate,
+        comm.intrate,
+        ballog.REPORT_DATE rptdt
+        from LOANCINO          comm,
+        LOANINFO          con,
+        LOAN_BAL_INFO_LOG ballog
+        where con.contractno = comm.contractno
+        and ballog.credenceno = comm.cino
+        and con.STATUS = '1')) credencd
+        where credencd.custcd = cust.custcd)) datas)
+
+        select * from bal t where t.上报日期=to_char(to_date('${reportdate}','yyyy-mm-dd'),'yyyymm')

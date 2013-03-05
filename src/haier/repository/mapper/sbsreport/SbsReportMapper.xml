@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="haier.repository.dao.sbsreport.SbsReportMapper">
+
+    <!--zhanrui 20110411  分币种查询企业存款类余额  -->
+    <select id="selectHistoryActBal" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalHistory">
+        select t.*,
+            (case when t.currcode='001' then t.homecurbal
+                else  round(t.homecurbal / 100 * t.roe, 2)
+                end) as rmbbal
+          from (select a.txndate,
+                       a.actno,
+                       a.actname,
+                       a.acttype,
+                       (select enuitemlabel from ptenudetail where enutype='ACCTTYPE' and enuitemvalue = a.acttype) as acttypename,
+                       (select actattr from rms_sbsactattr where actname = a.actname) as actattr,
+                       a.balamt as homecurbal,
+                       substr(a.actno, 16, 3) as currcode,
+                       (select trim(curnmc)
+                          from sbs_actccy
+                         where curcde = substr(a.actno, 16, 3)) as currname,
+                       (select ratval
+                          from sbs_actcxr
+                         where curcde = substr(a.actno, 16, 3)
+                           and txndate = #{txndate}
+                           and xrtcde = '8'
+                           and secccy = '001') as roe
+                  from (select *
+                          from sbs_actbal
+                         where txndate = #{txndate}
+                           <if test = "acttype == 'ALL'">
+                                  and actno in (select actno from mt_acttype)
+                           </if>
+                           <if test = "acttype != 'ALL'">
+                                  and actno in (select actno from mt_acttype where category = #{acttype})
+                           </if>
+        ) a) t
+    </select>
+    <!--zhanrui 20110411  查询某日A股或H股币种清单  -->
+    <select id="selectCurrcodeList" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalHistory">
+            select currcode,
+                   (select trim(curnmc) from sbs_actccy where curcde = currcode) as currname,
+                   (select ratval
+                      from sbs_actcxr
+                     where curcde = currcode
+                       and txndate = #{txndate}
+                       and xrtcde = '8'
+                       and secccy = '001') as roe
+              from (select substr(a.actno, 16, 3) as currcode, count(*)
+                      from (select *
+                              from sbs_actbal
+                             where txndate = #{txndate}
+                                <if test = "acttype == 'ALL'">
+                                    and actno in (select actno from mt_acttype)
+                                </if>
+                                <if test = "acttype != 'ALL'">
+                                    and actno in (select actno from mt_acttype where category = #{acttype})
+                                </if>
+                                ) a
+                     group by substr(a.actno, 16, 3)) x
+    </select>
+
+    <!--zhanrui 20110509  关联交易月控报表(本币为人民币的数据) -->
+    <select id="selectRelatedTxnReportRMBData" parameterType="String" resultType="java.lang.Long">
+        select round(sum(rmbbal)/10000,0) as totalamt
+          from
+            (select t.*, t.homecurbal as rmbbal
+              from (select a.txndate,
+                           a.actno,
+                           a.actname,
+                           a.acttype,
+                           a.balamt as homecurbal,
+                           substr(a.actno, 16, 3) as currcode,
+                           (select ratval
+                              from sbs_actcxr
+                             where curcde = substr(a.actno, 16, 3)
+                               and txndate = #{txndate}
+                               and xrtcde = '8'
+                               and secccy = '001') as roe
+                      from (select *
+                              from sbs_actbal
+                             where txndate = #{txndate}
+                               and actno in
+                                   (select actno from mt_acttype where category = #{acttype})) a) t) r
+               where r.currcode ='001'
+    </select>
+    <!--zhanrui 20110509  关联交易月控报表(本币为非人民币的数据) -->
+    <select id="selectRelatedTxnReportForeignData" parameterType="String" resultType="java.lang.Long">
+        select round(sum(rmbbal)/10000,0) as totalamt
+          from
+            (select t.*, round(t.homecurbal / 100 * t.roe, 2) as rmbbal
+              from (select a.txndate,
+                           a.actno,
+                           a.actname,
+                           a.acttype,
+                           a.balamt as homecurbal,
+                           substr(a.actno, 16, 3) as currcode,
+                           (select ratval
+                              from sbs_actcxr
+                             where curcde = substr(a.actno, 16, 3)
+                               and txndate = #{txndate}
+                               and xrtcde = '8'
+                               and secccy = '001') as roe
+                      from (select *
+                              from sbs_actbal
+                             where txndate = #{txndate}
+                               and actno in
+                                   (select actno from mt_acttype where category = #{acttype})) a) t) r
+               where r.currcode !=  '001'
+    </select>
+
+    <!--zhanrui 20110509  统计月度帐户余额增加排名TOP10 -->
+    <select id="selectAccountBalanceIncreaseTop10" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalRankBean">
+        <![CDATA[
+        select rownum as seqno,r.*
+          from (select *
+                  from (select a.actno,
+                               a.actname,
+                               round((a.balamt - nvl(b.balamt, 0)) / 10000, 0) as balamt,
+                               round(a.balamt/10000, 0) as lastdayamt,
+                               round(b.balamt/10000, 0) as firstdayamt
+                          from (select * from SBS_ACTBAL where txndate = #{lastdate}) a,
+                               (select * from SBS_ACTBAL where txndate = #{firstdate}) b
+                         where a.actno = b.actno(+)
+                         order by a.actno) t
+                 order by t.balamt desc) r
+         where rownum <= 10
+         ]]>
+    </select>
+    <!--zhanrui 20110509  统计月度帐户余额减少排名TOP10 -->
+    <select id="selectAccountBalanceDecreaseTop10" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalRankBean">
+        <![CDATA[
+        select rownum as seqno,r.actno,r.actname,abs(r.balamt) as balamt,r.lastdayamt,r.firstdayamt
+          from (select *
+                  from (select a.actno,
+                               a.actname,
+                               round((a.balamt - nvl(b.balamt, 0)) / 10000, 0) as balamt,
+                               round(a.balamt/10000, 0) as lastdayamt,
+                               round(b.balamt/10000, 0) as firstdayamt
+                          from (select * from SBS_ACTBAL where txndate = #{lastdate}) a,
+                               (select * from SBS_ACTBAL where txndate = #{firstdate}) b
+                         where a.actno = b.actno(+)
+                         order by a.actno) t
+                 order by t.balamt) r
+         where rownum <= 10
+         ]]>
+    </select>
+
+
+    <!--zhanrui 20110509  统计月度客户存款余额增加排名TOP10 -->
+    <select id="selectCustomerBalanceIncreaseTop10" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalRankBean">
+        <![CDATA[
+        select rownum as seqno,r.*
+          from (select *
+                  from (select t_end.actname, t_end.actattr, t_end.actnum,
+                               round((t_end.balamt - nvl(t_begin.balamt, 0)) / 10000, 0) as balamt,
+                               round(t_end.balamt/10000, 0) as lastdayamt,
+                               round(t_begin.balamt/10000, 0) as firstdayamt
+                          from (
+                                select txndate,actname,sum(rmbbal) as balamt,actattr, count(actno) as actnum from
+                                (select t.*,
+                                       (case  when t.currcode = '001' then  t.homecurbal
+                                         else  round(t.homecurbal / 100 * t.roe, 2)  end) as rmbbal
+                                  from (select a.txndate, a.actno, a.actname, a.acttype,
+                                               (select enuitemlabel from ptenudetail where enutype = 'ACCTTYPE' and enuitemvalue = a.acttype) as acttypename,
+                                               (select actattr from rms_sbsactattr where actname = a.actname) as actattr,
+                                               a.balamt as homecurbal, substr(a.actno, 16, 3) as currcode,
+                                               (select trim(curnmc)  from sbs_actccy where curcde = substr(a.actno, 16, 3)) as currname,
+                                               (select ratval from sbs_actcxr where curcde = substr(a.actno, 16, 3) and txndate = #{lastdate} and xrtcde = '8' and secccy = '001') as roe
+                                          from (select * from sbs_actbal where txndate = #{lastdate} and (acttype = '1' or acttype = '2' or acttype = '3')) a) t)
+                                group by txndate,actname,actattr
+                               ) t_end,
+                                (select txndate,actname,sum(rmbbal) as balamt,actattr, count(actno) as actnum from
+                                (select t.*,
+                                       (case  when t.currcode = '001' then  t.homecurbal
+                                         else  round(t.homecurbal / 100 * t.roe, 2)  end) as rmbbal
+                                  from (select a.txndate, a.actno, a.actname, a.acttype,
+                                               (select enuitemlabel from ptenudetail where enutype = 'ACCTTYPE' and enuitemvalue = a.acttype) as acttypename,
+                                               (select actattr from rms_sbsactattr where actname = a.actname) as actattr,
+                                               a.balamt as homecurbal, substr(a.actno, 16, 3) as currcode,
+                                               (select trim(curnmc)  from sbs_actccy where curcde = substr(a.actno, 16, 3)) as currname,
+                                               (select ratval from sbs_actcxr where curcde = substr(a.actno, 16, 3) and txndate = #{firstdate} and xrtcde = '8' and secccy = '001') as roe
+                                          from (select * from sbs_actbal where txndate = #{firstdate} and (acttype = '1' or acttype = '2' or acttype = '3')) a) t)
+                                group by txndate,actname,actattr
+                               ) t_begin
+                         where t_end.actname = t_begin.actname(+))
+                 order by balamt desc) r
+         where rownum <= 10
+         ]]>
+    </select>
+
+    <!--zhanrui 20110509  统计月度客户存款余额减少排名TOP10 -->
+    <select id="selectCustomerBalanceDecreaseTop10" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalRankBean">
+        <![CDATA[
+        select rownum as seqno,r.actname,abs(r.balamt) as balamt,r.lastdayamt,r.firstdayamt,r.actattr,r.actnum
+          from (select *
+                  from (select t_end.actname, t_end.actattr,t_end.actnum,
+                               round((t_end.balamt - nvl(t_begin.balamt, 0)) / 10000, 0) as balamt,
+                               round(t_end.balamt/10000, 0) as lastdayamt,
+                               round(t_begin.balamt/10000, 0) as firstdayamt
+                          from (
+                                select txndate,actname,sum(rmbbal) as balamt,actattr, count(actno) as actnum from
+                                (select t.*,
+                                       (case  when t.currcode = '001' then  t.homecurbal
+                                         else  round(t.homecurbal / 100 * t.roe, 2)  end) as rmbbal
+                                  from (select a.txndate, a.actno, a.actname, a.acttype,
+                                               (select enuitemlabel from ptenudetail where enutype = 'ACCTTYPE' and enuitemvalue = a.acttype) as acttypename,
+                                               (select actattr from rms_sbsactattr where actname = a.actname) as actattr,
+                                               a.balamt as homecurbal, substr(a.actno, 16, 3) as currcode,
+                                               (select trim(curnmc)  from sbs_actccy where curcde = substr(a.actno, 16, 3)) as currname,
+                                               (select ratval from sbs_actcxr where curcde = substr(a.actno, 16, 3) and txndate = #{lastdate} and xrtcde = '8' and secccy = '001') as roe
+                                          from (select * from sbs_actbal where txndate = #{lastdate} and (acttype = '1' or acttype = '2' or acttype = '3')) a) t)
+                                group by txndate,actname,actattr
+                               ) t_end,
+                                (select txndate,actname,sum(rmbbal) as balamt,actattr, count(actno) as actnum from
+                                (select t.*,
+                                       (case  when t.currcode = '001' then  t.homecurbal
+                                         else  round(t.homecurbal / 100 * t.roe, 2)  end) as rmbbal
+                                  from (select a.txndate, a.actno, a.actname, a.acttype,
+                                               (select enuitemlabel from ptenudetail where enutype = 'ACCTTYPE' and enuitemvalue = a.acttype) as acttypename,
+                                               (select actattr from rms_sbsactattr where actname = a.actname) as actattr,
+                                               a.balamt as homecurbal, substr(a.actno, 16, 3) as currcode,
+                                               (select trim(curnmc)  from sbs_actccy where curcde = substr(a.actno, 16, 3)) as currname,
+                                               (select ratval from sbs_actcxr where curcde = substr(a.actno, 16, 3) and txndate = #{firstdate} and xrtcde = '8' and secccy = '001') as roe
+                                          from (select * from sbs_actbal where txndate = #{firstdate} and (acttype = '1' or acttype = '2' or acttype = '3')) a) t)
+                                group by txndate,actname,actattr
+                               ) t_begin
+                         where t_end.actname = t_begin.actname(+))
+                 order by balamt asc) r
+         where rownum <= 10
+         ]]>
+    </select>
+
+    <!--zhanrui 20110509  按企业名称检索某月份内余额变动情况(万元) -->
+    <select id="selectCustomerBalanceOneMonth" parameterType="String" resultType="haier.repository.model.sbsreport.CorpBalanceBean">
+        <![CDATA[
+            select txndate, actname as corpname, round(sum(rmbbal)/10000,0) as balamt, count(actno) as actnum
+              from (select t.*,
+                           (case
+                             when t.currcode = '001' then
+                              t.homecurbal
+                             else
+                              round(t.homecurbal / 100 * t.roe, 2)
+                           end) as rmbbal
+                      from (select a.txndate,
+                                   a.actno,
+                                   a.actname,
+                                   a.acttype,
+                                   a.balamt as homecurbal,
+                                   substr(a.actno, 16, 3) as currcode,
+                                   (select ratval
+                                      from sbs_actcxr
+                                     where curcde = substr(a.actno, 16, 3)
+                                       and txndate = a.txndate
+                                       and xrtcde = '8'
+                                       and secccy = '001') as roe
+                              from (select *
+                                      from sbs_actbal
+                                     where substr(txndate, 1, 7) = #{yearmonth}
+                                       and actname = #{corpname}
+                                       and (acttype = '1' or acttype = '2' or
+                                            acttype = '3')) a) t)
+             group by txndate, actname
+             order by txndate
+         ]]>
+    </select>
+
+</mapper>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="haier.repository.dao.disreport.DisReportMapper">
+    <!--zhanrui 20110411  分币种查询企业存款类余额 按企业名称合并 -->
+    <select id="selectActBal" parameterType="String" resultType="haier.repository.model.disreport.ActbalHistory">
+      select  rownum as seqno,
+         t.*,
+         (select trim(curnmc) from sbs_actccy  where curcde=t.curcde) as curnmc,
+         (case when (acttype='4') then '贷款类'
+           else  '存款类' end) as acttypename
+      from
+        (select a.actname,
+            a.actno,
+            substr(a.actno, 16, 3)as curcde,
+            a.balamt,
+            a.acttype
+         from  sbs_actbal a, dis_actlst b
+         where a.actname = b.actname
+           and a.txndate =  #{txndate}
+         order by a.actname, a.actno) t
+   </select>
+    <!--zhanrui 20110411  分币种查询企业存款类余额 按企业名称合并 -->
+    <select id="selectActBalByCorpName" parameterType="String" resultType="haier.repository.model.disreport.ActbalHistory">
+      select  rownum as seqno,
+         t.*,
+         (select trim(curnmc) from sbs_actccy  where curcde=t.curcde) as curnmc
+      from
+        (select a.actname as actname,
+            substr(a.actno, 16, 3)as curcde,
+            count(*) as actcnt,
+            sum(a.balamt) as balamt
+         from  sbs_actbal a, dis_actlst b
+         where a.actname = b.actname
+           and a.txndate = #{txndate}
+         group by a.actname, substr(a.actno, 16, 3)
+         order by a.actname) t
+   </select>
+</mapper>

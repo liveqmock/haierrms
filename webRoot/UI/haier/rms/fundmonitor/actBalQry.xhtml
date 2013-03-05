@@ -1,0 +1,146 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+    </ui:define>
+
+    <ui:define name="content">
+        <p:messages id="msgs" showDetail="false"/>
+        <h:form id="form">
+            <p:dataTable id="pdt" selectionMode="single"
+                         selection="#{actBalMonitorAction.selectedActbalBean}"
+                         dblClickSelect="true"
+                         rowSelectListener="#{actBalMonitorAction.onRowSelectNavigate}"
+                         onRowSelectUpdate="pdt1"
+                         value="#{actBalMonitorAction.mtActbalChartBeanList}" var="record"
+                         emptyMessage="数据记录为空...">
+                <p:column style="text-align:center">
+                    <f:facet name="header">
+                        查询时间
+                    </f:facet>
+                    <h:outputText value="#{record.qrytime}"/>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        类别：A
+                    </f:facet>
+                    <h:outputText value="#{record.category1}" style="float: right">
+                        <f:convertNumber type="currency" maxFractionDigits="0" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        类别：H
+                    </f:facet>
+                    <h:outputText value="#{record.category4}" style="float: right">
+                        <f:convertNumber type="currency" maxFractionDigits="0" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        类别：F
+                    </f:facet>
+                    <h:outputText value="#{record.category3}" style="float: right">
+                        <f:convertNumber type="currency" maxFractionDigits="0" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        类别：D
+                    </f:facet>
+                    <h:outputText value="#{record.category2}" style="float: right">
+                        <f:convertNumber type="currency" maxFractionDigits="0" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        类别：W
+                    </f:facet>
+                    <h:outputText value="#{record.category5}" style="float: right">
+                        <f:convertNumber type="currency" maxFractionDigits="0" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        合计
+                    </f:facet>
+                    <h:outputText value="#{record.categorySum}" style="float: right">
+                        <f:convertNumber type="currency" maxFractionDigits="0" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+            </p:dataTable>
+
+            <br/>
+
+            <p:dataTable id="pdt1" binding="#{actBalMonitorAction.uiData}"
+                         value="#{actBalMonitorAction.mtActbalBeanList}" var="record"
+                         paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
+                         paginator="true" rows="15" paginatorPosition="bottom"
+                         rowsPerPageTemplate="100,50,30,15"
+                         emptyMessage="数据记录为空...">
+                <f:facet name="header">
+                    <h:outputText value="时点#{actBalMonitorAction.qrytime} 的账户余额清单" style="float: left">
+                    </h:outputText>
+
+                    <div style="text-align: right">
+                        <h:commandButton id="export" title="title" value="Excel导出"
+                                         action="#{actBalMonitorAction.onExportExcel}">
+                        </h:commandButton>
+                    </div>
+                </f:facet>
+                <p:column filterBy="#{record.actno}" filterMatchMode="contains" sortBy="#{record.actno}"
+                          style="text-align:center">
+                    <f:facet name="header">
+                        账号
+                    </f:facet>
+                    <h:outputText value="#{record.actno}"/>
+                </p:column>
+                <p:column sortBy="#{record.actname}" filterBy="#{record.actname}" filterMatchMode="contains">
+                    <f:facet name="header">
+                        户名
+                    </f:facet>
+                    <h:outputText value="#{record.actname}"/>
+                </p:column>
+
+                <p:column sortBy="#{record.balamt}">
+                    <f:facet name="header">余额(本币)</f:facet>
+                    <h:outputText value="#{record.balamt}" style="float: right">
+                        <f:convertNumber type="currency" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+                <p:column sortBy="#{record.rmbamt}">
+                    <f:facet name="header">余额(人民币)</f:facet>
+                    <h:outputText value="#{record.rmbamt}" style="float: right">
+                        <f:convertNumber type="currency" currencySymbol=""/>
+                    </h:outputText>
+                </p:column>
+
+                <p:column style="text-align:center" rendered="#{actBalMonitorAction.bankcd != '999' }">
+                    <f:facet name="header">
+                        开户行
+                    </f:facet>
+                    <h:outputText value="#{record.openingbank}"/>
+                </p:column>
+                <p:column style="text-align:center" rendered="#{actBalMonitorAction.bankcd != '999' }">
+                    <f:facet name="header">
+                        帐户类型
+                    </f:facet>
+                    <h:outputText value="#{record.actattr}"/>
+                </p:column>
+                <p:column style="text-align:center"
+                          filterBy="#{record.category}"
+                          filterMatchMode="exact" filterOptions="#{actBalMonitorAction.categoryOptions}">
+                    <f:facet name="header">
+                        统计类别
+                    </f:facet>
+                    <h:outputText value="#{record.category}"/>
+                </p:column>
+            </p:dataTable>
+        </h:form>
+    </ui:define>
+</ui:composition>

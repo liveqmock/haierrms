@@ -1,0 +1,94 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                template="/templates/ui.xhtml">
+
+
+    <ui:define name="content">
+        <h:form>
+            <div style="margin:20px">
+                <p:growl id="growl" showDetail="true"/>
+
+                <p:panel id="system" header="企业存款余额月度变化统计信息" toggleable="true" closable="true"
+                         toggleSpeed="500" widgetVar="panel">
+
+                    <div id="chart">
+                        <div style="margin-top:5px;">
+                            <p:graphicImage id="barchart" value="#{actbalStatisticsAction.barchart}"
+                                            style="margin-left:10px;"/>
+                        </div>
+                        <f:facet name="options">
+                            <p:menu>
+                                <p:submenu label="Settings">
+                                    <p:menuitem value="转换" url="#"
+                                                icon="/resources/images/update.png" onclick="panel.toggle()"/>
+                                    <p:menuitem value="关闭" url="#"
+                                                icon="/resources/images/delete.png" onclick="panel.close()"/>
+                                </p:submenu>
+                            </p:menu>
+                        </f:facet>
+
+                        <p:dataTable id="pdt" selectionMode="single"
+                                     value="#{actbalStatisticsAction.actbalList}" var="record"
+                                     emptyMessage="数据记录为空...">
+
+                            <p:column style="text-align:center">
+                                <f:facet name="header">
+                                    序号
+                                </f:facet>
+                                <h:outputText value="#{record.seqno}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    企业名称
+                                </f:facet>
+                                <h:outputText value="#{record.actname}"/>
+                            </p:column>
+
+                            <p:column>
+                                <f:facet name="header">余额变动情况</f:facet>
+                                <h:outputText value="#{record.balamt}万" style="float: right"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">月初余额</f:facet>
+                                <h:outputText value="#{record.firstdayamt}万" style="float: right"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">月底余额</f:facet>
+                                <h:outputText value="#{record.lastdayamt}万" style="float: right"/>
+                            </p:column>
+                            <p:column style="text-align:center">
+                                <f:facet name="header">
+                                    集团内外
+                                </f:facet>
+                                <h:outputText value="#{record.actattr}"/>
+                            </p:column>
+                            <p:column style="text-align:center">
+                                <f:facet name="header">
+                                    账户数
+                                </f:facet>
+                                <h:outputText value="#{record.actnum}"/>
+                            </p:column>
+                        </p:dataTable>
+                    </div>
+                    <br/>
+                    <p:separator style="margin-top:5px;"/>
+
+                    <div style="margin-top:10px;">
+                        <p:graphicImage value="#{actbalStatisticsAction.linechart1}"
+                                        style="margin-left:10px;"/>
+                    </div>
+                    <p:separator/>
+
+                    <div style="margin-top:10px;">
+                        <p:graphicImage value="#{actbalStatisticsAction.linechart2}"
+                                        style="margin-left:10px;"/>
+                    </div>
+                </p:panel>
+            </div>
+
+        </h:form>
+    </ui:define>
+</ui:composition>

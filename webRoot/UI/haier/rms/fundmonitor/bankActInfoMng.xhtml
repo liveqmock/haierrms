@@ -1,0 +1,124 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+        <script type="text/javascript">
+            var ns_actinfomng = {};
+            ns_actinfomng.gotoLastPage = function() {
+                var rowsPerpage =  pdtWidget.getPaginator().getTotalPages();
+                pdtWidget.getPaginator().setPage(rowsPerpage);
+            }
+        </script>
+    </ui:define>
+
+    <ui:define name="content">
+        <p:growl id="msgs" showDetail="false"/>
+
+        <div id="table">
+            <h:form id="form">
+                <div style="margin-top: 5px;margin-bottom:5px ">
+                    <p:menubar>
+                        <p:menuitem value="增加新帐户" icon="ui-icon ui-icon-gear"
+                                    action="#{bankActInfoManagerAction.onAddRecord}"
+                                    oncomplete="ns_actinfomng.gotoLastPage()"
+                                    update="form,pdt,msgs"/>
+                        <p:menuitem value="Excel导出" icon="ui-icon ui-icon-contact"
+                                    onclick="alert('此功能未完成')"
+                                    ajax="false"
+                                    update="pdt"/>
+                    </p:menubar>
+                </div>
+
+                <p:dataTable id="pdt"
+                             widgetVar="pdtWidget"
+                             binding="#{bankActInfoManagerAction.dataTableWidget}"
+                             rowEditListener="#{bankActInfoManagerAction.onSaveData}" onRowEditUpdate="msgs"
+                             value="#{bankActInfoManagerAction.mtActtypeUIBeanList}" var="record"
+                             paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
+                             paginator="true" rows="15" paginatorPosition="bottom"
+                             rowsPerPageTemplate="100,50,30,15"
+                             emptyMessage="数据记录为空...">
+                    <f:facet name="header">
+                        <h:outputText value="帐户信息清单" >
+                        </h:outputText>
+                    </f:facet>
+                    <p:column  id="actno" headerText="帐号" filterBy="#{record.actnoUI}" filterMatchMode="contains"
+                              sortBy="#{record.actnoUI}"
+                              style="text-align:center">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{record.actnoUI}"/>
+                            </f:facet>
+                            <f:facet name="input">
+                                <p:inputText value="#{record.actnoUI}"
+                                             required="true" requiredMessage="帐号不能为空" style="width:100%"/>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="户名" sortBy="#{record.actname}" filterBy="#{record.actname}"
+                              filterMatchMode="contains">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{record.actname}"/>
+                            </f:facet>
+                            <f:facet name="input">
+                                <p:inputText value="#{record.actname}" required="true" requiredMessage="户名不能为空"  style="width:100%"/>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="开户行" style="text-align:center">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{record.openingbank}"/>
+                            </f:facet>
+                            <f:facet name="input">
+                                <p:inputText value="#{record.openingbank}" style="width:100%"/>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="帐户类型" style="text-align:center">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{record.actattr}"/>
+                            </f:facet>
+                            <f:facet name="input">
+                                <p:inputText value="#{record.actattr}" style="width:100%"/>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="统计类别" style="text-align:center"
+                              filterBy="#{record.category}"
+                              filterMatchMode="exact" filterOptions="#{bankActInfoManagerAction.categoryOptions}">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{record.category}"/>
+                            </f:facet>
+                            <f:facet name="input">
+                                <h:selectOneMenu value="#{record.category}">
+                                    <f:selectItems value="#{bankActInfoManagerAction.categoryOptions}"
+                                                   var="category"
+                                                   itemLabel="#{category}"
+                                                   itemValue="#{category}"/>
+                                </h:selectOneMenu>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="操作" style="text-align:center">
+                        <p:rowEditor/>
+                    </p:column>
+
+                </p:dataTable>
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>

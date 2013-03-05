@@ -1,0 +1,83 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+    </ui:define>
+
+    <ui:define name="content">
+        <p:growl id="msgs" showDetail="false"/>
+
+        <div id="table">
+            <h:form id="form">
+                <div style="margin-top: 5px;margin-bottom:5px ">
+                    <p:menubar>
+                        <p:submenu label="账户分类批量设置" icon="ui-icon ui-icon-pencil">
+                            <p:menuitem value="1.批量设置类型：A"  action="#{sbsActInfoMngAction.onSetCategoryA}" update="pdt,msgs"/>
+                            <p:menuitem value="2.批量设置类型：H"  action="#{sbsActInfoMngAction.onSetCategoryH}" update="pdt,msgs"/>
+                            <p:menuitem value="3.批量设置类型：F"  action="#{sbsActInfoMngAction.onSetCategoryF}" update="pdt,msgs"/>
+                            <p:menuitem value="4.批量设置类型：D"  action="#{sbsActInfoMngAction.onSetCategoryD}" update="pdt,msgs"/>
+                            <p:menuitem value="5.批量设置类型：W"  action="#{sbsActInfoMngAction.onSetCategoryW}" update="pdt,msgs"/>
+                        </p:submenu>
+                        <p:menuitem value="Excel导出" icon="ui-icon ui-icon-contact"
+                                    onclick="alert('此功能未完成')"
+                                    ajax="false"
+                                    update="pdt"/>
+                    </p:menubar>
+                </div>
+
+                <p:dataTable id="pdt"
+                             onRowEditUpdate="msgs"
+                             selection="#{sbsActInfoMngAction.selectedActtypes}"
+                             rowEditListener="#{sbsActInfoMngAction.onSaveData}"
+                             value="#{sbsActInfoMngAction.mtActtypeList}" var="record"
+                             paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
+                             paginator="true" rows="15" paginatorPosition="bottom"
+                             rowsPerPageTemplate="100,50,30,15"
+                             emptyMessage="数据记录为空...">
+
+                    <f:facet name="header">
+                        <h:outputText value="#{sbsActInfoMngAction.title}">
+                        </h:outputText>
+                    </f:facet>
+
+                    <p:column selectionMode="multiple"/>
+                    <p:column id="actno" headerText="帐号" filterBy="#{record.actno}" filterMatchMode="contains"
+                              sortBy="#{record.actno}"
+                              style="text-align:center">
+                        <h:outputText value="#{record.actno}"/>
+                    </p:column>
+                    <p:column headerText="户名" sortBy="#{record.actname}" filterBy="#{record.actname}"
+                              filterMatchMode="contains">
+                        <h:outputText value="#{record.actname}"/>
+                    </p:column>
+                    <p:column headerText="统计类别" style="text-align:center"
+                              filterBy="#{record.category}"
+                              filterMatchMode="exact" filterOptions="#{sbsActInfoMngAction.categoryOptions}">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{record.category}"/>
+                            </f:facet>
+                            <f:facet name="input">
+                                <h:selectOneMenu value="#{record.category}">
+                                    <f:selectItems value="#{sbsActInfoMngAction.categoryOptions}"
+                                                   var="category"
+                                                   itemLabel="#{category}"
+                                                   itemValue="#{category}"/>
+                                </h:selectOneMenu>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="操作" style="text-align:center">
+                        <p:rowEditor/>
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>

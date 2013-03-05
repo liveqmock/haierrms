@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="EaiCorpBal">
+
+    <resultMap id="CorpBalResult" type="haier.rms.model.EaiCorpBal">
+    </resultMap>
+
+
+    <insert id="insertRecord" parameterType="haier.rms.model.EaiCorpBal" >
+    <![CDATA[
+        INSERT INTO
+        eai_corpbal (
+            id ,
+            corpname ,
+            item ,
+            bankname ,
+            corpacct ,
+            balance,
+            currcd,
+            querydate
+        ) VALUES (
+            #{id,jdbcType=VARCHAR},
+            #{corpname,jdbcType=VARCHAR},
+            #{item,jdbcType=VARCHAR},
+            #{bankname,jdbcType=VARCHAR},
+            #{corpacct,jdbcType=VARCHAR},
+            #{balance,jdbcType=VARCHAR},
+            #{currcd,jdbcType=VARCHAR},
+            #{querydate,jdbcType=DOUBLE}
+        )
+    ]]>
+    </insert>
+
+    <delete id="deleteAll">
+        delete from eai_corpbal
+    </delete>
+
+
+</mapper>

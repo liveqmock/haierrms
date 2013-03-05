@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="InterestInfo">
+
+    <resultMap id="InterestInfoResult" type="haier.rms.model.InterestInfo">
+    </resultMap>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="commonColumns">
+	    <![CDATA[
+	        c.xdfhkx_id as id,
+        	c.xdfhkx_htnm as htnm,
+        	c.xdfhkx_htbh as htbh,
+            a.gthtb_htlb as htlb,
+            a.gthtb_dwbh as khbh,
+            b.xdkhzd_khmc as khmc,
+            b.xdkhzd_khlb as khlb,
+            c.xdfhkx_ywrq as ywrq,
+            c.xdfhkx_dqrq as dqrq,
+            c.xdfhkx_je as je,
+            c.xdfhkx_ll as ll,
+            c.xdfhkx_fkid as fkid
+	    ]]>
+	</sql>
+
+
+    <select id="queryInterest" parameterType="haier.rms.model.InterestKey" resultMap="InterestInfoResult">
+        select
+        <include refid="commonColumns"/>
+        <![CDATA[
+		    from gthtb@haier_shengchan a, xdkhzd@haier_shengchan b, xdfhkx@haier_shengchan c
+            where c.xdfhkx_ywzl = #{ywzl}
+            and c.xdfhkx_htnm = a.gthtb_htnm
+            and a.gthtb_dwbh = b.xdkhzd_khbh
+            and c.xdfhkx_dqrq >=#{startDate,jdbcType=VARCHAR}
+        ]]>
+            <!-- 贷款利息收入（集团内） -->
+            <if test="bussItem=='5013'">
+                and substr(a.gthtb_dwbh,1,1)='N'
+                and (a.gthtb_htlb in ('01','08') or (a.gthtb_htlb='05' and b.xdkhzd_khbh != 'N0189'))
+		    </if>
+            <!-- 房地产业务收入(集团内) -->
+            <!--
+            <if test="bussItem=='5015'">
+                and substr(a.gthtb_dwbh,1,1)='N'
+                and (a.gthtb_htlb ='06' or (a.gthtb_htlb='05' and b.xdkhzd_khbh='N0189'))
+            </if>
+            -->
+            <if test="bussItem=='5015'">
+                and a.gthtb_htlb ='06'
+                and a.gthtb_dwbh in ('N005','N0126','N0129','N0188','N0200')
+            </if>
+            <!-- 房地产业务收入(集团外)金融地产收入  -->
+            <if test="bussItem=='5240'">
+                and a.gthtb_htlb ='06'
+                and a.gthtb_dwbh not in ('N005','N0126','N0129','N0188','N0200')
+            </if>
+
+            <!-- 买方信贷-大客户业务收入（集团外）合同类别为01 客户号W开头  -->
+            <if test="bussItem=='1501'">
+                and substr(a.gthtb_htbh,1,4)='BLMF'
+            </if>
+            <!-- 买方信贷-专卖店业务收入（集团外） 合同类别为01 -->
+            <if test="bussItem=='1502'">
+                and substr(a.gthtb_dwbh,1,3)='ZMD'
+            </if>
+            <!-- 产业链融资业务收入（集团外） -->
+            <if test="bussItem=='5211'">
+                and substr(a.gthtb_dwbh,1,1)='W'
+                and a.gthtb_htlb in ('01','05')
+            </if>
+
+            order by to_number(c.xdfhkx_htnm),c.xdfhkx_id
+
+    </select>
+    <!--and a.gthtb_htlb in ('01','05','06','08')-->
+    <!--and a.gthtb_htzt='1'-->
+
+    <!-- 查找还本记录 -->
+    <select id="queryYwzl2" parameterType="haier.rms.model.InterestKey" resultMap="InterestInfoResult">
+        select
+        <include refid="commonColumns"/>
+        <![CDATA[
+		    from gthtb@haier_shengchan a, xdkhzd@haier_shengchan b, xdfhkx@haier_shengchan c
+            where c.xdfhkx_ywzl = #{ywzl}
+            and c.xdfhkx_htnm = a.gthtb_htnm
+            and a.gthtb_dwbh = b.xdkhzd_khbh
+            and substr(a.gthtb_dwbh,1,1)='N'
+            and c.xdfhkx_fkid = #{fkid}
+            order by c.xdfhkx_id
+	    ]]>
+    </select>
+
+    <select id="getListAll"  resultMap="InterestInfoResult">
+        select
+        <include refid="commonColumns"/>
+        <![CDATA[
+		    from gthtb@haier_shengchan a, xdkhzd@haier_shengchan b, xdfhkx@haier_shengchan c
+            where c.xdfhkx_ywzl = '1'
+            and c.xdfhkx_htnm = a.gthtb_htnm
+            and a.gthtb_dwbh = b.xdkhzd_khbh
+            and substr(a.gthtb_dwbh,1,1)='N'
+            order by to_number(c.xdfhkx_htnm)
+	    ]]>
+    </select>
+
+    <select id="queryRate" parameterType="haier.rms.model.rateKey" resultType="java.lang.Double">
+        <![CDATA[
+        select gthtll_ll
+          from gthtll@haier_shengchan d
+         where d.gthtll_sxrq =
+               (select max(e.gthtll_sxrq)
+                  from gthtll@haier_shengchan e
+                 where d.gthtll_htnm = e.gthtll_htnm
+                   and e.gthtll_sxrq < #{sxrq})
+                   and d.gthtll_htnm= #{htnm}
+	    ]]>
+    </select>
+
+
+
+    <insert id="insertSburpt" parameterType="haier.rms.model.Sburpt" >
+    <![CDATA[
+        INSERT INTO
+        rms_sburpt (
+            buss_item ,
+            cust_no ,
+            cust_name ,
+            year_actr ,
+            week_actr ,
+            data_date,
+            data_flag,
+            week_actr_t1,
+            week_actr_t2,
+            week_actr_t3,
+            week_actr_t4,
+            week_actr_t5,
+            week_actr_t6
+        ) VALUES (
+            #{bussItem,jdbcType=VARCHAR},
+            #{custNo,jdbcType=VARCHAR},
+            #{custName,jdbcType=VARCHAR},
+            #{yearActr,jdbcType=DOUBLE},
+            #{weekActr,jdbcType=DOUBLE},
+            #{dataDate,jdbcType=VARCHAR},
+            #{dataFlag,jdbcType=VARCHAR},
+            #{weekActrT1,jdbcType=DOUBLE},
+            #{weekActrT2,jdbcType=DOUBLE},
+            #{weekActrT3,jdbcType=DOUBLE},
+            #{weekActrT4,jdbcType=DOUBLE},
+            #{weekActrT5,jdbcType=DOUBLE},
+            #{weekActrT6,jdbcType=DOUBLE}
+        )
+    ]]>
+    </insert>
+
+    <delete id="deleteall_sburpt">
+        delete from rms_sburpt
+    </delete>
+
+    <delete id="deletecurrdate_sburpt" parameterType="java.lang.String">
+        delete from rms_sburpt where data_date=#{id}
+    </delete>
+
+    
+    <delete id="deleteByItemAndDate_sburpt" parameterType="haier.rms.model.Sburpt">
+        delete from rms_sburpt where buss_item=#{bussItem} and data_date=#{dataDate}
+    </delete>
+
+    <!--贴现台帐数据处理-->
+    <select id="selectTxtz" parameterType="haier.rms.model.TxtzKey" resultType="haier.rms.model.TxtzInfo">
+        <![CDATA[
+            select c.gttxtz_sqyjdw as khbh,
+                   b.xdkhzd_khmc as khmc,
+                   c.gttxtz_rq as rq,
+                   c.gttxtz_hpdqr as hpdqr,
+                   c.gttxtz_lx as lx,
+                   c.gttxtz_qx as qx,
+                   round(c.gttxtz_lx / c.gttxtz_qx,2) as day_lx
+              from xdkhzd@haier_shengchan b, gttxtz@haier_shengchan c
+             where c.gttxtz_sqyjdw = b.xdkhzd_khbh
+               and substr(c.gttxtz_sqyjdw, 1, 1) = #{NeiWaiFlag}
+               and c.gttxtz_hpdqr >=#{startDate}
+               order by b.xdkhzd_khbh,c.gttxtz_rq
+	    ]]>
+    </select>
+
+    <select id="selectTopLevelData" parameterType="haier.rms.model.Sburpt" resultType="java.lang.Double">
+        <![CDATA[
+            select t.year_actr from rms_sburpt t where t.buss_item=#{bussItem} and t.data_date=#{dataDate}
+	    ]]>
+    </select>
+
+
+    <!-- 手工台帐数据处理 -->
+    <!-- 投资银行业务收入数据处理 -->
+    <select id="selectInvestData" parameterType="haier.rms.model.InvestInfo" resultType="haier.rms.model.InvestInfo">
+        <![CDATA[
+            select *
+              from sbu_investbiz a
+             where a.enddate >=#{startdate}
+               and a.datadate = #{datadate}
+               order by a.biztype
+	    ]]>
+    </select>
+
+    <!-- 国际业务收入数据处理, 取全部数据 -->
+    <select id="selectAllIntData" parameterType="haier.rms.model.IntInfo" resultType="haier.rms.model.IntInfo">
+        <![CDATA[
+            select *
+              from sbu_intbiz a
+             where a.enddate >=#{startdate}
+               and a.datadate = #{datadate}
+               order by a.loantype
+	    ]]>
+    </select>
+    <!-- 国际业务收入数据处理, 取境外收入数据 -->
+    <select id="selectOutboundIntData" parameterType="haier.rms.model.IntInfo" resultType="haier.rms.model.IntInfo">
+        <![CDATA[
+            select *
+              from sbu_intbiz a
+             where a.enddate >=#{startdate}
+               and a.datadate = #{datadate}
+               and a.outboundflag = '1'
+               order by a.loantype
+	    ]]>
+    </select>
+
+    <!-- 其他业务收入数据处理 -->
+    <select id="selectOtherData" parameterType="haier.rms.model.OtherIncomeInfo" resultType="haier.rms.model.OtherIncomeInfo">
+        <![CDATA[
+            select *
+              from sbu_otherincome a
+             where a.enddate >=#{startdate}
+               and a.datadate = #{datadate}
+               order by a.biztype
+	    ]]>
+    </select>
+
+
+</mapper>

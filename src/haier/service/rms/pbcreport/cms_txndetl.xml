@@ -1,0 +1,271 @@
+WITH detl as
+        (SELECT *
+        FROM (SELECT *
+        FROM ((SELECT 'C5007437000019' 机构,
+        --cust.cname 客户名,
+        --cust.custno 客户号,
+        CASE cust.cust_type
+        WHEN '1' THEN
+        '0'
+        WHEN '2' THEN
+        '1'
+        END 客户类型,
+        CASE
+        WHEN length(corp.ORG_CODE) = 10 THEN
+        substr(corp.ORG_CODE, 1, 8) ||
+        substr(corp.ORG_CODE, 10, 1)
+        ELSE
+        cust.custno
+        END 组织机构代码,
+        --corp.CREDIT_CARDNO 贷款卡号,
+        CASE
+        WHEN length(cust.MISCFLGS) = 6 THEN
+        CASE
+        WHEN substr(cust.MISCFLGS, 6, 1) = '1' THEN
+        '2'
+        ELSE
+        substr(corp.BIZ_TYPE, 1, 1)
+        END
+        ELSE
+        substr(corp.BIZ_TYPE, 1, 1)
+        END 行业类别,
+        corp.DIQUBIANHAO 注册地编码,
+        CASE corp.CORP_MODE
+        WHEN '110' THEN
+        'A0101'
+        WHEN '120' THEN
+        'A0201'
+        WHEN '130' THEN
+        'B0101'
+        WHEN '141' THEN
+        'A0102'
+        WHEN '142' THEN
+        'A0202'
+        WHEN '143' THEN
+        'A0102'
+        WHEN '149' THEN
+        'B0102'
+        WHEN '151' THEN
+        'A0102'
+        WHEN '159' THEN
+        'B0102'
+        WHEN '160' THEN
+        'B0101'
+        WHEN '171' THEN
+        'B0102'
+        WHEN '172' THEN
+        'B0102'
+        WHEN '173' THEN
+        'B0102'
+        WHEN '174' THEN
+        'B0102'
+        WHEN '190' THEN
+        'B0102'
+        WHEN '210' THEN
+        'B0202'
+        WHEN '220' THEN
+        'B0202'
+        WHEN '230' THEN
+        'B0202'
+        WHEN '240' THEN
+        'B0202'
+        WHEN '310' THEN
+        'B0302'
+        WHEN '320' THEN
+        'B0302'
+        WHEN '330' THEN
+        'B0302'
+        WHEN '340' THEN
+        'B0302'
+        WHEN '210' THEN
+        'B0202'
+        WHEN '220' THEN
+        'B0202'
+        ELSE
+        'B0201'
+        END 企业出资人经济成分,
+        CASE corp.CORP_SCALE
+        WHEN '1' THEN
+        'CS01'
+        WHEN '2' THEN
+        'CS01'
+        WHEN '3' THEN
+        'CS02'
+        WHEN '4' THEN
+        'CS03'
+        ELSE
+        'CS01'
+        END 企业规模,
+        credencd.CREDENCENO 贷款借据编码,
+        '022' 贷款类别,
+        CASE
+        WHEN length(cust.MISCFLGS) = 6 THEN
+        CASE
+        WHEN substr(cust.MISCFLGS, 6, 1) = '1' THEN
+        '200'
+        ELSE
+        corp.SHIJITOUXIANG
+        END
+        ELSE
+        corp.SHIJITOUXIANG
+        END 贷款实际投向,
+        credencd.startdate 贷款发放日期,
+        to_char(credencd.enddate, 'yyyy-mm-dd') 贷款到期日期,
+        (SELECT to_char(max(b.clrdt), 'yyyy-MM-dd')
+        FROM tla_lncino_base a, tla_lnplanmr b
+        WHERE a.lncino = b.lncino
+        and a.lncino = credencd.CREDENCENO
+        and a.clrflg = '1'
+        and to_char(b.clrdt, 'yyyy-MM-dd') <>
+    '3900-01-01') 贷款实际终止日期,
+    credencd.curcd 币种,
+    round(credencd.amt, 2) 金额,
+    CASE credencd.intrate_type
+    WHEN '1' THEN
+    'RF01'
+    ELSE
+    'RF02'
+    END 利率是否固定,
+    credencd.intrate 利率水平,
+    CASE credencd.guar
+    WHEN '1000' THEN
+    'D'
+    WHEN '0000' THEN
+    'D'
+    WHEN '0100' THEN
+    'C'
+    WHEN '0010' THEN
+    'B'
+    WHEN '0001' THEN
+    'A'
+    ELSE
+    'Z'
+    END 担保方式,
+    'FS01' as 贷款状态,
+    type 贷款发放收回标志,
+    '${enddate}' 上报日期
+    FROM customer_info cust,
+    corp_basic_info_view corp,
+    ((SELECT comm.custcd custcd,
+    CREDENCENO CREDENCENO,
+    '1' type,
+    '' paydate,
+    comm.payamt amt,
+    comm.CURCD curcd,
+    cast(con.GUAT_TYPE_LIST as varchar2(4)) guar,
+    to_char(comm.PAYDATE, 'yyyy-mm-dd') startdate,
+    comm.ENDDATE enddate,
+    comm.intrate,
+    intrate_type
+    FROM comm_credence_info comm, cont_base_info con
+    WHERE con.contractno = comm.contractno
+    and PROVIDE_STATE in ('3', '9')) UNION ALL
+    (SELECT comm.custcd custcd,
+    CREDENCENO CREDENCENO,
+    '0' type,
+    '' paydate,
+    tla.RTNAMT amt,
+    comm.CURCD curcd,
+    cast(con.GUAT_TYPE_LIST as varchar2(4)) aaa,
+    to_char(comm.PAYDATE, 'yyyy-mm-dd') startdate,
+    tla.RTNDT enddate,
+    comm.intrate,
+    intrate_type
+    FROM TLA_LNRTNLOG       tla,
+    comm_credence_info comm,
+    cont_base_info     con
+    WHERE con.contractno = comm.contractno
+    and tla.LNCINO = comm.credenceno
+    and RTNAMT != 0
+    and PROVIDE_STATE in ('3', '9'))) credencd
+    WHERE cust.custcd = corp.custcd
+    and credencd.custcd = cust.custcd) UNION ALL
+    (SELECT 'C5007437000019' 机构,
+    --cust.cname 客户名,
+    --cust.custno 客户号,
+    CASE cust.cust_type
+    WHEN '1' THEN
+    '0'
+    WHEN '2' THEN
+    '1'
+    END 客户类型,
+    cust.custno 组织机构代码,
+    --'' 贷款卡号,
+    '1' 行业类别,
+    '' 注册地编码,
+    '' 企业出资人经济成分,
+    '' 企业规模,
+    credencd.CREDENCENO 贷款借据编码,
+    CASE loantype
+    WHEN '101003' THEN
+    '0219'
+    WHEN '101001' THEN
+    '0211'
+    ELSE
+    '0211'
+    END 贷款类别,
+    '100' 贷款实际投向,
+    credencd.startdate 贷款发放日期,
+    to_char(credencd.enddate, 'yyyy-mm-dd') 贷款到期日期,
+    (SELECT to_char(max(b.clrdt), 'yyyy-MM-dd')
+    FROM tla_lncino_base a, tla_lnplanmr b
+    WHERE a.lncino = b.lncino
+    and a.lncino = credencd.CREDENCENO
+    and a.clrflg = '1'
+    and to_char(b.clrdt, 'yyyy-MM-dd') <> '3900-01-01') 贷款实际终止日期,
+    credencd.curcd 币种,
+    round(credencd.amt, 2) 金额,
+    'RF02' 利率是否固定,
+    credencd.intrate 利率水平,
+    CASE credencd.guar
+    WHEN '1' THEN
+    'A'
+    WHEN '2' THEN
+    'B'
+    WHEN '3' THEN
+    'C'
+    WHEN '4' THEN
+    'D'
+    WHEN '5' THEN
+    'E'
+    ELSE
+    'Z'
+    END 担保方式,
+    'FS01' as 贷款状态,
+    type 贷款发放收回标志,
+    '${enddate}' 上报日期
+
+    FROM customer_info cust,
+    ((SELECT comm.custcd custcd,
+    comm.CINO CREDENCENO,
+    con.lnid loantype,
+    '1' type,
+    comm.LNAMT amt,
+    con.CURCD curcd,
+    GUATCODE guar,
+    to_char(comm.ISDATE, 'yyyy-mm-dd') startdate,
+    comm.TEDATE enddate,
+    comm.intrate
+    FROM LOANCINO comm, LOANINFO con
+    WHERE con.contractno = comm.contractno
+    and con.STATUS = '1') UNION ALL
+    (SELECT comm.custcd custcd,
+    comm.CINO CREDENCENO,
+    con.lnid loantype,
+    '0' type,
+    tla.RTNAMT amt,
+    con.CURCD curcd,
+    GUATCODE guar,
+    to_char(comm.ISDATE, 'yyyy-mm-dd') startdate,
+    tla.RTNDT enddate,
+    comm.intrate
+    FROM TLA_LNRTNLOG tla, LOANCINO comm, LOANINFO con
+    WHERE con.contractno = comm.contractno
+    and con.STATUS = '1'
+    and comm.cino = tla.lncino)) credencd
+    WHERE credencd.custcd = cust.custcd))))
+
+        select *
+        from detl t
+        where (t.贷款发放收回标志 = '1' and t.贷款发放日期 between '${begindate}' and '${enddate}')
+        or (t.贷款发放收回标志 = '0' and t.贷款到期日期 between '${begindate}' and '${enddate}')

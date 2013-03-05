@@ -1,0 +1,121 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+    </ui:define>
+    <script type="text/javascript">
+       function doPopupWindow(obj) {
+            var pkid = obj.parentNode.parentNode.childNodes[1].innerHTML;
+            var popupwindow = window.open("common/rateDetlFields.xhtml?pkid=" + pkid, "", "height=600,width=800,left=200,top=100,toolbar=no,menubar=no,scrollbars=yes,location=no");
+            popupwindow.focus;
+        }
+    </script>
+    <ui:define name="content">
+        <div class="entry" id="top">
+            <p:growl id="msgs" showDetail="false"/>
+            <h:form id="form">
+                <div style="margin-top: 20px;">
+                    <p:panel header="选择报表日期">
+                        <h:panelGrid columns="2" cellspacing="30">
+
+                            <h:outputLabel value="报表日期:" style="font-weight: bold;" for="startdate"/>
+                            <p:inputText id="startdate" required="true" requiredMessage="日期不能为空。"
+                                         value="#{pbcRateRptAction.startdate}"
+                                         onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+                        </h:panelGrid>
+                        <p:separator/>
+                        <h:panelGrid columns="1" columnClasses="exportbutton">
+                            <h:panelGroup>
+                            <p:commandButton value="导入信贷系统发生额数据" image="ui-icon-disk" ajax="false"
+                                             action="#{pbcRateLoanBalAction.onImportCmsTxndetlData}"/>
+                            <p:commandButton value="导出贷款发生额上报文件" image="ui-icon-disk" ajax="false"
+                                             action="#{pbcRateLoanBalAction.onExportCmsTxndetlTxt}"/>
+                            </h:panelGroup>
+                        </h:panelGrid>
+
+                    </p:panel>
+
+                    <p:ajaxStatus style="height:20px;text-align:center">
+                        <f:facet name="start">
+                            <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                        </f:facet>
+                        <f:facet name="complete">
+                            <h:outputText value=""/>
+                        </f:facet>
+                    </p:ajaxStatus>
+                    <p:dataTable id="qrypdt" dynamic="true" style="width:2000px; margin-right:20px;"
+                                 value="#{pbcRateLoanBalAction.detlList}" var="record"
+                                 selection="#{pbcRateLoanBalAction.selectRecord}"
+                                 paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown} 【总笔数:#{obtainBillsAction.totalqrycount}】【总金额:#{obtainBillsAction.totalqryamt}】"
+                                 paginator="true" rows="15" paginatorPosition="bottom"
+                                 rowsPerPageTemplate="100,50,30,15,5"
+                                 emptyMessage="数据记录为空...">
+                        <!--<p:column selectionMode="multiple"/>-->
+                        <p:column headerText="机构编码" style="text-align: center">
+                            <h:outputText value="#{record.bankcode}"/>
+                        </p:column>
+                        <p:column headerText="借款人" style="text-align: center">
+                            <h:outputText value="#{record.clientname}"/>
+                        </p:column>
+                        <p:column headerText="行业类别" style="text-align: center">
+                            <h:outputText value="#{record.industrycode}"/>
+                        </p:column>
+                        <p:column headerText="登记注册地" style="text-align: center">
+                        <h:outputText value="#{record.regioncode}"/>
+                        </p:column>
+                        <p:column headerText="出资人经济成分" style="text-align: center">
+                            <h:outputText value="#{record.economicsectorcode}"/>
+                        </p:column>
+                        <p:column headerText="企业规模" style="text-align: center">
+                            <h:outputText value="#{record.corporationscalecode}"/>
+                        </p:column>
+                        <p:column headerText="借据编号" style="text-align: center">
+                            <h:outputText value="#{record.ioucode}"/>
+                        </p:column>
+                        <p:column headerText="产品类别" style="text-align: center">
+                            <h:outputText value="#{record.productstypecode}"/>
+                        </p:column>
+                        <p:column headerText="贷款投向" style="text-align: center">
+                            <h:outputText value="#{record.loanrealinvestmentcode}"/>
+                        </p:column>
+                        <p:column headerText="贷款发放日期" style="text-align: center">
+                            <h:outputText value="#{record.loanstartdate}"/>
+                        </p:column>
+                        <p:column headerText="贷款到期日期" style="text-align: center">
+                            <h:outputText value="#{record.loanenddate}"/>
+                        </p:column>
+                        <p:column headerText="币种" style="text-align: center">
+                            <h:outputText value="#{record.currencycode}"/>
+                        </p:column>
+                        <p:column headerText="贷款借据余额">
+                            <h:outputText value="#{record.ioubalamt}" style="float: right">
+                                <f:convertNumber type="number" pattern="#,###,###,###,###.##"/>
+                            </h:outputText>
+                        </p:column>
+                        <p:column headerText="利率是否固定" style="text-align: center">
+                            <h:outputText value="#{record.rateflexibletypecode}"/>
+                        </p:column>
+                        <p:column headerText="利率水平">
+                            <h:outputText value="#{record.intrate}" style="float: right">
+                                <f:convertNumber type="number" pattern="#,###,###,###,###.##"/>
+                            </h:outputText>
+                        </p:column>
+                        <p:column headerText="贷款担保方式" style="text-align: center">
+                            <h:outputText value="#{record.loanguaranteetypecode}"/>
+                        </p:column>
+                        <p:column headerText="贷款质量" style="text-align: center">
+                            <h:outputText value="#{record.loanqualitycode}"/>
+                        </p:column>
+                    </p:dataTable>
+                </div>
+
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

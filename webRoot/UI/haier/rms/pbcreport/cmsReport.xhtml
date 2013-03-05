@@ -1,0 +1,108 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="entry" id="top">
+            <p:growl id="msgs" showDetail="false"/>
+            <h:form id="form">
+                <div>
+                    <p:panel header="选择报表日期">
+                        <h:panelGrid columns="2" cellspacing="30">
+
+                            <h:outputLabel value="报表月份:" style="font-weight: bold;" for="startdate"/>
+                            <p:inputText id="startdate" required="true" requiredMessage="日期不能为空。"
+                                         value="#{pbcCmsRptAction.startdate}"
+                                         onclick="WdatePicker({dateFmt:'yyyy年MM月'})"/>
+                        </h:panelGrid>
+                        <p:separator/>
+                        <h:panelGrid columns="1" columnClasses="exportbutton">
+                            <h:panelGroup>
+                            <p:commandButton value="导出余额文件" image="ui-icon-disk" ajax="false"
+                                             action="#{pbcCmsRptAction.onExportTxt_Y}"/>
+                            <p:commandButton value="导出发生额文件" image="ui-icon-disk" ajax="false"
+                                             action="#{pbcCmsRptAction.onExportTxt_F}"/>
+                            <p:commandButton value="导出校验文件" image="ui-icon-disk" ajax="false"
+                                             action="#{pbcCmsRptAction.onExportExcel}"/>
+                            <p:commandButton value="查询SBS汇总数据" image="ui-icon-search" ajax="false"
+                                             action="#{pbcCmsRptAction.onSearchSbsData}"/>
+                            </h:panelGroup>
+                        </h:panelGrid>
+
+                    </p:panel>
+
+                    <p:ajaxStatus style="height:20px;text-align:center">
+                        <f:facet name="start">
+                            <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                        </f:facet>
+                        <f:facet name="complete">
+                            <h:outputText value=""/>
+                        </f:facet>
+                    </p:ajaxStatus>
+                    <p:dataTable id="pdt" height="200" dynamic="true" selectionMode="single"
+                                 value="#{pbcCmsRptAction.sbsItemBalBeanList}" var="record"
+                                 paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
+                                 paginator="true" rows="15" paginatorPosition="bottom"
+                                 rowsPerPageTemplate="100,50,30,15"
+                                 emptyMessage="数据记录为空...">
+
+                        <f:facet name="header">
+                            对公贷款余额合计:
+                            <h:outputText value="#{pbcCmsRptAction.totalCreditAmt}">
+                                <f:convertNumber type="number" pattern="##,###,###,###,###.##"/>
+                            </h:outputText>
+                             / 贴现余额合计:
+                            <h:outputText value="#{pbcCmsRptAction.totalDiscountAmt}">
+                                <f:convertNumber type="number" pattern="##,###,###,###,###.##"/>
+                            </h:outputText>
+                        </f:facet>
+
+                        <p:column filterBy="#{record.type}" sortBy="#{record.type}"
+                                  style="text-align:center">
+                            <f:facet name="header">
+                                类别
+                            </f:facet>
+                            <h:outputText value="#{record.type}"/>
+                        </p:column>
+                        <p:column sortBy="#{record.code}" filterBy="#{record.code}" filterMatchMode="contains" style="text-align:center">
+                            <f:facet name="header">
+                                号码
+                            </f:facet>
+                            <h:outputText value="#{record.code}"/>
+                        </p:column>
+                        <p:column sortBy="#{record.codename}" filterBy="#{record.codename}" filterMatchMode="contains">
+                            <f:facet name="header">
+                                名称
+                            </f:facet>
+                            <h:outputText value="#{record.codename}"/>
+                        </p:column>
+
+                        <p:column sortBy="#{record.balamt}">
+                            <f:facet name="header">余额</f:facet>
+                            <h:outputText value="#{record.balamt}" style="float: right">
+                                <f:convertNumber type="currency" currencySymbol=""/>
+                            </h:outputText>
+                        </p:column>
+                        <p:column sortBy="#{record.currcd}" style="text-align:center" filterBy="#{record.currcd}"
+                                  filterMatchMode="exact">
+                            <f:facet name="header">
+                                币种
+                            </f:facet>
+                            <h:outputText value="#{record.currcd}"/>
+                        </p:column>
+                    </p:dataTable>
+
+                </div>
+
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>
