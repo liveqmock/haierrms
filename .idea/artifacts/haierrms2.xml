@@ -4,20 +4,20 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Haierrms2" />
+          <element id="module-output" name="Haierrms" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="lib" />
           <element id="library" level="application" name="BeanValidation" />
-          <element id="library" level="application" name="spring-3.0.5" />
           <element id="library" level="application" name="logging" />
           <element id="library" level="application" name="apache-common" />
-          <element id="library" level="application" name="jsf-2.0.4" />
           <element id="library" level="application" name="ActiveMQ-5.5.0" />
           <element id="library" level="application" name="groovy-1.8.3-all" />
+          <element id="library" level="application" name="javax.faces-2.1.10" />
+          <element id="library" level="application" name="spring3.2.1" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="Haierrms2/web/Web" />
+      <element id="javaee-facet-resources" facet="Haierrms/web/Web" />
     </root>
   </artifact>
 </component>
