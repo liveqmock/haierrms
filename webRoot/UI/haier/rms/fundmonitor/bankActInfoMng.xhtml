@@ -2,7 +2,7 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:p="http://primefaces.org/ui"
                 xmlns:fn="http://java.sun.com/jsp/jstl/functions"
                 template="/templates/ui.xhtml">
 
@@ -17,10 +17,10 @@
     </ui:define>
 
     <ui:define name="content">
-        <p:growl id="msgs" showDetail="false"/>
 
         <div id="table">
             <h:form id="form">
+                <p:growl id="msgs" showDetail="false"/>
                 <div style="margin-top: 5px;margin-bottom:5px ">
                     <p:menubar>
                         <p:menuitem value="增加新帐户" icon="ui-icon ui-icon-gear"
@@ -35,9 +35,10 @@
                 </div>
 
                 <p:dataTable id="pdt"
+                             editable="true"
                              widgetVar="pdtWidget"
                              binding="#{bankActInfoManagerAction.dataTableWidget}"
-                             rowEditListener="#{bankActInfoManagerAction.onSaveData}" onRowEditUpdate="msgs"
+                             onRowEditUpdate="msgs"
                              value="#{bankActInfoManagerAction.mtActtypeUIBeanList}" var="record"
                              paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
                              paginator="true" rows="15" paginatorPosition="bottom"
@@ -47,6 +48,7 @@
                         <h:outputText value="帐户信息清单" >
                         </h:outputText>
                     </f:facet>
+                    <p:ajax event="rowEdit" listener="#{bankActInfoManagerAction.onSaveData}" update=":form:msgs" />
                     <p:column  id="actno" headerText="帐号" filterBy="#{record.actnoUI}" filterMatchMode="contains"
                               sortBy="#{record.actnoUI}"
                               style="text-align:center">

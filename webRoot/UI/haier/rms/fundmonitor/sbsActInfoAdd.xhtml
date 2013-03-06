@@ -2,7 +2,7 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:p="http://primefaces.org/ui"
                 xmlns:fn="http://java.sun.com/jsp/jstl/functions"
                 template="/templates/ui.xhtml">
 
@@ -17,10 +17,10 @@
     </ui:define>
 
     <ui:define name="content">
-        <p:growl id="msgs" showDetail="false"/>
 
         <div id="table">
             <h:form id="form">
+                <p:growl id="msgs" showDetail="false"/>
                 <div style="margin-top: 5px;margin-bottom:0px ">
                     <p:menubar>
                         <p:menuitem value="SBS帐户信息实时同步" icon="ui-icon ui-icon-gear"
@@ -53,10 +53,11 @@
                     </f:facet>
                 </p:ajaxStatus>
                 <p:dataTable id="pdt"
+                             editable="true"
                              selection="#{sbsActInfoMngAction.selectedActtypes}"
-                             rowEditListener="#{sbsActInfoMngAction.onSaveData}"
                              onRowEditUpdate="msgs"
                              value="#{sbsActInfoMngAction.mtActtypeList}" var="record"
+                             rowKey="#{record.bankcd}#{record.actno}"
                              paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
                              paginator="true" rows="15" paginatorPosition="bottom"
                              rowsPerPageTemplate="100,50,30,15"
@@ -65,6 +66,9 @@
                         <h:outputText value="#{sbsActInfoMngAction.title}">
                         </h:outputText>
                     </f:facet>
+
+                    <p:ajax event="rowEdit" listener="#{sbsActInfoMngAction.onSaveData}" update=":form:msgs" />
+
                     <p:column selectionMode="multiple"/>
                     <p:column id="actno" headerText="帐号" filterBy="#{record.actno}" filterMatchMode="contains"
                               sortBy="#{record.actno}"

@@ -216,7 +216,7 @@ public class BalanceQryAction implements Serializable {
         return null;
     }
 
-    public String query() {
+    public String onQuery() {
         try {
             roeMap = new HashMap<String, RoeBean>();
 

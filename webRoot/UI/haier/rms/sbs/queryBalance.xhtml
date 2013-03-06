@@ -2,7 +2,7 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:p="http://primefaces.org/ui"
                 xmlns:fn="http://java.sun.com/jsp/jstl/functions"
                 template="/templates/ui.xhtml">
 
@@ -10,28 +10,28 @@
     </ui:define>
 
     <ui:define name="content">
-        <p:messages id="msgs" showDetail="false"/>
         <h:form id="form">
+            <p:messages id="msgs" showDetail="false"/>
             <div id="header" style="margin-top:15px">
                 <div>
                     <p:toolbar id="toolbar">
                         <p:toolbarGroup align="left">
-                            <p:divider/>
+                            <!--<p:divider/>-->
                             <p:commandButton type="push" value="获取SBS余额信息" image="ui-icon-search"
-                                             action="#{balanceQryAction.query}" update="pdt,msgs,toolbar"/>
-                            <p:divider/>
+                                             action="#{balanceQryAction.onQuery}" update="pdt,msgs,toolbar"/>
+                            <!--<p:divider/>-->
                             <p:commandButton type="push" value="Excel报表生成" image="ui-icon-disk"
                                              action="#{balanceQryAction.exportExcel}" update="pdt,msgs,toolbar"
                                              rendered="#{not empty balanceQryAction.detlList}"/>
-                            <p:divider rendered="#{not empty balanceQryAction.detlList}"/>
+                            <!--<p:divider rendered="#{not empty balanceQryAction.detlList}"/>-->
                             <p:commandButton  value="Excel报表下载" image="ui-icon-disk"
                                              ajax="false" rendered="#{not empty balanceQryAction.reportFileName}">
                                 <p:fileDownload value="#{excelDownloadAction.reportFile}" contentDisposition="inline"/>
                             </p:commandButton>
-                            <p:divider rendered="#{not empty balanceQryAction.reportFileName}"/>
+                            <!--<p:divider rendered="#{not empty balanceQryAction.reportFileName}"/>-->
 
                         </p:toolbarGroup>
-                        <p:divider/>
+                        <!--<p:divider/>-->
                     </p:toolbar>
                     <p:ajaxStatus style="height:20px;text-align:center">
                         <f:facet name="start">
@@ -41,20 +41,11 @@
                             <h:outputText value=""/>
                         </f:facet>
                     </p:ajaxStatus>
-                    <!--
-                     <p:ajaxStatus onstart="statusDialog.show();" onsuccess="statusDialog.hide();">
-                        <p:panel widgetVar="statusDialog" visible="false" closable="false"
-                                 style="position: absolute; background-color: rgba(0, 0, 0, 0.6); height: 256px; width: 256px; left:0%; top:0%; z-index:2; height: 100%; width: 100%">
-                            <p:graphicImage value="/images/ajaxloadingbar.gif"
-                                            style="position: absolute;left: 40%; top: 40%;"/>
-                        </p:panel>
-                    </p:ajaxStatus>
-                    -->
                 </div>
             </div>
             <!--<br/>-->
 
-            <p:dataTable id="pdt" height="200" dynamic="true" selectionMode="single"
+            <p:dataTable id="pdt" height="200" dynamic="true"
                          value="#{balanceQryAction.detlList}" var="record"
                          paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
                          paginator="true" rows="30" paginatorPosition="bottom"

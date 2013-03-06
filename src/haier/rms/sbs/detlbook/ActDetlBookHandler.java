@@ -166,7 +166,7 @@ public class ActDetlBookHandler {
 //            dataTable.clearInitialState();
 //            dataTable.
             dataTable.setFirst(0);
-            dataTable.setPage(1);
+            //dataTable.setPage(1);
             queryRecordsFromSBS();
         } catch (Exception e) {
             logger.error("查询时出现错误。", e);

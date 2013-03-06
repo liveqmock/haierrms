@@ -1,7 +1,8 @@
 package haier.view;
 
 import net.sf.jxls.transformer.XLSTransformer;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pub.platform.advance.utils.PropertyManager;
@@ -53,13 +54,14 @@ public class JxlsManager {
         return null;
     }
 
-    private void outputExcel(Map beansMap, String templateFileName, String excelFilename) throws IOException {
+    private void outputExcel(Map beansMap, String templateFileName, String excelFilename) throws IOException, InvalidFormatException {
         ServletOutputStream os = null;
         InputStream is = null;
         try {
             XLSTransformer transformer = new XLSTransformer();
             is = new BufferedInputStream(new FileInputStream(templateFileName));
-            HSSFWorkbook wb = transformer.transformXLS(is, beansMap);
+            //HSSFWorkbook wb = transformer.transformXLS(is, beansMap);
+            Workbook wb = transformer.transformXLS(is, beansMap);
             HttpServletResponse response = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();
             os = response.getOutputStream();
             response.reset();

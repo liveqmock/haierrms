@@ -2,7 +2,7 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:p="http://primefaces.org/ui"
                 xmlns:fn="http://java.sun.com/jsp/jstl/functions"
                 template="/templates/ui.xhtml">
 
@@ -10,10 +10,10 @@
     </ui:define>
 
     <ui:define name="content">
-        <p:growl id="msgs" showDetail="false"/>
 
         <div id="table">
             <h:form id="form">
+                <p:growl id="msgs" showDetail="false"/>
                 <div style="margin-top: 5px;margin-bottom:5px ">
                     <p:menubar>
                         <p:submenu label="账户分类批量设置" icon="ui-icon ui-icon-pencil">
@@ -32,8 +32,9 @@
 
                 <p:dataTable id="pdt"
                              onRowEditUpdate="msgs"
+                             editable="true"
                              selection="#{sbsActInfoMngAction.selectedActtypes}"
-                             rowEditListener="#{sbsActInfoMngAction.onSaveData}"
+                             rowKey="#{record.bankcd}#{record.actno}"
                              value="#{sbsActInfoMngAction.mtActtypeList}" var="record"
                              paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
                              paginator="true" rows="15" paginatorPosition="bottom"
@@ -44,6 +45,8 @@
                         <h:outputText value="#{sbsActInfoMngAction.title}">
                         </h:outputText>
                     </f:facet>
+
+                    <p:ajax event="rowEdit" listener="#{sbsActInfoMngAction.onSaveData}" update=":form:msgs" />
 
                     <p:column selectionMode="multiple"/>
                     <p:column id="actno" headerText="帐号" filterBy="#{record.actno}" filterMatchMode="contains"

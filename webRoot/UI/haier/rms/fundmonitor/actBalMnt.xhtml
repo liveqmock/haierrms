@@ -2,7 +2,7 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:p="http://primefaces.org/ui"
                 xmlns:fn="http://java.sun.com/jsp/jstl/functions"
                 template="/templates/ui.xhtml">
 
@@ -10,8 +10,8 @@
     </ui:define>
 
     <ui:define name="content">
-        <p:messages id="msgs" showDetail="false"/>
         <h:form id="form">
+            <p:messages id="msgs" showDetail="false"/>
             <p:pieChart model="#{actBalMonitorAction.pieChartModel}" var="pie"
                          width="50%"  />
             <p:lineChart model="#{actBalMonitorAction.cartesianModel}"

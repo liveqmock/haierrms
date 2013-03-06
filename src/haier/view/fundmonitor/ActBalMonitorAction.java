@@ -7,8 +7,7 @@ import haier.rms.sbs.balance.RoeBean;
 import haier.service.fundmonitor.ActBalOnlineService;
 import net.sf.jxls.transformer.XLSTransformer;
 import org.apache.commons.lang.StringUtils;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.primefaces.component.chart.series.ChartSeries;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.primefaces.event.SelectEvent;
 import org.primefaces.model.chart.CartesianChartModel;
 import org.primefaces.model.chart.PieChartModel;
@@ -263,6 +262,7 @@ public class ActBalMonitorAction implements Serializable {
 
         List<MtActbalSumBean> mtActbalSumBeanList = actBalOnlineService.selectSumDataList(this.bankcd, this.txndate);
 
+/*
         ChartSeries classA = new ChartSeries();
         ChartSeries classD = new ChartSeries();
         ChartSeries classF = new ChartSeries();
@@ -273,7 +273,9 @@ public class ActBalMonitorAction implements Serializable {
         classF.setLabel("类别：F");
         classH.setLabel("类别：H");
         classW.setLabel("类别：W");
+*/
 
+/*
         for (MtActbalSumBean mtActbalSumBean : mtActbalSumBeanList) {
             //String category = mtActbalSumBean.getCategory();
             char category = mtActbalSumBean.getCategory().charAt(0);
@@ -303,6 +305,7 @@ public class ActBalMonitorAction implements Serializable {
         cartesianModel.addSeries(classF);
         cartesianModel.addSeries(classH);
         cartesianModel.addSeries(classW);
+*/
     }
 
 
@@ -396,7 +399,8 @@ public class ActBalMonitorAction implements Serializable {
 
             InputStream is = new BufferedInputStream(new FileInputStream(templateFileName));
 
-            HSSFWorkbook wb = transformer.transformXLS(is, beansMap);
+            //HSSFWorkbook wb = transformer.transformXLS(is, beansMap);
+            Workbook wb = transformer.transformXLS(is, beansMap);
 
             HttpServletResponse response = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();
             response.reset();

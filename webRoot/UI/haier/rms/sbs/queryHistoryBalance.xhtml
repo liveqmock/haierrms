@@ -2,7 +2,7 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:p="http://primefaces.prime.com.tr/ui"
+                xmlns:p="http://primefaces.org/ui"
                 xmlns:fn="http://java.sun.com/jsp/jstl/functions"
                 template="/templates/ui.xhtml">
 
@@ -10,13 +10,12 @@
     </ui:define>
 
     <ui:define name="content">
-        <p:messages id="msgs" showDetail="false"/>
         <h:form id="form">
+            <p:messages id="msgs" showDetail="false"/>
             <div id="header" style="margin-top:5px">
                 <div>
                     <p:panel header="查询条件">
                         <h:panelGrid columns="2" cellspacing="10">
-
                             <h:outputLabel value="业务日期:" for="startdate"/>
                             <p:calendar id="startdate" value="#{historyBalanceQryAction.startdate}" mode="popup"
                                         pattern="yyyy-MM-dd"
@@ -26,7 +25,7 @@
                         <p:separator/>
                         <h:panelGrid columns="2"  style="margin-left:10px;">
                             <p:commandButton type="push" value="查询" image="ui-icon-search"
-                                             action="#{historyBalanceQryAction.query}" update="pdt,msgs,toolbar"/>
+                                             action="#{historyBalanceQryAction.query}" update="pdt,msgs"/>
                             <p:commandButton id="print"  value="导出"  ajax="false"
                                              action="#{historyBalanceQryAction.exportExcel}"/>
                         </h:panelGrid>
@@ -45,7 +44,7 @@
             </div>
             <!--<br/>-->
 
-            <p:dataTable id="pdt" height="200" dynamic="true" selectionMode="single"
+            <p:dataTable id="pdt" height="200" dynamic="true"
                          value="#{historyBalanceQryAction.detlList}" var="record"
                          paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
                          paginator="true" rows="30" paginatorPosition="bottom"

@@ -5,8 +5,8 @@ import haier.repository.model.sbsreport.ActbalHistory;
 import haier.service.rms.sbsbatch.ActbalService;
 import net.sf.jxls.transformer.XLSTransformer;
 import org.apache.commons.lang.StringUtils;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -375,7 +375,8 @@ public class HistoryBalanceQryAction implements Serializable {
 
         InputStream is = new BufferedInputStream(new FileInputStream(templateFileName));
 
-        HSSFWorkbook wb = transformer.transformXLS(is, beansMap);
+        //HSSFWorkbook wb = transformer.transformXLS(is, beansMap);
+        Workbook wb = transformer.transformXLS(is, beansMap);
 
         HttpServletResponse response = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();
         response.reset();
