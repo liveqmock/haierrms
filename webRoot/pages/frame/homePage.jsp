@@ -1,6 +1,10 @@
 <%@ page import="pub.platform.db.ConnectionManager" %>
 <%@ page import="pub.platform.db.DatabaseConnection" %>
 <%@ page import="pub.platform.db.RecordSet" %>
+<%@ page import="pub.platform.form.config.SystemAttributeNames" %>
+<%@ page import="pub.platform.security.OperatorManager" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html; charset=GBK" %>
 <%
     response.setContentType("text/html; charset=GBK");
@@ -8,7 +12,7 @@
     /*2011-4-7 Cookie设置添加到loginassistor.jsp中*/
     String jsonDefaultMenu = null;
     String jsonSystemMenu = null;
-    //OperatorManager om = (OperatorManager) session.getAttribute(SystemAttributeNames.USER_INFO_NAME);
+    OperatorManager om = (OperatorManager) session.getAttribute(SystemAttributeNames.USER_INFO_NAME);
     try {
         //xmlString =om.getXmlString();
         jsonDefaultMenu = om.getJsonString("default");
@@ -18,6 +22,7 @@
     } catch (Exception e) {
         System.out.println("jsp" + e + "\n");
     }
+    String username = "";
     String deptname = "";
     String operid = "";
 
