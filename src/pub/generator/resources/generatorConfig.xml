@@ -81,6 +81,11 @@
             <property name="ignoreQualifiersAtRuntime" value="true"/>
             <generatedKey column="pkid" sqlStatement="select sys_guid() from dual" identity="false"/>
         </table>
+        <table schema="rms" tableName="s1169_corplist">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+            <generatedKey column="pkid" sqlStatement="select sys_guid() from dual" identity="false"/>
+        </table>
+        <table tableName="s1169_acttype"/>
         -->
 
 
@@ -101,6 +106,7 @@
                 <table tableName="ptlogicact"/>
                 <table tableName="ptmenu"/>
                 <table tableName="ptoper"/>
+                <table tableName="ptoplog"/>
                 <table tableName="ptoperrole"/>
                 <table tableName="ptrsource"/>
                 <table tableName="sys_lock"/>
