@@ -9,11 +9,13 @@ import haier.repository.dao.S1169CorplistMapper;
 import haier.repository.model.S1169Corplist;
 import haier.repository.model.S1169CorplistExample;
 import haier.service.common.SbsCommonService;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,27 +29,60 @@ import java.util.List;
 @Service
 public class FixedDepositQryService {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     private S1169CorplistMapper s1169CorplistMapper;
     @Autowired
     private SbsCommonService sbsCommonService;
 
 
-    public void processFixedDepositRecord(){
+    public List<FixedDepositBean>  getFixedDepositRecord(String corpName){
         List<SOFDataDetail> sbsToaList = queryAllFixedDepositRecordFromSBS();
         List<S1169Corplist> corplists = queryAllCorpList();
 
         List<FixedDepositBean> voList = new ArrayList<FixedDepositBean>();
         for (SOFDataDetail detail : sbsToaList) {
+            if (StringUtils.isNotEmpty(corpName)) {
+                if (!((T8855SOFDataDetail) detail).getCusnam().contains(corpName)) {
+                    continue;
+                }
+            }
+            if (isExistConfig((T8855SOFDataDetail) detail, corplists)
+                    && "1".equals(((T8855SOFDataDetail) detail).getActsts())) {
+                FixedDepositBean vo = new FixedDepositBean();
+                vo.setCorpName(((T8855SOFDataDetail) detail).getCusnam().trim());
+                vo.setCorpCode("");
+                vo.setBankName("财务公司");
+                vo.setActNum(((T8855SOFDataDetail) detail).getCusact().trim());
+                vo.setVoucherNum(((T8855SOFDataDetail) detail).getBoknum().trim());
 
+                String bal = ((T8855SOFDataDetail) detail).getBokbal();
+                vo.setBalamt(new BigDecimal(bal));
+                vo.setStartDate(((T8855SOFDataDetail) detail).getValdat());
+                vo.setEndDate(((T8855SOFDataDetail) detail).getExpdat());
+
+                String intrat = ((T8855SOFDataDetail) detail).getIntrat();
+                vo.setIntRate(new BigDecimal(intrat));
+                vo.setPeriod(Integer.parseInt(((T8855SOFDataDetail) detail).getDptprd()));
+
+                String curcde = ((T8855SOFDataDetail) detail).getCusact().substring(15,18);
+                vo.setCurrCode(curcde);
+                if ("001".equals(curcde)) {
+                    vo.setCurrName("人民币");
+                }else{
+                    vo.setCurrName(sbsCommonService.selectCurrNameByCurrCode(curcde));
+                }
+                voList.add(vo);
+            }
         }
-
+        return voList;
     }
 
-    private boolean isExistConfig(SOFDataDetail detail, List<S1169Corplist> corplists){
+    private boolean isExistConfig(T8855SOFDataDetail detail, List<S1169Corplist> corplists){
         for (S1169Corplist corp : corplists) {
-//            if (corp.getCordname().trim().equals((T8855SOFDataDetail)detail.)) {
-//            }
+            if (corp.getCordname().trim().equals(detail.getCusnam().trim())) {
+                return true;
+            }
         }
         return false;
     }

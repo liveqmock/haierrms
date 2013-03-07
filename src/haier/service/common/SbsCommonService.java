@@ -5,7 +5,11 @@ import haier.activemq.service.sbs.core.SBSResponse4SingleRecord;
 import haier.activemq.service.sbs.core.SOFDataDetail;
 import haier.activemq.service.sbs.txn.T5834.T5834Handler;
 import haier.activemq.service.sbs.txn.T5834.T5834SOFDataDetail;
+import haier.repository.dao.SbsActccyMapper;
+import haier.repository.model.SbsActccy;
+import haier.repository.model.SbsActccyExample;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pub.platform.advance.utils.PropertyManager;
 
@@ -24,6 +28,9 @@ import java.util.Map;
  */
 @Service
 public class SbsCommonService {
+
+    @Autowired
+    private SbsActccyMapper sbsActccyMapper;
 
     public Map<String, BigDecimal> queryExchangeRateList(List<String> curcdeList, String yyyymmdd) {
 
@@ -106,5 +113,21 @@ public class SbsCommonService {
             return new BigDecimal(strRoe.replaceAll("(\\,|\\s+)", ""));
         }
 
+    }
+
+    public String selectCurrNameByCurrCode(String currCode){
+        SbsActccyExample example = new SbsActccyExample();
+        example.createCriteria().andCurcdeEqualTo(currCode);
+        List<SbsActccy> records  = sbsActccyMapper.selectByExample(example);
+        if (records.isEmpty()) {
+            return null;
+        }else{
+            return records.get(0).getCurnmc();
+        }
+    }
+    public List<SbsActccy> selectCurrNameByCurrCode(){
+        SbsActccyExample example = new SbsActccyExample();
+        example.createCriteria();
+        return sbsActccyMapper.selectByExample(example);
     }
 }
