@@ -218,14 +218,16 @@
     <!-- Action Servlet Mapping -->
     <servlet-mapping>
         <servlet-name>AdminServlet</servlet-name>
-        <!--<url-pattern>index.html</url-pattern>-->
         <url-pattern>*.login</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>AdminServletNocas</servlet-name>
-        <!--<url-pattern>index.html</url-pattern>-->
         <url-pattern>*.loginnocas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServletNocas</servlet-name>
+        <url-pattern>1169</url-pattern>
     </servlet-mapping>
 
     <mime-mapping>
