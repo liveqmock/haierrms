@@ -475,6 +475,18 @@ public class OperatorManager implements Serializable {
         return (String)this.jsonMap.get(target);
     }
 
+    public String getRemoteAddr() {
+        return remoteAddr;
+    }
+
+    public String getRemoteHost() {
+        return remoteHost;
+    }
+
+    public String getLoginTime() {
+        return loginTime;
+    }
+
 //    public Scttlr getScttlr() {
 //        return scttlr;
 //    }

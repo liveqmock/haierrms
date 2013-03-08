@@ -106,7 +106,10 @@
                 <table tableName="ptlogicact"/>
                 <table tableName="ptmenu"/>
                 <table tableName="ptoper"/>
-                <table tableName="ptoplog"/>
+                <table schema="rms" tableName="ptoplog">
+                    <property name="ignoreQualifiersAtRuntime" value="true"/>
+                    <generatedKey column="guid" sqlStatement="select sys_guid() from dual" identity="false"/>
+                </table>
                 <table tableName="ptoperrole"/>
                 <table tableName="ptrsource"/>
                 <table tableName="sys_lock"/>

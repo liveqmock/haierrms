@@ -1,6 +1,8 @@
 package haier.view.infoqry;
 
+import haier.repository.model.Ptoplog;
 import haier.repository.model.S1169Corplist;
+import haier.service.common.PlatformService;
 import haier.service.infoqry.Act1169ListService;
 import org.primefaces.component.datatable.DataTable;
 import org.primefaces.event.RowEditEvent;
@@ -35,6 +37,9 @@ public class Act1169ListAction implements Serializable {
     private S1169Corplist selectedBean;
     private List<S1169Corplist> detlList;
     private DataTable dataTableWidget;
+    @ManagedProperty(value = "#{platformService}")
+    private PlatformService platformService;
+
 
     //==============================
     @PostConstruct
@@ -46,6 +51,12 @@ public class Act1169ListAction implements Serializable {
         S1169Corplist corp = (S1169Corplist) event.getObject();
         try {
             act1169ListService.insertCorplistRecord(corp);
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("Act1169ListAction_onSaveData");
+            oplog.setActionName("1169企业清单维护:保存");
+            oplog.setOpLog(this.selectedBean.getCordname());
+            platformService.insertNewOperationLog(oplog);
             MessageUtil.addInfo("记录处理成功");
         } catch (Exception e) {
             logger.error("增加记录时出现错误",e);
@@ -56,6 +67,13 @@ public class Act1169ListAction implements Serializable {
     public String onDelete() {
         try {
             act1169ListService.deleteCorplistRecord(this.selectedBean);
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("Act1169ListAction_onDelete");
+            oplog.setActionName("1169企业清单维护:删除");
+            oplog.setOpLog(this.selectedBean.getCordname());
+            platformService.insertNewOperationLog(oplog);
+
             MessageUtil.addInfo("记录处理成功");
         } catch (Exception e) {
             logger.error("删除记录时出现错误",e);
@@ -108,5 +126,13 @@ public class Act1169ListAction implements Serializable {
 
     public void setDataTableWidget(DataTable dataTableWidget) {
         this.dataTableWidget = dataTableWidget;
+    }
+
+    public PlatformService getPlatformService() {
+        return platformService;
+    }
+
+    public void setPlatformService(PlatformService platformService) {
+        this.platformService = platformService;
     }
 }

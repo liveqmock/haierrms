@@ -1,6 +1,9 @@
 package haier.view.infoqry;
 
+import haier.repository.model.Ptoplog;
 import haier.repository.model.infoqry.FixedDepositBean;
+import haier.service.common.PlatformService;
+import haier.service.common.ToolsService;
 import haier.service.infoqry.FixedDepositQryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,11 +37,22 @@ public class FixedDepositQryAction implements Serializable {
     @ManagedProperty(value = "#{fixedDepositQryService}")
     private FixedDepositQryService fixedDepositQryService;
 
+    @ManagedProperty(value = "#{toolsService}")
+    private ToolsService toolsService;
+    @ManagedProperty(value = "#{platformService}")
+    private PlatformService platformService;
+
 
     public String onQuery() {
         try {
             detlList = fixedDepositQryService.getFixedDepositRecord(corpName);
             biDetlList = fixedDepositQryService.getFixedDepositRecordFromBI();
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("FixedDepositQryAction_onQuery");
+            oplog.setActionName("定期存款信息查询（1169）:查询");
+            platformService.insertNewOperationLog(oplog);
+
         } catch (Exception e) {
             logger.error("查询定期余额错误", e);
             MessageUtil.addError("查询定期余额错误," + e.getMessage());
@@ -121,4 +135,19 @@ public class FixedDepositQryAction implements Serializable {
         this.biDetlList = biDetlList;
     }
 
+    public ToolsService getToolsService() {
+        return toolsService;
+    }
+
+    public void setToolsService(ToolsService toolsService) {
+        this.toolsService = toolsService;
+    }
+
+    public PlatformService getPlatformService() {
+        return platformService;
+    }
+
+    public void setPlatformService(PlatformService platformService) {
+        this.platformService = platformService;
+    }
 }

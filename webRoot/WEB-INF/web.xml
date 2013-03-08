@@ -224,7 +224,7 @@
     <servlet-mapping>
         <servlet-name>AdminServletNocas</servlet-name>
         <url-pattern>*.loginnocas</url-pattern>
-        <url-pattern>*.1169</url-pattern>
+        <url-pattern>*.ext</url-pattern>
     </servlet-mapping>
 
     <mime-mapping>

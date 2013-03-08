@@ -2,8 +2,10 @@ package haier.repository.dao;
 
 import haier.repository.model.Ptdept;
 import haier.repository.model.PtdeptExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 public interface PtdeptMapper {
     /**
@@ -93,4 +95,23 @@ public interface PtdeptMapper {
      * @mbggenerated Fri Apr 08 16:05:09 CST 2011
      */
     int updateByPrimaryKey(Ptdept record);
+
+
+    /**
+     * 获取机构层次列表
+     * @param branchid
+     * @return
+     */
+    @Select("select deptid || '|' || LPad('　', (level - 1) * 2, '　') || deptname" +
+            "  from ptdept" +
+            " start with deptid = #{branchid}" +
+            "connect by prior deptid = parentdeptid")
+    List<String> selectBranchLevelString(@Param("branchid") String branchid);
+
+    @Select("select deptid " +
+            "  from ptdept" +
+            " start with deptid = #{branchid}" +
+            "connect by prior deptid = parentdeptid")
+    List<String> selectBranchLevelList(@Param("branchid") String branchid);
+
 }
