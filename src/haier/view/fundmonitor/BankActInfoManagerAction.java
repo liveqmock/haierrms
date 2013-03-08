@@ -108,6 +108,7 @@ public class BankActInfoManagerAction implements Serializable {
 //        mtActtypeUIBean.setActno("999999");
         this.mtActtypeUIBeanList.add(mtActtypeUIBean);
 
+        dataTableWidget.setFirst(this.mtActtypeUIBeanList.size());
         return null;
     }
 

@@ -310,7 +310,7 @@
                 <%--<img src="../../images/pams.jpg" height="50px" width="50px">--%>
             </td>
             <td colspan="2">
-                <%--<img src="../../images/rmstitle.jpg" height="28px">--%>
+                <img src="../../images/haierrms.jpg" height="40px" style="margin-left: 5px">
             </td>
             <td style="height:25px;text-align:right" class="headfont">
                 <span>ฤ๚บร,<%=username%>! </span>

@@ -4,10 +4,14 @@
 <%@ page import="pub.platform.form.config.SystemAttributeNames" %>
 <%@ page import="pub.platform.security.OperatorManager" %>
 <%
+    String path = request.getContextPath();
     String username = request.getParameter("username");
+    if (username == null) {
+        out.println("<script language=\"javascript\">if(top){ top.location.href='" + path + "/pages/security/loginPage_nocas.jsp'; } else { location.href = '" + path + "/pages/security/loginPage_nocas.jsp';} </script>");
+        return;
+    }
     String password = request.getParameter("password");
     String cookieFlag = request.getParameter("DropExpiration");
-    String path = request.getContextPath();
     Cookie cookies[] = request.getCookies();
     int cookieMaxAge = 0;
     if ("Month".equalsIgnoreCase(cookieFlag)) {
@@ -57,7 +61,7 @@
         om.setRemoteHost(request.getRemoteHost());
         isLogin = om.login(username, password);
         if (!isLogin) {
-            out.println("<script language=\"javascript\">alert ('输入用户名或密码有误！'); if(top){ top.location.href='" + path + "/pages/security/loginPage.jsp'; } else { location.href = '" + path + "/pages/security/loginPage.jsp';} </script>");
+            out.println("<script language=\"javascript\">alert ('输入用户名或密码有误！'); if(top){ top.location.href='" + path + "/pages/security/loginPage_nocas.jsp'; } else { location.href = '" + path + "/pages/security/loginPage_nocas.jsp';} </script>");
         }
     } catch (Exception e) {
         e.printStackTrace();

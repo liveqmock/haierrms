@@ -1,0 +1,109 @@
+<!-- 1169企业名称清单维护 -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+        <script type="text/javascript">
+            var ns_actinfomng = {};
+            ns_actinfomng.gotoLastPage = function () {
+                var rowsPerpage = pdtWidget.getPaginator().getTotalPages();
+                pdtWidget.getPaginator().setPage(rowsPerpage);
+            }
+        </script>
+    </ui:define>
+
+    <ui:define name="content">
+
+        <div id="table">
+            <h:form id="form">
+                <p:tabView id="tabView" style="font-weight:normal;font-style:normal" dynamic="true" cache="false">
+                    <p:tab id="tab" title="1169企业清单维护">
+                        <p:growl id="msgs" showDetail="false"/>
+
+                        <div style="margin-top: 15px;margin-bottom:15px ">
+                            <p:panel>
+
+                                <h:panelGrid columns="2" cellspacing="5" columnClasses="col-95,col-5">
+                                    <h:panelGrid>
+                                        <p:commandButton style="width:120px;" value="增加新帐户"
+                                                         action="#{act1169ListAction.onAddRecord}"
+                                                         update="pdt,msgs">
+                                        </p:commandButton>
+
+                                        <!--
+                                                                                <p:commandButton ajax="false"  value="导出CSV"
+                                                                                                 style="width:120px;">
+                                                                                    <p:dataExporter type="csv" target="pdt"
+                                                                                                    fileName="fdrpt"
+                                                                                                    encoding="GBK"
+                                                                                                    pageOnly="false"/>
+                                                                                </p:commandButton>
+                                        -->
+                                    </h:panelGrid>
+                                </h:panelGrid>
+                            </p:panel>
+                        </div>
+
+                        <p:dataTable id="pdt"
+                                     editable="true"
+                                     widgetVar="pdtWidget"
+                                     binding="#{act1169ListAction.dataTableWidget}"
+                                     onRowEditUpdate="msgs"
+                                     value="#{act1169ListAction.detlList}" var="record"
+                                     paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
+                                     paginator="true" rows="15" paginatorPosition="bottom"
+                                     rowsPerPageTemplate="100,50,30,15"
+                                     emptyMessage="数据记录为空...">
+                            <p:ajax event="rowEdit" listener="#{act1169ListAction.onSaveData}"
+                                    update=":form:tabView:msgs"/>
+                            <p:column id="actno" headerText="企业名称"
+                                      filterBy="#{record.cordname}" filterMatchMode="contains"
+                                      sortBy="#{record.cordname}"
+                                      style="text-align:center">
+                                <p:cellEditor>
+                                    <f:facet name="output">
+                                        <h:outputText value="#{record.cordname}"/>
+                                    </f:facet>
+                                    <f:facet name="input">
+                                        <p:inputText value="#{record.cordname}"
+                                                     required="true" requiredMessage="名称不能为空" style="width:100%"/>
+                                    </f:facet>
+                                </p:cellEditor>
+                            </p:column>
+
+                            <p:column headerText="公司代码" style="text-align:center"
+                                      sortBy="#{record.corpcode}" filterBy="#{record.corpcode}"
+                                      filterMatchMode="contains">
+                                <p:cellEditor>
+                                    <f:facet name="output">
+                                        <h:outputText value="#{record.corpcode}"/>
+                                    </f:facet>
+                                    <f:facet name="input">
+                                        <p:inputText value="#{record.corpcode}" style="width:100%"/>
+                                    </f:facet>
+                                </p:cellEditor>
+                            </p:column>
+                            <p:column headerText="信息编辑" style="text-align:center">
+                                <p:rowEditor/>
+                            </p:column>
+                            <p:column headerText="删除记录" style="text-align:center">
+                                <p:commandButton id="selectButton" update=":form:tabView:msgs :form:tabView:pdt"
+                                                 icon="ui-icon-close"
+                                                 title="删除" action="#{act1169ListAction.onDelete}">
+                                    <f:setPropertyActionListener value="#{record}"
+                                                                 target="#{act1169ListAction.selectedBean}"/>
+                                </p:commandButton>
+                            </p:column>
+                        </p:dataTable>
+                    </p:tab>
+                </p:tabView>
+
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>

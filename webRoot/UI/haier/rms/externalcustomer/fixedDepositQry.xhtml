@@ -24,7 +24,7 @@
 <div style="margin:5px;">
 <h:form id="form">
 <p:tabView id="tabView" style="font-weight:normal;font-style:normal" dynamic="true" cache="false">
-<p:tab id="tab" title="定期存款明细查询">
+<p:tab id="tab" title="财务公司定期存款数据">
     <p:growl id="msgs" showDetail="false" life="3000"/>
 
     <div id="header">
@@ -113,6 +113,14 @@
                 <f:convertNumber type="currency" currencySymbol=""/>
             </h:outputText>
         </p:column>
+        <p:column sortBy="#{record.intRate}">
+            <f:facet name="header">
+                <h:outputText value="利率"/>
+            </f:facet>
+            <h:outputText value="#{record.intRate}" style="float: right">
+                <f:convertNumber type="currency" currencySymbol=""/>
+            </h:outputText>
+        </p:column>
 
         <p:column style="text-align:center" sortBy="#{record.startDate}">
             <f:facet name="header">
@@ -132,16 +140,9 @@
             </f:facet>
             <h:outputText value="#{record.period}"/>
         </p:column>
-        <!--
-                                    <p:summaryRow listener="#{fixedDepositQryAction.calculateTotal}" >
-                                        <p:column colspan="1" style="text-align:right">
-                                            小记:  #{record.balamt}
-                                        </p:column>
-                                    </p:summaryRow>
-        -->
     </p:dataTable>
 </p:tab>
-<p:tab id="tab2" title="定期存款明细查询(小记)">
+<p:tab id="tab2" title="财务公司定期存款数据(带小记)">
     <p:growl id="msgs2" showDetail="false" life="3000"/>
 
     <div>
@@ -230,6 +231,14 @@
                 <f:convertNumber type="currency" currencySymbol=""/>
             </h:outputText>
         </p:column>
+        <p:column sortBy="#{record.intRate}">
+            <f:facet name="header">
+                <h:outputText value="利率"/>
+            </f:facet>
+            <h:outputText value="#{record.intRate}" style="float: right">
+                <f:convertNumber type="currency" currencySymbol=""/>
+            </h:outputText>
+        </p:column>
 
         <p:column style="text-align:center">
             <f:facet name="header">
@@ -258,6 +267,90 @@
             </p:column>
         </p:summaryRow>
     </p:dataTable>
+</p:tab>
+<p:tab id="tab3" title="外部银行理财数据">
+    <p:growl id="msgs3" showDetail="false" life="3000"/>
+
+    <div>
+        <p:panel>
+            <h:panelGrid columns="2" cellspacing="5" columnClasses="col-95,col-5">
+                <h:panelGrid>
+                    <p:commandButton  style="width:120px;" value="查询"
+                                     action="#{fixedDepositQryAction.onQuery}"
+                                     update="pdt3,msgs3">
+                    </p:commandButton>
+
+                    <!--
+                                                            <p:commandButton ajax="false"  value="导出CSV"
+                                                                             style="width:120px;">
+                                                                <p:dataExporter type="csv" target="pdt"
+                                                                                fileName="fdrpt"
+                                                                                encoding="GBK"
+                                                                                pageOnly="false"/>
+                                                            </p:commandButton>
+                    -->
+                </h:panelGrid>
+            </h:panelGrid>
+        </p:panel>
+    </div>
+
+    <p:ajaxStatus style="height:20px;text-align:center">
+        <f:facet name="start">
+            <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+        </f:facet>
+        <f:facet name="complete">
+            <h:outputText value=""/>
+        </f:facet>
+    </p:ajaxStatus>
+
+    <p:dataTable id="pdt3" style="width:100%;"
+                 value="#{fixedDepositQryAction.biDetlList}" var="record"
+                 rowKey="#{record.pkid}"
+                 paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown} "
+                 currentPageReportTemplate="{startRecord}-{endRecord} 共{totalRecords}笔"
+                 paginator="true" rows="30"
+                 paginatorPosition="bottom"
+                 rowsPerPageTemplate="500,100,50,30,15"
+                 sortBy="#{record.corpName}"
+                 emptyMessage="数据记录为空...">
+
+        <p:column style="text-align:center">
+            <f:facet name="header">
+                币种
+            </f:facet>
+            <h:outputText value="#{record.currName}"/>
+        </p:column>
+        <p:column sortBy="#{record.balamt}">
+            <f:facet name="header">
+                <h:outputText value="余额"/>
+            </f:facet>
+            <h:outputText value="#{record.balamt}" style="float: right">
+                <f:convertNumber type="currency" currencySymbol=""/>
+            </h:outputText>
+        </p:column>
+        <p:column sortBy="#{record.intRate}">
+            <f:facet name="header">
+                <h:outputText value="利率"/>
+            </f:facet>
+            <h:outputText value="#{record.intRate}" style="float: right">
+                <f:convertNumber type="currency" currencySymbol=""/>
+            </h:outputText>
+        </p:column>
+
+        <p:column style="text-align:center" sortBy="#{record.startDate}">
+            <f:facet name="header">
+                起息日
+            </f:facet>
+            <h:outputText value="#{record.startDate}"/>
+        </p:column>
+        <p:column style="text-align:center" sortBy="#{record.endDate}">
+            <f:facet name="header">
+                到期日
+            </f:facet>
+            <h:outputText value="#{record.endDate}"/>
+        </p:column>
+    </p:dataTable>
+
 </p:tab>
 </p:tabView>
 </h:form>

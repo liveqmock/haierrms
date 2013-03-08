@@ -278,7 +278,7 @@
     }
     function Relogin() {
         parent.window.reload = "true";
-        parent.window.location.replace("<%=contextPath%>/pages/security/logout.jsp");
+        parent.window.location.replace("<%=contextPath%>/pages/security/logout_nocas.jsp");
     }
     function changepwd() {
         var sfeature = "dialogwidth:400px; dialogheight:200px;center:yes;help:no;resizable:no;scroll:no;status:no";
@@ -305,7 +305,7 @@
                 <%--<img src="../../images/pams.jpg" height="50px" width="50px">--%>
             </td>
             <td colspan="2">
-                <%--<img src="../../images/rmstitle.jpg" height="28px">--%>
+                <img src="../../images/haierrms.jpg" height="40px" style="margin-left: 5px">
             </td>
             <td style="height:25px;text-align:right" class="headfont">
                 <span>ฤ๚บร,<%=username%>! </span>

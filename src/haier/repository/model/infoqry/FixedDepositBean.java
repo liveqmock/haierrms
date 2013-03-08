@@ -1,4 +1,4 @@
-package haier.service.infoqry;
+package haier.repository.model.infoqry;
 
 import java.math.BigDecimal;
 

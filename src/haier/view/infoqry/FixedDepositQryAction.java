@@ -1,9 +1,10 @@
 package haier.view.infoqry;
 
-import haier.service.infoqry.FixedDepositBean;
+import haier.repository.model.infoqry.FixedDepositBean;
 import haier.service.infoqry.FixedDepositQryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pub.tools.MessageUtil;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
@@ -28,13 +29,20 @@ public class FixedDepositQryAction implements Serializable {
     private String corpName;
     private BigDecimal total;
     private List<FixedDepositBean> detlList;
+    private List<FixedDepositBean> biDetlList;
 
     @ManagedProperty(value = "#{fixedDepositQryService}")
     private FixedDepositQryService fixedDepositQryService;
 
 
     public String onQuery() {
-        detlList = fixedDepositQryService.getFixedDepositRecord(corpName);
+        try {
+            detlList = fixedDepositQryService.getFixedDepositRecord(corpName);
+            biDetlList = fixedDepositQryService.getFixedDepositRecordFromBI();
+        } catch (Exception e) {
+            logger.error("查询定期余额错误", e);
+            MessageUtil.addError("查询定期余额错误," + e.getMessage());
+        }
         return null;
     }
 
@@ -104,4 +112,13 @@ public class FixedDepositQryAction implements Serializable {
     public void setTotal(BigDecimal total) {
         this.total = total;
     }
+
+    public List<FixedDepositBean> getBiDetlList() {
+        return biDetlList;
+    }
+
+    public void setBiDetlList(List<FixedDepositBean> biDetlList) {
+        this.biDetlList = biDetlList;
+    }
+
 }

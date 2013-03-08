@@ -25,7 +25,6 @@
                     <p:menubar>
                         <p:menuitem value="增加新帐户" icon="ui-icon ui-icon-gear"
                                     action="#{bankActInfoManagerAction.onAddRecord}"
-                                    oncomplete="ns_actinfomng.gotoLastPage()"
                                     update="form,pdt,msgs"/>
                         <p:menuitem value="Excel导出" icon="ui-icon ui-icon-contact"
                                     onclick="alert('此功能未完成')"
@@ -44,10 +43,6 @@
                              paginator="true" rows="15" paginatorPosition="bottom"
                              rowsPerPageTemplate="100,50,30,15"
                              emptyMessage="数据记录为空...">
-                    <f:facet name="header">
-                        <h:outputText value="帐户信息清单" >
-                        </h:outputText>
-                    </f:facet>
                     <p:ajax event="rowEdit" listener="#{bankActInfoManagerAction.onSaveData}" update=":form:msgs" />
                     <p:column  id="actno" headerText="帐号" filterBy="#{record.actnoUI}" filterMatchMode="contains"
                               sortBy="#{record.actnoUI}"

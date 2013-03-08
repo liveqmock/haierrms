@@ -6,8 +6,10 @@ import haier.activemq.service.sbs.core.SOFDataDetail;
 import haier.activemq.service.sbs.txn.T8855.T8855Handler;
 import haier.activemq.service.sbs.txn.T8855.T8855SOFDataDetail;
 import haier.repository.dao.S1169CorplistMapper;
+import haier.repository.dao.infoqry.HfcBiMapper;
 import haier.repository.model.S1169Corplist;
 import haier.repository.model.S1169CorplistExample;
+import haier.repository.model.infoqry.FixedDepositBean;
 import haier.service.common.SbsCommonService;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -32,6 +34,9 @@ public class FixedDepositQryService {
 
     @Autowired
     private S1169CorplistMapper s1169CorplistMapper;
+    @Autowired
+    private HfcBiMapper hfcBiMapper;
+
     @Autowired
     private SbsCommonService sbsCommonService;
 
@@ -109,5 +114,10 @@ public class FixedDepositQryService {
         S1169CorplistExample example = new S1169CorplistExample();
         example.createCriteria();
         return s1169CorplistMapper.selectByExample(example);
+    }
+
+    //外部银行数据 从BI获取
+    public List<FixedDepositBean>  getFixedDepositRecordFromBI(){
+        return hfcBiMapper.selectHistoryActBal();
     }
 }
