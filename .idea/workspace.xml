@@ -11,6 +11,22 @@
   <component name="ChangeListManager">
     <list readonly="true" id="ead27e89-99eb-40f0-a9c3-e0eb80618690" name="Default" comment="" />
     <list default="true" id="9988f1a9-44b6-4305-b711-49cb30d2edc0" name="" comment="1169定期余额查询">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/service/common/PlatformService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/view/platform/PtoplogAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/service/common/ToolsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/UI/platform/ptoplogQry.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/view/infoqry/Act1169ListAction.java" afterPath="$PROJECT_DIR$/src/haier/view/infoqry/Act1169ListAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/view/infoqry/FixedDepositQryAction.java" afterPath="$PROJECT_DIR$/src/haier/view/infoqry/FixedDepositQryAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pub/platform/security/OperatorManager.java" afterPath="$PROJECT_DIR$/src/pub/platform/security/OperatorManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/repository/dao/PtdeptMapper.java" afterPath="$PROJECT_DIR$/src/haier/repository/dao/PtdeptMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/repository/model/Ptoplog.java" afterPath="$PROJECT_DIR$/src/haier/repository/model/Ptoplog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/repository/model/PtoplogExample.java" afterPath="$PROJECT_DIR$/src/haier/repository/model/PtoplogExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/repository/dao/PtoplogMapper.java" afterPath="$PROJECT_DIR$/src/haier/repository/dao/PtoplogMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/repository/mapper/PtoplogMapper.xml" afterPath="$PROJECT_DIR$/src/haier/repository/mapper/PtoplogMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/act1169ListMng.xhtml" afterPath="$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/act1169ListMng.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/applicationContext.xml" afterPath="$PROJECT_DIR$/src/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/fixedDepositQry.xhtml" afterPath="$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/fixedDepositQry.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pub/generator/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/pub/generator/resources/generatorConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webRoot/WEB-INF/web.xml" />
     </list>
     <list id="5ccc1d64-bba7-4e6c-828c-523c65ef74ad" name="Failed commit: " comment="Failed commit:" />
@@ -35,7 +51,7 @@
     <file path="/readme.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1357873264527" ignored="false" />
     <file path="$PROJECT_DIR$/../../../svn-haierfip/src-psisvn/haierfip/src/main/java/fip/service/fip/CmsService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358149309611" ignored="false" />
     <file path="/CmsService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358149252467" ignored="false" />
-    <file path="/Dummy.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362649963770" ignored="false" />
+    <file path="/Dummy.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362737039902" ignored="false" />
     <file path="/PbcRateRptAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358754846905" ignored="false" />
     <file path="$PROJECT_DIR$/../../../svn-ccbpams/src/ccbpams-v2.0/main/webapp/UI/test/loginPage01.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358221688093" ignored="false" />
     <file path="/loginPage01.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358221686602" ignored="false" />
@@ -44,7 +60,7 @@
     <file path="/DataEtlService.groovy" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358505148637" ignored="false" />
     <file path="/DBXML.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358311272312" ignored="false" />
     <file path="/expExcelJsp.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358312545585" ignored="false" />
-    <file path="/a.dummy" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358471950065" ignored="false" />
+    <file path="/a.dummy" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362650894656" ignored="false" />
     <file path="/ccms_balance.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358486457412" ignored="false" />
     <file path="/PbcRateService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358484693770" ignored="false" />
     <file path="/LogAnalysys.groovy" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358413399305" ignored="false" />
@@ -58,15 +74,28 @@
     <file path="/queryBalance.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362541654788" ignored="false" />
     <file path="/trackMisc.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362547151526" ignored="false" />
     <file path="/sbsActInfoMng.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362547345720" ignored="false" />
-    <file path="/homePage_nocas.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362553417707" ignored="false" />
-    <file path="/FixedDepositQryAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362649574071" ignored="false" />
-    <file path="/FixedDepositQryService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362649613675" ignored="false" />
-    <file path="/fragment.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362637901342" ignored="false" />
+    <file path="/homePage_nocas.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362709173054" ignored="false" />
+    <file path="/FixedDepositQryAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362726474549" ignored="false" />
+    <file path="/FixedDepositQryService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362726249699" ignored="false" />
+    <file path="/fragment.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362735978379" ignored="false" />
     <file path="/T8855SOFDataDetail.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362626661775" ignored="false" />
-    <file path="/generatorConfig.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362638825413" ignored="false" />
+    <file path="/generatorConfig.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362737201992" ignored="false" />
     <file path="/FixedDepositBean.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362649203695" ignored="false" />
-    <file path="/fixedDepositQry.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362649902022" ignored="false" />
+    <file path="/fixedDepositQry.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362734900117" ignored="false" />
     <file path="/SbsCommonService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362649039433" ignored="false" />
+    <file path="/logout_nocas.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362651015412" ignored="false" />
+    <file path="/web.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362733636129" ignored="false" />
+    <file path="/loginassistor_nocas.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362706663187" ignored="false" />
+    <file path="/bankActInfoMng.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362714960016" ignored="false" />
+    <file path="/BankActInfoManagerAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362715275120" ignored="false" />
+    <file path="/act1169ListMng.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362735178724" ignored="false" />
+    <file path="/HfcBiMapper.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362725587752" ignored="false" />
+    <file path="/HfcBiMapper.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362725665821" ignored="false" />
+    <file path="/HfcBiService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362725760900" ignored="false" />
+    <file path="/Act1169ListAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362736772208" ignored="false" />
+    <file path="/Act1169ListService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362729727811" ignored="false" />
+    <file path="/PtoplogAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362737575453" ignored="false" />
+    <file path="/applicationContext.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362737531229" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,23 +119,6 @@
     <groupTables value="false" />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/haier/activemq/service/sbs/txn/T8855/T8855Test.java" line="34" class="haier.activemq.service.sbs.txn.T8855.T8855Test" package="haier.activemq.service.sbs.txn.T8855">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -141,6 +153,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/haier/activemq/service/sbs/txn/T8855/T8855Test.java" line="34" class="haier.activemq.service.sbs.txn.T8855.T8855Test" package="haier.activemq.service.sbs.txn.T8855">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -156,7 +185,73 @@
       <file leaf-file-name="FixedDepositQryAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/haier/view/infoqry/FixedDepositQryAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="16" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
+            <state line="53" column="40" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlatformService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/service/common/PlatformService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="63" selection-start="5535" selection-end="5535" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4051#4067#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ibator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pub/generator/Ibator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="13" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generatorConfig.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pub/generator/resources/generatorConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="0" selection-start="4849" selection-end="4849" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PtoperroleMapper.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/repository/mapper/PtoperroleMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="S1169ActtypeMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/S1169ActtypeMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="3" selection-start="291" selection-end="302" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PtoplogMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/PtoplogMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PtoplogAction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/haier/view/platform/PtoplogAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="24" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.64893615">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,144 +259,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fixedDepositQry.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/fixedDepositQry.xhtml">
+      <file leaf-file-name="activemqContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/activemqContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="91" selection-start="10261" selection-end="10261" vertical-scroll-proportion="-8.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="51" selection-start="1878" selection-end="1878" vertical-scroll-proportion="-14.36">
               <folding>
-                <marker date="1362649950665" expanded="true" signature="735:771" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="1133:1150" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="1236:1248" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="1369:1381" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="2424:2453" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="2715:2726" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="3393:3410" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="3595:3612" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="3795:3812" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="3991:4008" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="4189:4206" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="4570:4582" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="4728:4745" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="4957:4974" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="5182:5199" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="6119:6136" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="6222:6234" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="6356:6368" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="7413:7442" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="7705:7716" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="8402:8419" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="8604:8621" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="8804:8821" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="9000:9017" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="9198:9215" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="9553:9565" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="9711:9728" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="9911:9928" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="10109:10126" placeholder="{...}" />
-                <marker date="1362649950665" expanded="true" signature="10397:10413" placeholder="{...}" />
+                <element signature="e#1328#1376#0" expanded="true" />
+                <element signature="e#1414#1461#0" expanded="true" />
+                <element signature="e#1504#1547#0" expanded="true" />
+                <element signature="e#1590#1635#0" expanded="true" />
+                <element signature="e#6697#6726#0" expanded="true" />
+                <element signature="e#6764#6781#0" expanded="true" />
+                <element signature="e#6824#6846#0" expanded="true" />
+                <element signature="e#6889#6911#0" expanded="true" />
+                <element signature="e#7495#7525#0" expanded="true" />
+                <element signature="e#7563#7581#0" expanded="true" />
+                <element signature="e#7624#7647#0" expanded="true" />
+                <element signature="e#7690#7713#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webRoot/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="25" selection-start="8024" selection-end="8024" vertical-scroll-proportion="1.3675889">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queryBalance.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryBalance.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="38" selection-start="4260" selection-end="4337" vertical-scroll-proportion="-7.857143">
-              <folding>
-                <marker date="1362542493113" expanded="true" signature="2062:2091" placeholder="{...}" />
-                <marker date="1362542493113" expanded="true" signature="3545:3562" placeholder="{...}" />
-                <marker date="1362542493113" expanded="true" signature="4245:4257" placeholder="{...}" />
-                <marker date="1362542493113" expanded="true" signature="4581:4593" placeholder="{...}" />
-                <marker date="1362542493113" expanded="true" signature="4798:4815" placeholder="{...}" />
-                <marker date="1362542493113" expanded="true" signature="5312:5324" placeholder="{...}" />
-                <marker date="1362542493113" expanded="true" signature="5924:5941" placeholder="{...}" />
-                <marker date="1362542493113" expanded="true" signature="6178:6195" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queryActDetl.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryActDetl.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="4979" selection-end="5243" vertical-scroll-proportion="-13.357142">
-              <folding>
-                <marker date="1362622538336" expanded="true" signature="2450:2479" placeholder="{...}" />
-                <marker date="1362622538336" expanded="true" signature="3271:3288" placeholder="{...}" />
-                <marker date="1362622538336" expanded="true" signature="3550:3567" placeholder="{...}" />
-                <marker date="1362622538336" expanded="true" signature="3929:3946" placeholder="{...}" />
-                <marker date="1362622538336" expanded="true" signature="4201:4218" placeholder="{...}" />
-                <marker date="1362622538336" expanded="true" signature="4473:4490" placeholder="{...}" />
-                <marker date="1362622538336" expanded="true" signature="4935:4947" placeholder="{...}" />
-                <marker date="1362622538336" expanded="true" signature="5199:5211" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixedDepositQryService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/service/infoqry/FixedDepositQryService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="81" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1479#1497#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SbsCommonService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/service/common/SbsCommonService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="26" selection-start="4249" selection-end="4249" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixedDepositBean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/service/infoqry/FixedDepositBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="33" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoeBean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/RoeBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BalanceQryAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="13" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -324,22 +308,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/credit_production.properties" />
-        <option value="$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryActDetl.xhtml" />
-        <option value="$PROJECT_DIR$/src/haier/view/rms/sbs/FixedDepositQryAction.java" />
-        <option value="$PROJECT_DIR$/src/haier/activemq/service/sbs/txn/T8855/T8855SOFDataDetail.java" />
-        <option value="$PROJECT_DIR$/src/haier/activemq/service/sbs/txn/T8855/T8855Test.java" />
-        <option value="$PROJECT_DIR$/src/haier/activemq/service/sbs/txn/T8855/T8855Handler.java" />
-        <option value="$PROJECT_DIR$/src/haier/repository/dao/S1169ActtypeMapper.java" />
-        <option value="$PROJECT_DIR$/src/haier/repository/dao/S1169CorplistMapper.java" />
+        <option value="$PROJECT_DIR$/src/haier/repository/dao/infoqry/HfcBiMapper.java" />
+        <option value="$PROJECT_DIR$/src/haier/service/infoqry/FixedDepositQryService.java" />
+        <option value="$PROJECT_DIR$/src/haier/service/infoqry/Act1169ListService.java" />
+        <option value="$PROJECT_DIR$/webRoot/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/fixedDepositQry.xhtml" />
+        <option value="$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/act1169ListMng.xhtml" />
+        <option value="$PROJECT_DIR$/src/pub/platform/security/OperatorManager.java" />
+        <option value="$PROJECT_DIR$/src/haier/view/infoqry/FixedDepositQryAction.java" />
+        <option value="$PROJECT_DIR$/src/haier/service/common/PlatformService.java" />
+        <option value="$PROJECT_DIR$/src/haier/repository/dao/PtdeptMapper.java" />
+        <option value="$PROJECT_DIR$/src/haier/service/common/ToolsService.java" />
+        <option value="$PROJECT_DIR$/src/haier/view/infoqry/Act1169ListAction.java" />
         <option value="$PROJECT_DIR$/src/pub/generator/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/haier/repository/dao/PtoplogMapper.java" />
-        <option value="$PROJECT_DIR$/src/haier/service/common/SbsCommonService.java" />
-        <option value="$PROJECT_DIR$/src/haier/service/infoqry/FixedDepositBean.java" />
-        <option value="$PROJECT_DIR$/src/haier/view/infoqry/FixedDepositQryAction.java" />
-        <option value="$PROJECT_DIR$/src/haier/service/infoqry/FixedDepositQryService.java" />
-        <option value="$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/fixedDepositQry.xhtml" />
-        <option value="$PROJECT_DIR$/webRoot/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/haier/view/platform/PtoplogAction.java" />
       </list>
     </option>
   </component>
@@ -407,7 +391,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectStructureProblems">
     <ignored-problems>
@@ -428,6 +412,130 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gwk/burlap">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gateway">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Haierrms2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -492,7 +600,113 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webRoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,6 +853,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platform" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -838,41 +1078,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rms" />
+              <option name="myItemId" value="repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sbs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="balance" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -899,6 +1109,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infoqry" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -950,6 +1164,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbsreport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infoqry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -972,7 +1246,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="activemq" />
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbsreport" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -994,238 +1276,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="activemq" />
+              <option name="myItemId" value="repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sbs" />
+              <option name="myItemId" value="infoqry" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="txn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activemq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="txn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="T8855" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activemq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activemq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="gwk/burlap">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="gateway">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ccbgwk_v1.0">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haierrms2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1241,7 +1301,7 @@
     <property name="options.lastSelected" value="File.Encoding" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="D:/javalib/spring/spring-framework-3.2.1.RELEASE/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/haier/repository/mapper/infoqry" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Xhtml" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -1251,38 +1311,38 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="haier.view.platform" />
+      <recent name="haier.service.infoqry" />
+      <recent name="haier.view.infoqry" />
+      <recent name="haier.repository.dao.infoqry" />
       <recent name="haier.activemq.service.sbs.txn.T8855" />
-      <recent name="haier.activemq.service.sbs.txn.T8821" />
-      <recent name="haier.rms.sbs.tellertxnreport" />
-      <recent name="haier.rms.sbs.landingcheck" />
-      <recent name="haier.repository.model.pbcrateReport" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\UI\haier\rms\sbs" />
-      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\src" />
-      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\pages\frame" />
+      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\UI" />
+      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\src\haier\service\common" />
+      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\src\haier\repository\mapper\infoqry" />
+      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\UI\haier\rms\externalcustomer" />
       <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\images" />
-      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cbs.batch.ac.voucher" />
       <recent name="cbs.common.validator" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="haier.repository.model.sbsreport" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\UI\haier\rms\externalcustomer" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\UI\cbs\ac\batchbook" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\pages\frame" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\pages\security" />
       <recent name="F:\svn-fbicbs\source\fbicbs\src\cbs\common\utils\message" />
-      <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\resources\images" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="haier.repository.model.sbsreport" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat7.0.33">
@@ -1447,6 +1507,19 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <module name="" />
@@ -1475,19 +1548,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -1508,25 +1568,6 @@
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="WebLogic Instance" factoryName="Local">
-      <option name="PORT" value="7001" />
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN_PATH" value="" />
-        <option name="SERVER_NAME" value="myserver" />
-        <option name="DOMAIN_NAME" value="mydomain" />
-        <option name="ADMIN_SERVER_HOST" value="localhost" />
-        <option name="ADMIN_SERVER_PORT" value="7001" />
-        <option name="CLUSTER_NAME" value="mycluster" />
-        <option name="CONNECT_TO_MANAGED_SERVER" value="false" />
-        <option name="USERNAME" value="weblogic" />
-        <option name="PASSWORD" value="" />
-      </server-settings>
-      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
-      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
-      <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1550,10 +1591,23 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
+    <configuration default="true" type="WebLogic Instance" factoryName="Local">
+      <option name="PORT" value="7001" />
+      <deployment />
+      <server-settings>
+        <option name="DOMAIN_PATH" value="" />
+        <option name="SERVER_NAME" value="myserver" />
+        <option name="DOMAIN_NAME" value="mydomain" />
+        <option name="ADMIN_SERVER_HOST" value="localhost" />
+        <option name="ADMIN_SERVER_PORT" value="7001" />
+        <option name="CLUSTER_NAME" value="mycluster" />
+        <option name="CONNECT_TO_MANAGED_SERVER" value="false" />
+        <option name="USERNAME" value="weblogic" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
+      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
@@ -1561,6 +1615,12 @@
       <server-settings />
       <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Tomcat7.0.33" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.33">
@@ -1808,13 +1868,13 @@
       </method>
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Application.Ibator" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SbsFtp4PbcRateRpt" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Tn116Test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.T8821Test" />
-      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.Tomcat7.0.33" />
-      <item index="5" class="java.lang.String" itemvalue="WebLogic Server.weblogic_10.3.2_gwk" />
-      <item index="6" class="java.lang.String" itemvalue="WebLogic Server.weblogic-10.3.3_gwk" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat7.0.33" />
+      <item index="1" class="java.lang.String" itemvalue="WebLogic Server.weblogic_10.3.2_gwk" />
+      <item index="2" class="java.lang.String" itemvalue="WebLogic Server.weblogic-10.3.3_gwk" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Ibator" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SbsFtp4PbcRateRpt" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Tn116Test" />
+      <item index="6" class="java.lang.String" itemvalue="Application.T8821Test" />
       <item index="7" class="java.lang.String" itemvalue="Application.T8855Test" />
     </list>
     <recent_temporary>
@@ -1958,7 +2018,11 @@
       <created>1362649967822</created>
       <updated>1362649967822</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="1169定期余额查询">
+      <created>1362733393761</created>
+      <updated>1362733393761</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1988,11 +2052,12 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4296875" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2643208" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42079207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21941273" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4438944" sideWeight="0.49390244" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4438944" sideWeight="0.49085367" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5148515" sideWeight="0.5007622" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4438944" sideWeight="0.503811" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50625" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
@@ -2020,7 +2085,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Properties" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42079207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.297561" sideWeight="0.4357367" order="5" side_tool="true" content_ui="tabs" />
@@ -2106,7 +2170,9 @@
     <MESSAGE value="1169定期余额查询" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <PATH>
@@ -2121,179 +2187,149 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/RmsSbsactattrMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/pub/platform/security/OperatorManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="0.15277778">
+        <state line="476" column="0" selection-start="12112" selection-end="12112" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/activemq/service/sbs/txn/T8855/T8855Test.java">
+    <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/PtdeptMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="60" selection-start="1016" selection-end="1034" vertical-scroll-proportion="0.0">
+        <state line="115" column="0" selection-start="3558" selection-end="3558" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/S1169CorplistMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/haier/service/common/ToolsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="83" column="0" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/service/fundmonitor/ActBalOnlineService.java">
+    <entry file="file://$PROJECT_DIR$/webRoot/UI/platform/ptoplogQry.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="13" selection-start="1672" selection-end="1672" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359979444847" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/view/infoqry/Act1169ListAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="10" selection-start="2888" selection-end="2888" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/haier/view/fundmonitor/ActBalMonitorAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="34" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/view/fundmonitor/SbsActInfoMngAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1298" selection-end="1412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryActDetl.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="4979" selection-end="5243" vertical-scroll-proportion="-13.357142">
-          <folding>
-            <marker date="1362622538336" expanded="true" signature="2450:2479" placeholder="{...}" />
-            <marker date="1362622538336" expanded="true" signature="3271:3288" placeholder="{...}" />
-            <marker date="1362622538336" expanded="true" signature="3550:3567" placeholder="{...}" />
-            <marker date="1362622538336" expanded="true" signature="3929:3946" placeholder="{...}" />
-            <marker date="1362622538336" expanded="true" signature="4201:4218" placeholder="{...}" />
-            <marker date="1362622538336" expanded="true" signature="4473:4490" placeholder="{...}" />
-            <marker date="1362622538336" expanded="true" signature="4935:4947" placeholder="{...}" />
-            <marker date="1362622538336" expanded="true" signature="5199:5211" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/RoeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="13" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/service/common/SbsCommonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="26" selection-start="4249" selection-end="4249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/service/infoqry/FixedDepositBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="33" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
+        <state line="381" column="23" selection-start="12175" selection-end="12175" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/haier/view/infoqry/FixedDepositQryAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="16" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/service/infoqry/FixedDepositQryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="81" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1479#1497#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryBalance.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="38" selection-start="4260" selection-end="4337" vertical-scroll-proportion="-7.857143">
-          <folding>
-            <marker date="1362542493113" expanded="true" signature="2062:2091" placeholder="{...}" />
-            <marker date="1362542493113" expanded="true" signature="3545:3562" placeholder="{...}" />
-            <marker date="1362542493113" expanded="true" signature="4245:4257" placeholder="{...}" />
-            <marker date="1362542493113" expanded="true" signature="4581:4593" placeholder="{...}" />
-            <marker date="1362542493113" expanded="true" signature="4798:4815" placeholder="{...}" />
-            <marker date="1362542493113" expanded="true" signature="5312:5324" placeholder="{...}" />
-            <marker date="1362542493113" expanded="true" signature="5924:5941" placeholder="{...}" />
-            <marker date="1362542493113" expanded="true" signature="6178:6195" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/fixedDepositQry.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="91" selection-start="10261" selection-end="10261" vertical-scroll-proportion="-8.0">
-          <folding>
-            <marker date="1362649950665" expanded="true" signature="735:771" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="1133:1150" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="1236:1248" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="1369:1381" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="2424:2453" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="2715:2726" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="3393:3410" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="3595:3612" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="3795:3812" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="3991:4008" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="4189:4206" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="4570:4582" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="4728:4745" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="4957:4974" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="5182:5199" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="6119:6136" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="6222:6234" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="6356:6368" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="7413:7442" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="7705:7716" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="8402:8419" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="8604:8621" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="8804:8821" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="9000:9017" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="9198:9215" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="9553:9565" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="9711:9728" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="9911:9928" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="10109:10126" placeholder="{...}" />
-            <marker date="1362649950665" expanded="true" signature="10397:10413" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="25" selection-start="8024" selection-end="8024" vertical-scroll-proportion="1.3675889">
+        <state line="53" column="40" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/service/common/PlatformService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="63" selection-start="5535" selection-end="5535" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4051#4067#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pub/generator/Ibator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pub/generator/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="4849" selection-end="4849" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/repository/mapper/PtoperroleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/S1169ActtypeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="3" selection-start="291" selection-end="302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/PtoplogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/activemqContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="51" selection-start="1878" selection-end="1878" vertical-scroll-proportion="-14.36">
+          <folding>
+            <element signature="e#1328#1376#0" expanded="true" />
+            <element signature="e#1414#1461#0" expanded="true" />
+            <element signature="e#1504#1547#0" expanded="true" />
+            <element signature="e#1590#1635#0" expanded="true" />
+            <element signature="e#6697#6726#0" expanded="true" />
+            <element signature="e#6764#6781#0" expanded="true" />
+            <element signature="e#6824#6846#0" expanded="true" />
+            <element signature="e#6889#6911#0" expanded="true" />
+            <element signature="e#7495#7525#0" expanded="true" />
+            <element signature="e#7563#7581#0" expanded="true" />
+            <element signature="e#7624#7647#0" expanded="true" />
+            <element signature="e#7690#7713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/view/platform/PtoplogAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="24" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.64893615">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
