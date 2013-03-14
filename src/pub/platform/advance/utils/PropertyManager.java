@@ -61,7 +61,7 @@ public class PropertyManager {
 
      private static PropertyManager manager = null;
      private static Object managerLock = new Object();
-     private static String propsName = "/credit.properties";
+     private static String propsName = "/prjcfg.properties";
      private Properties properties = null;
      private Object propertiesLock = new Object();
      private String resourceURI;

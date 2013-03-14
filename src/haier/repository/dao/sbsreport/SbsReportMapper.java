@@ -19,6 +19,7 @@ public interface SbsReportMapper {
      * @return
      */
     List<ActbalHistory> selectHistoryActBal(@Param("txndate") String txndate, @Param("acttype") String acttype);
+    List<ActbalHistory> selectHistoryActBalByCorpName(@Param("startdate") String startdate, @Param("enddate") String enddate, @Param("corpname") String corpname);
 
     /**
      * 查询某日A股或H股币种清单

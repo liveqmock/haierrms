@@ -14,7 +14,7 @@
         default-lazy-init="false" >
 
     <!-- 配置数据库连接池 -->
-    <context:property-placeholder location="classpath:credit.properties"/>
+    <context:property-placeholder location="classpath:prjcfg.properties"/>
 
     <!-- 配置数据库连接池 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">

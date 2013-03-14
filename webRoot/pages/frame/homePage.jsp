@@ -3,6 +3,7 @@
 <%@ page import="pub.platform.db.RecordSet" %>
 <%@ page import="pub.platform.form.config.SystemAttributeNames" %>
 <%@ page import="pub.platform.security.OperatorManager" %>
+<%@ page import="pub.tools.PlatformHelper" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html; charset=GBK" %>
@@ -49,6 +50,17 @@
             }
         }
     }
+
+    //20130313  zr  增加开发环境提示
+    String isProduction_WebServer = "0";
+    String isProduction_SBSServer = "0";
+    if (PlatformHelper.isProductionServerIp()) {
+        isProduction_WebServer = "1";
+    }
+    if (!PlatformHelper.getRealtimeProjectConfigProperty("SBS_HOSTIP").equals("192.168.91.5")) {
+        isProduction_SBSServer = "1";
+    }
+
 %>
 <script type="text/javascript">
     var g_jsContextPath = "<%=contextPath%>";
@@ -129,6 +141,16 @@
         tabbarhide("bizlayout");
         document.getElementById("biz").setAttribute("active", "true");
         document.getElementById("biz").setAttribute("className", "tabs-item-active");
+
+        //20130313 zr 开发环境提示
+        var isProd_Web = <%=isProduction_WebServer%>;
+        var isProd_Sbs = <%=isProduction_SBSServer%>;
+        if (isProd_Web == "0") {
+            alert("当前环境为开发测试环境！");
+        }
+        if (isProd_Sbs == "0") {
+            alert("当前环境连接的是SBS测试机！");
+        }
     }
 
     function doBizLoad() {

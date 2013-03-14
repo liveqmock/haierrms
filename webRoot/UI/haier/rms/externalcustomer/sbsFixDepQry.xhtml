@@ -1,0 +1,134 @@
+<!-- 定期（SBS） -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:c="http://java.sun.com/jsp/jstl/core"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+<ui:define name="head">
+    <style type="text/css">
+        .col-95 {
+            width: 95%;
+        }
+
+        .col-5 {
+            width: 5%;
+        }
+    </style>
+
+</ui:define>
+
+<ui:define name="content">
+<div style="margin:5px;">
+<h:form id="form">
+<p:tabView id="tabView" style="font-weight:normal;font-style:normal" dynamic="true" cache="false">
+<p:tab id="tab" title="企业定期存款明细查询">
+    <p:growl id="msgs" showDetail="false" life="3000"/>
+
+    <div id="header">
+        <p:panel>
+            <h:panelGrid columns="2" cellspacing="5" columnClasses="col-95,col-5">
+                <h:panelGrid columns="2" cellspacing="5">
+                    <h:outputLabel value="企业名称:" style="font-weight:bold;"/>
+                    <p:inputText value="#{sbsFixedDepQryAction.corpName}" title="请输入企业名称，可进行模糊查询。" style="width: 220px"/>
+                </h:panelGrid>
+                <h:panelGrid>
+                    <p:commandButton id="qrybtn" style="width:120px;" value="查询"
+                                     action="#{sbsFixedDepQryAction.onQuery}"
+                                     update="pdt,msgs">
+                    </p:commandButton>
+                </h:panelGrid>
+            </h:panelGrid>
+        </p:panel>
+    </div>
+
+    <p:ajaxStatus style="height:20px;text-align:center">
+        <f:facet name="start">
+            <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+        </f:facet>
+        <f:facet name="complete">
+            <h:outputText value=""/>
+        </f:facet>
+    </p:ajaxStatus>
+
+    <p:dataTable id="pdt" style="width:100%;"
+                 value="#{sbsFixedDepQryAction.detlList}" var="record"
+                 rowKey="#{record.pkid}"
+                 paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown} "
+                 currentPageReportTemplate="{startRecord}-{endRecord} 共{totalRecords}笔"
+                 paginator="true" rows="30"
+                 paginatorPosition="bottom"
+                 rowsPerPageTemplate="500,100,50,30,15"
+                 sortBy="#{record.corpName}"
+                 emptyMessage="数据记录为空...">
+
+        <p:column style="text-align:center">
+            <f:facet name="header">
+                法人单位名称
+            </f:facet>
+            <h:outputText value="#{record.corpName}"/>
+        </p:column>
+        <p:column style="text-align:center">
+            <f:facet name="header">
+                账号
+            </f:facet>
+            <h:outputText value="#{record.actNum}"/>
+        </p:column>
+        <p:column style="text-align:center">
+            <f:facet name="header">
+                币种
+            </f:facet>
+            <h:outputText value="#{record.currName}"/>
+        </p:column>
+        <p:column style="text-align:center">
+            <f:facet name="header">
+                存单号
+            </f:facet>
+            <h:outputText value="#{record.voucherNum}"/>
+        </p:column>
+        <p:column sortBy="#{record.balamt}">
+            <f:facet name="header">
+                <h:outputText value="余额"/>
+            </f:facet>
+            <h:outputText value="#{record.balamt}" style="float: right">
+                <f:convertNumber type="currency" currencySymbol=""/>
+            </h:outputText>
+        </p:column>
+        <p:column sortBy="#{record.intRate}">
+            <f:facet name="header">
+                <h:outputText value="利率"/>
+            </f:facet>
+            <h:outputText value="#{record.intRate}" style="float: right">
+                <f:convertNumber type="currency" currencySymbol=""/>
+            </h:outputText>
+        </p:column>
+
+        <p:column style="text-align:center" sortBy="#{record.startDate}">
+            <f:facet name="header">
+                起息日
+            </f:facet>
+            <h:outputText value="#{record.startDate}"/>
+        </p:column>
+        <p:column style="text-align:center" sortBy="#{record.endDate}">
+            <f:facet name="header">
+                到期日
+            </f:facet>
+            <h:outputText value="#{record.endDate}"/>
+        </p:column>
+        <p:column style="text-align:center" sortBy="#{record.period}">
+            <f:facet name="header">
+                定期期限
+            </f:facet>
+            <h:outputText value="#{record.period}"/>
+        </p:column>
+    </p:dataTable>
+</p:tab>
+</p:tabView>
+</h:form>
+</div>
+
+</ui:define>
+</ui:composition>

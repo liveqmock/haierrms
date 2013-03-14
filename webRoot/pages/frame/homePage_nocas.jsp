@@ -1,11 +1,18 @@
 <%@ page import="pub.platform.db.ConnectionManager" %>
 <%@ page import="pub.platform.db.DatabaseConnection" %>
 <%@ page import="pub.platform.db.RecordSet" %>
+<%@ page import="java.net.Inet4Address" %>
+<%@ page import="java.net.InetAddress" %>
+<%@ page import="java.net.NetworkInterface" %>
+<%@ page import="pub.tools.PlatformHelper" %>
+<%@ page import="java.net.SocketException" %>
+<%@ page import="pub.platform.advance.utils.PropertyManager" %>
 <%@ page contentType="text/html; charset=GBK" %>
 <%@ include file="/pages/security/loginassistor_nocas.jsp" %>
 <%
     response.setContentType("text/html; charset=GBK");
     String contextPath = request.getContextPath();
+
     /*2011-4-7 Cookie设置添加到loginassistor.jsp中*/
     String jsonDefaultMenu = null;
     String jsonSystemMenu = null;
@@ -45,6 +52,18 @@
             }
         }
     }
+
+
+    //20130313  zr  增加开发环境提示
+    String isProduction_WebServer = "0";
+    String isProduction_SBSServer = "0";
+    if (PlatformHelper.isProductionServerIp()) {
+        isProduction_WebServer = "1";
+    }
+    if (!PlatformHelper.getRealtimeProjectConfigProperty("SBS_HOSTIP").equals("192.168.91.5")) {
+        isProduction_SBSServer = "1";
+    }
+
 %>
 <script type="text/javascript">
     var g_jsContextPath = "<%=contextPath%>";
@@ -124,6 +143,16 @@
         tabbarhide("bizlayout");
         document.getElementById("biz").setAttribute("active", "true");
         document.getElementById("biz").setAttribute("className", "tabs-item-active");
+
+        //20130313 zr 开发环境提示
+        var isProd_Web = <%=isProduction_WebServer%>;
+        var isProd_Sbs = <%=isProduction_SBSServer%>;
+        if (isProd_Web == "0") {
+            alert("当前环境为开发测试环境！");
+        }
+        if (isProd_Sbs == "0") {
+            alert("当前环境连接的是SBS测试机！");
+        }
     }
 
     function doBizLoad() {

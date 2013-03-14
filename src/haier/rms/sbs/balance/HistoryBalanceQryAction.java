@@ -39,6 +39,7 @@ import java.util.*;
 @ViewScoped
 public class HistoryBalanceQryAction implements Serializable {
     private static final Logger logger = LoggerFactory.getLogger(HistoryBalanceQryAction.class);
+    private static final long serialVersionUID = -7592488690417583844L;
 
     private List<ActbalHistory> detlList = new ArrayList<ActbalHistory>();
     private List<ActbalHistory> currList;
@@ -47,8 +48,9 @@ public class HistoryBalanceQryAction implements Serializable {
     private BigDecimal totalamt = new BigDecimal(0);
 
     private String actnum;
-    private Date startdate;
-    private Date enddate;
+    private String actname;
+    private String startdate;
+    private String enddate;
     private static SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 
     private String[] acttypes = {"活期", "定期", "保证金"};
@@ -107,19 +109,19 @@ public class HistoryBalanceQryAction implements Serializable {
         this.actnum = actnum;
     }
 
-    public Date getStartdate() {
+    public String getStartdate() {
         return startdate;
     }
 
-    public void setStartdate(Date startdate) {
+    public void setStartdate(String startdate) {
         this.startdate = startdate;
     }
 
-    public Date getEnddate() {
+    public String getEnddate() {
         return enddate;
     }
 
-    public void setEnddate(Date enddate) {
+    public void setEnddate(String enddate) {
         this.enddate = enddate;
     }
 
@@ -167,6 +169,14 @@ public class HistoryBalanceQryAction implements Serializable {
         this.actattrOptions = actattrOptions;
     }
 
+    public String getActname() {
+        return actname;
+    }
+
+    public void setActname(String actname) {
+        this.actname = actname;
+    }
+
     //==============================
     @PostConstruct
     public void postConstruct() {
@@ -175,8 +185,8 @@ public class HistoryBalanceQryAction implements Serializable {
         String currDate = sdf.format(date);
 
         DateTime dt = new DateTime();
-        this.startdate = dt.minusDays(1).toDate();
-        this.enddate = this.startdate;
+        this.startdate = dt.dayOfMonth().withMinimumValue().toString("yyyy-MM-dd");
+        this.enddate = dt.minusDays(1).toString("yyyy-MM-dd");
 
         //query();
         FacesContext context = FacesContext.getCurrentInstance();
@@ -211,7 +221,6 @@ public class HistoryBalanceQryAction implements Serializable {
             }
             this.currList = this.actbalService.selectCurrcodeList(new SimpleDateFormat("yyyy-MM-dd").format(this.startdate), this.queryType);
             this.reportFileName = createExcelTempFile();
-            //FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("ExcelFileName", this.reportFileName);
         } catch (Exception e) {
             logger.error("报表生成失败。", e);
         }
@@ -222,7 +231,21 @@ public class HistoryBalanceQryAction implements Serializable {
         try {
             queryRecordsFromDB();
 
-            this.currList = this.actbalService.selectCurrcodeList(new SimpleDateFormat("yyyy-MM-dd").format(this.startdate), this.queryType);
+            this.currList = this.actbalService.selectCurrcodeList(this.startdate, this.queryType);
+            this.currencyOptions = createFilterOptions(createCurrencyArray());
+
+        } catch (Exception e) {
+            logger.error("查询时出现错误。", e);
+            FacesContext context = FacesContext.getCurrentInstance();
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "查询时出现错误。", "检索数据库出现问题。"));
+        }
+        return null;
+    }
+    public String queryByCorpName() {
+        try {
+            queryRecordsFromDBByCorpName();
+
+            this.currList = this.actbalService.selectCurrcodeList(this.startdate, this.queryType);
             this.currencyOptions = createFilterOptions(createCurrencyArray());
 
         } catch (Exception e) {
@@ -241,7 +264,20 @@ public class HistoryBalanceQryAction implements Serializable {
     private void queryRecordsFromDB() {
         FacesContext context = FacesContext.getCurrentInstance();
         try {
-            this.detlList = actbalService.selectHistoryActBal(new SimpleDateFormat("yyyy-MM-dd").format(this.startdate), this.queryType);
+            this.detlList = actbalService.selectHistoryActBal(this.startdate, this.queryType);
+            if (this.detlList.size() == 0) {
+                context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "此日期的余额记录不存在。", null));
+            }
+        } catch (Exception e) {
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "历史余额查询失败", null));
+            logger.error("SBS查询结果异常", e);
+        }
+    }
+
+    private void queryRecordsFromDBByCorpName() {
+        FacesContext context = FacesContext.getCurrentInstance();
+        try {
+            this.detlList = actbalService.selectHistoryActBalByCorpName(this.startdate, this.enddate, this.actname);
             if (this.detlList.size() == 0) {
                 context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "此日期的余额记录不存在。", null));
             }

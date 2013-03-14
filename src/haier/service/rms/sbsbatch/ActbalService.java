@@ -95,6 +95,9 @@ public class ActbalService {
     public List<ActbalHistory> selectHistoryActBal(String txndate, String acttype) {
         return sbsrptMapper.selectHistoryActBal(txndate, acttype);
     }
+    public List<ActbalHistory> selectHistoryActBalByCorpName(String startdate,String enddate, String corpname) {
+        return sbsrptMapper.selectHistoryActBalByCorpName(startdate, enddate, corpname);
+    }
 
     /**
      * 查询某日A股或H股币种清单

@@ -1,9 +1,9 @@
 package haier.rms.sbs.detlbook.sbs8853;
 
 import gateway.CtgManager;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pub.platform.utils.StringUtils;
 import pub.tools.Message;
 
 import java.util.ArrayList;
@@ -103,18 +103,7 @@ public class T8853Service {
 
     //==============================================================
 
-/*
-    public List<T8853ResponseRecord> getResponseList() {
-        this.reponseRecords = new ArrayList<T8853ResponseRecord>();
-        try{
-            querySBS();
-        }catch(Exception e){
-            throw new RuntimeException("SBS查询异常", e);
-        } finally {
-            return this.reponseRecords;
-        }
-    }
-*/
+
 
     public void querySBS() {
 
@@ -126,11 +115,6 @@ public class T8853Service {
         while (beginnum >= 1) {
             beginnum = processNextPkg(ctg, beginnum);
         }
-/*
-        if (beginnum == -1) {
-            throw new RuntimeException("SBS返回异常信息。");
-        }
-*/
 
     }
 
@@ -145,32 +129,30 @@ public class T8853Service {
             requestList.add(param);
         }
 
-        requestList.add(StringUtils.addPrefix(Integer.toString(beginnum), "0", 6));                 //  起始笔数
-
-        //CorpPayFeeQueryResult queryresult;
+        //requestList.add(StringUtils.addPrefix(Integer.toString(beginnum), "0", 6));                 //  起始笔数
+        requestList.add(StringUtils.leftPad(Integer.toString(beginnum), 6, "0"));                 //  起始笔数
 
         try {
-            byte[] buffer = ctg.processBatchRequest("8853", requestList);
-
-            processResponseHeader(buffer);
-            //String formcode = queryresult.getFormcode();
-
-            if (!formcode.substring(0, 1).equals("T")) {     //异常情况处理
-                String formstr = Message.getString("messages", formcode,null);
-                String msg = "SBS数据查询错误，返回错误信息为：" + formcode + "=" +formstr;
-                logger.error(msg);
-                msgs.add(msg);
-                //TODO
-                return -1;
-            } else {      //报文发送成功
-                processResponseBody();
-            }
-
+            buffer = ctg.processBatchRequest("8853", requestList);
         } catch (Exception e) {
             String msg = "与SBS通讯出现异常";
             msgs.add(msg);
             logger.error(msg, e);
             throw new RuntimeException(msg, e);
+        }
+
+        String errmsg = processResponseHeader(buffer);
+        if (!formcode.substring(0, 1).equals("T")) {     //异常情况处理
+            //String formstr = Message.getString("messages", formcode,null);
+            if (StringUtils.isEmpty(errmsg)) {
+                errmsg = Message.getString("messages", formcode, null);
+            }
+            String msg = "SBS数据查询错误，返回错误信息为：" + formcode + "=" + errmsg;
+            logger.error(msg);
+            msgs.add(msg);
+            throw new RuntimeException(msg);
+        } else {      //报文发送成功
+            processResponseBody();
         }
 
         //计算下一步起始笔数
@@ -184,11 +166,9 @@ public class T8853Service {
 
     }
 
-
     /*
    批量查询包结果处理
     */
-
     private void processResponseBody() {
         int k = 0;
         try {
@@ -259,7 +239,7 @@ public class T8853Service {
      设置
      */
 
-    private void processResponseHeader(byte[] buffer) {
+    private String processResponseHeader(byte[] buffer) {
 
         this.setBuffer(buffer);
         int k = 0;
@@ -271,7 +251,10 @@ public class T8853Service {
             this.setFormcode(new String(bFormcode));
 
             if (!this.formcode.substring(0, 1).equals("T")) {
-                return;  //formcode 非“T”开头，则返回报文为出错报文，不再进行包体分析
+                short msgLen = byteToShort(buffer[28], buffer[27]);
+                byte[] bErrmsg = new byte[msgLen];
+                System.arraycopy(buffer, 29, bErrmsg, 0, bErrmsg.length);
+                return new String(bErrmsg);  //formcode 非“T”开头，则返回报文为出错报文，不再进行包体分析
             }
             //包头处理
             pos = 29;
@@ -294,7 +277,16 @@ public class T8853Service {
             logger.error("报文解包时出现问题：" + k);
             throw new RuntimeException(e);
         }
+        return null;
     }
 
+    private short byteToShort(byte high, byte low) {
+        byte[] msglenBuf = new byte[2];
+        msglenBuf[0] = high;
+        msglenBuf[1] = low;
+        short tmp1 = (short)(msglenBuf[0] & 0xFF);
+        short tmp2 = (short)((msglenBuf[1] << 8) & 0xFF00);
+        return (short)(tmp2 | tmp1);
+    }
 
 }

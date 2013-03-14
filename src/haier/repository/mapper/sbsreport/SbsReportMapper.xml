@@ -36,6 +36,35 @@
                            </if>
         ) a) t
     </select>
+
+    <select id="selectHistoryActBalByCorpName" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalHistory">
+        select t.*,
+            (case when t.currcode='001' then t.homecurbal
+                else  round(t.homecurbal / 100 * t.roe, 2)
+                end) as rmbbal
+          from (select a.txndate,
+                       a.actno,
+                       a.actname,
+                       a.acttype,
+                       (select enuitemlabel from ptenudetail where enutype='ACCTTYPE' and enuitemvalue = a.acttype) as acttypename,
+                       (select actattr from rms_sbsactattr where actname = a.actname) as actattr,
+                       a.balamt as homecurbal,
+                       substr(a.actno, 16, 3) as currcode,
+                       (select trim(curnmc)
+                          from sbs_actccy
+                         where curcde = substr(a.actno, 16, 3)) as currname,
+                       (select ratval
+                          from sbs_actcxr
+                         where curcde = substr(a.actno, 16, 3)
+                           and txndate = #{txndate}
+                           and xrtcde = '8'
+                           and secccy = '001') as roe
+                  from (select *
+                          from sbs_actbal
+                         where txndate between #{startdate} and #{enddate}
+                               and actname like '%${corpname}%'
+        ) a) t
+    </select>
     <!--zhanrui 20110411  查询某日A股或H股币种清单  -->
     <select id="selectCurrcodeList" parameterType="String" resultType="haier.repository.model.sbsreport.ActbalHistory">
             select currcode,

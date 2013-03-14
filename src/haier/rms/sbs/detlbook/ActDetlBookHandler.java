@@ -4,7 +4,7 @@ import haier.rms.sbs.detlbook.sbs8853.T8853ResponseRecord;
 import haier.rms.sbs.detlbook.sbs8853.T8853Service;
 import org.apache.commons.lang.StringUtils;
 import org.apache.poi.hssf.usermodel.*;
-import org.primefaces.component.datatable.DataTable;
+import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,8 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -43,9 +41,7 @@ public class ActDetlBookHandler {
 
     private String actnum;
     private String startdate;
-    private Date uiStartdate;
     private String enddate;
-    private Date uiEnddate;
     private static SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 
     HSSFCellStyle cellStyle;
@@ -109,43 +105,18 @@ public class ActDetlBookHandler {
         this.enddate = enddate;
     }
 
-    public Date getUiStartdate() {
-        return uiStartdate;
-    }
-
-    public void setUiStartdate(Date uiStartdate) {
-        this.uiStartdate = uiStartdate;
-    }
-
-    public Date getUiEnddate() {
-        return uiEnddate;
-    }
-
-    public void setUiEnddate(Date uiEnddate) {
-        this.uiEnddate = uiEnddate;
-    }
 
     //==============================
     @PostConstruct
     public void postConstruct() {
 
-        Date date = new Date();
-        String currDate = sdf.format(date);
-//        this.startdate = currDate.substring(0, 6) + "01";
-//        this.startdate = currDate;
-//        this.enddate = currDate;
-
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(new Date());
-        cal.add(Calendar.DATE, -1);
-        this.uiStartdate = cal.getTime();
-        this.uiEnddate = cal.getTime();
+        this.startdate = new DateTime().dayOfMonth().withMinimumValue().toString("yyyyMMdd");
+        this.enddate = new DateTime().minusDays(0).toString("yyyyMMdd");
     }
 
     public String query() {
         FacesContext context = FacesContext.getCurrentInstance();
         try {
-
             if (this.actnum.length() == 14) {
                 this.actnum = "8010" + this.actnum;
             }
@@ -153,20 +124,8 @@ public class ActDetlBookHandler {
                 context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "请输入14位或18位帐号。", null));
                 return null;
             }
-
-            if (uiEnddate.before(uiStartdate)) {
-                context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "日期输入顺序错误。", null));
-                return null;
-            }
-
-            this.startdate = new SimpleDateFormat("yyyyMMdd").format(uiStartdate);
-            this.enddate = new SimpleDateFormat("yyyyMMdd").format(uiEnddate);
-
-            DataTable dataTable = (DataTable) FacesContext.getCurrentInstance().getViewRoot().findComponent("form:pdt");
-//            dataTable.clearInitialState();
-//            dataTable.
-            dataTable.setFirst(0);
-            //dataTable.setPage(1);
+            //DataTable dataTable = (DataTable) FacesContext.getCurrentInstance().getViewRoot().findComponent("form:pdt");
+            //dataTable.setFirst(0);
             queryRecordsFromSBS();
         } catch (Exception e) {
             logger.error("查询时出现错误。", e);
@@ -230,8 +189,6 @@ public class ActDetlBookHandler {
 
             setCell(row, col, "摘要");
 
-
-//            int i = 0;
             for (T8853ResponseRecord record : this.detlList) {
                 row = sheet.createRow(i + 1);
 
@@ -362,9 +319,5 @@ public class ActDetlBookHandler {
             }
             logger.error("SBS查询结果异常", e);
         }
-
-
     }
-
-
 }

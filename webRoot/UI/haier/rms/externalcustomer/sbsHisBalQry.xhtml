@@ -1,0 +1,151 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:c="http://java.sun.com/jsp/jstl/core"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+        <style type="text/css">
+            .col-95 {
+                width: 95%;
+            }
+
+            .col-5 {
+                width: 5%;
+            }
+        </style>
+
+    </ui:define>
+
+    <ui:define name="content">
+        <div style="margin:5px;">
+            <h:form id="form">
+                <p:tabView id="tabView" style="font-weight:normal;font-style:normal" dynamic="true" cache="false">
+                    <p:tab id="tab" title="按企业名称查询账户历史余额">
+                        <p:growl id="msgs" showDetail="false" life="8000"/>
+
+                        <div>
+                            <p:panel>
+                                <h:panelGrid columns="2" cellspacing="5" columnClasses="col-95,col-5">
+                                    <h:panelGrid columns="2" cellspacing="5">
+                                        <p:outputLabel value="企业名称:" for="actnum"/>
+                                        <p:inputText id="actnum" size="30" required="true" requiredMessage="请输入企业名称。"
+                                                     value="#{historyBalanceQryAction.actname}"/>
+
+                                        <h:outputLabel value="起始日期:" for="startdate"/>
+                                        <p:inputText id="startdate" value="#{historyBalanceQryAction.startdate}"
+                                                     size="30"
+                                                     onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+                                        <h:outputLabel value="截止日期:" for="enddate"/>
+                                        <p:inputText id="enddate" value="#{historyBalanceQryAction.enddate}"
+                                                     size="30"
+                                                     onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+                                    </h:panelGrid>
+                                    <h:panelGrid>
+                                        <p:commandButton id="qrybtn" value="查询" style="width:120px;"
+                                                         action="#{historyBalanceQryAction.queryByCorpName}"
+                                                         update="pdt,msgs">
+                                        </p:commandButton>
+                                        <p:commandButton id="excelbtn1" value="导出" style="width:120px;"
+                                                         action="#{historyBalanceQryAction.exportExcel}"
+                                                         ajax="false">
+                                        </p:commandButton>
+                                    </h:panelGrid>
+                                </h:panelGrid>
+                            </p:panel>
+                        </div>
+                        <p:ajaxStatus style="height:20px;text-align:center">
+                            <f:facet name="start">
+                                <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                            </f:facet>
+                            <f:facet name="complete">
+                                <h:outputText value=""/>
+                            </f:facet>
+                        </p:ajaxStatus>
+
+                        <p:dataTable id="pdt" height="200" dynamic="true"
+                                     value="#{historyBalanceQryAction.detlList}" var="record"
+                                     paginatorTemplate=" {FirstPageLink}  {PageLinks}  {LastPageLink} {RowsPerPageDropdown}"
+                                     paginator="true" rows="30" paginatorPosition="bottom"
+                                     rowsPerPageTemplate="100,50,30,15"
+                                     emptyMessage="数据记录为空...">
+
+                            <f:facet name="header">
+                                <h:outputText value="#{historyBalanceQryAction.title}"/>
+                                (
+                                <h:outputText value="总数:#{historyBalanceQryAction.totalcount}／人民币总金额:"/>
+
+                                <h:outputText value="#{historyBalanceQryAction.totalamt}">
+                                    <f:convertNumber type="number" pattern="##,###,###,###,###.##"/>
+                                </h:outputText>
+                                )
+                            </f:facet>
+
+                            <p:column filterBy="#{record.actno}" filterMatchMode="contains" sortBy="#{record.actno}"
+                                      style="text-align:center">
+                                <f:facet name="header">
+                                    账号
+                                </f:facet>
+                                <h:outputText value="#{record.actno}"/>
+                            </p:column>
+                            <p:column sortBy="#{record.actname}" filterBy="#{record.actname}" filterMatchMode="contains">
+                                <f:facet name="header">
+                                    户名
+                                </f:facet>
+                                <h:outputText value="#{record.actname}"/>
+                            </p:column>
+
+                            <p:column sortBy="#{record.homecurbal}">
+                                <f:facet name="header">余额(本币)</f:facet>
+                                <h:outputText value="#{record.homecurbal}" style="float: right">
+                                    <f:convertNumber type="currency" currencySymbol=""/>
+                                </h:outputText>
+                            </p:column>
+                            <p:column sortBy="#{record.rmbbal}">
+                                <f:facet name="header">余额(人民币)</f:facet>
+                                <h:outputText value="#{record.rmbbal}" style="float: right">
+                                    <f:convertNumber type="currency" currencySymbol=""/>
+                                </h:outputText>
+                            </p:column>
+                            <p:column sortBy="#{record.currname}" style="text-align:center" filterBy="#{record.currname}"
+                                      filterMatchMode="exact" filterOptions="#{historyBalanceQryAction.currencyOptions}">
+                                <f:facet name="header">
+                                    币种
+                                </f:facet>
+                                <h:outputText value="#{record.currname}"/>
+                            </p:column>
+                            <p:column sortBy="#{record.roe}">
+                                <f:facet name="header">汇率</f:facet>
+                                <h:outputText value="#{record.roe}" style="float: right">
+                                    <f:convertNumber pattern="###,###,##0.00#####"/>
+                                </h:outputText>
+                            </p:column>
+
+                            <p:column sortBy="#{record.acttypename}" style="text-align:center" filterBy="#{record.acttypename}"
+                                      filterMatchMode="exact" filterOptions="#{historyBalanceQryAction.acttypeOptions}">
+                                <f:facet name="header">
+                                    帐户类型
+                                </f:facet>
+                                <h:outputText value="#{record.acttypename}"/>
+                            </p:column>
+
+                            <p:column sortBy="#{record.actattr}" style="text-align:center" filterBy="#{record.actattr}"
+                                      filterMatchMode="exact" filterOptions="#{historyBalanceQryAction.actattrOptions}">
+                                <f:facet name="header">
+                                    集团内外
+                                </f:facet>
+                                <h:outputText value="#{record.actattr}"/>
+                            </p:column>
+
+                        </p:dataTable>
+
+                    </p:tab>
+                </p:tabView>
+            </h:form>
+        </div>
+
+    </ui:define>
+</ui:composition>

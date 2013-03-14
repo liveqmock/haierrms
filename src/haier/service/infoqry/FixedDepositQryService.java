@@ -5,8 +5,11 @@ import haier.activemq.service.sbs.core.SBSResponse4MultiRecord;
 import haier.activemq.service.sbs.core.SOFDataDetail;
 import haier.activemq.service.sbs.txn.T8855.T8855Handler;
 import haier.activemq.service.sbs.txn.T8855.T8855SOFDataDetail;
+import haier.repository.dao.MtActtypeMapper;
 import haier.repository.dao.S1169CorplistMapper;
 import haier.repository.dao.infoqry.HfcBiMapper;
+import haier.repository.model.MtActtype;
+import haier.repository.model.MtActtypeExample;
 import haier.repository.model.S1169Corplist;
 import haier.repository.model.S1169CorplistExample;
 import haier.repository.model.infoqry.FixedDepositBean;
@@ -36,14 +39,16 @@ public class FixedDepositQryService {
     private S1169CorplistMapper s1169CorplistMapper;
     @Autowired
     private HfcBiMapper hfcBiMapper;
+    @Autowired
+    private MtActtypeMapper mtActtypeMapper;
 
     @Autowired
     private SbsCommonService sbsCommonService;
 
 
-    public List<FixedDepositBean>  getFixedDepositRecord(String corpName){
+    public List<FixedDepositBean> getFixedDepositRecordFor1169(String corpName){
         List<SOFDataDetail> sbsToaList = queryAllFixedDepositRecordFromSBS();
-        List<S1169Corplist> corplists = queryAllCorpList();
+        List<S1169Corplist> corplists = queryAll1169CorpList();
 
         List<FixedDepositBean> voList = new ArrayList<FixedDepositBean>();
         for (SOFDataDetail detail : sbsToaList) {
@@ -52,7 +57,7 @@ public class FixedDepositQryService {
                     continue;
                 }
             }
-            if (isExistConfig((T8855SOFDataDetail) detail, corplists)
+            if (isExistConfigFor1169((T8855SOFDataDetail) detail, corplists)
                     && "1".equals(((T8855SOFDataDetail) detail).getActsts())) {
                 FixedDepositBean vo = new FixedDepositBean();
                 vo.setCorpName(((T8855SOFDataDetail) detail).getCusnam().trim());
@@ -83,7 +88,45 @@ public class FixedDepositQryService {
         return voList;
     }
 
-    private boolean isExistConfig(T8855SOFDataDetail detail, List<S1169Corplist> corplists){
+    //按企业名称查找此企业名下所有定期存款
+    public List<FixedDepositBean> getFixedDepositRecord(String corpName){
+        List<SOFDataDetail> sbsToaList = queryAllFixedDepositRecordFromSBS();
+        List<MtActtype> acttypeList = selectActnosByCorpName(corpName);
+
+        List<FixedDepositBean> voList = new ArrayList<FixedDepositBean>();
+        for (SOFDataDetail detail : sbsToaList) {
+            if (isExistConfigForCorpName((T8855SOFDataDetail) detail, acttypeList)
+                    && "1".equals(((T8855SOFDataDetail) detail).getActsts())) {
+                FixedDepositBean vo = new FixedDepositBean();
+                vo.setCorpName(((T8855SOFDataDetail) detail).getCusnam().trim());
+                vo.setCorpCode("");
+                vo.setBankName("财务公司");
+                vo.setActNum(((T8855SOFDataDetail) detail).getCusact().trim());
+                vo.setVoucherNum(((T8855SOFDataDetail) detail).getBoknum().trim());
+
+                String bal = ((T8855SOFDataDetail) detail).getBokbal();
+                vo.setBalamt(new BigDecimal(bal));
+                vo.setStartDate(((T8855SOFDataDetail) detail).getValdat());
+                vo.setEndDate(((T8855SOFDataDetail) detail).getExpdat());
+
+                String intrat = ((T8855SOFDataDetail) detail).getIntrat();
+                vo.setIntRate(new BigDecimal(intrat));
+                vo.setPeriod(Integer.parseInt(((T8855SOFDataDetail) detail).getDptprd()));
+
+                String curcde = ((T8855SOFDataDetail) detail).getCusact().substring(15,18);
+                vo.setCurrCode(curcde);
+                if ("001".equals(curcde)) {
+                    vo.setCurrName("人民币");
+                }else{
+                    vo.setCurrName(sbsCommonService.selectCurrNameByCurrCode(curcde));
+                }
+                voList.add(vo);
+            }
+        }
+        return voList;
+    }
+
+    private boolean isExistConfigFor1169(T8855SOFDataDetail detail, List<S1169Corplist> corplists){
         for (S1169Corplist corp : corplists) {
             if (corp.getCordname().trim().equals(detail.getCusnam().trim())) {
                 return true;
@@ -91,6 +134,17 @@ public class FixedDepositQryService {
         }
         return false;
     }
+
+    //确认SBS返回报文中的账号是否在此企业的账户清单中
+    private boolean isExistConfigForCorpName(T8855SOFDataDetail detail, List<MtActtype> mtActtypeList){
+        for (MtActtype mtActtype : mtActtypeList) {
+            if (mtActtype.getActno().trim().equals(detail.getCusact().trim())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     private List<SOFDataDetail> queryAllFixedDepositRecordFromSBS(){
         T8855Handler handler = new T8855Handler();
@@ -110,10 +164,16 @@ public class FixedDepositQryService {
         return response.getSofDataDetailList();
     }
 
-    private List<S1169Corplist> queryAllCorpList(){
+    private List<S1169Corplist> queryAll1169CorpList(){
         S1169CorplistExample example = new S1169CorplistExample();
         example.createCriteria();
         return s1169CorplistMapper.selectByExample(example);
+    }
+
+    private List<MtActtype> selectActnosByCorpName(String corpName){
+        MtActtypeExample example = new MtActtypeExample();
+        example.createCriteria().andBankcdEqualTo("999").andActnameLike("%" + corpName + "%");
+        return mtActtypeMapper.selectByExample(example);
     }
 
     //外部银行数据 从BI获取
