@@ -263,4 +263,11 @@ public class ActbalService {
         example.setOrderByClause("actno");
         return mtActtypeMapper.selectByExample(example);
     }
+
+    public List<MtActtype> selectActnosByCorpName(String corpName){
+        MtActtypeExample example = new MtActtypeExample();
+        example.createCriteria().andBankcdEqualTo("999").andActnameLike("%" + corpName + "%");
+        return mtActtypeMapper.selectByExample(example);
+    }
+
 }

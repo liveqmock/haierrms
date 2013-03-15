@@ -1,6 +1,8 @@
 package haier.view.rms.externalcustomer;
 
-import haier.repository.model.SbsActbal;
+import haier.repository.model.Ptoplog;
+import haier.service.common.PlatformService;
+import haier.service.common.ToolsService;
 import haier.service.rms.externalcustomer.ExternalCustService;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
@@ -50,6 +52,10 @@ public class LtdratioRptAction {
     HSSFDataFormat dataFormat;
     @ManagedProperty(value = "#{externalCustService}")
     private ExternalCustService externalCustService;
+    @ManagedProperty(value = "#{toolsService}")
+    private ToolsService toolsService;
+    @ManagedProperty(value = "#{platformService}")
+    private PlatformService platformService;
 
     private String startdate;
     private String enddate;
@@ -203,6 +209,13 @@ public class LtdratioRptAction {
             workbook.write(os);
             os.flush();
             os.close();
+
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("LtdratioRptAction_onExport");
+            oplog.setActionName("日均存贷比报表");
+            platformService.insertNewOperationLog(oplog);
+
         } catch (Exception ex1) {
             ex1.printStackTrace();
         }
@@ -323,5 +336,21 @@ public class LtdratioRptAction {
 
     public void setDeptname(String deptname) {
         this.deptname = deptname;
+    }
+
+    public ToolsService getToolsService() {
+        return toolsService;
+    }
+
+    public void setToolsService(ToolsService toolsService) {
+        this.toolsService = toolsService;
+    }
+
+    public PlatformService getPlatformService() {
+        return platformService;
+    }
+
+    public void setPlatformService(PlatformService platformService) {
+        this.platformService = platformService;
     }
 }

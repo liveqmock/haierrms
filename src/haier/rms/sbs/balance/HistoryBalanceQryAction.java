@@ -1,7 +1,10 @@
 package haier.rms.sbs.balance;
 
 import haier.repository.model.MtActtype;
+import haier.repository.model.Ptoplog;
 import haier.repository.model.sbsreport.ActbalHistory;
+import haier.service.common.PlatformService;
+import haier.service.common.ToolsService;
 import haier.service.rms.sbsbatch.ActbalService;
 import net.sf.jxls.transformer.XLSTransformer;
 import org.apache.commons.lang.StringUtils;
@@ -66,6 +69,10 @@ public class HistoryBalanceQryAction implements Serializable {
 
     @ManagedProperty(value = "#{actbalService}")
     private ActbalService actbalService;
+    @ManagedProperty(value = "#{toolsService}")
+    private ToolsService toolsService;
+    @ManagedProperty(value = "#{platformService}")
+    private PlatformService platformService;
 
     public List<ActbalHistory> getDetlList() {
         return detlList;
@@ -177,6 +184,22 @@ public class HistoryBalanceQryAction implements Serializable {
         this.actname = actname;
     }
 
+    public ToolsService getToolsService() {
+        return toolsService;
+    }
+
+    public void setToolsService(ToolsService toolsService) {
+        this.toolsService = toolsService;
+    }
+
+    public PlatformService getPlatformService() {
+        return platformService;
+    }
+
+    public void setPlatformService(PlatformService platformService) {
+        this.platformService = platformService;
+    }
+
     //==============================
     @PostConstruct
     public void postConstruct() {
@@ -221,6 +244,12 @@ public class HistoryBalanceQryAction implements Serializable {
             }
             this.currList = this.actbalService.selectCurrcodeList(new SimpleDateFormat("yyyy-MM-dd").format(this.startdate), this.queryType);
             this.reportFileName = createExcelTempFile();
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("HistoryBalanceQryAction_exportExcel");
+            oplog.setActionName("SBS历史余额查询:查询");
+            platformService.insertNewOperationLog(oplog);
+
         } catch (Exception e) {
             logger.error("报表生成失败。", e);
         }
@@ -233,6 +262,11 @@ public class HistoryBalanceQryAction implements Serializable {
 
             this.currList = this.actbalService.selectCurrcodeList(this.startdate, this.queryType);
             this.currencyOptions = createFilterOptions(createCurrencyArray());
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("HistoryBalanceQryAction_query");
+            oplog.setActionName("SBS历史余额查询:查询");
+            platformService.insertNewOperationLog(oplog);
 
         } catch (Exception e) {
             logger.error("查询时出现错误。", e);
@@ -247,6 +281,11 @@ public class HistoryBalanceQryAction implements Serializable {
 
             this.currList = this.actbalService.selectCurrcodeList(this.startdate, this.queryType);
             this.currencyOptions = createFilterOptions(createCurrencyArray());
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("HistoryBalanceQryAction_queryByCorpName");
+            oplog.setActionName("SBS历史余额查询:查询");
+            platformService.insertNewOperationLog(oplog);
 
         } catch (Exception e) {
             logger.error("查询时出现错误。", e);

@@ -56,7 +56,7 @@
                        (select ratval
                           from sbs_actcxr
                          where curcde = substr(a.actno, 16, 3)
-                           and txndate = #{txndate}
+                           and txndate = a.txndate
                            and xrtcde = '8'
                            and secccy = '001') as roe
                   from (select *

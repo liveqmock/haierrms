@@ -17,10 +17,9 @@
                     <p:panel header="查询条件">
                         <h:panelGrid columns="2" cellspacing="10">
                             <h:outputLabel value="业务日期:" for="startdate"/>
-                            <p:calendar id="startdate" value="#{historyBalanceQryAction.startdate}" mode="popup"
-                                        pattern="yyyy-MM-dd"
-                                        locale="zh_CN" showButtonPanel="true" navigator="true"
-                                        required="true" requiredMessage="日期不能为空。"/>
+                            <p:inputText id="startdate" value="#{historyBalanceQryAction.startdate}"
+                                         size="30"
+                                         onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
                         </h:panelGrid>
                         <p:separator/>
                         <h:panelGrid columns="2"  style="margin-left:10px;">

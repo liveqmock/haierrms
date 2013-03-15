@@ -10,6 +10,7 @@ import java.math.BigDecimal;
  * To change this template use File | Settings | File Templates.
  */
 public class ActbalHistory {
+    String txndate;
     String actno;      //’À∫≈
     String actname;    //ªß√˚
     BigDecimal homecurbal; //±æ±“”‡∂Ó
@@ -137,5 +138,13 @@ public class ActbalHistory {
 
     public void setActattr(String actattr) {
         this.actattr = actattr;
+    }
+
+    public String getTxndate() {
+        return txndate;
+    }
+
+    public void setTxndate(String txndate) {
+        this.txndate = txndate;
     }
 }

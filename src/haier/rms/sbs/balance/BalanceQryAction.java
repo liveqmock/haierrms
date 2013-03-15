@@ -6,10 +6,13 @@ import haier.activemq.service.sbs.core.SOFDataDetail;
 import haier.activemq.service.sbs.txn.T8123.T8123Handler;
 import haier.activemq.service.sbs.txn.T8123.T8123SOFDataDetail;
 import haier.repository.model.MtActtype;
+import haier.repository.model.Ptoplog;
 import haier.repository.model.RmsSbsactattr;
 import haier.rms.sbs.balance.sbs5834.T5834Service;
 import haier.rms.sbs.balance.sbs8121.T8121ResponseRecord;
 import haier.rms.sbs.balance.sbs8121.T8121Service;
+import haier.service.common.PlatformService;
+import haier.service.common.ToolsService;
 import haier.service.rms.sbsbatch.ActbalService;
 import net.sf.jxls.transformer.XLSTransformer;
 import org.apache.commons.lang.StringUtils;
@@ -61,6 +64,7 @@ public class BalanceQryAction implements Serializable {
     private int totalcount = 0;
     private BigDecimal totalamt = new BigDecimal(0);
 
+    private String actname;
     private String actnum;
     private String startdate;
     private String enddate;
@@ -79,7 +83,10 @@ public class BalanceQryAction implements Serializable {
 
     @ManagedProperty(value = "#{actbalService}")
     private ActbalService actbalService;
-
+    @ManagedProperty(value = "#{toolsService}")
+    private ToolsService toolsService;
+    @ManagedProperty(value = "#{platformService}")
+    private PlatformService platformService;
 
     public List<BalanceBean> getDetlList() {
         return detlList;
@@ -170,6 +177,30 @@ public class BalanceQryAction implements Serializable {
         this.queryType = queryType;
     }
 
+    public String getActname() {
+        return actname;
+    }
+
+    public void setActname(String actname) {
+        this.actname = actname;
+    }
+
+    public ToolsService getToolsService() {
+        return toolsService;
+    }
+
+    public void setToolsService(ToolsService toolsService) {
+        this.toolsService = toolsService;
+    }
+
+    public PlatformService getPlatformService() {
+        return platformService;
+    }
+
+    public void setPlatformService(PlatformService platformService) {
+        this.platformService = platformService;
+    }
+
     //==============================
     @PostConstruct
     public void postConstruct() {
@@ -212,22 +243,47 @@ public class BalanceQryAction implements Serializable {
         }
         //创建excel文件
         this.reportFileName = createExcelTempFile();
+
+        Ptoplog oplog = new Ptoplog();
+        oplog.setActionId("BalanceQryAction_exportExcel");
+        oplog.setActionName("SBS实时余额查询:导出");
+        platformService.insertNewOperationLog(oplog);
+
         FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("ExcelFileName", this.reportFileName);
+
         return null;
     }
 
     public String onQuery() {
         try {
             roeMap = new HashMap<String, RoeBean>();
-
-/*
-            DataTable dataTable = (DataTable) FacesContext.getCurrentInstance().getViewRoot().findComponent("form:pdt");
-            dataTable.setFirst(0);
-            dataTable.setPage(1);
-*/
             queryRecordsFromSBS_new();
 
             this.currencyOptions = createFilterOptions(createCurrencyArray());
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("BalanceQryAction_onQuery");
+            oplog.setActionName("SBS实时余额查询:按账号查询");
+            platformService.insertNewOperationLog(oplog);
+
+        } catch (Exception e) {
+            logger.error("查询时出现错误。", e);
+            FacesContext context = FacesContext.getCurrentInstance();
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "查询时出现错误。", "检索数据库出现问题。"));
+        }
+        return null;
+    }
+    public String queryByCorpName() {
+        try {
+            roeMap = new HashMap<String, RoeBean>();
+            queryRecordsFromSBSByCorpName(this.actname);
+
+            this.currencyOptions = createFilterOptions(createCurrencyArray());
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("BalanceQryAction_onQuery");
+            oplog.setActionName("SBS实时余额查询:按企业名称查询");
+            platformService.insertNewOperationLog(oplog);
 
         } catch (Exception e) {
             logger.error("查询时出现错误。", e);
@@ -353,6 +409,23 @@ public class BalanceQryAction implements Serializable {
         }
     }
 
+    private void queryRecordsFromSBSByCorpName(String corpName) {
+        try {
+            List<MtActtype> actnums = actbalService.selectActnosByCorpName(corpName);
+            List<SOFDataDetail> responseList = new ArrayList<SOFDataDetail>();
+
+            for (MtActtype mtActtype : actnums) {
+                SBSResponse4MultiRecord response = processSbsTxn_8123_byActnum(mtActtype.getActno());
+                responseList.addAll(response.getSofDataDetailList());
+            }
+
+            detlList = transformResponseRecords_New(responseList);
+        } catch (Exception e) {
+            logger.error("SBS查询结果异常", e);
+            MessageUtil.addError("SBS查询结果异常" + e.getMessage());
+        }
+    }
+
     private List<BalanceBean> transformResponseRecords_New(List<SOFDataDetail> responseList) {
         //获取SBS账号属性定义清单
         List<MtActtype> acttypeList =  actbalService.selectActtype4SbsActList();
@@ -455,6 +528,32 @@ public class BalanceQryAction implements Serializable {
         if (!formcode.substring(0, 1).equals("T")) {
             String forminfo = response.getForminfo();
             throw new RuntimeException("交易异常！" + formcode + (forminfo == null ? " " : forminfo) + PropertyManager.getProperty(formcode));
+        }
+        return response;
+    }
+    private SBSResponse4MultiRecord processSbsTxn_8123_byActnum(String actnum) {
+        T8123Handler handler = new T8123Handler();
+        List<String> paramList = new ArrayList<String>();
+        paramList.add(actnum.substring(4, 11));//7位客户号
+        paramList.add(actnum.substring(11, 15));//4位核算码
+        paramList.add(actnum.substring(15, 18));//3位币别
+        paramList.add(" ");//1位帐户类型
+        paramList.add(" ");//1：单位 2：个人
+
+        SBSRequest request = new SBSRequest("8123", paramList);
+        SBSResponse4MultiRecord response = new SBSResponse4MultiRecord();
+
+        SOFDataDetail sofDataDetail = new T8123SOFDataDetail();
+        response.setSofDataDetail(sofDataDetail);
+
+        handler.run(request, response);
+
+        String formcode = response.getFormcode();
+        if (!formcode.substring(0, 1).equals("T")) {
+            if (!"M101".equals(formcode)) {   //该账号不存在
+                String forminfo = response.getForminfo();
+                throw new RuntimeException(formcode + (forminfo == null ? " " : forminfo) + PropertyManager.getProperty(formcode) + "--" + actname + "--" + actnum);
+            }
         }
         return response;
     }
