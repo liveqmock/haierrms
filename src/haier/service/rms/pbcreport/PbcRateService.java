@@ -156,12 +156,12 @@ public class PbcRateService {
                 Object o = (m.invoke(record) == null ? (Object) "" : m.invoke(record));
                 //System.out.println(o.toString());
                 sb.append(o.toString());
-                if (i < fields.length) {
+                if (i < fields.length - 1) {
                     sb.append("|");
                 }
-                /*if (i < count) {
-                    sb.append(";");
-                }*/
+                if (i == fields.length - 1) {
+                    break;
+                }
             }
             if (line < objects.size()) {
                 sb.append("\n");

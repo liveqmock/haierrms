@@ -78,8 +78,13 @@ public class PtoplogAction implements Serializable {
             paramMap.put("branchStrList", branchStrList);
             paramMap.put("startDate", this.startDate);
             paramMap.put("endDate", this.endDate);
+/*
             String sql = "select * from ptoplog where oper_branchid in (:branchStrList)" +
                     " and to_char(op_date,'yyyy-mm-dd') >= :startDate and to_char(op_date,'yyyy-mm-dd') <= :endDate " +
+                    " order by op_date desc, oper_branchid";
+*/
+            String sql = "select * from ptoplog where  " +
+                    " to_char(op_date,'yyyy-mm-dd') >= :startDate and to_char(op_date,'yyyy-mm-dd') <= :endDate " +
                     " order by op_date desc, oper_branchid";
             detlList = rmsJdbc.query(sql, paramMap, new BeanPropertyRowMapper<Ptoplog>(Ptoplog.class));
         } catch (Exception e) {
