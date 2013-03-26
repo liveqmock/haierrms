@@ -46,7 +46,7 @@
         ,temp.currencycode
         from
         (
-            select substr(t.productstypecode, 0, 2) as productstypecode,
+            select substr(t.productstypecode, 2, 2) as productstypecode,
                    count(*) as cnt,
                    (case
                      when t.currencycode = 'CNY' then
@@ -59,7 +59,7 @@
                 from pbc_rate_loanbal t
                 where
                     t.reportdate = #{strdate}
-                group by substr(t.productstypecode,0,2),t.currencycode
+                group by substr(t.productstypecode,2,2),t.currencycode
             ) temp
          group by temp.productstypecode,temp.currencycode
     </select>
@@ -74,7 +74,7 @@
             ,temp.currencycode
         from
             (
-            select substr(t.productstypecode, 0, 2) as productstypecode,
+            select substr(t.productstypecode, 2, 2) as productstypecode,
                    (case
                      when t.currencycode = 'CNY' then
                       sum(t.balamt) / 10000 else
@@ -84,7 +84,7 @@
                    (case when t.currencycode='CNY' then 'CNY' else 'USD' end) as currencycode
               from pbc_rate_depositbal t
              where t.reportdate=#{strdate}
-             group by substr(t.productstypecode, 0, 2), t.currencycode
+             group by substr(t.productstypecode, 2, 2), t.currencycode
              ) temp
         group by temp.productstypecode,temp.currencycode
 
@@ -99,7 +99,7 @@
         ,temp.currencycode
         from
         (
-        select substr(t.productstypecode, 0, 2) as productstypecode,
+        select substr(t.productstypecode, 2, 2) as productstypecode,
                count(*) as cnt,
                (case
                  when t.currencycode = 'CNY' then
@@ -125,7 +125,7 @@
                end) as currencycode
           from pbc_rate_loandetl t
          where t.reportdate = #{strdate}
-         group by substr(t.productstypecode, 0, 2), t.currencycode
+         group by substr(t.productstypecode, 2, 2), t.currencycode
         ) temp
          group by temp.productstypecode,temp.currencycode
     </select>
@@ -140,7 +140,7 @@
         ,temp.currencycode
         from
         (
-        select substr(t.productstypecode, 0, 2) as productstypecode,
+        select substr(t.productstypecode, 2, 2) as productstypecode,
                count(*) as cnt,
                (case when t.currencycode = 'CNY' then
                 sum(case when t.depositflag = '1' then t.amt else - t.amt end) /
@@ -157,7 +157,7 @@
           from pbc_rate_depositdetl t
          where t.productstypecode <> '011'
            and t.reportdate = #{strdate}
-         group by substr(t.productstypecode, 0, 2), t.currencycode
+         group by substr(t.productstypecode, 2, 2), t.currencycode
         ) temp
          group by temp.productstypecode,temp.currencycode
 

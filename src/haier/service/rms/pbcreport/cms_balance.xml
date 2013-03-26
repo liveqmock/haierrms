@@ -115,7 +115,7 @@ with bal as
         'CS01'
         end 企业规模,
         credencd.CREDENCENO 贷款借据编码,
-        '022' 贷款类别,
+        'F02' 贷款类别,
         case
         when length(cust.MISCFLGS) = 6 then
         case
@@ -137,9 +137,9 @@ with bal as
         when '0000' then
         'D'
         when '0100' then
-        'C'
+        'C01'
         when '0010' then
-        'B'
+        'B01'
         when '0001' then
         'A'
         else
@@ -166,7 +166,7 @@ with bal as
         corp_basic_info_view corp,
         (select comm.custcd custcd,
         comm.CREDENCENO CREDENCENO,
-        'QL01' type,
+        'FQ01' type,
         comm.trm_class trm_class,
         comm.paydate paydate,
         ballog.lnbal amt,
@@ -203,11 +203,11 @@ with bal as
         credencd.CREDENCENO 贷款借据编码,
         case loantype
         when '101003' then
-        '0219'
+        'F0219'
         when '101001' then
-        '0211'
+        'F0211'
         else
-        '0211'
+        'F0211'
         end 贷款类别,
         '100' 贷款实际投向,
         to_char(credencd.startdate, 'yyyy-mm-dd') 贷款发放日期,
@@ -222,9 +222,9 @@ with bal as
         when '1' then
         'A'
         when '2' then
-        'B'
+        'B01'
         when '3' then
-        'C'
+        'C01'
         when '4' then
         'D'
         when '5' then
@@ -247,7 +247,7 @@ with bal as
         comm.CINO CREDENCENO,
         comm.trm_class trm_class,
         con.lnid loantype,
-        'QL01' type,
+        'FQ01' type,
         ballog.lnbal amt,
         con.CURCD curcd,
         GUATCODE guar,

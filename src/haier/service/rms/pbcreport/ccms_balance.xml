@@ -8,8 +8,8 @@ select 'C5007437000019' 金融机构代码, '1' 客户类型, data.*
         a.AB_ACCTNO 贷款借据编码,
         --a.AB_PRODUCT_CD 产品类别,
         case a.ab_amorz_type
-          when '4' then '022'
-          when '5' then '0219'
+        when '4' then 'F0219'
+        when '5' then 'F0219'
         end 产品类别,
         '100' 贷款实际投向,
         to_char(to_date(a.AB_SETUP_DATE, 'yyyyMMdd'),'yyyy-MM-dd') 贷款发放日期,
@@ -28,7 +28,7 @@ select 'C5007437000019' 金融机构代码, '1' 客户类型, data.*
         'RF02'
         end 利率是否固定,
         i.IP_RATE 利率水平,
-        l.AD_USER_CD_6 贷款担保方式,
+        'D' 贷款担保方式,
         case a.AB_DELQ_CLASS
         when '1' then
         'FQ01'
@@ -43,9 +43,9 @@ select 'C5007437000019' 金融机构代码, '1' 客户类型, data.*
         end 贷款质量,
         case a.ab_loan_status
         when 'N' then
-        'RS01'
+        'FS01'
         else
-        'RS03'
+        'FS03'
         end 贷款状态,
         '${enddate}' 上报日期
         from TBL_CSM_CSTBSC c,

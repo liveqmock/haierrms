@@ -92,7 +92,7 @@ public class PbcRateService {
     public String selectLoanbalToString(String strDate10) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
         PbcRateLoanbalExample example = new PbcRateLoanbalExample();
         example.createCriteria().andReportdateEqualTo(strDate10)
-                .andIoubalamtNotEqualTo(new BigDecimal("0"));
+                .andIoubalamtNotEqualTo(new BigDecimal("0")).andCurrencycodeEqualTo("CNY");
         List<PbcRateLoanbal> pbcRateLoanbals = loanbalMapper.selectByExample(example);
         String rtnStr = "";
         rtnStr = getRecToString(pbcRateLoanbals);
@@ -101,7 +101,7 @@ public class PbcRateService {
 
     public String selectLoandetlToString(String strDate10) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
         PbcRateLoandetlExample example = new PbcRateLoandetlExample();
-        example.createCriteria().andReportdateEqualTo(strDate10);
+        example.createCriteria().andReportdateEqualTo(strDate10).andCurrencycodeEqualTo("CNY");
         List<PbcRateLoandetl> pbcRateLoandetls = loandetlMapper.selectByExample(example);
         String rtnStr = "";
         rtnStr = getRecToString(pbcRateLoandetls);
@@ -111,7 +111,7 @@ public class PbcRateService {
     public String selectDepositbalToString(String strDate10) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
         PbcRateDepositbalExample example = new PbcRateDepositbalExample();
         example.createCriteria().andReportdateEqualTo(strDate10)
-                .andBalamtNotEqualTo(new BigDecimal("0"));
+                .andBalamtNotEqualTo(new BigDecimal("0")).andCurrencycodeEqualTo("CNY");
         List<PbcRateDepositbal> pbcRateDepositbals = depositbalMapper.selectByExample(example);
         String rtnStr = "";
 
@@ -142,6 +142,8 @@ public class PbcRateService {
     public String getRecToString(List<?> objects) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         StringBuffer sb = new StringBuffer();
         int line = 0;
+        DecimalFormat dfBal=new DecimalFormat("0.00");
+        DecimalFormat dfIntrate=new DecimalFormat("0.00000");
         for (Object record : objects) {
             line++;
             Field[] fields = record.getClass().getDeclaredFields();
@@ -155,7 +157,16 @@ public class PbcRateService {
                 Method m = record.getClass().getMethod(methodName);
                 Object o = (m.invoke(record) == null ? (Object) "" : m.invoke(record));
                 //System.out.println(o.toString());
-                sb.append(o.toString());
+                if ("getBalamt".equals(methodName)
+                        || "getIoubalamt".equals(methodName)
+                        ) {
+                    sb.append(dfBal.format(o));
+                }else if ("getIntrate".equals(methodName)) {
+                    sb.append(dfIntrate.format(o));
+                }else{
+                    sb.append(o.toString());
+                }
+
                 if (i < fields.length - 1) {
                     sb.append("|");
                 }
