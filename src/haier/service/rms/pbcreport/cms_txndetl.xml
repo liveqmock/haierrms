@@ -3,7 +3,7 @@ WITH detl as
         FROM (SELECT *
         FROM ((SELECT 'C5007437000019' 机构,
         --cust.cname 客户名,
-        --cust.custno 客户号,
+        --cust.custcd 客户号,
         CASE cust.cust_type
         WHEN '1' THEN
         '0'
@@ -15,7 +15,7 @@ WITH detl as
         substr(corp.ORG_CODE, 1, 8) ||
         substr(corp.ORG_CODE, 10, 1)
         ELSE
-        cust.custno
+        cust.custcd
         END 组织机构代码,
         --corp.CREDIT_CARDNO 贷款卡号,
         CASE
@@ -97,7 +97,7 @@ WITH detl as
         'CS01'
         END 企业规模,
         credencd.CREDENCENO 贷款借据编码,
-        'F02' 贷款类别,
+        'F022' 贷款类别,
         CASE
         WHEN length(cust.MISCFLGS) = 6 THEN
         CASE
@@ -182,14 +182,14 @@ WITH detl as
     and credencd.custcd = cust.custcd) UNION ALL
     (SELECT 'C5007437000019' 机构,
     --cust.cname 客户名,
-    --cust.custno 客户号,
+    --cust.custcd 客户号,
     CASE cust.cust_type
     WHEN '1' THEN
     '0'
     WHEN '2' THEN
     '1'
     END 客户类型,
-    cust.custno 组织机构代码,
+    cust.custcd 组织机构代码,
     --'' 贷款卡号,
     '1' 行业类别,
     '' 注册地编码,

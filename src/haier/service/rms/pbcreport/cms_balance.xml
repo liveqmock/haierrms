@@ -28,7 +28,7 @@ with bal as
         substr(corp.ORG_CODE, 1, 8) ||
         substr(corp.ORG_CODE, 10, 1)
         else
-        cust.custno
+        cust.custcd
         end 组织机构代码,
         case cust.cust_type
         when '1' then
@@ -115,7 +115,7 @@ with bal as
         'CS01'
         end 企业规模,
         credencd.CREDENCENO 贷款借据编码,
-        'F02' 贷款类别,
+        'F022' 贷款类别,
         case
         when length(cust.MISCFLGS) = 6 then
         case
@@ -195,7 +195,7 @@ with bal as
         when '2' then
         '1'
         end 客户类型,
-        cust.custno 组织机构代码,
+        cust.custcd 组织机构代码,
         '1' 行业类别,
         '' 注册地编码,
         '' 企业出资人经济成分,
