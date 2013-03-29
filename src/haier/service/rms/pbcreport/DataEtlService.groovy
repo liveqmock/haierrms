@@ -69,6 +69,12 @@ class DataEtlService {
         loadCmsBalDataFromFileToLocalDB(cmsdb,strDate10)
     }
 
+    //按照人行规则进行数据校验
+    public String verifyLoanBal(){
+        return "...."
+    }
+
+
     def deleteLocalLoanBalData(String strDate10){
         def rmsdb = new Sql(dataSource)
         rmsdb.withTransaction {
@@ -278,14 +284,14 @@ class DataEtlService {
                 fields << '0'  //客户类型
                 fields << line[5]  //depositaccountno
                 line[7..8].each {fields << it}         // depositagreementno  ..
-                def startdate = line[9]
-                if (startdate != null) {
+                def startdate = line[9].trim()
+                if (startdate != "") {
                     startdate = startdate[0..3] + "-" + startdate[4..5] + "-" + startdate[6..7]
                 }
                 fields << startdate         // depositstartdate
 
-                def enddate = line[10]
-                if (enddate != null) {
+                def enddate = line[10].trim()
+                if (enddate != "") {
                     if (enddate != '11111111') {
                         enddate = enddate[0..3] + "-" + enddate[4..5] + "-" + enddate[6..7]
                     }

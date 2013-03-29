@@ -13,7 +13,7 @@ with bal as
         a.贷款实际投向,
         a.贷款发放日期,
         a.贷款到期日期,
-        to_char(ext.ENDDATE, 'yyyy-mm-dd') 展期到期日,
+        null 展期到期日,
         a.币种,
         a.金额,
         a.利率是否固定,
