@@ -23,6 +23,7 @@ public class FixedDepositBean {
     private int period;
     private String currCode;
     private String currName;
+    private String csmOtherName;
 
     public String getCorpName() {
         return corpName;
@@ -126,5 +127,13 @@ public class FixedDepositBean {
 
     public void setCurrCode(String currCode) {
         this.currCode = currCode;
+    }
+
+    public String getCsmOtherName() {
+        return csmOtherName;
+    }
+
+    public void setCsmOtherName(String csmOtherName) {
+        this.csmOtherName = csmOtherName;
     }
 }

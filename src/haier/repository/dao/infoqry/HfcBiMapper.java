@@ -19,7 +19,7 @@ public interface HfcBiMapper {
             "                --t.csm_grp_code,\n" +
             "                --t.csm_grp_name,\n" +
             "                --t.data_type,\n" +
-            "                --t.csm_other_name,\n" +
+            "                t.csm_other_name as csmOtherName,\n" +
             "                --t.flag,\n" +
             "                t.cur_code as currName,\n" +
             "                t.loan_amount as balamt,\n" +

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" compressed="false" hash="0" />
+  <component name="DataSourceManagerImpl" format="xml" hash="0">
+    <data-source source="LOCAL" name="DataSource" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f6657fba-1dca-4cc8-917d-e56c667be578">
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@localhost:1521:orcl</jdbc-url>
+      <user-name>cbs</user-name>
+      <user-password>dfc9dfc8dfd9</user-password>
+      <schema-pattern>*.CBS</schema-pattern>
+      <libraries>
+        <library>
+          <url>jar://$PROJECT_DIR$/webRoot/WEB-INF/lib/ojdbc6.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
 </project>
 
