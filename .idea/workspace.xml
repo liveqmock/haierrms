@@ -11,966 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list readonly="true" id="ead27e89-99eb-40f0-a9c3-e0eb80618690" name="Default" comment="" />
-    <list default="true" id="9988f1a9-44b6-4305-b711-49cb30d2edc0" name="" comment="1169定期存款查询增加外部银行名称">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/icons/accord_biz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/icons/accord_manage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/icons/accord_support.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_terrace/bg_active.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_terrace/bg_arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_terrace/bg_def.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_terrace/bg_def.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/book.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/book_titel.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/books_close.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/books_open.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/but_cut.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/but_cut.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/imgs/dhx_terrace/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/close2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/imgs/dhx_terrace/dhx_terrace_bottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/imgs/dhx_terrace/dhx_terrace_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/imgs/dhx_terrace/dhx_terrace_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/imgs/dhx_terrace/dhx_terrace_top.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_terrace/dhxacc_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_web/dhxacc_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_black/dhxacc_bg_hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_blue/dhxacc_bg_hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_skyblue/dhxacc_bg_hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_terrace/dhxacc_bg_hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_black/dhxacc_bg_normal.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_blue/dhxacc_bg_normal.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_skyblue/dhxacc_bg_normal.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_terrace/dhxacc_bg_normal.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_skyblue/dhxacc_bg_sb.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_terrace/dhxacc_bg_sb.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_skyblue/dhxacc_btns.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_terrace/dhxacc_btns.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/imgs/dhxaccord_dhx_web/dhxacc_btns.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_bg_sb.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_terrace/dhxlayout_bg_sb.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_web/dhxlayout_bg_sb.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_btns.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_terrace/dhxlayout_btns.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_web/dhxlayout_btns.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_collapsedhor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_collapsedhor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_collapsedhor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_collapsedver.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_collapsedver.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_collapsedver.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_cpanel_btn_dock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_cpanel_btn_dock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_cpanel_btn_dock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_cpanel_btn_undock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_cpanel_btn_undock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_cpanel_btn_undock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_drag_hor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_drag_hor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_drag_hor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_terrace/dhxlayout_drag_hor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_web/dhxlayout_drag_hor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_drag_ver.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_drag_ver.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_drag_ver.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_terrace/dhxlayout_drag_ver.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_web/dhxlayout_drag_ver.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_hor1l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_hor1l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_hor1r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_hor1r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_hor2l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_hor2l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_hor2r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_hor2r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_terrace/dhxlayout_progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_web/dhxlayout_progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_progress_global.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_progress_global.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_skyblue/dhxlayout_progress_global.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_terrace/dhxlayout_progress_global.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_web/dhxlayout_progress_global.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_ver1b.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_ver1b.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_ver1t.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_ver1t.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_ver2b.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_ver2b.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_black/dhxlayout_ver2t.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/imgs/dhxlayout_dhx_blue/dhxlayout_ver2t.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/icons/editor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/folderClosed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/folderOpen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/icons/graph-sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/iconCheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconCheckAll_2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/iconCheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/iconCheckGray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/iconChecked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconChecked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconChecked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconChecked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconChecked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconChecked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconChecked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconFlag.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconFlag.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconFlag.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconFlag.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconFlag.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconFlag.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconGraph.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconGraph.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconGraph.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconGraph.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconGraph.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconGraph.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/iconSafe.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconSound.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconSound.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconSound.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconSound.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconSound.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconSound.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/iconText.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconText.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconText.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconText.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconText.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconText.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconText.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/iconText.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconTexts.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconTexts.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconTexts.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconTexts.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconTexts.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconTexts.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/iconUncheckAll.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/iconUncheckDis.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconWrite1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconWrite1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconWrite1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconWrite1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconWrite1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconWrite1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/iconWrite2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/iconWrite2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/iconWrite2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/iconWrite2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/iconWrite2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/iconWrite2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/leaf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/leaf2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/leaf3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/leaf_2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/leaves.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/leaves.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/line1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line1_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line1_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/line2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line2_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line2_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/line3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line3_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line3_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/line4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/line4_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/line4_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/minus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/minus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus2_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus2_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/minus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus3_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus3_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/minus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus4_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus4_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/minus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus5_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/minus5_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/minus_ar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/plus1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/plus2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus2_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus2_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/plus3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus3_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus3_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/plus4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus4_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus4_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/plus5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus5_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/plus5_rtl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/plus_ar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/radio_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluefolders/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_skyblue/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_dhx_terrace/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_vista/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_winstyle/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/radio_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/safe_close.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_scbrblue/safe_open.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/sky_blue_sel_tree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_bluebooks/tombs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/tombs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/tombs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_books/tombs_open.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/imgs/csh_yellowbooks/tombs_open.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/dhtmlxaccordion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_black.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_skyblue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_terrace.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_web.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/dhtmlxcommon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/dhtmlxcommon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxcommon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/dhtmlxcommon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/dhtmlxcontainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/dhtmlxcontainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxcontainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/dhtmlxlayout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/dhtmlxlayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_black.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_terrace.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_web.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern4a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern4c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern4e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern4f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern4g.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern4j.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern4l.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern4w.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern5e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern5u.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern5w.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern6c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern6e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/patterns/dhtmlxlayout_pattern7h.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/ext/dhtmlxtabbar_scroll_ext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/dhtmlxtree.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/dhtmlxtree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/ext/dhtmlxtree_dragin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/ext/dhtmlxtree_ed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/ext/dhtmlxtree_er.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/ext/dhtmlxtree_json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/ext/dhtmlxtree_start.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/pages/frame/homePage_tab.js" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\dhtmlxaccordion.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\dhtmlxcommon.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\dhtmlxcontainer.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\dhtmlxlayout.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\dhtmlxlayout.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\dhtmlxtree.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\dhtmlxtree.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\ext\dhtmlxtree_dragin.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\ext\dhtmlxtree_ed.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\ext\dhtmlxtree_er.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\ext\dhtmlxtree_json.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\ext\dhtmlxtree_start.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\icons\accord_biz.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\icons\accord_manage.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\icons\accord_support.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\icons\editor.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\icons\graph-sm.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\but_cut.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\book.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\book_titel.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\but_cut.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\close2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\iconChecked.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\iconSafe.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\iconText.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line1_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\line4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\minus5_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\plus5_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluebooks\tombs.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconCheckAll_2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconChecked.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconFlag.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconGraph.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconSound.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconText.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconTexts.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconWrite1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\iconWrite2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_bluefolders\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\tombs.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_books\tombs_open.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconChecked.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconFlag.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconGraph.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconSound.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconText.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconTexts.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconWrite1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\iconWrite2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_dhx_skyblue\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconChecked.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconFlag.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconGraph.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconSound.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconText.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconTexts.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconWrite1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\iconWrite2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\safe_close.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_scbrblue\safe_open.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconChecked.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconFlag.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconGraph.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconSound.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconText.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconTexts.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconWrite1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\iconWrite2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_vista\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconChecked.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconFlag.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconGraph.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconSound.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconText.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconTexts.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconWrite1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\iconWrite2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\leaves.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_winstyle\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\books_close.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\books_open.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\iconText.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\leaf2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\leaf3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\leaf_2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\tombs.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\csh_yellowbooks\tombs_open.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_black\dhxacc_bg_hover.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_black\dhxacc_bg_normal.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_blue\dhxacc_bg_hover.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_blue\dhxacc_bg_normal.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_skyblue\dhxacc_bg_hover.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_skyblue\dhxacc_bg_normal.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_skyblue\dhxacc_bg_sb.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_skyblue\dhxacc_btns.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_web\dhxacc_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxaccord_dhx_web\dhxacc_btns.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_collapsedhor.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_collapsedver.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_cpanel_btn_dock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_cpanel_btn_undock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_drag_hor.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_drag_ver.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_hor1l.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_hor1r.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_hor2l.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_hor2r.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_progress_global.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_ver1b.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_ver1t.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_ver2b.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_black\dhxlayout_ver2t.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_collapsedhor.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_collapsedver.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_cpanel_btn_dock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_cpanel_btn_undock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_drag_hor.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_drag_ver.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_hor1l.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_hor1r.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_hor2l.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_hor2r.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_progress_global.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_ver1b.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_ver1t.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_ver2b.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_ver2t.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_bg_sb.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_btns.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_collapsedhor.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_collapsedver.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_cpanel_btn_dock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_cpanel_btn_undock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_drag_hor.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_drag_ver.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_progress_global.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_web\dhxlayout_bg_sb.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_web\dhxlayout_btns.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_web\dhxlayout_drag_hor.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_web\dhxlayout_drag_ver.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_web\dhxlayout_progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\dhxlayout_dhx_web\dhxlayout_progress_global.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line1_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\line4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus5_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\minus_ar.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus5_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\plus_ar.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\imgs\sky_blue_sel_tree.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern4a.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern4c.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern4e.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern4f.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern4j.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern4l.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern4w.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern5e.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern5u.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern5w.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\patterns\dhtmlxlayout_pattern6c.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\skins\dhtmlxaccordion_dhx_black.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\skins\dhtmlxaccordion_dhx_blue.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\skins\dhtmlxaccordion_dhx_skyblue.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\skins\dhtmlxaccordion_dhx_web.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\skins\dhtmlxlayout_dhx_black.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\skins\dhtmlxlayout_dhx_blue.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\skins\dhtmlxlayout_dhx_skyblue.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\skins\dhtmlxlayout_dhx_web.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\dhtmlx\codebase\tree3.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar.css" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar.js" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/ext/dhtmlxtabbar_deprecated.js" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/ext/dhtmlxtabbar_deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar_start.js" afterPath="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar_start.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/diytabbar.css" afterPath="$PROJECT_DIR$/webRoot/css/diytabbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp" afterPath="$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp" />
+    <list default="true" id="9988f1a9-44b6-4305-b711-49cb30d2edc0" name="" comment="主页IE10支持">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp" afterPath="$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="5ccc1d64-bba7-4e6c-828c-523c65ef74ad" name="Failed commit: " comment="Failed commit:" />
@@ -994,7 +36,7 @@
     <file path="/readme.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1357873264527" ignored="false" />
     <file path="$PROJECT_DIR$/../../../svn-haierfip/src-psisvn/haierfip/src/main/java/fip/service/fip/CmsService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358149309611" ignored="false" />
     <file path="/CmsService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358149252467" ignored="false" />
-    <file path="/Dummy.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365572395988" ignored="false" />
+    <file path="/Dummy.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365572463912" ignored="false" />
     <file path="/PbcRateRptAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358754846905" ignored="false" />
     <file path="$PROJECT_DIR$/../../../svn-ccbpams/src/ccbpams-v2.0/main/webapp/UI/test/loginPage01.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358221688093" ignored="false" />
     <file path="/loginPage01.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358221686602" ignored="false" />
@@ -1017,7 +59,7 @@
     <file path="/queryBalance.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362541654788" ignored="false" />
     <file path="/trackMisc.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362547151526" ignored="false" />
     <file path="/sbsActInfoMng.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362547345720" ignored="false" />
-    <file path="/homePage_nocas.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365566972768" ignored="false" />
+    <file path="/homePage_nocas.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365577254730" ignored="false" />
     <file path="/FixedDepositQryAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362726474549" ignored="false" />
     <file path="/FixedDepositQryService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363166666844" ignored="false" />
     <file path="/fragment.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1364437450238" ignored="false" />
@@ -1142,10 +184,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="homePage_nocas.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="homePage_nocas.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="65" selection-start="6002" selection-end="6002" vertical-scroll-proportion="0.69803923">
+            <state line="72" column="62" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-8.785714">
               <folding>
                 <element signature="tag#tr#2;tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
@@ -1153,82 +195,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homePage_layout.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="homePage.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="155" column="14" selection-start="5893" selection-end="5893" vertical-scroll-proportion="-31.678572">
+              <folding>
+                <element signature="tag#tr#2;tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homePage_layout.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="42" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhtmlxaccordion_dhx_blue.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_blue.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="17" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhtmlxlayout.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/dhtmlxlayout.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="4" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhtmlxlayout_dhx_skyblue.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="17" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhtmlxlayout_dhx_blue.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_blue.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhtmlxaccordion_dhx_skyblue.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_skyblue.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="17" selection-start="2575" selection-end="2575" vertical-scroll-proportion="-6.214286">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhtmlxtabbar.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="16" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhtmlxtree.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/dhtmlxtree.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="16" selection-start="3234" selection-end="3234" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhtmlxaccordion_dhx_black.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_black.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="17" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
+            <state line="35" column="31" selection-start="1277" selection-end="1277" vertical-scroll-proportion="-1.2986112">
               <folding />
             </state>
           </provider>
@@ -1252,7 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/haier/service/rms/pbcreport/cms_balance.xml" />
         <option value="$PROJECT_DIR$/src/haier/service/rms/pbcreport/cms_txndetl.xml" />
         <option value="$PROJECT_DIR$/src/haier/service/rms/pbcreport/DataEtlService.groovy" />
         <option value="$PROJECT_DIR$/src/haier/repository/dao/infoqry/HfcBiMapper.java" />
@@ -1260,14 +240,15 @@
         <option value="$PROJECT_DIR$/src/haier/repository/model/infoqry/FixedDepositBean.java" />
         <option value="$PROJECT_DIR$/webRoot/css/diytabbar.css" />
         <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage_tab.js" />
-        <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js" />
         <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_blue.css" />
         <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/dhtmlxtree.css" />
         <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_black.css" />
         <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css" />
         <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_skyblue.css" />
         <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar.css" />
+        <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp" />
         <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp" />
+        <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js" />
       </list>
     </option>
   </component>
@@ -1461,40 +442,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dhtmlx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlxTree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codebase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlxTabbar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codebase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2916,7 +1863,11 @@
       <created>1365327503169</created>
       <updated>1365327503169</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="主页IE10支持">
+      <created>1365572480652</created>
+      <updated>1365572480652</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2941,7 +1892,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4296875" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
@@ -2955,7 +1906,7 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2256839" sideWeight="0.5792079" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2256839" sideWeight="0.5792079" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48514852" sideWeight="0.79119086" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2643208" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -3030,7 +1981,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="1169定期存款查询增加外部银行名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="主页IE10支持" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -3044,7 +1995,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="人行信贷报表" />
     <MESSAGE value="结算资金监控 2" />
     <MESSAGE value="结算资金监控 3 excel" />
     <MESSAGE value="单点登录和用户同步" />
@@ -3069,6 +2019,7 @@
     <MESSAGE value="人行利率水平报表：导出文件去掉最后一个字段（折美元）" />
     <MESSAGE value="人行利率水平报表" />
     <MESSAGE value="1169定期存款查询增加外部银行名称" />
+    <MESSAGE value="主页IE10支持" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3144,13 +2095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="407" selection-end="456" vertical-scroll-proportion="-6.285714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Configuration.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="2" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
@@ -3172,27 +2116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="42" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_blue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="17" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/dhtmlxlayout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="4" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/dhtmlxtree.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="16" selection-start="3234" selection-end="3234" vertical-scroll-proportion="0.0">
@@ -3203,13 +2126,6 @@
     <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_black.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="17" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="17" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -3235,12 +2151,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp">
+    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="65" selection-start="6002" selection-end="6002" vertical-scroll-proportion="0.69803923">
+        <state line="70" column="17" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.040892195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/dhtmlxlayout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="4" selection-start="586" selection-end="586" vertical-scroll-proportion="0.17785844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="17" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.17785844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="14" selection-start="5893" selection-end="5893" vertical-scroll-proportion="-31.678572">
           <folding>
             <element signature="tag#tr#2;tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="62" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-8.785714">
+          <folding>
+            <element signature="tag#tr#2;tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="31" selection-start="1277" selection-end="1277" vertical-scroll-proportion="-1.2986112">
+          <folding />
         </state>
       </provider>
     </entry>
