@@ -15,6 +15,7 @@ import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -30,8 +31,9 @@ import java.util.List;
 
 @ManagedBean
 @ViewScoped
-public class ActDetlBookHandler {
+public class ActDetlBookHandler implements Serializable{
     private static final Logger logger = LoggerFactory.getLogger(ActDetlBookHandler.class);
+    private static final long serialVersionUID = 7186267236457525988L;
 
     private List<T8853ResponseRecord> detlList = new ArrayList<T8853ResponseRecord>();
     private T8853ResponseRecord detlRecord = new T8853ResponseRecord();

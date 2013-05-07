@@ -8,6 +8,7 @@ select 'C5007437000019' 金融机构代码, '1' 客户类型, data.*
         case a.ab_amorz_type
         when '4' then 'F0219'
         when '5' then 'F0219'
+        else 'F0219'
         end 产品类别,
         '100' 贷款实际投向,
 
