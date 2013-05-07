@@ -45,7 +45,7 @@ select 'C5007437000019' 金融机构代码, '1' 客户类型, data.*
         when 'N' then
         'FS01'
         else
-        'FS03'
+        'FS01'
         end 贷款状态,
         data1.prinbackflag 贷款发放收回标志,
         '${enddate}' 上报日期
