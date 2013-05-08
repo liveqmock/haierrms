@@ -242,7 +242,7 @@ public class HistoryBalanceQryAction implements Serializable {
                 context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "请先查询数据。", ""));
                 return null;
             }
-            this.currList = this.actbalService.selectCurrcodeList(new SimpleDateFormat("yyyy-MM-dd").format(this.startdate), this.queryType);
+            this.currList = this.actbalService.selectCurrcodeList(this.startdate, this.queryType);
             this.reportFileName = createExcelTempFile();
 
             Ptoplog oplog = new Ptoplog();
@@ -441,7 +441,7 @@ public class HistoryBalanceQryAction implements Serializable {
         String reportPath = PropertyManager.getProperty("REPORT_ROOTPATH");
         String templateFileName = reportPath + "sbsbalance.xls";
 
-        String excelFilename = "sbsbal_" + new SimpleDateFormat("yyyyMMdd_").format(this.startdate) + this.queryType + ".xls";
+        String excelFilename = "sbsbal_" + this.startdate + "_" + this.queryType + ".xls";
         String destFileName = reportPath + "temp/" + excelFilename;
 
 
