@@ -1,7 +1,6 @@
 package haier.rms.scheduler;
 
-import haier.rms.psireport.Scheduler;
-import haier.scheduler.DisReportHandler;
+import haier.scheduler.PsiReportHandler;
 import haier.scheduler.SBSAccountBalanceHandler;
 import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
@@ -30,8 +29,8 @@ public class PsiReportAction {
     @ManagedProperty(value = "#{sbsactbal}")
     private SBSAccountBalanceHandler sbsScheduler;
 
-    @ManagedProperty(value = "#{disactbal}")
-    private DisReportHandler disScheduler;
+    @ManagedProperty(value = "#{psiReport}")
+    private PsiReportHandler psiScheduler;
 
     public Date getStartdate() {
         return startdate;
@@ -49,12 +48,20 @@ public class PsiReportAction {
         this.enddate = enddate;
     }
 
+    public SBSAccountBalanceHandler getSbsScheduler() {
+        return sbsScheduler;
+    }
+
     public void setSbsScheduler(SBSAccountBalanceHandler sbsScheduler) {
         this.sbsScheduler = sbsScheduler;
     }
 
-    public void setDisScheduler(DisReportHandler disScheduler) {
-        this.disScheduler = disScheduler;
+    public PsiReportHandler getPsiScheduler() {
+        return psiScheduler;
+    }
+
+    public void setPsiScheduler(PsiReportHandler psiScheduler) {
+        this.psiScheduler = psiScheduler;
     }
 
     //=======================================================
@@ -66,6 +73,7 @@ public class PsiReportAction {
         this.enddate = new Date();
     }
 
+/*
     public String doStart() {
         try {
             haier.rms.psireport.Scheduler psi = new Scheduler();
@@ -78,4 +86,18 @@ public class PsiReportAction {
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "调度任务已完成。", null));
         return null;
     }
+*/
+    public String doStart() {
+        try {
+            sbsScheduler.run(startdate);
+            psiScheduler.run(startdate);
+        } catch (Exception e) {
+            logger.error(e);
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, e.getMessage(), null));
+            return null;
+        }
+        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "调度任务已完成。", null));
+        return null;
+    }
+
 }

@@ -2,6 +2,7 @@ package haier.scheduler;
 
 import gateway.ftp.Ftp4SBS;
 import haier.repository.model.SbsActaha;
+import haier.repository.model.SbsActapc;
 import haier.repository.model.SbsActbal;
 import haier.repository.model.SbsActcxr;
 import haier.service.rms.sbsbatch.ActbalService;
@@ -15,6 +16,8 @@ import pub.platform.advance.utils.PropertyManager;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -86,7 +89,8 @@ public class SBSAccountBalanceHandler {
             extractActbalTxtToDb(strdate);
             extractActcxrTxtToDb(strdate);
             extractActahaTxtToDb(strdate);
-        } catch (IOException e) {
+            extractActapcTxtToDb(strdate);
+        } catch (Exception e) {
             logger.error("转换SBS余额文件出现问题。" + strdate, e);
             //TODO DBLOG
             throw new RuntimeException("转换SBS余额文件出现问题。。");
@@ -181,6 +185,38 @@ public class SBSAccountBalanceHandler {
             actaha.setOperid("AUTO");
             actaha.setOperdate(date);
             actbalService.insertActaha(actaha);
+        }
+    }
+    /**
+     * 核算码定义文件
+     * @param strdate
+     * @throws IOException
+     */
+    private void extractActapcTxtToDb(String strdate) throws IOException, ParseException {
+        String filepath = PropertyManager.getProperty("FTP_SBS_ROOTPATH");
+        File file = new File(filepath + strdate + "_actapc_1.010");
+
+        List<String> lines = FileUtils.readLines(file);
+        if (lines.size() == 0) {
+            return;
+        }
+        actbalService.deleteActapcAllRecord();
+        SbsActapc actapc = new SbsActapc();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        int count = 0;
+        for (String line : lines) {
+            count++;
+            if (count==1) {
+                continue;
+            }
+            String[] fileds = StringUtils.split(line, "|");
+            actapc.setApcode(fileds[0].trim());
+            actapc.setApcdcr(fileds[1].trim());
+            actapc.setApctyp(fileds[2].trim());
+            actapc.setGlcode(fileds[3].trim());
+            actapc.setPlcode(fileds[4].trim());
+            actapc.setUpddat(sdf.parse(fileds[5].trim()));
+            actbalService.insertActapc(actapc);
         }
     }
 }

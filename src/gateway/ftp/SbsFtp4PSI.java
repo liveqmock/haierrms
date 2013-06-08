@@ -1,16 +1,9 @@
 package gateway.ftp;
 
-import haier.rms.psireport.ExportExcel;
-import haier.rms.psireport.nsmbean;
-import haier.rms.psireport.readData;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import pub.platform.advance.utils.PropertyManager;
 
 import java.io.IOException;
 import java.text.ParseException;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -21,15 +14,13 @@ import java.util.List;
  */
 public class SbsFtp4PSI {
 
-    //private FtpClient sbsclient = FtpClient.getInstance("sbsftpconf.properties");
     private FtpClient sbsclient = new FtpClient("sbsftpconf.properties");
-    //private FtpClient psiclient = FtpClient.getInstance("psiftpconf.properties");
     private FtpClient psiclient = new FtpClient("psiftpconf.properties");
 
     /**
      * @param args
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         try {
             //getFileList();
             //download("C:/", "startadmin.sh");
@@ -38,7 +29,7 @@ public class SbsFtp4PSI {
 
             String dataStr = "2010-09-29";
             sbsftp.getFileFromSBS(dataStr);
-            sbsftp.lst2Excel(dataStr);
+            //sbsftp.lst2Excel(dataStr);
             sbsftp.putFileToPSI(dataStr);
         } catch (IOException e) {
             e.printStackTrace();
@@ -65,30 +56,19 @@ public class SbsFtp4PSI {
         } else {
             getFileList();
             sbsdownload("d:/rms/ftp/sbs/2010-04-30/", "dpbcptpiv1.010");
-//            uoload();
         }
         sbsclient.close();
         sbsclient.closeHandSwitch();
     }
 
     //÷ÿµ„
-
     public void getFileFromSBS(String strDate) throws IOException {
         sbsclient.openHandSwitch();
         if (!sbsclient.ready()) {
             sbsclient.close();
         } else {
-            //getFileList();
-
-            //SBS FTP ????????     d:/rms/ftp/sbs/
             String ftpPath = PropertyManager.getProperty("FTP_SBS_ROOTPATH");
-
-            try {
-                sbsdownload(ftpPath + strDate + "_nsm-old.lst", strDate + "/nsm-old.lst");
-
-            } catch (IOException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-            }
+            sbsdownload(ftpPath + strDate + "_nsm-old.lst", strDate + "/nsm-old.lst");
         }
 
         sbsclient.close();
@@ -101,15 +81,8 @@ public class SbsFtp4PSI {
             psiclient.close();
         } else {
             String ftpPath = PropertyManager.getProperty("FTP_SBS_ROOTPATH");
-
-            try {
-                //2012/01/04 zhanrui Œ¥≤‚ ‘
-                //psiclient.removeFile("pub/gxzx/", strDate + ".xls");
-                psiclient.removeFile("", strDate + ".xls");
-                psiclient.upload(ftpPath,  strDate + ".xls", strDate + ".xls");
-            } catch (IOException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-            }
+            psiclient.removeFile("", strDate + ".xls");
+            psiclient.upload(ftpPath, strDate + ".xls", strDate + ".xls");
         }
 
         psiclient.close();
@@ -117,33 +90,20 @@ public class SbsFtp4PSI {
     }
 
 
-    public void lst2Excel(String strDate) {
-        HSSFWorkbook wb = new HSSFWorkbook();
-        HSSFSheet sheet = wb.createSheet();
 
-        ExportExcel ext = new ExportExcel(wb, sheet);
-        ext.createHead(true);
-
-        String ftpPath = PropertyManager.getProperty("FTP_SBS_ROOTPATH");
-
-        String strPath = ftpPath + strDate + "_" + "nsm-old.lst";
-
-        readData rd = new readData();
-        List al = rd.getDataList(strPath, "|");
-        Iterator<nsmbean> it = al.iterator();
-        try {
-            int count = 0;
-            while (it.hasNext()) {
-                nsmbean n = it.next();
-                ext.createBody(true, n);
-//                System.out.println(n.getBorrowamt());
-                count++;
-                //System.out.println("count=" + count);
-            }
-        } catch (ParseException e) {
-            e.printStackTrace();
+    //===============
+    public void putFileToPSIByFilename(String srcFile) throws IOException {
+        psiclient.openHandSwitch();
+        if (!psiclient.ready()) {
+            psiclient.close();
+        } else {
+            String ftpPath = PropertyManager.getProperty("FTP_SBS_ROOTPATH");
+            psiclient.removeFile("", srcFile);
+            psiclient.upload(ftpPath, srcFile, srcFile);
         }
-        ext.outputExcel(ftpPath + strDate + ".xls");
+
+        psiclient.close();
+        psiclient.closeHandSwitch();
     }
 
 }

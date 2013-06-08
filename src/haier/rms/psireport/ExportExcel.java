@@ -3,9 +3,10 @@ package haier.rms.psireport;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.hssf.util.HSSFColor;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.text.DecimalFormat;
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -13,7 +14,7 @@ import java.util.Date;
 
 /**
  * Created by IntelliJ IDEA.
- * User: Administrator
+ * User: huangzunxiu
  * Date: 2010-9-28
  * Time: 5:48:23
  * To change this template use File | Settings | File Templates.

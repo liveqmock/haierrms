@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <classPathEntry location="/WorkSpace/svn-haierrms/ref/ojdbc6.jar"/>
+    <classPathEntry location="/WorkSpace/git-haierrms/lib/ojdbc6.jar"/>
 
     <!--信息 注意数据库地址配置 -->
     <context id="AllInfo" targetRuntime="MyBatis3">
@@ -44,6 +44,7 @@
         <table tableName="sbs_actccy"/>
         <table tableName="sbs_actcxr"/>
         <table tableName="sbs_actaha"/>
+        <table tableName="sbs_actapc"/>
 
         <table tableName="dis_actlst"/>
         <table tableName="rms_sbsactattr"/>

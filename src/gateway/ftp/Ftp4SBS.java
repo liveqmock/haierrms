@@ -69,8 +69,12 @@ public class Ftp4SBS {
 
             try {
                 sbsdownload(ftpPath + strDate + "_actbal-bk.lst", strDate + "/actbal-bk.lst");
+                //A股H股名单
                 sbsdownload(ftpPath + strDate + "_actcxr-bk.lst", strDate + "/actcxr-bk.lst");
+                //当前汇率
                 sbsdownload(ftpPath + strDate + "_actaha-bk.lst", strDate + "/actaha-bk.lst");
+                //核算码总账码对照表
+                sbsdownload(ftpPath + strDate + "_actapc_1.010", strDate + "/actapc_1.010");
 
             } catch (IOException e) {
                 logger.error("SBS文件获取失败，可能网络链接出现错误。");

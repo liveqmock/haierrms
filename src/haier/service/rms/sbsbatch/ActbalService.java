@@ -1,9 +1,6 @@
 package haier.service.rms.sbsbatch;
 
-import haier.repository.dao.MtActtypeMapper;
-import haier.repository.dao.SbsActahaMapper;
-import haier.repository.dao.SbsActbalMapper;
-import haier.repository.dao.SbsActcxrMapper;
+import haier.repository.dao.*;
 import haier.repository.dao.sbsreport.SbsReportMapper;
 import haier.repository.model.*;
 import haier.repository.model.sbsreport.ActbalHistory;
@@ -39,6 +36,8 @@ public class ActbalService {
     private SbsActahaMapper actahaMapper;
     @Autowired
     private SbsReportMapper sbsrptMapper;
+    @Autowired
+    private SbsActapcMapper actapcMapper;
 
     @Autowired
     private MtActtypeMapper mtActtypeMapper;
@@ -79,11 +78,19 @@ public class ActbalService {
     public int insertActaha(SbsActaha actaha) {
         return actahaMapper.insert(actaha);
     }
+    public int insertActapc(SbsActapc actapc) {
+        return actapcMapper.insert(actapc);
+    }
 
     public int deleteActahaAllRecord() {
         SbsActahaExample example = new SbsActahaExample();
         example.createCriteria().andActtypeIsNotNull();
         return actahaMapper.deleteByExample(example);
+    }
+    public int deleteActapcAllRecord() {
+        SbsActapcExample example = new SbsActapcExample();
+        example.createCriteria();
+        return actapcMapper.deleteByExample(example);
     }
 
     /**

@@ -3,9 +3,6 @@ package haier.rms.psireport;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-import java.text.ParseException;
-import java.util.*;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Administrator
@@ -17,6 +14,7 @@ public class fileChange {
     private static HSSFWorkbook wb = new HSSFWorkbook(); 
     private static HSSFSheet sheet = wb.createSheet();
     public static void main(String[] args) {
+/*
         ExportExcel ext = new ExportExcel(wb,sheet);
         ext.createHead(true);
         String strPath = "D:\\าตฮ๑\\xing\\2010-09-26_nsm-old.lst";
@@ -34,5 +32,6 @@ public class fileChange {
             e.printStackTrace();
         }
         ext.outputExcel("d:\\tt.xls");
+*/
     }
 }

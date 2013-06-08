@@ -11,8 +11,26 @@
   </component>
   <component name="ChangeListManager">
     <list readonly="true" id="ead27e89-99eb-40f0-a9c3-e0eb80618690" name="Default" comment="" />
-    <list default="true" id="9988f1a9-44b6-4305-b711-49cb30d2edc0" name="" comment="主页IE10支持">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp" afterPath="$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp" />
+    <list default="true" id="9988f1a9-44b6-4305-b711-49cb30d2edc0" name="" comment="PSI共享中心报表 增加余额报表 同时过滤总账码（未处理明细报表）">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/scheduler/PsiReportHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/repository/dao/psireport/PsiReportMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/service/rms/psireport/PsiReportService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/repository/model/SbsActapc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/repository/model/SbsActapcExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/repository/dao/SbsActapcMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/repository/mapper/SbsActapcMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/service/rms/sbsbatch/ActbalService.java" afterPath="$PROJECT_DIR$/src/haier/service/rms/sbsbatch/ActbalService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/psireport/ExportExcel.java" afterPath="$PROJECT_DIR$/src/haier/rms/psireport/ExportExcel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gateway/ftp/Ftp4SBS.java" afterPath="$PROJECT_DIR$/src/gateway/ftp/Ftp4SBS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/scheduler/PsiReportAction.java" afterPath="$PROJECT_DIR$/src/haier/rms/scheduler/PsiReportAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java" afterPath="$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gateway/ftp/SbsFtp4PSI.java" afterPath="$PROJECT_DIR$/src/gateway/ftp/SbsFtp4PSI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/psireport/Scheduler.java" afterPath="$PROJECT_DIR$/src/haier/rms/psireport/Scheduler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/applicationContext.xml" afterPath="$PROJECT_DIR$/src/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/psireport/fileChange.java" afterPath="$PROJECT_DIR$/src/haier/rms/psireport/fileChange.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pub/generator/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/pub/generator/resources/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/psireport/readData.java" afterPath="$PROJECT_DIR$/src/haier/rms/psireport/readData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="5ccc1d64-bba7-4e6c-828c-523c65ef74ad" name="Failed commit: " comment="Failed commit:" />
@@ -36,7 +54,7 @@
     <file path="/readme.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1357873264527" ignored="false" />
     <file path="$PROJECT_DIR$/../../../svn-haierfip/src-psisvn/haierfip/src/main/java/fip/service/fip/CmsService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358149309611" ignored="false" />
     <file path="/CmsService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358149252467" ignored="false" />
-    <file path="/Dummy.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365572463912" ignored="false" />
+    <file path="/Dummy.txt" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1370691274635" ignored="false" />
     <file path="/PbcRateRptAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358754846905" ignored="false" />
     <file path="$PROJECT_DIR$/../../../svn-ccbpams/src/ccbpams-v2.0/main/webapp/UI/test/loginPage01.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358221688093" ignored="false" />
     <file path="/loginPage01.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358221686602" ignored="false" />
@@ -46,7 +64,7 @@
     <file path="/DBXML.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358311272312" ignored="false" />
     <file path="/expExcelJsp.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358312545585" ignored="false" />
     <file path="/a.dummy" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365571374405" ignored="false" />
-    <file path="/ccms_balance.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358486457412" ignored="false" />
+    <file path="/ccms_balance.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1367907801505" ignored="false" />
     <file path="/PbcRateService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1364292336418" ignored="false" />
     <file path="/LogAnalysys.groovy" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358413399305" ignored="false" />
     <file path="/cms_balance.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1358417853783" ignored="false" />
@@ -62,9 +80,9 @@
     <file path="/homePage_nocas.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365577254730" ignored="false" />
     <file path="/FixedDepositQryAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362726474549" ignored="false" />
     <file path="/FixedDepositQryService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363166666844" ignored="false" />
-    <file path="/fragment.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1364437450238" ignored="false" />
+    <file path="/fragment.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369619561705" ignored="false" />
     <file path="/T8855SOFDataDetail.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362626661775" ignored="false" />
-    <file path="/generatorConfig.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362737201992" ignored="false" />
+    <file path="/generatorConfig.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369644941312" ignored="false" />
     <file path="/FixedDepositBean.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365324706888" ignored="false" />
     <file path="/fixedDepositQry.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365324815974" ignored="false" />
     <file path="/SbsCommonService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362649039433" ignored="false" />
@@ -80,7 +98,7 @@
     <file path="/Act1169ListAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362736772208" ignored="false" />
     <file path="/Act1169ListService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362729727811" ignored="false" />
     <file path="/PtoplogAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362737575453" ignored="false" />
-    <file path="/applicationContext.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362737531229" ignored="false" />
+    <file path="/applicationContext.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369641586038" ignored="false" />
     <file path="$PROJECT_DIR$/../../../git-fbipams/src/fbipams/main/webapp/pages/frame/trackMisc.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362921435668" ignored="false" />
     <file path="$PROJECT_DIR$/../../../git-fbipams/src/fbipams/main/webapp/pages/frame/homePage.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362922136780" ignored="false" />
     <file path="/homePage.jsp" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1362922083235" ignored="false" />
@@ -95,7 +113,7 @@
     <file path="/sbsHisBalQry.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363255758931" ignored="false" />
     <file path="/SbsReportMapper.xml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363255528296" ignored="false" />
     <file path="/SbsReportMapper.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363253240440" ignored="false" />
-    <file path="/ActbalService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363315701850" ignored="false" />
+    <file path="/ActbalService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369645397274" ignored="false" />
     <file path="/ActbalHistory.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363255730450" ignored="false" />
     <file path="/sbsBalQry.xhtml" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363316841298" ignored="false" />
     <file path="$PROJECT_DIR$/../../../svn-qdccbloan/source/ccbloan_v4.0/src/com/ccb/flowmng/ArchiveInfoSelectOneAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1363838262919" ignored="false" />
@@ -112,6 +130,19 @@
     <file path="/diytabbar.css" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365502957442" ignored="false" />
     <file path="/homePage_layout.js" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365560390058" ignored="false" />
     <file path="/dhtmlxtabbar.css" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365571732377" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../git-fbipams/src/fbipams/main/resources/credit.properties" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1365578842638" ignored="false" />
+    <file path="/ActDetlBookHandler.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1366096968227" ignored="false" />
+    <file path="/PsiReportHandler.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369797286446" ignored="false" />
+    <file path="/PsiReportService.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369646988133" ignored="false" />
+    <file path="/SbsFtp4PSI.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369637449371" ignored="false" />
+    <file path="/FtpClient.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369637343253" ignored="false" />
+    <file path="/PsiReportAction.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369641611830" ignored="false" />
+    <file path="/Ftp4SBS.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369643607604" ignored="false" />
+    <file path="/SBSAccountBalanceHandler.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369645680576" ignored="false" />
+    <file path="/readData.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369646659857" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../git-ccbposprize/src/ccbprize/ccbprize/src/java/prize/client/PosClient.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369721660866" ignored="false" />
+    <file path="/PosClient.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369721613318" ignored="false" />
+    <file path="/ExportExcel.java" changelist="9988f1a9-44b6-4305-b711-49cb30d2edc0" time="1369791515837" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,32 +215,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="homePage_nocas.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp">
+      <file leaf-file-name="PsiReportHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/scheduler/PsiReportHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="62" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-8.785714">
-              <folding>
-                <element signature="tag#tr#2;tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="151" column="30" selection-start="4964" selection-end="4964" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homePage.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="14" selection-start="5893" selection-end="5893" vertical-scroll-proportion="-31.678572">
-              <folding>
-                <element signature="tag#tr#2;tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.1461987">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homePage_layout.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js">
+      <file leaf-file-name="psiftpconf.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gateway/ftp/psiftpconf.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="31" selection-start="1277" selection-end="1277" vertical-scroll-proportion="-1.2986112">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sbsftpconf.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gateway/ftp/sbsftpconf.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PsiReportAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/rms/scheduler/PsiReportAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="26" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nsmbean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/nsmbean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExportExcel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/ExportExcel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="20" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PsiReportService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/service/rms/psireport/PsiReportService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="27" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scheduler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/Scheduler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="14" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileChange.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/fileChange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -233,22 +323,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/haier/service/rms/pbcreport/cms_txndetl.xml" />
-        <option value="$PROJECT_DIR$/src/haier/service/rms/pbcreport/DataEtlService.groovy" />
-        <option value="$PROJECT_DIR$/src/haier/repository/dao/infoqry/HfcBiMapper.java" />
-        <option value="$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/fixedDepositQry.xhtml" />
-        <option value="$PROJECT_DIR$/src/haier/repository/model/infoqry/FixedDepositBean.java" />
-        <option value="$PROJECT_DIR$/webRoot/css/diytabbar.css" />
-        <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage_tab.js" />
-        <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_blue.css" />
-        <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/dhtmlxtree.css" />
-        <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_black.css" />
-        <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css" />
-        <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_skyblue.css" />
-        <option value="$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar.css" />
-        <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp" />
-        <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp" />
-        <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js" />
+        <option value="$PROJECT_DIR$/src/haier/repository/dao/psireport/PsiReportMapper.java" />
+        <option value="$PROJECT_DIR$/src/gateway/ftp/FtpClient.java" />
+        <option value="$PROJECT_DIR$/src/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/haier/rms/scheduler/PsiReportAction.java" />
+        <option value="$PROJECT_DIR$/src/gateway/ftp/Ftp4SBS.java" />
+        <option value="$PROJECT_DIR$/src/pub/generator/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/haier/service/rms/sbsbatch/ActbalService.java" />
+        <option value="$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java" />
+        <option value="$PROJECT_DIR$/src/haier/rms/psireport/readData.java" />
+        <option value="$PROJECT_DIR$/src/haier/service/rms/psireport/PsiReportService.java" />
+        <option value="$PROJECT_DIR$/src/gateway/ftp/SbsFtp4PSI.java" />
+        <option value="$PROJECT_DIR$/src/haier/rms/psireport/ExportExcel.java" />
+        <option value="$PROJECT_DIR$/src/haier/scheduler/PsiReportHandler.java" />
+        <option value="$PROJECT_DIR$/src/haier/rms/psireport/Scheduler.java" />
+        <option value="$PROJECT_DIR$/src/haier/rms/psireport/fileChange.java" />
+        <option value="$PROJECT_DIR$/webRoot/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -337,6 +427,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Haierrms2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,6 +448,10 @@
               <option name="myItemId" value="haierrms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -366,24 +474,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,159 +491,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlxLayout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codebase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlxLayout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codebase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlxAccordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codebase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dhtmlxAccordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codebase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skins" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -568,6 +506,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -586,114 +590,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pbcreport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="externalcustomer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infoqry" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -745,7 +641,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="infoqry" />
+              <option name="myItemId" value="rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbsbatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psireport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="disreport" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -789,11 +749,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="scheduler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -815,15 +771,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infoqry" />
+              <option name="myItemId" value="rms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -845,41 +793,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
+              <option name="myItemId" value="rms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pbcrateReport" />
+              <option name="myItemId" value="scheduler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -901,41 +819,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
+              <option name="myItemId" value="rms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pbcrateReport" />
+              <option name="myItemId" value="psireport" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -957,15 +845,103 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
+              <option name="myItemId" value="activemq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="infoqry" />
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activemq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activemq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ftp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ftp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1081,25 +1057,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haierrms2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -1114,6 +1076,7 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -1122,11 +1085,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="haier.repository.dao.psireport" />
+      <recent name="haier.service.rms.psireport" />
+      <recent name="haier.scheduler" />
       <recent name="haier.view.rms.externalcustomer" />
       <recent name="haier.view.platform" />
-      <recent name="haier.service.infoqry" />
-      <recent name="haier.view.infoqry" />
-      <recent name="haier.repository.dao.infoqry" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\pages\frame" />
@@ -1139,15 +1102,15 @@
       <recent name="cbs.batch.ac.voucher" />
       <recent name="cbs.common.validator" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="haier.repository.model.sbsreport" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\UI\haier\rms\externalcustomer" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\UI\cbs\ac\batchbook" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\pages\frame" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\pages\security" />
       <recent name="F:\svn-fbicbs\source\fbicbs\src\cbs\common\utils\message" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="haier.repository.model.sbsreport" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat7.0.33">
@@ -1867,7 +1830,23 @@
       <created>1365572480652</created>
       <updated>1365572480652</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="主页IE10支持">
+      <created>1365578074278</created>
+      <updated>1365578074278</updated>
+    </task>
+    <task id="LOCAL-00034" summary="人行报表 产品种类 CCMS  增加默认值">
+      <created>1367910180549</created>
+      <updated>1367910180549</updated>
+    </task>
+    <task id="LOCAL-00035" summary="人行报表 产品种类 CCMS  增加默认值">
+      <created>1367910316636</created>
+      <updated>1367910316636</updated>
+    </task>
+    <task id="LOCAL-00036" summary="修改报表BUG">
+      <created>1367983441014</created>
+      <updated>1367983441014</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1892,35 +1871,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4296875" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21941273" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4438944" sideWeight="0.503811" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5658307" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50625" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2256839" sideWeight="0.5792079" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48514852" sideWeight="0.79119086" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2643208" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42079207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4620462" sideWeight="0.49085367" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21941273" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5693069" sideWeight="0.49085367" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4438944" sideWeight="0.503811" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50625" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5658307" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34488449" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29934746" sideWeight="0.3369906" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25367048" sideWeight="0.34375" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.677116" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967373" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.677116" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2256839" sideWeight="0.43069306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48514852" sideWeight="0.79119086" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2667758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.584375" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
       <window_info id="JavaRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JavaRebel" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1981,7 +1960,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="主页IE10支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改报表BUG" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1995,8 +1974,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="结算资金监控 2" />
-    <MESSAGE value="结算资金监控 3 excel" />
     <MESSAGE value="单点登录和用户同步" />
     <MESSAGE value="&#10;" />
     <MESSAGE value="人行利率水平报表（1411、2411）&#10;ren" />
@@ -2020,6 +1997,8 @@
     <MESSAGE value="人行利率水平报表" />
     <MESSAGE value="1169定期存款查询增加外部银行名称" />
     <MESSAGE value="主页IE10支持" />
+    <MESSAGE value="人行报表 产品种类 CCMS  增加默认值" />
+    <MESSAGE value="修改报表BUG" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2039,160 +2018,123 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/fixedDepositQry.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/haier/service/rms/sbsbatch/ActbalService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="317" column="85" selection-start="13312" selection-end="13312" vertical-scroll-proportion="0.0">
+        <state line="82" column="21" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1365324821055" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/css/diytabbar.css">
+    <entry file="file://$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="12" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
+        <state line="47" column="0" selection-start="1189" selection-end="1245" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Configuration.xml">
+    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/SbsFtp4PSI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+        <state line="32" column="12" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/templates/ui.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/readData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="174" vertical-scroll-proportion="-0.78571427">
+        <state line="46" column="0" selection-start="284" selection-end="1361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_tab.js">
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/ExportExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
+        <state line="16" column="20" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTree/codebase/dhtmlxtree.css">
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/nsmbean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="16" selection-start="3234" selection-end="3234" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_black.css">
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/fileChange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="17" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
+        <state line="35" column="0" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_blue.css">
+    <entry file="jar://C:/java/jdk1.7.0_17_i586/src.zip!/com/sun/org/apache/xerces/internal/util/ErrorHandlerWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="0" selection-start="7146" selection-end="7146" vertical-scroll-proportion="2.5190563" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="34" selection-start="2602" selection-end="2612" vertical-scroll-proportion="2.402299">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="14" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/psiftpconf.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_skyblue.css">
+    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/sbsftpconf.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="17" selection-start="2575" selection-end="2575" vertical-scroll-proportion="-6.214286">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxTabbar/codebase/dhtmlxtabbar.css">
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/scheduler/PsiReportAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="16" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
+        <state line="92" column="26" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css">
+    <entry file="file://$PROJECT_DIR$/src/haier/service/rms/psireport/PsiReportService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="17" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.040892195">
+        <state line="29" column="27" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxLayout/codebase/dhtmlxlayout.css">
+    <entry file="file://$PROJECT_DIR$/src/haier/scheduler/PsiReportHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="4" selection-start="586" selection-end="586" vertical-scroll-proportion="0.17785844">
+        <state line="151" column="30" selection-start="4964" selection-end="4964" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/dhtmlx/dhtmlxAccordion/codebase/skins/dhtmlxaccordion_dhx_blue.css">
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="17" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.17785844">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="14" selection-start="5893" selection-end="5893" vertical-scroll-proportion="-31.678572">
-          <folding>
-            <element signature="tag#tr#2;tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="62" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-8.785714">
-          <folding>
-            <element signature="tag#tr#2;tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/pages/frame/homePage_layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="31" selection-start="1277" selection-end="1277" vertical-scroll-proportion="-1.2986112">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.1461987">
           <folding />
         </state>
       </provider>
