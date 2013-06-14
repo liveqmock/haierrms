@@ -1,15 +1,20 @@
 package pub.platform.advance.utils;
 
-import java.util.*;
-
-import javax.servlet.*;
-import javax.servlet.http.*;
-import java.io.*;
+import com.ccb.dao.SYSSCHEDULER;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerFactory;
 import org.quartz.impl.StdSchedulerFactory;
 
-import com.ccb.dao.SYSSCHEDULER;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class SchedulerManager extends HttpServlet {
 
@@ -18,6 +23,8 @@ public class SchedulerManager extends HttpServlet {
 		System.out.println("loading SchedulerManager.class");
 		System.out.println("////////////////////////////////////////");
 	}
+
+    private static final long serialVersionUID = 1527023683681574743L;
 
     public static Scheduler scheduler;
     public static Map jobInfoMap = new HashMap();
@@ -88,11 +95,9 @@ public class SchedulerManager extends HttpServlet {
 		SchedulerManager.shutdownScheduler();
 
 		SchedulerFactory schedulerFactory = new StdSchedulerFactory();
-               // System.out.println("ddd");
 		SchedulerManager.scheduler = schedulerFactory.getScheduler();
 
 		List list = SYSSCHEDULER.find("", true);
-
 
 		for(int i=0; i<list.size(); i++){
 			SYSSCHEDULER scheuler = (SYSSCHEDULER)list.get(i);
@@ -117,16 +122,21 @@ public class SchedulerManager extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
     	throws ServletException, IOException {
+        response.setContentType("text/html;charset=GBK");
+        PrintWriter out = response.getWriter();
     	if("reload".equals(request.getParameter("action"))){
     		System.out.println("********  reload  *********");
     		SchedulerManager.reload();
-
+            out.print("schedule config reloaded...");
     	}else if("shutdown".equals(request.getParameter("action"))){
     		System.out.println("********  shutdown  **********");
     		SchedulerManager.shutdown();
-    	}
-
-    	response.sendError(HttpServletResponse.SC_FORBIDDEN);
+            out.print("schedule config shutdown...");
+        }else{
+            out.print("使用说明：</br>");
+            out.print("1、重新装载调度计划：http://...../../..?action=reload</br>");
+            out.print("2、关闭调度任务：http://...../../..?action=shutdown</br>");
+        }
     }
 
 	private static void printLine(){

@@ -72,7 +72,7 @@
     </bean>
     <bean id="sbsactbalCronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
         <property name="jobDetail" ref="sbsactbalJobDetailBean"/>
-        <property name="cronExpression" value="0 30 23 * * ?"/>
+        <property name="cronExpression" value="0 01 23 * * ?"/>
     </bean>
     <!-- DIS 企业余额上报 cronTrigger -->
     <bean id="disactbal" class="haier.scheduler.DisReportHandler"/>
@@ -93,6 +93,7 @@
     <bean id="psiReportCronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
         <property name="jobDetail" ref="psiReportJobDetailBean"/>
         <property name="cronExpression" value="0 30 23 * * ?"/>
+        <!--<property name="cronExpression" value="0 45 13 * * ?"/>-->
     </bean>
 
     <!-- CCB 重客企业余额实时查询 cronTrigger -->

@@ -63,7 +63,7 @@
 
 %>
 
-<!DOCTYPE html>
+<%--<!DOCTYPE html>--%>
 <html>
 <head>
     <title>财务公司报表查询平台</title>

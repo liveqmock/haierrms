@@ -17,7 +17,7 @@ import pub.platform.utils.*;
 public class DAOGenerator {
   // 默认的包名
 //  private static final String schme = "CCB";
-  private static final String schme = "GWK";
+  private static final String schme = "RMS";
   public static final String PACKAGE = "com.ccb.dao";
   static JavaBeanGenerator jbg = new JavaBeanGenerator();
 
@@ -86,7 +86,8 @@ public class DAOGenerator {
 //     generateTable("LS_BDGAGENCY_H");
 //     generateTable("LS_CARDBASEINFO");
 //     generateTable("LS_CONSUMEINFO");
-      generateTable("LS_CARDSTATUS");
+//      generateTable("LS_CARDSTATUS");
+      generateTable("EVT_MAININFO");
   }
 
 }

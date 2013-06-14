@@ -1,12 +1,18 @@
 package pub.platform.advance.utils;
 
-import java.util.*;
-import java.io.*;
-import javax.activation.*;
-import javax.mail.*;
-import javax.mail.internet.*;
+import pub.platform.form.config.EnumerationType;
 
-import pub.platform.form.config.*;
+import javax.activation.DataHandler;
+import javax.activation.FileDataSource;
+import javax.mail.Message;
+import javax.mail.Multipart;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.*;
+import java.io.File;
+import java.util.Date;
+import java.util.List;
+import java.util.Properties;
 
 public class MailSendHelper {
 
@@ -96,13 +102,9 @@ public class MailSendHelper {
         }
         // 设置消息内容
         msg.setContent(mp);
-
         // 设置时间
         msg.setSentDate(new Date());
-
         // 发送邮件
         Transport.send(msg);
-
     }
-
 }

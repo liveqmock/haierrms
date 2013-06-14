@@ -43,15 +43,33 @@ public class PsiReportHandler {
     }
 
     public void run(Date date) {
-        processOneWeek(date);
+        try {
+            processOneWeek(date);
+        } catch (InterruptedException e) {
+            logger.error("定时任务出现错误.", e);
+        }
     }
 
-    private void processOneWeek(Date date) {
+    private void processOneWeek(Date date) throws InterruptedException {
+        boolean isOK = true;
         DateTime dateTime = new DateTime(date);
         int i = 0;
         do {
-            processOneDay_balRpt(dateTime.toString("yyyy-MM-dd"));
-            processOneDay_detlRpt(dateTime.toString("yyyy-MM-dd"));
+            isOK = processOneDay_balRpt(dateTime.toString("yyyy-MM-dd"));
+            int failCount = 5;
+            while (!isOK && failCount > 0 ) {
+                Thread.sleep(10 * 1000);
+                isOK = processOneDay_balRpt(dateTime.toString("yyyy-MM-dd"));
+                failCount -- ;
+            }
+
+            isOK = processOneDay_detlRpt(dateTime.toString("yyyy-MM-dd"));
+            failCount = 5;
+            while (!isOK && failCount > 0 ) {
+                Thread.sleep(10 * 1000);
+                isOK = processOneDay_detlRpt(dateTime.toString("yyyy-MM-dd"));
+                failCount -- ;
+            }
             dateTime = dateTime.minusDays(1);
             i++;
         } while (i < 7);
@@ -59,12 +77,14 @@ public class PsiReportHandler {
     }
 
     //txt 企业余额报表
-    private void processOneDay_balRpt(String strdate) {
+    private boolean processOneDay_balRpt(String strdate) {
+        boolean isOK = true;
         try {
             generateTxtReport(strdate);
         } catch (IOException e) {
+            isOK = false;
             logger.error("生成SBS余额文件出现问题。" + strdate, e);
-            throw new RuntimeException("生成SBS余额文件出现问题。。");
+            //throw new RuntimeException("生成SBS余额文件出现问题。。");
         }
 
         try {
@@ -72,10 +92,12 @@ public class PsiReportHandler {
             String fileName = strdate + "_actbal_psi.txt";
             ftp.putFileToPSIByFilename(fileName);
         } catch (Exception e) {
+            isOK = false;
             logger.error("FTP接口出现问题。" + strdate, e);
-            throw new RuntimeException("FTP接口出现问题。");
+            //throw new RuntimeException("FTP接口出现问题。", e);
         }
 
+        return isOK;
     }
 
     private void generateTxtReport(String strdate) throws IOException {
@@ -103,9 +125,9 @@ public class PsiReportHandler {
     }
 
     //excel:交易明细报表
-    private void processOneDay_detlRpt(String strdate) {
+    private boolean processOneDay_detlRpt(String strdate) {
+        boolean isOK = true;
         SbsFtp4PSI sbsftp = new SbsFtp4PSI();
-
         try {
             sbsftp.getFileFromSBS(strdate);
             lst2Excel(strdate);
@@ -113,9 +135,11 @@ public class PsiReportHandler {
             sbsftp.putFileToPSI(strdate);
             logger.info("共享中心EXCEL 上传完成：" + strdate);
         } catch (Exception e) {
+            isOK = false;
             logger.error("共享中心EXCE报表出现问题" + strdate, e);
-            throw new RuntimeException("共享中心EXCE报表出现问题", e);
+            //throw new RuntimeException("共享中心EXCE报表出现问题", e);
         }
+        return isOK;
     }
 
     private void lst2Excel(String strDate) throws ParseException, IOException {
