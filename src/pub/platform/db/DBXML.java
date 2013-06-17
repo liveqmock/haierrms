@@ -1,15 +1,18 @@
 package pub.platform.db;
 
 import jxl.write.WritableWorkbook;
-import org.jdom.*;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
+import pub.platform.form.config.EnumerationBean;
+import pub.platform.form.config.EnumerationType;
+import pub.platform.html.JOption;
+import pub.platform.utils.Basic;
+import pub.platform.utils.Util;
 
-import pub.platform.form.config.*;
-import pub.platform.html.*;
-import pub.platform.utils.*;
-
-import java.io.*;
-import java.lang.*;
+import java.io.Reader;
+import java.io.StringReader;
 import java.util.List;
 
 /**
@@ -67,9 +70,24 @@ public class DBXML {
             dbGrid.setfieldCheck(childRoot.getAttributeValue("fieldCheck"));
             dbGrid.setcountSQL(childRoot.getAttributeValue("countSQL"));
 
-            dbGrid.setpagesize(Integer.parseInt(childRoot.getAttributeValue("pageSize")));
-            dbGrid.setAbsolutePage(Integer.parseInt(childRoot.getAttributeValue("AbsolutePage")));
-            dbGrid.setRecordCount(Integer.parseInt(childRoot.getAttributeValue("RecordCount")));
+            String pageSize = childRoot.getAttributeValue("pageSize");
+            if (pageSize == null || "".equals(pageSize)) {
+                pageSize = "0";
+            }
+            dbGrid.setpagesize(Integer.parseInt(pageSize));
+
+            String absolutePage = childRoot.getAttributeValue("AbsolutePage");
+            if (absolutePage == null || "".equals(absolutePage)) {
+                absolutePage = "0";
+            }
+            dbGrid.setAbsolutePage(Integer.parseInt(absolutePage));
+
+            String recordCount = childRoot.getAttributeValue("RecordCount");
+            if (recordCount == null || "".equals(recordCount)) {
+                recordCount = "0";
+            }
+            dbGrid.setRecordCount(Integer.parseInt(recordCount));
+
             dbGrid.setCheck(childRoot.getAttributeValue("checkbl").toLowerCase().trim().equals("true"));
             dbGrid.setAlign(childRoot.getAttributeValue("tralign"));
 
@@ -91,9 +109,8 @@ public class DBXML {
             outstr = dbGrid.getEditDataTable();
             // System.out.println(outstr);
 
-        } catch (JDOMException ex) {
-            System.out.print(ex.getMessage());
-
+        } catch (Exception ex) {
+            ex.printStackTrace();
         } finally {
             cm.release();
         }

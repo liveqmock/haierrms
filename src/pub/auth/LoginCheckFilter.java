@@ -29,7 +29,7 @@ public class LoginCheckFilter extends HttpServlet implements Filter {
         //logger.debug("REQUEST URL£º" + httpServletRequest.getServletPath() + "?" + httpServletRequest.getQueryString());
         //logger.debug("REQUEST PARAM£º" + httpServletRequest.getParameterMap());
         String url = httpServletRequest.getServletPath();
-        if (url.indexOf("pages") >= 0) {
+        if (url.contains("pages") ||url.contains("/BI/")||url.contains("/UI/system/")) {
             chain.doFilter(request, response);
         } else {
             HttpSession session = httpServletRequest.getSession();
