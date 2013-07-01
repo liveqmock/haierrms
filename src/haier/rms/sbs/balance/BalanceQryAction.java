@@ -59,9 +59,11 @@ public class BalanceQryAction implements Serializable {
     private static final long serialVersionUID = -2848018355778876614L;
 
     private List<BalanceBean> detlList = new ArrayList<BalanceBean>();
+    private List<BalanceBean> detlList4Corp = new ArrayList<BalanceBean>();
     private List<RmsSbsactattr> actattrList = new ArrayList<RmsSbsactattr>();
     private List<RoeBean> roeList = new ArrayList<RoeBean>();
     private int totalcount = 0;
+    private int totalcount2 = 0;
     private BigDecimal totalamt = new BigDecimal(0);
 
     private String actname;
@@ -98,6 +100,10 @@ public class BalanceQryAction implements Serializable {
 
     public int getTotalcount() {
         return this.detlList.size();
+    }
+
+    public int getTotalcount2() {
+        return this.detlList4Corp.size();
     }
 
     public void setTotalcount(int totalcount) {
@@ -201,6 +207,14 @@ public class BalanceQryAction implements Serializable {
         this.platformService = platformService;
     }
 
+    public List<BalanceBean> getDetlList4Corp() {
+        return detlList4Corp;
+    }
+
+    public void setDetlList4Corp(List<BalanceBean> detlList4Corp) {
+        this.detlList4Corp = detlList4Corp;
+    }
+
     //==============================
     @PostConstruct
     public void postConstruct() {
@@ -273,6 +287,55 @@ public class BalanceQryAction implements Serializable {
         }
         return null;
     }
+
+    //20130630 zr
+    public String onQuery4CorpName() {
+        try {
+            roeMap = new HashMap<String, RoeBean>();
+            queryRecordsFromSBS_new();
+
+            //按企业名称和币种整理
+            this.detlList4Corp = new ArrayList<BalanceBean>();
+            for (BalanceBean actnobean : this.detlList) {
+                boolean isFound = false;
+                for (BalanceBean corpbean : detlList4Corp) {
+                    if (actnobean.getActname().equals(corpbean.getActname())
+                            && actnobean.getCurrcode().equals(corpbean.getCurrcode())) {
+                        //累加处理
+                        corpbean.setHomecurbal(corpbean.getHomecurbal().add(actnobean.getHomecurbal()));
+                        corpbean.setRmbbal(corpbean.getRmbbal().add(actnobean.getRmbbal()));
+
+                        corpbean.setActtype1bal(corpbean.getActtype1bal().add(actnobean.getActtype1bal()));
+                        corpbean.setActtype2bal(corpbean.getActtype2bal().add(actnobean.getActtype2bal()));
+                        corpbean.setActtype3bal(corpbean.getActtype3bal().add(actnobean.getActtype3bal()));
+                        isFound = true;
+                        break;
+                    }
+                }
+
+                if (!isFound) {
+                    BalanceBean bean = new BalanceBean();
+                    BeanUtils.copyProperties(actnobean, bean);
+                    this.detlList4Corp.add(bean);
+                }
+            }
+
+            this.currencyOptions = createFilterOptions(createCurrencyArray());
+
+            Ptoplog oplog = new Ptoplog();
+            oplog.setActionId("BalanceQryAction_onQuery");
+            oplog.setActionName("SBS实时余额查询:按账号查询");
+            platformService.insertNewOperationLog(oplog);
+
+        } catch (Exception e) {
+            logger.error("查询时出现错误。", e);
+            FacesContext context = FacesContext.getCurrentInstance();
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "查询时出现错误。", "检索数据库出现问题。"));
+        }
+        return null;
+    }
+
+
     public String queryByCorpName() {
         try {
             roeMap = new HashMap<String, RoeBean>();
