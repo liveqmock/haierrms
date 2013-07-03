@@ -61,6 +61,7 @@
 <html>
 <head>
     <title>财务公司报表查询平台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=5" />
 
     <script src="../../dhtmlx/dhtmlxTabbar/codebase/dhtmlxcommon.js" type="text/javascript"></script>
     <script src="../../dhtmlx/dhtmlxTabbar/codebase/dhtmlxcontainer.js" type="text/javascript"></script>
