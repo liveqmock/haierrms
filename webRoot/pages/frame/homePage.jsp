@@ -162,7 +162,7 @@
         <tr style="width:100%; height:45px">
             <td width="5%" rowspan="2">
                 &nbsp;
-                <img src="../../images/haier.jpg" height="45px">
+                <img src="../../images/haier.png" height="40px">
             </td>
             <td colspan="2">
                 <img src="../../images/haierrms.jpg" height="40px" style="margin-left: 5px">
