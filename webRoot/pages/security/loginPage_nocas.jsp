@@ -1,4 +1,3 @@
-<%@ page import="pub.platform.security.OperatorManager" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
