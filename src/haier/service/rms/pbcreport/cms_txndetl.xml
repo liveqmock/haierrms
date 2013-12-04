@@ -112,7 +112,7 @@ WITH detl as
         credencd.startdate 贷款发放日期,
         to_char(credencd.enddate, 'yyyy-mm-dd') 贷款到期日期,
         (SELECT to_char(max(b.clrdt), 'yyyy-MM-dd')
-        FROM tla_lncino_base a, tla_lnplanmr b
+        FROM loansys.tla_lncino_base a, loansys.tla_lnplanmr b
         WHERE a.lncino = b.lncino
         and a.lncino = credencd.CREDENCENO
         and a.clrflg = '1'
@@ -144,8 +144,8 @@ WITH detl as
     'FS01' as 贷款状态,
     type 贷款发放收回标志,
     '${enddate}' 上报日期
-    FROM customer_info cust,
-    corp_basic_info_view corp,
+    FROM loansys.customer_info cust,
+    loansys.corp_basic_info_view corp,
     ((SELECT comm.custcd custcd,
     CREDENCENO CREDENCENO,
     '1' type,
@@ -157,7 +157,7 @@ WITH detl as
     comm.ENDDATE enddate,
     comm.intrate,
     intrate_type
-    FROM comm_credence_info comm, cont_base_info con
+    FROM loansys.comm_credence_info comm, loansys.cont_base_info con
     WHERE con.contractno = comm.contractno
     and PROVIDE_STATE in ('3', '9')) UNION ALL
     (SELECT comm.custcd custcd,
@@ -171,9 +171,9 @@ WITH detl as
     tla.RTNDT enddate,
     comm.intrate,
     intrate_type
-    FROM TLA_LNRTNLOG       tla,
-    comm_credence_info comm,
-    cont_base_info     con
+    FROM loansys.TLA_LNRTNLOG       tla,
+    loansys.comm_credence_info comm,
+    loansys.cont_base_info     con
     WHERE con.contractno = comm.contractno
     and tla.LNCINO = comm.credenceno
     and RTNAMT != 0
@@ -208,7 +208,7 @@ WITH detl as
     credencd.startdate 贷款发放日期,
     to_char(credencd.enddate, 'yyyy-mm-dd') 贷款到期日期,
     (SELECT to_char(max(b.clrdt), 'yyyy-MM-dd')
-    FROM tla_lncino_base a, tla_lnplanmr b
+    FROM loansys.tla_lncino_base a, loansys.tla_lnplanmr b
     WHERE a.lncino = b.lncino
     and a.lncino = credencd.CREDENCENO
     and a.clrflg = '1'
@@ -235,7 +235,7 @@ WITH detl as
     type 贷款发放收回标志,
     '${enddate}' 上报日期
 
-    FROM customer_info cust,
+    FROM loansys.customer_info cust,
     ((SELECT comm.custcd custcd,
     comm.CINO CREDENCENO,
     con.lnid loantype,
@@ -246,7 +246,7 @@ WITH detl as
     to_char(comm.ISDATE, 'yyyy-mm-dd') startdate,
     comm.TEDATE enddate,
     comm.intrate
-    FROM LOANCINO comm, LOANINFO con
+    FROM loansys.LOANCINO comm, loansys.LOANINFO con
     WHERE con.contractno = comm.contractno
     and con.STATUS = '1') UNION ALL
     (SELECT comm.custcd custcd,
@@ -259,7 +259,7 @@ WITH detl as
     to_char(comm.ISDATE, 'yyyy-mm-dd') startdate,
     tla.RTNDT enddate,
     comm.intrate
-    FROM TLA_LNRTNLOG tla, LOANCINO comm, LOANINFO con
+    FROM loansys.TLA_LNRTNLOG tla, loansys.LOANCINO comm, loansys.LOANINFO con
     WHERE con.contractno = comm.contractno
     and con.STATUS = '1'
     and comm.cino = tla.lncino)) credencd

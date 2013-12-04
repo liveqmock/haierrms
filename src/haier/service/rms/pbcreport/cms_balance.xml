@@ -162,8 +162,8 @@ with bal as
         'FS01'
         end 贷款状态,
         credencd.rptdt 上报日期
-        from customer_info cust,
-        corp_basic_info_view corp,
+        from loansys.customer_info cust,
+        loansys.corp_basic_info_view corp,
         (select comm.custcd custcd,
         comm.CREDENCENO CREDENCENO,
         'FQ01' type,
@@ -177,15 +177,15 @@ with bal as
         comm.intrate,
         comm.intrate_type,
         ballog.REPORT_DATE rptdt
-        from comm_credence_info comm,
-        cont_base_info     con,
-        LOAN_BAL_INFO_LOG  ballog
+        from loansys.comm_credence_info comm,
+        loansys.cont_base_info     con,
+        loansys.LOAN_BAL_INFO_LOG  ballog
         where con.contractno = comm.contractno
         and ballog.credenceno = comm.credenceno
         and PROVIDE_STATE in ('3', '9')) credencd
         where cust.custcd = corp.custcd
         and credencd.custcd = cust.custcd) a
-        left outer join EXT_CREDENCE_INFO ext
+        left outer join loansys.EXT_CREDENCE_INFO ext
         on ext.credenceno = a.贷款借据编码) union all
         (select
         --cust.cname 客户名,
@@ -242,7 +242,7 @@ with bal as
         'FS01'
         end 贷款状态,
         credencd.rptdt 上报日期
-        from customer_info cust,
+        from loansys.customer_info cust,
         ((select comm.custcd custcd,
         comm.CINO CREDENCENO,
         comm.trm_class trm_class,
@@ -255,9 +255,9 @@ with bal as
         comm.TEDATE enddate,
         comm.intrate,
         ballog.REPORT_DATE rptdt
-        from LOANCINO          comm,
-        LOANINFO          con,
-        LOAN_BAL_INFO_LOG ballog
+        from loansys.LOANCINO          comm,
+        loansys.LOANINFO          con,
+        loansys.LOAN_BAL_INFO_LOG ballog
         where con.contractno = comm.contractno
         and ballog.credenceno = comm.cino
         and con.STATUS = '1')) credencd
