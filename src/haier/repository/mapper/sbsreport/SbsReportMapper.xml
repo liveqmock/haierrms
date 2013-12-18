@@ -29,7 +29,8 @@
                           from sbs_actbal
                          where txndate = #{txndate}
                            <if test = "acttype == 'ALL'">
-                                  and actno in (select actno from mt_acttype)
+                               --and actno in (select actno from mt_acttype)
+                               and acttype != '4'
                            </if>
                            <if test = "acttype != 'ALL'">
                                   and actno in (select actno from mt_acttype where category = #{acttype})
