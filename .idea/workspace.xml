@@ -12,74 +12,8 @@
   <component name="ChangeListManager">
     <list readonly="true" id="ead27e89-99eb-40f0-a9c3-e0eb80618690" name="Default" comment="" />
     <list default="true" id="9988f1a9-44b6-4305-b711-49cb30d2edc0" name="" comment="IE10 支持尝试">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pub/auth/CharacterEncodingFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\EVTMAININFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNCOOPPROJ.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNLOANAPPLY.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNMORTINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNODSBACCTAMWKPL08.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNODSBACCTARREARS.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNODSBACCTLNS.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNODSBACCTTOTLDATA.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNODSBCMPRODDEF.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNODSBCOOPPROJ.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNODSBIEMPTLR.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNODSBLOANAPPLY.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LNTASKINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSBDGAGENCY.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSBDGAGENCYH.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSCARDBASEINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSCARDSTATUS.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSCONSUMEINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSPAYBACKINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSPERSONALINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSSYSINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\LSTASKINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\ODSBCRDCRT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\ODSBCRDCRTACCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\ODSBCRDCRTTRAD.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTDEMO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\SYSSEQ.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\SYSSEQDISCARD.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\TASKINFO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\init\TrackMiscAction.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\personinfo\PerInfoEidtAction.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\personinfo\ReadExcel.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\security\Cryptographic.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\util\BaseJsp.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\util\CcbLoanConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\util\SeqUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\util\StringUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\util\SysLockAction.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\haier\scheduler\SimpleSMS.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pub/platform/advance/utils/JobInfo.java" afterPath="$PROJECT_DIR$/src/pub/platform/advance/utils/JobInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pub/platform/advance/utils/SchedulerManager.java" afterPath="$PROJECT_DIR$/src/pub/platform/advance/utils/SchedulerManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/applicationContext.xml" afterPath="$PROJECT_DIR$/src/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/querycorppayfee/corppayfeeAction.java" afterPath="$PROJECT_DIR$/src/haier/rms/querycorppayfee/corppayfeeAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webRoot/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\CPSEQUENCE.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/CPSEQUENCE.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTDEPT.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTDEPT.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTENUDETAIL.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTENUDETAIL.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTENUMAIN.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTENUMAIN.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTERROR.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTERROR.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTLOGICACT.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTLOGICACT.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTMENU.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTMENU.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTOPER.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTOPER.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTOPERROLE.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTOPERROLE.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTPYK.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTPYK.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTRESOURCE.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTRESOURCE.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTROLE.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTROLE.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTROLERES.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTROLERES.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\PTWORDSPELL.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/PTWORDSPELL.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\SYSLOCK.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/SYSLOCK.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\SYSSCHEDULER.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/SYSSCHEDULER.java" />
-      <change type="MOVED" beforePath="E:\WorkSpace\git-haierrms\src\haierrms\src\com\ccb\dao\SYSSCHEDULERLOG.java" afterPath="$PROJECT_DIR$/src/pub/platform/dao/SYSSCHEDULERLOG.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java" afterPath="$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml" afterPath="$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml" />
     </list>
     <list id="5ccc1d64-bba7-4e6c-828c-523c65ef74ad" name="Failed commit: " comment="Failed commit:" />
     <list id="7edb8110-54c9-4a1b-8f75-397ac14b59b3" name="my97date" comment="">
@@ -192,7 +126,7 @@
       <file leaf-file-name="BalanceQryAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="233" column="0" selection-start="6756" selection-end="7038" vertical-scroll-proportion="0.0" vertical-offset="3828" max-vertical-offset="17248">
+            <state line="87" column="0" selection-start="3233" selection-end="3416" vertical-scroll-proportion="0.0" vertical-offset="1716" max-vertical-offset="17248">
               <folding />
             </state>
           </provider>
@@ -201,52 +135,85 @@
       <file leaf-file-name="AverageBalAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="48" selection-start="3033" selection-end="3033" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="3520">
+            <state line="161" column="0" selection-start="5566" selection-end="5566" vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="4862">
               <folding>
-                <element signature="e#930#951#0" expanded="true" />
+                <element signature="e#1188#1209#0" expanded="true" />
                 <element signature="class#AverageDailyBalBean#0;class#AverageBalAction#0" expanded="false" />
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1416#1417#0" expanded="true" />
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1584#1585#0" expanded="true" />
-                <element signature="e#1628#1629#0" expanded="true" />
-                <element signature="e#1664#1665#0" expanded="true" />
-                <element signature="e#1700#1701#0" expanded="true" />
-                <element signature="e#1746#1747#0" expanded="true" />
-                <element signature="e#1788#1789#0" expanded="true" />
-                <element signature="e#2867#2883#0" expanded="true" />
-                <element signature="e#4210#4211#0" expanded="true" />
-                <element signature="e#4242#4243#0" expanded="true" />
-                <element signature="e#4292#4293#0" expanded="true" />
-                <element signature="e#4334#4335#0" expanded="true" />
-                <element signature="e#4368#4369#0" expanded="true" />
-                <element signature="e#4398#4399#0" expanded="true" />
-                <element signature="e#4444#4445#0" expanded="true" />
-                <element signature="e#4482#4483#0" expanded="true" />
-                <element signature="e#4536#4537#0" expanded="true" />
-                <element signature="e#4567#4568#0" expanded="true" />
-                <element signature="e#4634#4635#0" expanded="true" />
-                <element signature="e#4674#4675#0" expanded="true" />
-                <element signature="e#4728#4729#0" expanded="true" />
-                <element signature="e#4758#4759#0" expanded="true" />
-                <element signature="e#4824#4825#0" expanded="true" />
-                <element signature="e#4862#4863#0" expanded="true" />
-                <element signature="e#4916#4917#0" expanded="true" />
-                <element signature="e#4953#4954#0" expanded="true" />
-                <element signature="e#5026#5027#0" expanded="true" />
-                <element signature="e#5078#5079#0" expanded="true" />
-                <element signature="e#5114#5115#0" expanded="true" />
-                <element signature="e#5146#5147#0" expanded="true" />
-                <element signature="e#5196#5197#0" expanded="true" />
-                <element signature="e#5238#5239#0" expanded="true" />
-                <element signature="e#5270#5271#0" expanded="true" />
-                <element signature="e#5298#5299#0" expanded="true" />
-                <element signature="e#5340#5341#0" expanded="true" />
-                <element signature="e#5374#5375#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#2003#2004#0" expanded="true" />
+                <element signature="e#2049#2050#0" expanded="true" />
+                <element signature="e#2095#2096#0" expanded="true" />
+                <element signature="e#2137#2138#0" expanded="true" />
+                <element signature="e#2199#2200#0" expanded="true" />
+                <element signature="e#2253#2254#0" expanded="true" />
+                <element signature="e#2301#2302#0" expanded="true" />
+                <element signature="e#2345#2346#0" expanded="true" />
+                <element signature="e#2411#2412#0" expanded="true" />
+                <element signature="e#2469#2470#0" expanded="true" />
+                <element signature="e#2501#2502#0" expanded="true" />
+                <element signature="e#2536#2537#0" expanded="true" />
+                <element signature="e#2577#2578#0" expanded="true" />
+                <element signature="e#2617#2618#0" expanded="true" />
+                <element signature="e#2650#2651#0" expanded="true" />
+                <element signature="e#2686#2687#0" expanded="true" />
+                <element signature="e#2729#2730#0" expanded="true" />
+                <element signature="e#2771#2772#0" expanded="true" />
+                <element signature="e#4226#4242#0" expanded="true" />
+                <element signature="e#5872#5873#0" expanded="true" />
+                <element signature="e#5904#5905#0" expanded="true" />
+                <element signature="e#5954#5955#0" expanded="true" />
+                <element signature="e#5996#5997#0" expanded="true" />
+                <element signature="e#6030#6031#0" expanded="true" />
+                <element signature="e#6060#6061#0" expanded="true" />
+                <element signature="e#6106#6107#0" expanded="true" />
+                <element signature="e#6144#6145#0" expanded="true" />
+                <element signature="e#6198#6199#0" expanded="true" />
+                <element signature="e#6229#6230#0" expanded="true" />
+                <element signature="e#6296#6297#0" expanded="true" />
+                <element signature="e#6336#6337#0" expanded="true" />
+                <element signature="e#6390#6391#0" expanded="true" />
+                <element signature="e#6420#6421#0" expanded="true" />
+                <element signature="e#6486#6487#0" expanded="true" />
+                <element signature="e#6524#6525#0" expanded="true" />
+                <element signature="e#6578#6579#0" expanded="true" />
+                <element signature="e#6615#6616#0" expanded="true" />
+                <element signature="e#6688#6689#0" expanded="true" />
+                <element signature="e#6740#6741#0" expanded="true" />
+                <element signature="e#6776#6777#0" expanded="true" />
+                <element signature="e#6808#6809#0" expanded="true" />
+                <element signature="e#6858#6859#0" expanded="true" />
+                <element signature="e#6900#6901#0" expanded="true" />
+                <element signature="e#6932#6933#0" expanded="true" />
+                <element signature="e#6960#6961#0" expanded="true" />
+                <element signature="e#7002#7003#0" expanded="true" />
+                <element signature="e#7036#7037#0" expanded="true" />
+                <element signature="e#7071#7072#0" expanded="true" />
+                <element signature="e#7102#7103#0" expanded="true" />
+                <element signature="e#7150#7151#0" expanded="true" />
+                <element signature="e#7190#7191#0" expanded="true" />
+                <element signature="e#7239#7240#0" expanded="true" />
+                <element signature="e#7274#7275#0" expanded="true" />
+                <element signature="e#7340#7341#0" expanded="true" />
+                <element signature="e#7388#7389#0" expanded="true" />
+                <element signature="e#7433#7434#0" expanded="true" />
+                <element signature="e#7468#7469#0" expanded="true" />
+                <element signature="e#7530#7531#0" expanded="true" />
+                <element signature="e#7578#7579#0" expanded="true" />
+                <element signature="e#7629#7630#0" expanded="true" />
+                <element signature="e#7667#7668#0" expanded="true" />
+                <element signature="e#7738#7739#0" expanded="true" />
+                <element signature="e#7792#7793#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlatformService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/service/common/PlatformService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="29" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0" vertical-offset="3253" max-vertical-offset="4400">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -254,7 +221,7 @@
       <file leaf-file-name="queryDailyBal.xhtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="51" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.2578125" vertical-offset="462" max-vertical-offset="2134">
+            <state line="34" column="109" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.61328125" vertical-offset="434" max-vertical-offset="2552">
               <folding />
             </state>
           </provider>
@@ -802,6 +769,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1821,7 +1836,7 @@
       <workItem from="1389151331909" duration="2638000" />
       <workItem from="1389171841874" duration="2481000" />
       <workItem from="1389178645738" duration="745000" />
-      <workItem from="1389234525410" duration="8290000" />
+      <workItem from="1389234525410" duration="13734000" />
     </task>
     <task id="LOCAL-00002" summary="柜员交易量报表">
       <created>1338260379572</created>
@@ -1999,7 +2014,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18455000" />
+    <option name="totallyTimeSpent" value="23899000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2023,7 +2038,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4296875" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
@@ -2407,13 +2422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="0" selection-start="6756" selection-end="7038" vertical-scroll-proportion="0.0" vertical-offset="3828" max-vertical-offset="17248">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryBalance.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.428572" vertical-offset="264" max-vertical-offset="3058">
@@ -2428,60 +2436,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="3233" selection-end="3416" vertical-scroll-proportion="0.0" vertical-offset="1716" max-vertical-offset="17248">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/service/common/PlatformService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="29" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0" vertical-offset="3253" max-vertical-offset="4400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="48" selection-start="3033" selection-end="3033" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="3520">
+        <state line="161" column="0" selection-start="5566" selection-end="5566" vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="4862">
           <folding>
-            <element signature="e#930#951#0" expanded="true" />
+            <element signature="e#1188#1209#0" expanded="true" />
             <element signature="class#AverageDailyBalBean#0;class#AverageBalAction#0" expanded="false" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-            <element signature="e#1746#1747#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#2867#2883#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4242#4243#0" expanded="true" />
-            <element signature="e#4292#4293#0" expanded="true" />
-            <element signature="e#4334#4335#0" expanded="true" />
-            <element signature="e#4368#4369#0" expanded="true" />
-            <element signature="e#4398#4399#0" expanded="true" />
-            <element signature="e#4444#4445#0" expanded="true" />
-            <element signature="e#4482#4483#0" expanded="true" />
-            <element signature="e#4536#4537#0" expanded="true" />
-            <element signature="e#4567#4568#0" expanded="true" />
-            <element signature="e#4634#4635#0" expanded="true" />
-            <element signature="e#4674#4675#0" expanded="true" />
-            <element signature="e#4728#4729#0" expanded="true" />
-            <element signature="e#4758#4759#0" expanded="true" />
-            <element signature="e#4824#4825#0" expanded="true" />
-            <element signature="e#4862#4863#0" expanded="true" />
-            <element signature="e#4916#4917#0" expanded="true" />
-            <element signature="e#4953#4954#0" expanded="true" />
-            <element signature="e#5026#5027#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
-            <element signature="e#5146#5147#0" expanded="true" />
-            <element signature="e#5196#5197#0" expanded="true" />
-            <element signature="e#5238#5239#0" expanded="true" />
-            <element signature="e#5270#5271#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5340#5341#0" expanded="true" />
-            <element signature="e#5374#5375#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2049#2050#0" expanded="true" />
+            <element signature="e#2095#2096#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2199#2200#0" expanded="true" />
+            <element signature="e#2253#2254#0" expanded="true" />
+            <element signature="e#2301#2302#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
+            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#2469#2470#0" expanded="true" />
+            <element signature="e#2501#2502#0" expanded="true" />
+            <element signature="e#2536#2537#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2650#2651#0" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+            <element signature="e#2729#2730#0" expanded="true" />
+            <element signature="e#2771#2772#0" expanded="true" />
+            <element signature="e#4226#4242#0" expanded="true" />
+            <element signature="e#5872#5873#0" expanded="true" />
+            <element signature="e#5904#5905#0" expanded="true" />
+            <element signature="e#5954#5955#0" expanded="true" />
+            <element signature="e#5996#5997#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#6060#6061#0" expanded="true" />
+            <element signature="e#6106#6107#0" expanded="true" />
+            <element signature="e#6144#6145#0" expanded="true" />
+            <element signature="e#6198#6199#0" expanded="true" />
+            <element signature="e#6229#6230#0" expanded="true" />
+            <element signature="e#6296#6297#0" expanded="true" />
+            <element signature="e#6336#6337#0" expanded="true" />
+            <element signature="e#6390#6391#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#6486#6487#0" expanded="true" />
+            <element signature="e#6524#6525#0" expanded="true" />
+            <element signature="e#6578#6579#0" expanded="true" />
+            <element signature="e#6615#6616#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+            <element signature="e#6740#6741#0" expanded="true" />
+            <element signature="e#6776#6777#0" expanded="true" />
+            <element signature="e#6808#6809#0" expanded="true" />
+            <element signature="e#6858#6859#0" expanded="true" />
+            <element signature="e#6900#6901#0" expanded="true" />
+            <element signature="e#6932#6933#0" expanded="true" />
+            <element signature="e#6960#6961#0" expanded="true" />
+            <element signature="e#7002#7003#0" expanded="true" />
+            <element signature="e#7036#7037#0" expanded="true" />
+            <element signature="e#7071#7072#0" expanded="true" />
+            <element signature="e#7102#7103#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7190#7191#0" expanded="true" />
+            <element signature="e#7239#7240#0" expanded="true" />
+            <element signature="e#7274#7275#0" expanded="true" />
+            <element signature="e#7340#7341#0" expanded="true" />
+            <element signature="e#7388#7389#0" expanded="true" />
+            <element signature="e#7433#7434#0" expanded="true" />
+            <element signature="e#7468#7469#0" expanded="true" />
+            <element signature="e#7530#7531#0" expanded="true" />
+            <element signature="e#7578#7579#0" expanded="true" />
+            <element signature="e#7629#7630#0" expanded="true" />
+            <element signature="e#7667#7668#0" expanded="true" />
+            <element signature="e#7738#7739#0" expanded="true" />
+            <element signature="e#7792#7793#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="51" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.2578125" vertical-offset="462" max-vertical-offset="2134">
+        <state line="34" column="109" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.61328125" vertical-offset="434" max-vertical-offset="2552">
           <folding />
         </state>
       </provider>

@@ -12,6 +12,7 @@
             .col-95 {
                 width: 95%;
             }
+
             .col-5 {
                 width: 5%;
             }
@@ -22,6 +23,7 @@
         <div style="margin:5px;">
             <h:form id="form">
                 <p:growl id="msgs" showDetail="false" life="1500"/>
+
                 <div id="header">
                     <p:panel header="#{averageBalAction.title}">
                         <h:panelGrid columns="2" cellspacing="5" columnClasses="col-95,col-5">
@@ -30,6 +32,11 @@
                                 <p:inputText value="#{averageBalAction.startDate}"/>
                                 <h:outputLabel value="结束日期:"/>
                                 <p:inputText value="#{averageBalAction.endDate}"/>
+                                <h:outputLabel value="企业类别:" rendered="#{averageBalAction.queryType == 'C'}" />
+                                <h:selectOneMenu id="corpType" style="width:130px;"
+                                                 value="#{averageBalAction.corpType}" rendered="#{averageBalAction.queryType == 'C'}">
+                                    <f:selectItems value="#{averageBalAction.corpTypeList}"/>
+                                </h:selectOneMenu>
                             </h:panelGrid>
                             <h:panelGrid>
                                 <p:commandButton id="qrybtn" style="width:90px;" value="查询"
@@ -67,7 +74,7 @@
                              paginatorPosition="bottom"
                              rowsPerPageTemplate="100,50,30,15,5"
                              emptyMessage="数据记录为空...">
-                    <p:column style="text-align:center" >
+                    <p:column style="text-align:center">
                         <f:facet name="header">
                             日期
                         </f:facet>
@@ -75,15 +82,27 @@
                     </p:column>
                     <p:column style="text-align:center">
                         <f:facet name="header">
-                            金额(人民币)
+                            余额累计(折人民币)
                         </f:facet>
-                        <h:outputText value="#{record.rmbBal}" style="float:right"/>
+                        <h:outputText value="#{record.rmbBalTotal}" style="float:right"/>
                     </p:column>
-                    <p:column style="text-align:center" >
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            日均余额(折人民币)
+                        </f:facet>
+                        <h:outputText value="#{record.rmbBalAverage}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
                         <f:facet name="header">
                             账户数
                         </f:facet>
                         <h:outputText value="#{record.accts}"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            天数
+                        </f:facet>
+                        <h:outputText value="#{record.days}"/>
                     </p:column>
                 </p:dataTable>
             </h:form>
