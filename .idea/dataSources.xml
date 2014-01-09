@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="0">
-    <data-source source="LOCAL" name="DataSource" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f6657fba-1dca-4cc8-917d-e56c667be578">
+    <data-source source="LOCAL" name="DataSource" uuid="f6657fba-1dca-4cc8-917d-e56c667be578">
+      <driver-ref>oracle</driver-ref>
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@localhost:1521:orcl</jdbc-url>
       <user-name>cbs</user-name>

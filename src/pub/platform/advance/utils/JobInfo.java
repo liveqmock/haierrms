@@ -1,6 +1,6 @@
 package pub.platform.advance.utils;
 
-import com.ccb.dao.SYSSCHEDULER;
+import pub.platform.dao.SYSSCHEDULER;
 import org.quartz.CronTrigger;
 import org.quartz.JobDetail;
 import org.quartz.SchedulerException;

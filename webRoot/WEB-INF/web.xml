@@ -231,6 +231,23 @@
         <url-pattern>*.ext</url-pattern>
     </servlet-mapping>
 
+
+    <filter>
+        <filter-name>Character Encoding</filter-name>
+        <filter-class>pub.auth.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>Character Encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+
     <mime-mapping>
         <extension>xls</extension>
         <mime-type>application/vnd.ms-excel</mime-type>

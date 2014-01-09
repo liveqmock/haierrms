@@ -13,19 +13,12 @@ package haier.rms.querycorppayfee;
  * @version 1.0
  */
 
-import com.ccb.dao.LNCOOPPROJ;
-import com.ccb.util.StringUtil;
-import gateway.BalanceRecord;
-import gateway.BatchQueryResult;
 import gateway.CorpPayFeeQuery.CorpPayFeeQueryResult;
 import gateway.CorpPayFeeQuery.CorpPayFeeRecord;
 import gateway.CtgManager;
-import haier.rms.dao.RMSACCTBAL;
 import haier.rms.dao.RMSCORPPAYFEE;
 import pub.platform.advance.utils.PropertyManager;
-import pub.platform.db.RecordSet;
 import pub.platform.form.control.Action;
-import pub.platform.utils.BusinessDate;
 import pub.platform.utils.StringUtils;
 
 import java.math.BigDecimal;
