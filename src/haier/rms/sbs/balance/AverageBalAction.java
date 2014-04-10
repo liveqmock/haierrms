@@ -141,20 +141,32 @@ public class AverageBalAction {
         paramMap.put("days", days);
         detlList = rmsJdbc.query(assembleSql(), paramMap, new BeanPropertyRowMapper<AverageBalAction.AverageDailyBalBean>(AverageBalAction.AverageDailyBalBean.class));
 
+        //20140410 zr  重新处理日均余额
+        BigDecimal product = new BigDecimal("0.00");
+        int day = 0;
+        for (AverageDailyBalBean averageDailyBalBean : detlList) {
+            day++;
+            product = product.add(averageDailyBalBean.getRmbBalTotal());
+            BigDecimal average = product.divide(new BigDecimal(Integer.toString(day)),2, BigDecimal.ROUND_HALF_UP);
+            averageDailyBalBean.setRmbBalAverage(average);
+        }
+
     }
 
     private String assembleSql() {
         String sql = "with actbal as\n" +
-                " (select a.*, b.bankcd, b.category, c.currat\n" +
+                " (select a.*, b.bankcd, b.category, c.ratval\n" +
                 "    from sbs_actbal a, mt_acttype b, sbs_actcxr c\n" +
                 "   where a.actno = b.actno(+)\n" +
                 "     and a.txndate = c.txndate\n" +
                 "     and substr(a.actno, 16, 3) = c.curcde(+)\n" +
                 "     and c.xrtcde = '8'\n" +
                 "     and c.secccy = '001')\n" +
-                "select t.txndate, sum(round(balamt * currat, 2)) as rmbBalTotal, round(sum(balamt * currat)/:days,2) as rmbbalAverage, :days as days, count(*) as accts\n" +
+                "select t.txndate, " +
+                " sum(round((case when substr(actno, 16, 3)='001' then balamt else balamt/100 end) * ratval, 2)) as rmbBalTotal, " +
+                " 0 as rmbbalAverage, :days as days, count(*) as accts\n" +
                 "  from actbal t\n" +
-                " where t.bankcd = '999'\n" +
+                " where (t.bankcd = '999' or (t.bankcd is null and t.acttype !='4'))\n" +
                 "   and t.txndate between :startDate and :endDate\n";
 
         if (this.queryType.equals("C")) {
@@ -167,6 +179,8 @@ public class AverageBalAction {
 
         sql += " group by t.txndate\n" +
                 " order by t.txndate";
+
+        logger.info("SQL:" + sql);
         return sql;
     }
 
