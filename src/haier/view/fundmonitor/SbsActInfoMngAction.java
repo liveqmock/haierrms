@@ -45,7 +45,7 @@ public class SbsActInfoMngAction implements Serializable {
     @ManagedProperty(value = "#{actInfoManagerService}")
     private ActInfoManagerService actInfoManagerService;
 
-    private String[] categorys = {"A", "H", "F", "D", "W"};
+    private String[] categorys = {"A", "H", "F", "D", "W", "HGL"};
     private SelectItem[] categoryOptions;
 
     private List<MtActtype> mtActtypeList = new ArrayList<MtActtype>();
@@ -120,6 +120,9 @@ public class SbsActInfoMngAction implements Serializable {
 
     public String onSetCategoryW() {
         return batchsetCategory("W");
+    }
+    public String onSetCategoryHGL() {
+        return batchsetCategory("HGL");
     }
 
     private String batchsetCategory(String category) {

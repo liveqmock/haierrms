@@ -90,6 +90,7 @@ public class SBSAccountBalanceHandler {
             extractActcxrTxtToDb(strdate);
             extractActahaTxtToDb(strdate);
             extractActapcTxtToDb(strdate);
+            //TODO 待增加总账码表 actglc
         } catch (Exception e) {
             logger.error("转换SBS余额文件出现问题。" + strdate, e);
             //TODO DBLOG

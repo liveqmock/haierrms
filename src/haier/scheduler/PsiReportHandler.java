@@ -181,14 +181,17 @@ public class PsiReportHandler {
         return list;
     }
 
-    //业务过滤规则：判断帐号是否属于规定的总账码
+    //业务过滤规则：判断帐号是否属于规定的总账码 (所有存款类)
     private boolean filterRecordResult(nsmbean n, List<SbsActapc> actapcList) {
         boolean founded = false;
         for (SbsActapc sbsActapc : actapcList) {
             if (sbsActapc.getApcode().equals(n.getBankacct().substring(7,11))) {
                 if ("2010".equals(sbsActapc.getGlcode())
                         ||"2020".equals(sbsActapc.getGlcode())
-                        ||"2030".equals(sbsActapc.getGlcode())) {
+                        ||"2030".equals(sbsActapc.getGlcode())
+                        ||"2210".equals(sbsActapc.getGlcode())
+                        ||"2220".equals(sbsActapc.getGlcode())
+                        ||"2230".equals(sbsActapc.getGlcode())) {
                     return true;
                 }
             }

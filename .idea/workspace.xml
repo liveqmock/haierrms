@@ -7,29 +7,23 @@
     <bookmark url="file://$PROJECT_DIR$/src/pub/platform/db/DBTable.java" line="456" />
     <bookmark url="file://$PROJECT_DIR$/webRoot/js/dbgrid.js" line="2997" />
     <bookmark url="file://$PROJECT_DIR$/src/haier/view/fundmonitor/ActBalMonitorAction.java" line="415" />
-    <bookmark url="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java" line="596" />
+    <bookmark url="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java" line="595" />
   </component>
   <component name="ChangeListManager">
     <list readonly="true" id="ead27e89-99eb-40f0-a9c3-e0eb80618690" name="Default" comment="" />
     <list default="true" id="9988f1a9-44b6-4305-b711-49cb30d2edc0" name="" comment="IE10 支持尝试">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java" afterPath="$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/haier/rms/sbs/balance/DepositStructAnalysisAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java" afterPath="$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gateway/ftp/Ftp4SBS.java" afterPath="$PROJECT_DIR$/src/gateway/ftp/Ftp4SBS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/scheduler/PsiReportHandler.java" afterPath="$PROJECT_DIR$/src/haier/scheduler/PsiReportHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java" afterPath="$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/haier/view/fundmonitor/SbsActInfoMngAction.java" afterPath="$PROJECT_DIR$/src/haier/view/fundmonitor/SbsActInfoMngAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/UI/haier/rms/fundmonitor/sbsActInfoAdd.xhtml" afterPath="$PROJECT_DIR$/webRoot/UI/haier/rms/fundmonitor/sbsActInfoAdd.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="5ccc1d64-bba7-4e6c-828c-523c65ef74ad" name="Failed commit: " comment="Failed commit:" />
-    <list id="7edb8110-54c9-4a1b-8f75-397ac14b59b3" name="my97date" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/lang/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/lang/zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/skin/WdatePicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/skin/datePicker.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/skin/default/datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/skin/default/img.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/skin/whyGreen/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/skin/whyGreen/datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webRoot/My97DatePicker/开发包/skin/whyGreen/img.gif" afterPath="" />
-    </list>
+    <list id="7edb8110-54c9-4a1b-8f75-397ac14b59b3" name="my97date" comment="" />
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="ccbloan_v1.2.iws" />
@@ -93,24 +87,73 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true" />
     <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ccbloan_v1.2" />
+    <favorites_list name="haierrms" />
     <favorites_list name="haierrms2" />
     <favorites_list name="haierrms2.1" />
-    <favorites_list name="haierrms" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="queryHistoryBalance.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryHistoryBalance.xhtml">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.357143" vertical-offset="132" max-vertical-offset="2860">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state vertical-scroll-proportion="-3.88" vertical-offset="1553" max-vertical-offset="4202">
+              <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="credit_develop.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/credit_develop.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="28292">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cms_txndetl.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/haier/service/rms/pbcreport/cms_txndetl.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3080" max-vertical-offset="6072">
+              <caret line="140" column="33" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ftp4DIS.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gateway/ftp/Ftp4DIS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1100">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="disftpconf.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gateway/ftp/disftpconf.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sbsBalQry.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/sbsBalQry.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.0" vertical-offset="726" max-vertical-offset="2904">
+              <caret line="47" column="92" selection-start-line="47" selection-start-column="92" selection-end-line="47" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -119,177 +162,18 @@
       <file leaf-file-name="BalanceQryAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1914" max-vertical-offset="18436">
-              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8950" max-vertical-offset="17138">
+              <caret line="475" column="67" selection-start-line="475" selection-start-column="67" selection-end-line="475" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AverageBalAction.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java">
+      <file leaf-file-name="SBSAccountBalanceHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59074074" vertical-offset="2871" max-vertical-offset="4774">
-              <caret line="165" column="111" selection-start-line="165" selection-start-column="111" selection-end-line="165" selection-end-column="111" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sbsActInfoAdd.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/fundmonitor/sbsActInfoAdd.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.285714" vertical-offset="396" max-vertical-offset="2552">
-              <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SbsActInfoMngAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/view/fundmonitor/SbsActInfoMngAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="3850">
-              <caret line="99" column="65" selection-start-line="99" selection-start-column="65" selection-end-line="99" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HistoryBalanceQryAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/HistoryBalanceQryAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5232" max-vertical-offset="9438">
-              <caret line="305" column="54" selection-start-line="305" selection-start-column="54" selection-end-line="305" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActbalService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/service/rms/sbsbatch/ActbalService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1730" max-vertical-offset="5940">
-              <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SbsReportMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/sbsreport/SbsReportMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1848">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SbsReportMapper.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/haier/repository/mapper/sbsreport/SbsReportMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="6666">
-              <caret line="22" column="41" selection-start-line="21" selection-start-column="24" selection-end-line="22" selection-end-column="41" />
-              <folding>
-                <marker date="1387328564474" expanded="true" signature="391:2033" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="567:2030" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="709:799" placeholder="select enuit..ptenudetail..." />
-                <marker date="1387328564474" expanded="true" signature="841:901" placeholder="select actat..rms_sbsactattr..." />
-                <marker date="1387328564474" expanded="true" signature="1045:1169" placeholder="select trim(..sbs_actccy..." />
-                <marker date="1387328564474" expanded="true" signature="1208:1468" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="1501:1985" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="1693:1738" placeholder="--and actno ..." />
-                <marker date="1387328564474" expanded="true" signature="1928:1984" placeholder="select actno..mt_acttype..." />
-                <marker date="1387328564474" expanded="true" signature="2188:3501" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="2364:3498" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="2506:2596" placeholder="select enuit..ptenudetail..." />
-                <marker date="1387328564474" expanded="true" signature="2638:2698" placeholder="select actat..rms_sbsactattr..." />
-                <marker date="1387328564474" expanded="true" signature="2842:2966" placeholder="select trim(..sbs_actccy..." />
-                <marker date="1387328564474" expanded="true" signature="3005:3264" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="3297:3486" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="3693:4751" placeholder="select currc..substr..." />
-                <marker date="1387328564474" expanded="true" signature="3730:3789" placeholder="select trim(..sbs_actccy..." />
-                <marker date="1387328564474" expanded="true" signature="3824:4050" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="4079:4732" placeholder="select subst..*..." />
-                <marker date="1387328564474" expanded="true" signature="4159:4621" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="4383:4411" placeholder="select actno..mt_acttype..." />
-                <marker date="1387328564474" expanded="true" signature="4564:4620" placeholder="select actno..mt_acttype..." />
-                <marker date="1387328564474" expanded="true" signature="4924:5938" placeholder="select round..*..." />
-                <marker date="1387328564474" expanded="true" signature="4998:5896" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="5053:5893" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="5325:5605" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="5642:5890" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="5833:5889" placeholder="select actno..mt_acttype..." />
-                <marker date="1387328564474" expanded="true" signature="6115:7156" placeholder="select round..*..." />
-                <marker date="1387328564474" expanded="true" signature="6189:7111" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="6268:7108" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="6540:6820" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="6857:7105" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="7048:7104" placeholder="select actno..mt_acttype..." />
-                <marker date="1387328564474" expanded="true" signature="7382:8093" placeholder="select rownu..*..." />
-                <marker date="1387328564474" expanded="true" signature="7425:7977" placeholder="select * fro..actno..." />
-                <marker date="1387328564474" expanded="true" signature="7458:7977" placeholder="select a.act..*..." />
-                <marker date="1387328564474" expanded="true" signature="7780:7832" placeholder="select * fro..SBS_ACTBAL..." />
-                <marker date="1387328564474" expanded="true" signature="7869:7922" placeholder="select * fro..SBS_ACTBAL..." />
-                <marker date="1387328564474" expanded="true" signature="8331:9102" placeholder="select rownu..*..." />
-                <marker date="1387328564474" expanded="true" signature="8439:8991" placeholder="select * fro..actno..." />
-                <marker date="1387328564474" expanded="true" signature="8472:8991" placeholder="select a.act..*..." />
-                <marker date="1387328564474" expanded="true" signature="8794:8846" placeholder="select * fro..SBS_ACTBAL..." />
-                <marker date="1387328564474" expanded="true" signature="8883:8936" placeholder="select * fro..SBS_ACTBAL..." />
-                <marker date="1387328564474" expanded="true" signature="9345:12724" placeholder="select rownu..*..." />
-                <marker date="1387328564474" expanded="true" signature="9388:12655" placeholder="select * fro..actname..." />
-                <marker date="1387328564474" expanded="true" signature="9421:12654" placeholder="select t_end..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="9789:11130" placeholder="select txnda..*..." />
-                <marker date="1387328564474" expanded="true" signature="9904:11064" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="10145:11061" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="10242:10334" placeholder="select enuit..ptenudetail..." />
-                <marker date="1387328564474" expanded="true" signature="10400:10460" placeholder="select actat..rms_sbsactattr..." />
-                <marker date="1387328564474" expanded="true" signature="10629:10703" placeholder="select trim(..sbs_actccy..." />
-                <marker date="1387328564474" expanded="true" signature="10766:10895" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="10952:11058" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="11204:12547" placeholder="select txnda..*..." />
-                <marker date="1387328564474" expanded="true" signature="11319:12481" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="11560:12478" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="11657:11749" placeholder="select enuit..ptenudetail..." />
-                <marker date="1387328564474" expanded="true" signature="11815:11875" placeholder="select actat..rms_sbsactattr..." />
-                <marker date="1387328564474" expanded="true" signature="12044:12118" placeholder="select trim(..sbs_actccy..." />
-                <marker date="1387328564474" expanded="true" signature="12181:12311" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="12368:12475" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="12966:16419" placeholder="select rownu..*..." />
-                <marker date="1387328564474" expanded="true" signature="13085:16351" placeholder="select * fro..actname..." />
-                <marker date="1387328564474" expanded="true" signature="13118:16350" placeholder="select t_end..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="13485:14826" placeholder="select txnda..*..." />
-                <marker date="1387328564474" expanded="true" signature="13600:14760" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="13841:14757" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="13938:14030" placeholder="select enuit..ptenudetail..." />
-                <marker date="1387328564474" expanded="true" signature="14096:14156" placeholder="select actat..rms_sbsactattr..." />
-                <marker date="1387328564474" expanded="true" signature="14325:14399" placeholder="select trim(..sbs_actccy..." />
-                <marker date="1387328564474" expanded="true" signature="14462:14591" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="14648:14754" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="14900:16243" placeholder="select txnda..*..." />
-                <marker date="1387328564474" expanded="true" signature="15015:16177" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="15256:16174" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="15353:15445" placeholder="select enuit..ptenudetail..." />
-                <marker date="1387328564474" expanded="true" signature="15511:15571" placeholder="select actat..rms_sbsactattr..." />
-                <marker date="1387328564474" expanded="true" signature="15740:15814" placeholder="select trim(..sbs_actccy..." />
-                <marker date="1387328564474" expanded="true" signature="15877:16007" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="16064:16171" placeholder="select * fro..sbs_actbal..." />
-                <marker date="1387328564474" expanded="true" signature="16663:18202" placeholder="select txnda..*..." />
-                <marker date="1387328564474" expanded="true" signature="16781:18132" placeholder="select t.*, ..txndate..." />
-                <marker date="1387328564474" expanded="true" signature="17098:18129" placeholder="select a.txn..*..." />
-                <marker date="1387328564474" expanded="true" signature="17418:17737" placeholder="select ratva..sbs_actcxr..." />
-                <marker date="1387328564474" expanded="true" signature="17782:18126" placeholder="select * fro..sbs_actbal..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queryDailyBal.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="2552">
-              <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.8101266" vertical-offset="2258" max-vertical-offset="4862">
+              <caret line="131" column="32" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -332,8 +216,15 @@
         <option value="$PROJECT_DIR$/webRoot/pages/frame/homePage_nocas.jsp" />
         <option value="$PROJECT_DIR$/src/haier/rms/querycorppayfee/corppayfeeAction.java" />
         <option value="$PROJECT_DIR$/src/com/ccb/util/SysLockAction.java" />
-        <option value="$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml" />
         <option value="$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java" />
+        <option value="$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml" />
+        <option value="$PROJECT_DIR$/src/haier/rms/sbs/balance/DepositStructAnalysisAction.java" />
+        <option value="$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java" />
+        <option value="$PROJECT_DIR$/src/haier/view/fundmonitor/SbsActInfoMngAction.java" />
+        <option value="$PROJECT_DIR$/webRoot/UI/haier/rms/fundmonitor/sbsActInfoAdd.xhtml" />
+        <option value="$PROJECT_DIR$/src/haier/scheduler/PsiReportHandler.java" />
+        <option value="$PROJECT_DIR$/src/gateway/ftp/Ftp4SBS.java" />
+        <option value="$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java" />
       </list>
     </option>
   </component>
@@ -422,20 +313,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haierrms2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -546,6 +423,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Haierrms2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -592,24 +483,6 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webRoot" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="UI" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -666,7 +539,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fundmonitor" />
+              <option name="myItemId" value="externalcustomer" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -721,54 +594,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fundmonitor" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -847,6 +672,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haierrms" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haier" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -972,93 +819,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbsreport" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haierrms" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haier" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbsreport" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1108,11 +869,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="haier.rms.sbs.balance" />
       <recent name="gateway.sms" />
       <recent name="haier.repository.dao.psireport" />
       <recent name="haier.service.rms.psireport" />
       <recent name="haier.scheduler" />
-      <recent name="haier.view.rms.externalcustomer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\UI\haier\rms\sbs" />
@@ -1125,15 +886,15 @@
       <recent name="cbs.batch.ac.voucher" />
       <recent name="cbs.common.validator" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="haier.repository.model.sbsreport" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WorkSpace\git-haierrms\src\haierrms\webRoot\UI\haier\rms\externalcustomer" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\UI\cbs\ac\batchbook" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\pages\frame" />
       <recent name="F:\svn-fbicbs\source\fbicbs\webRoot\pages\security" />
       <recent name="F:\svn-fbicbs\source\fbicbs\src\cbs\common\utils\message" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="haier.repository.model.sbsreport" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat7.0.33">
@@ -1836,7 +1597,23 @@
       <workItem from="1396938250628" duration="15000" />
       <workItem from="1396941182362" duration="24000" />
       <workItem from="1397038341451" duration="1393000" />
-      <workItem from="1397092496835" duration="9961000" />
+      <workItem from="1397092496835" duration="10818000" />
+      <workItem from="1398146010366" duration="5242000" />
+      <workItem from="1398320306404" duration="9047000" />
+      <workItem from="1398484125378" duration="364000" />
+      <workItem from="1398743684368" duration="585000" />
+      <workItem from="1399530370496" duration="223000" />
+      <workItem from="1399530624238" duration="1481000" />
+      <workItem from="1399969867417" duration="591000" />
+      <workItem from="1399973717016" duration="619000" />
+      <workItem from="1400033285883" duration="6636000" />
+      <workItem from="1400047933541" duration="1494000" />
+      <workItem from="1400049576550" duration="1130000" />
+      <workItem from="1402280984612" duration="144000" />
+      <workItem from="1402281224071" duration="96000" />
+      <workItem from="1402281526860" duration="1732000" />
+      <workItem from="1403247776296" duration="156000" />
+      <workItem from="1406600407993" duration="961000" />
     </task>
     <task id="LOCAL-00002" summary="柜员交易量报表">
       <created>1338260379572</created>
@@ -2014,7 +1791,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38580000" />
+    <option name="totallyTimeSpent" value="69938000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2042,31 +1819,30 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4296875" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21941273" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2643208" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21941273" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4438944" sideWeight="0.503811" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3026316" sideWeight="0.49085367" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44243422" sideWeight="0.503811" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5049505" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5658307" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5049505" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29934746" sideWeight="0.3369906" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25367048" sideWeight="0.34375" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967373" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.677116" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27424243" sideWeight="0.6006601" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48514852" sideWeight="0.79119086" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2643208" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39802632" sideWeight="0.49085367" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34375" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29934746" sideWeight="0.3369906" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25367048" sideWeight="0.34375" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.677116" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967373" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2667758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.584375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
@@ -2086,6 +1862,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4194079" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34375" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.297561" sideWeight="0.4357367" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2138,7 +1915,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -2154,108 +1931,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/prjcfg.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="28424">
-          <caret line="28" column="71" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2090">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="4202">
-          <caret line="33" column="77" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/Ftp4DIS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="1100">
-          <caret line="15" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/psiftpconf.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryHistoryBalance.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="2860">
-          <caret line="26" column="82" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/HistoryBalanceQryAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6710" max-vertical-offset="10670">
-          <caret line="305" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/service/rms/sbsbatch/ActbalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2244" max-vertical-offset="6292">
-          <caret line="102" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/sbsreport/SbsReportMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="1848">
-          <caret line="20" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/repository/mapper/sbsreport/SbsReportMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="6666">
-          <caret line="32" column="75" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/prjcfg.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="28424">
-          <caret line="28" column="71" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="2090">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="4202">
-          <caret line="33" column="77" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryHistoryBalance.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2860">
-          <caret line="26" column="82" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/HistoryBalanceQryAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6710" max-vertical-offset="10670">
@@ -2291,20 +1966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pub/auth/CharacterEncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="10" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/sbsBalQry.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="52" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webRoot/pages/security/loginassistor_nocas.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -2319,13 +1980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/service/rms/pbcreport/cms_txndetl.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="15" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/relatedTxnReport.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -2337,13 +1991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2090">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/Ftp4DIS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="1100">
-          <caret line="15" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2403,27 +2050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="4202">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryBalance.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="3058">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/haier/service/common/PlatformService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3253" max-vertical-offset="4400">
           <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2431,7 +2061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="3322">
           <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2443,43 +2072,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryHistoryBalance.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5192" max-vertical-offset="5852">
-          <caret line="236" column="31" selection-start-line="236" selection-start-column="31" selection-end-line="236" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="2860">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/HistoryBalanceQryAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5364" max-vertical-offset="9438">
+          <caret line="305" column="48" selection-start-line="305" selection-start-column="48" selection-end-line="305" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/repository/mapper/sbsreport/SbsReportMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="6666">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="2552">
-          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1914" max-vertical-offset="18436">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryHistoryBalance.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.357143" vertical-offset="132" max-vertical-offset="2860">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/service/rms/sbsbatch/ActbalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1730" max-vertical-offset="5940">
-          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="2552">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -2487,135 +2104,205 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1848">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/fundmonitor/sbsActInfoAdd.xhtml">
+    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/fundmonitor/actBalMnt.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.285714" vertical-offset="396" max-vertical-offset="2552">
-          <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/view/fundmonitor/SbsActInfoMngAction.java">
+    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/fundmonitor/sbsActInfoMng.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="3850">
-          <caret line="99" column="65" selection-start-line="99" selection-start-column="65" selection-end-line="99" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/HistoryBalanceQryAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5232" max-vertical-offset="9438">
-          <caret line="305" column="54" selection-start-line="305" selection-start-column="54" selection-end-line="305" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/haier/repository/mapper/sbsreport/SbsReportMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="6666">
-          <caret line="22" column="41" selection-start-line="21" selection-start-column="24" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <marker date="1387328564474" expanded="true" signature="391:2033" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="567:2030" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="709:799" placeholder="select enuit..ptenudetail..." />
-            <marker date="1387328564474" expanded="true" signature="841:901" placeholder="select actat..rms_sbsactattr..." />
-            <marker date="1387328564474" expanded="true" signature="1045:1169" placeholder="select trim(..sbs_actccy..." />
-            <marker date="1387328564474" expanded="true" signature="1208:1468" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="1501:1985" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="1693:1738" placeholder="--and actno ..." />
-            <marker date="1387328564474" expanded="true" signature="1928:1984" placeholder="select actno..mt_acttype..." />
-            <marker date="1387328564474" expanded="true" signature="2188:3501" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="2364:3498" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="2506:2596" placeholder="select enuit..ptenudetail..." />
-            <marker date="1387328564474" expanded="true" signature="2638:2698" placeholder="select actat..rms_sbsactattr..." />
-            <marker date="1387328564474" expanded="true" signature="2842:2966" placeholder="select trim(..sbs_actccy..." />
-            <marker date="1387328564474" expanded="true" signature="3005:3264" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="3297:3486" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="3693:4751" placeholder="select currc..substr..." />
-            <marker date="1387328564474" expanded="true" signature="3730:3789" placeholder="select trim(..sbs_actccy..." />
-            <marker date="1387328564474" expanded="true" signature="3824:4050" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="4079:4732" placeholder="select subst..*..." />
-            <marker date="1387328564474" expanded="true" signature="4159:4621" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="4383:4411" placeholder="select actno..mt_acttype..." />
-            <marker date="1387328564474" expanded="true" signature="4564:4620" placeholder="select actno..mt_acttype..." />
-            <marker date="1387328564474" expanded="true" signature="4924:5938" placeholder="select round..*..." />
-            <marker date="1387328564474" expanded="true" signature="4998:5896" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="5053:5893" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="5325:5605" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="5642:5890" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="5833:5889" placeholder="select actno..mt_acttype..." />
-            <marker date="1387328564474" expanded="true" signature="6115:7156" placeholder="select round..*..." />
-            <marker date="1387328564474" expanded="true" signature="6189:7111" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="6268:7108" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="6540:6820" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="6857:7105" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="7048:7104" placeholder="select actno..mt_acttype..." />
-            <marker date="1387328564474" expanded="true" signature="7382:8093" placeholder="select rownu..*..." />
-            <marker date="1387328564474" expanded="true" signature="7425:7977" placeholder="select * fro..actno..." />
-            <marker date="1387328564474" expanded="true" signature="7458:7977" placeholder="select a.act..*..." />
-            <marker date="1387328564474" expanded="true" signature="7780:7832" placeholder="select * fro..SBS_ACTBAL..." />
-            <marker date="1387328564474" expanded="true" signature="7869:7922" placeholder="select * fro..SBS_ACTBAL..." />
-            <marker date="1387328564474" expanded="true" signature="8331:9102" placeholder="select rownu..*..." />
-            <marker date="1387328564474" expanded="true" signature="8439:8991" placeholder="select * fro..actno..." />
-            <marker date="1387328564474" expanded="true" signature="8472:8991" placeholder="select a.act..*..." />
-            <marker date="1387328564474" expanded="true" signature="8794:8846" placeholder="select * fro..SBS_ACTBAL..." />
-            <marker date="1387328564474" expanded="true" signature="8883:8936" placeholder="select * fro..SBS_ACTBAL..." />
-            <marker date="1387328564474" expanded="true" signature="9345:12724" placeholder="select rownu..*..." />
-            <marker date="1387328564474" expanded="true" signature="9388:12655" placeholder="select * fro..actname..." />
-            <marker date="1387328564474" expanded="true" signature="9421:12654" placeholder="select t_end..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="9789:11130" placeholder="select txnda..*..." />
-            <marker date="1387328564474" expanded="true" signature="9904:11064" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="10145:11061" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="10242:10334" placeholder="select enuit..ptenudetail..." />
-            <marker date="1387328564474" expanded="true" signature="10400:10460" placeholder="select actat..rms_sbsactattr..." />
-            <marker date="1387328564474" expanded="true" signature="10629:10703" placeholder="select trim(..sbs_actccy..." />
-            <marker date="1387328564474" expanded="true" signature="10766:10895" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="10952:11058" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="11204:12547" placeholder="select txnda..*..." />
-            <marker date="1387328564474" expanded="true" signature="11319:12481" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="11560:12478" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="11657:11749" placeholder="select enuit..ptenudetail..." />
-            <marker date="1387328564474" expanded="true" signature="11815:11875" placeholder="select actat..rms_sbsactattr..." />
-            <marker date="1387328564474" expanded="true" signature="12044:12118" placeholder="select trim(..sbs_actccy..." />
-            <marker date="1387328564474" expanded="true" signature="12181:12311" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="12368:12475" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="12966:16419" placeholder="select rownu..*..." />
-            <marker date="1387328564474" expanded="true" signature="13085:16351" placeholder="select * fro..actname..." />
-            <marker date="1387328564474" expanded="true" signature="13118:16350" placeholder="select t_end..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="13485:14826" placeholder="select txnda..*..." />
-            <marker date="1387328564474" expanded="true" signature="13600:14760" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="13841:14757" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="13938:14030" placeholder="select enuit..ptenudetail..." />
-            <marker date="1387328564474" expanded="true" signature="14096:14156" placeholder="select actat..rms_sbsactattr..." />
-            <marker date="1387328564474" expanded="true" signature="14325:14399" placeholder="select trim(..sbs_actccy..." />
-            <marker date="1387328564474" expanded="true" signature="14462:14591" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="14648:14754" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="14900:16243" placeholder="select txnda..*..." />
-            <marker date="1387328564474" expanded="true" signature="15015:16177" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="15256:16174" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="15353:15445" placeholder="select enuit..ptenudetail..." />
-            <marker date="1387328564474" expanded="true" signature="15511:15571" placeholder="select actat..rms_sbsactattr..." />
-            <marker date="1387328564474" expanded="true" signature="15740:15814" placeholder="select trim(..sbs_actccy..." />
-            <marker date="1387328564474" expanded="true" signature="15877:16007" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="16064:16171" placeholder="select * fro..sbs_actbal..." />
-            <marker date="1387328564474" expanded="true" signature="16663:18202" placeholder="select txnda..*..." />
-            <marker date="1387328564474" expanded="true" signature="16781:18132" placeholder="select t.*, ..txndate..." />
-            <marker date="1387328564474" expanded="true" signature="17098:18129" placeholder="select a.txn..*..." />
-            <marker date="1387328564474" expanded="true" signature="17418:17737" placeholder="select ratva..sbs_actcxr..." />
-            <marker date="1387328564474" expanded="true" signature="17782:18126" placeholder="select * fro..sbs_actbal..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2002">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/AverageBalAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59074074" vertical-offset="2871" max-vertical-offset="4774">
-          <caret line="165" column="111" selection-start-line="165" selection-start-column="111" selection-end-line="165" selection-end-column="111" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="4774">
+          <caret line="152" column="78" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/DepositStructAnalysisAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4058" max-vertical-offset="5852">
+          <caret line="228" column="34" selection-start-line="228" selection-start-column="26" selection-end-line="228" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryBalance.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="3058">
+          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/view/fundmonitor/SbsActInfoMngAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2212" max-vertical-offset="3960">
+          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/fundmonitor/sbsActInfoAdd.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="2596">
+          <caret line="39" column="107" selection-start-line="39" selection-start-column="107" selection-end-line="39" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pub/auth/CharacterEncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32592592" vertical-offset="0" max-vertical-offset="770">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5126" max-vertical-offset="5852">
+          <caret line="236" column="47" selection-start-line="236" selection-start-column="47" selection-end-line="236" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/readData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="1166">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/nsmbean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1254">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/fileChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="946">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/psireport/ExportExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="4180">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/Ftp4SBS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="2068">
+          <caret line="78" column="83" selection-start-line="78" selection-start-column="83" selection-end-line="78" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/scheduler/DisReportHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="2112">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/scheduler/PsiReportHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2966" max-vertical-offset="4840">
+          <caret line="151" column="59" selection-start-line="151" selection-start-column="59" selection-end-line="151" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/credit_develop.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="28292">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/service/rms/pbcreport/cms_txndetl.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2970" max-vertical-offset="6072">
+          <caret line="140" column="33" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/Ftp4DIS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="1100">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gateway/ftp/disftpconf.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/UI/haier/rms/externalcustomer/sbsBalQry.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.0" vertical-offset="726" max-vertical-offset="2904">
+          <caret line="47" column="92" selection-start-line="47" selection-start-column="92" selection-end-line="47" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/rms/sbs/balance/BalanceQryAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8950" max-vertical-offset="17138">
+          <caret line="475" column="67" selection-start-line="475" selection-start-column="67" selection-end-line="475" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.88" vertical-offset="1553" max-vertical-offset="4202">
+          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/repository/dao/SbsActbalMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1681736" vertical-offset="80" max-vertical-offset="1584">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/service/rms/sbsbatch/ActbalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37251356" vertical-offset="938" max-vertical-offset="5984">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding>
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8101266" vertical-offset="2258" max-vertical-offset="4862">
+          <caret line="131" column="32" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -2680,6 +2367,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -6,10 +6,12 @@
     <file url="file://$PROJECT_DIR$/src/gateway/sms/HaierSms.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/haier/rms/sbs/statistics/ActbalStatisticsAction.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/haier/rms/sbs/statistics/ChartDateAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/haier/scheduler/SBSAccountBalanceHandler.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/messages.properties" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/prjcfg.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/pub/auth/SecurityPhaseListener.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
 

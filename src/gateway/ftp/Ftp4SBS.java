@@ -75,7 +75,8 @@ public class Ftp4SBS {
                 sbsdownload(ftpPath + strDate + "_actaha-bk.lst", strDate + "/actaha-bk.lst");
                 //核算码总账码对照表
                 sbsdownload(ftpPath + strDate + "_actapc_1.010", strDate + "/actapc_1.010");
-
+                //总账码核算码明细表
+                sbsdownload(ftpPath + strDate + "_actglc_1.010", strDate + "/actglc_1.010");
             } catch (IOException e) {
                 logger.error("SBS文件获取失败，可能网络链接出现错误。");
                 throw new RuntimeException("SBS文件获取失败，可能网络链接出现错误。");

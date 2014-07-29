@@ -450,7 +450,9 @@ public class BalanceQryAction implements Serializable {
 
             List<SOFDataDetail> responseList = new ArrayList<SOFDataDetail>();
 
-            if (this.queryType.equals("A") || this.queryType.equals("H")) {
+            if (this.queryType.equals("C")) {  //È«²¿
+                responseList = sofDataDetailList;
+            } else {
                 List<MtActtype> mtActtypeList = actbalService.selectActtype4SbsActList(this.queryType);
                 for (SOFDataDetail sofDataDetail : sofDataDetailList) {
                     String actno = "8010" + ((T8123SOFDataDetail) sofDataDetail).getActnum();
@@ -461,9 +463,6 @@ public class BalanceQryAction implements Serializable {
                         }
                     }
                 }
-            }
-            if (this.queryType.equals("C")) {
-                responseList = sofDataDetailList;
             }
             detlList = transformResponseRecords_New(responseList);
         } catch (Exception e) {
