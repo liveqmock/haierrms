@@ -263,4 +263,5 @@ with bal as
         and con.STATUS = '1')) credencd
         where credencd.custcd = cust.custcd)) datas)
 
-        select * from bal t where t.上报日期=to_char(to_date('${reportdate}','yyyy-mm-dd'),'yyyymm')
+
+        select t.*,b.LNNOMACTNO as 贷款账号  from bal t left join tla_lncino_base b on t.贷款借据编码 = b.lncino where   t.上报日期=to_char(to_date('${reportdate}','yyyy-mm-dd'),'yyyymm')

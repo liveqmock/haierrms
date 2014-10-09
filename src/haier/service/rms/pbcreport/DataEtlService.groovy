@@ -59,14 +59,14 @@ class DataEtlService {
         def txtfilename = "_PbcRateBal.txt"
         def cmsdb = new Sql(cmsDataSource)
         obtainCmsDbDataToLocalFile(cmsdb,sqlfilename, strDate10, txtfilename)
-        loadCmsBalDataFromFileToLocalDB(cmsdb, strDate10)
+        loadCmsBalDataFromFileToLocalDB(cmsdb, strDate10, 'CMS')
     }
     public void extractCCmsBalData(String strDate10) {
         def sqlfilename = "ccms_balance.xml"
         def txtfilename = "_PbcRateBal.txt"
         def cmsdb = new Sql(ccmsDataSource)
         obtainCmsDbDataToLocalFile(cmsdb,sqlfilename, strDate10, txtfilename)
-        loadCmsBalDataFromFileToLocalDB(cmsdb,strDate10)
+        loadCmsBalDataFromFileToLocalDB(cmsdb,strDate10, 'CCMS')
     }
 
     //按照人行规则进行数据校验
@@ -130,7 +130,7 @@ class DataEtlService {
     /**
      *
      */
-    def loadCmsBalDataFromFileToLocalDB = { cmsdb, strDate10 ->
+    def loadCmsBalDataFromFileToLocalDB = { cmsdb, strDate10, chan ->
         //def rmsdb = new Sql(dataSource)
 
         def insertSql = '''
@@ -140,7 +140,7 @@ class DataEtlService {
                 ?,?,?,?,?,
                 ?,?,?,?,?,
                 ?,?,?,?,?,
-                ?,?
+                ?,?,?,?
                 )
              '''
 
@@ -149,7 +149,7 @@ class DataEtlService {
         def filepath = PropertyManager.getProperty("EXP_CMS_ROOTPATH") + strDate10 + "_PbcRateBal.txt";
         //def strDate8 = strDate10.replaceAll('-', '')
 
-        transformCmsData(cmsdb, strDate10, filepath, insertSql);
+        transformCmsData_bal(cmsdb, strDate10, filepath, insertSql, chan);
 
     }
     def loadCmsTxnDetlDataFromFileToLocalDB = { cmsdb, strDate10 ->
@@ -164,10 +164,33 @@ class DataEtlService {
                 )
              '''
         def filepath = PropertyManager.getProperty("EXP_CMS_ROOTPATH") + strDate10 + "_PbcRateDetl.txt";
-        transformCmsData(cmsdb, strDate10, filepath, insertSql);
+        transformCmsData_detl(cmsdb, strDate10, filepath, insertSql);
     }
 
-    def transformCmsData = { cmsdb, strDate10, filepath, insertSql ->
+    def transformCmsData_bal = { cmsdb, strDate10, filepath, insertSql, chan ->
+        def rmsdb = new Sql(dataSource)
+
+        def count = 0;
+        rmsdb.withTransaction {
+            println '事务开始'
+            //rmsdb.executeUpdate(deleteSql, strDate10)
+            new File(filepath).splitEachLine(",") { line ->
+                def fields = []
+                fields << strDate10
+                fields += line
+                def sbsactno = fields[-1]
+                fields = fields[0..-3]
+                fields << 0.00
+                fields << sbsactno
+                fields << chan
+
+                rmsdb.executeUpdate(insertSql, fields)
+                count++;
+            }
+            println '事务完成'
+        }
+    }
+    def transformCmsData_detl = { cmsdb, strDate10, filepath, insertSql ->
         def rmsdb = new Sql(dataSource)
 
         def count = 0;

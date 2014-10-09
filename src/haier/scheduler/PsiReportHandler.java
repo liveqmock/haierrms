@@ -39,7 +39,8 @@ public class PsiReportHandler {
 
     //====================================================================
     public void run() {
-        this.run(new Date());
+        DateTime dt = new DateTime();
+        this.run(dt.minusDays(1).toDate());
     }
 
     public void run(Date date) {

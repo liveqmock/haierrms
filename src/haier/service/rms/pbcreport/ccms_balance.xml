@@ -48,7 +48,9 @@ select 'C5007437000019' 金融机构代码, '1' 客户类型, data.*
         else
         'FS03'
         end 贷款状态,
-        '${enddate}' 上报日期
+        '${enddate}' 上报日期,
+        '8010' as sbsactno
+
         from TBL_CSM_CSTBSC c,
         TBL_ACM_ACCBSC a,
         TBL_ADM_APPDTL l,
