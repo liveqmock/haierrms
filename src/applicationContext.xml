@@ -100,7 +100,7 @@
     </bean>
     <bean id="psiReportCronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
         <property name="jobDetail" ref="psiReportJobDetailBean"/>
-        <property name="cronExpression" value="0 30 23 * * ?"/>
+        <property name="cronExpression" value="0 01 10 * * ?"/>
         <!--<property name="cronExpression" value="0 45 13 * * ?"/>-->
     </bean>
 

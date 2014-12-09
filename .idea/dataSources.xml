@@ -5,9 +5,6 @@
       <driver-ref>oracle</driver-ref>
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@localhost:1521:orcl</jdbc-url>
-      <user-name>cbs</user-name>
-      <user-password>dfc9dfc8dfd9</user-password>
-      <schema-pattern>*.CBS</schema-pattern>
       <libraries>
         <library>
           <url>jar://$PROJECT_DIR$/webRoot/WEB-INF/lib/ojdbc6.jar!/</url>
@@ -16,4 +13,3 @@
     </data-source>
   </component>
 </project>
-

@@ -10,8 +10,8 @@
     <file url="file://$PROJECT_DIR$/src/messages.properties" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/prjcfg.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/pub/auth/SecurityPhaseListener.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryBalStruct.xhtml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/webRoot/UI/haier/rms/sbs/queryDailyBal.xhtml" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
-

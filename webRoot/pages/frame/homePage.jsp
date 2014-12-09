@@ -57,7 +57,8 @@
     if (PlatformHelper.isProductionServerIp()) {
         isProduction_WebServer = "1";
     }
-    if (PlatformHelper.getRealtimeProjectConfigProperty("SBS_HOSTIP").equals("192.168.91.5")) {
+    String sbs_hostip = PlatformHelper.getRealtimeProjectConfigProperty("SBS_HOSTIP");
+    if (sbs_hostip.equals("192.168.91.5")||sbs_hostip.equals("192.168.91.6")||sbs_hostip.equals("10.143.18.20")) {
         isProduction_SBSServer = "1";
     }
 

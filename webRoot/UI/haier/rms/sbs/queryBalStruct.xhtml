@@ -1,0 +1,138 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:c="http://java.sun.com/jsp/jstl/core"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/templates/ui.xhtml">
+
+    <ui:define name="head">
+        <style type="text/css">
+            .col-95 {
+                width: 95%;
+            }
+
+            .col-5 {
+                width: 5%;
+            }
+        </style>
+    </ui:define>
+
+    <ui:define name="content">
+        <div style="margin:5px;">
+            <h:form id="form">
+                <p:growl id="msgs" showDetail="false" life="1500"/>
+
+                <div id="header">
+                    <p:panel header="#{depositStructAction.title}">
+                        <h:panelGrid columns="2" cellspacing="5" columnClasses="col-95,col-5">
+                            <h:panelGrid columns="2" cellspacing="5">
+                                <h:outputLabel value="起始日期:"/>
+                                <p:inputText value="#{depositStructAction.startDate}"/>
+                                <h:outputLabel value="结束日期:"/>
+                                <p:inputText value="#{depositStructAction.endDate}"/>
+                            </h:panelGrid>
+                            <h:panelGrid>
+                                <p:commandButton id="qrybtn" style="width:90px;" value="查询"
+                                                 action="#{depositStructAction.onQuery}"
+                                                 update="pdt,msgs">
+                                </p:commandButton>
+<!--
+                                <p:commandButton ajax="false" id="btnExport" value="导出CSV"
+                                                 style="width:90px;">
+                                    <p:dataExporter type="csv" target="pdt"
+                                                    fileName="rpt_#{depositStructAction.startDate}_#{depositStructAction.endDate}"
+                                                    encoding="GBK"
+                                                    pageOnly="false"/>
+                                </p:commandButton>
+-->
+                            </h:panelGrid>
+                        </h:panelGrid>
+                    </p:panel>
+                </div>
+
+                <p:ajaxStatus style="height:20px;text-align:center">
+                    <f:facet name="start">
+                        <h:graphicImage value="/images/ajaxloadingbar.gif"/>
+                    </f:facet>
+                    <f:facet name="complete">
+                        <h:outputText value=""/>
+                    </f:facet>
+                </p:ajaxStatus>
+
+                <p:dataTable id="pdt" style="width:100%;"
+                             value="#{depositStructAction.detlList}" var="record"
+                             rowKey="#{record.txnDate}"
+                             emptyMessage="数据记录为空...">
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            类别
+                        </f:facet>
+                        <h:outputText value="#{record.itemName}"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            本日止日均
+                        </f:facet>
+                        <h:outputText value="#{record.averageBal}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            AH活期
+                        </f:facet>
+                        <h:outputText value="#{record.currdepBal}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            AH定期
+                        </f:facet>
+                        <h:outputText value="#{record.fixdepBal}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            AH保证金
+                        </f:facet>
+                        <h:outputText value="#{record.marginBal}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            财务公司活期
+                        </f:facet>
+                        <h:outputText value="#{record.currdepBal_HF}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            财务公司定期
+                        </f:facet>
+                        <h:outputText value="#{record.fixdepBal_HF}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            财务公司保证金
+                        </f:facet>
+                        <h:outputText value="#{record.marginBal_HF}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            AH活期占比
+                        </f:facet>
+                        <h:outputText value="#{record.currdepRatio}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            AH定期占比
+                        </f:facet>
+                        <h:outputText value="#{record.fixdepRatio}" style="float:right"/>
+                    </p:column>
+                    <p:column style="text-align:center">
+                        <f:facet name="header">
+                            AH保证金占比
+                        </f:facet>
+                        <h:outputText value="#{record.marginBalRatio}" style="float:right"/>
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>
